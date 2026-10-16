@@ -35,6 +35,8 @@ window.TSB = {
     "complete-hvac-tech-pack": "",
     "complete-technician-library": ""
   } },
+  /* Payments. Square: make a Payment Link per product in your Square dashboard and paste the URL into store.links above (the Buy button then opens Square checkout). No Square code runs on this site. Zelle cannot be automated: fill recipient (the email or phone registered for Zelle) and the box below the Store page appears. */
+  payments: { zelle: { recipient: "", name: "" }, supportEmail: "", deliveryNote: "After payment we email your files, usually within one business day." },
   /* Opt-in email signup (js/signup.js). Leave action empty to keep the form switched off. Paste the form-post URL your email service gives you (for example Buttondown or MailerLite) and, if it needs a different field name, change emailField. Never shown on game pages. */
   signup: { action: "", emailField: "email", method: "post" },
   /* lessonGate: when true, lessons tagged "Premium lesson" show only the intro and first section, then a card linking to premium.html. Honor system: no accounts or payments, and the hidden text stays in the page source. Leave false until a real login exists. */

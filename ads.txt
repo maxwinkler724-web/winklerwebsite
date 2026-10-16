@@ -1,0 +1,3 @@
+# ads.txt placeholder. Ads are OFF. When Google AdSense approves the site, replace this comment with the one line AdSense shows you
+# (it looks like:  google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0 ), using your own publisher ID.
+# A comment-only file is valid and tells ad buyers nothing is authorized yet.

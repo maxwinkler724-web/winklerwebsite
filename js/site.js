@@ -58,3 +58,6 @@
     }
   }
 })();
+
+/* ?q=term fills the lesson search box (home page search form) */
+(function(){try{var q=new URLSearchParams(location.search).get("q"),i=document.getElementById("q");if(q&&i){i.value=q;i.dispatchEvent(new Event("input",{bubbles:true}));}}catch(e){}})();
