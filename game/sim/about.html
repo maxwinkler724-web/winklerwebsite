@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About the Service Call Simulator | Trade Study Bench</title>
+<meta name="description" content="About the Service Call Simulator: the modules and calls, how scoring works, accuracy notes and the classroom kit.">
+<link rel="stylesheet" href="sim.css"></head><body><div class="wrap" role="main">
+<div class="top"><h1>About the Service Call Simulator</h1><nav><a href="../../index.html">Trade Study Bench</a> &middot; <a href="index.html">Furnace simulator</a> &middot; <a href="cooling.html">Cooling simulator</a> &middot; <a href="heatpump.html">Heat pump simulator</a> &middot; <a href="minisplit.html">Mini-split simulator</a> &middot; <a href="boiler.html">Boiler simulator</a> &middot; <a href="condensing.html">Condensing boiler simulator</a> &middot; <a href="steam.html">Steam simulator</a> &middot; <a href="ecm.html">ECM blower simulator</a> &middot; <a href="rtu.html">Rooftop economizer simulator</a> &middot; <a href="refrig.html">Commercial refrigeration simulator</a> &middot; <a href="steamhx.html">Steam heat exchanger simulator</a> &middot; <a href="../index.html">Fix-It Van (kids)</a> &middot; <a href="about.html">About</a></nav></div>
+<div class="panel"><p>Two diagnosis simulators for students and adults. Plain HTML, CSS and JavaScript. No accounts, no ads, no network calls. Best scores are saved only in your own browser.</p>
+<h2>What you can practice</h2>
+<ul><li><strong>Furnace:</strong> thirteen calls on an induced-draft gas furnace (including a blocked vent that trips the rollout switch, an open gas valve coil and a dead thermostat): igniter, flame sensor, pressure switch tube, inducer, blown fuse with a pinched wire, dirty filter tripping the limit, weak blower capacitor. A wiring diagram shows expected voltages by stage.</li>
+<li><strong>Cooling:</strong> six calls on a 3-ton R-410A split system with a TXV: low charge with a leak, dirty condenser, low airflow, overcharge, failed fan capacitor, liquid line restriction. Use gauges, line temperatures, amps, capacitance, and superheat and subcooling.</li>
+<li><strong>Heat pump:</strong> five winter calls on a 3-ton R-410A air-source heat pump: leaking reversing valve, failed defrost sensor, low charge with a leak, clogged filter in heating, and a bad contactor that leaves only the aux heat strips running.</li>
+<li><strong>Boiler:</strong> seven calls on a residential gas hot-water boiler with two zone valves: seized circulator, air-locked zone, waterlogged expansion tank with a dripping relief valve, clogged fill valve, a dead zone valve motor, an expansion tank on the wrong side of the circulator, and closely spaced tees broken by field changes. Capping a relief valve is penalized.</li>
+<li><strong>Steam:</strong> seven calls on a residential one-pipe steam boiler: pressuretrol set too high, low-water lockout, a clogged radiator vent, a radiator pitched the wrong way, dirty water that makes the boiler prime, banging after a boiler swap (Hartford loop and a sagging main), and half-closed radiator valves. Never cap a relief valve or shock a hot dry boiler with cold water.</li>
+<li><strong>Mini-split:</strong> four calls on a ductless unit: a communication fault from a damaged interconnect cable, an iced indoor coil, a sensor out of range, and an afternoon overload trip. Never chip ice or bypass an overload.</li>
+<li><strong>Condensing boiler:</strong> three calls: a blocked condensate trap that mimics flame loss, an ignition lockout after repeated resets, and a blocked vent that trips the air-proving switch. Never jumper a proving switch.</li>
+<li><strong>ECM blower:</strong> three calls: a failed motor versus its control, a harness pin pushed back, and a blower that hunts because of a thick filter. Wait about five minutes before opening an ECM motor.</li>
+<li><strong>Steam heat exchanger:</strong> three calls: a small coil that floods at low load (vacuum breaker or pump trap), steam hammer on a cold start-up, and a steam trap that failed open.</li>
+<li><strong>Commercial refrigeration:</strong> five calls: a walk-in freezer with a failed defrost heater, a warm reach-in and cold-holding limits, two ice machine faults and a walk-in with a bypassed fan delay.</li>
+<li><strong>Rooftop economizer:</strong> four calls on a commercial rooftop unit: a damper that will not open because of binding linkage, a changeover set for the wrong climate, a minimum position left closed, and a mixed-air sensor flash code. Record as-found and final settings.</li>
+<li><strong>More furnace and heat pump calls:</strong> a blocked flue with a weak draft, a condensing furnace drain that freezes, a jumpered pressure switch, a TXV that has closed, a crimped liquid line, a heat pump defrosting every 15 minutes, and one call where nothing is wrong and the right answer is to wait and explain.</li></ul>
+<h2>For classrooms</h2>
+<p>The classroom tier includes a <a href="classroom/index.html">classroom kit</a>: printable worksheets and answer keys for every module, a teacher guide, and a student progress card that is printed or saved on the student's device. No accounts and nothing is sent anywhere.</p>
+<h2>How you are scored</h2>
+<p>Safety counts as much as the fix: PPE, powering off and verifying dead before ohm tests or repairs, never opening the refrigerant circuit without recovery, never topping off a leaking system, charging by weight, and verifying with the panel on and the right readings. Replacing parts that were not faulty costs points and money.</p>
+<h2>Accuracy notes</h2>
+<ul><li>R-410A saturation values are interpolated from a published pressure-temperature chart. Fault readings are illustrative and consistent with each other, not measurements of a real unit.</li>
+<li>Superheat and subcooling targets here (about 8 to 14 F and 10 F) are examples. Real targets come from the equipment data plate and manufacturer charging charts.</li>
+<li>LED codes belong to a fictional board. Real codes vary by manufacturer.</li></ul>
+<h2>Sources</h2>
+<p>Every module lists the documents it is built from, on its own page and on the <a href="sources.html">Sources page</a>. Numbers in the calls are practice examples unless a call says otherwise.</p>
+<h2>Please note</h2>
+<p>Educational simulation only. It does not certify you or replace hands-on training, manufacturer instructions or local codes. Handling refrigerant requires EPA 608 certification. All customers and houses are fictional.</p>
+<h2>Premium</h2>
+<p>The first call in each simulator is a free demo. A premium option is planned; no payment is connected yet.</p>
+<h2>Licenses</h2><p>All code and drawings are original. No third-party code or art.</p></div></div><script src="langload.js"></script>
+<script src="i18n.js"></script>
+<script src="offline.js"></script>
+</body></html>

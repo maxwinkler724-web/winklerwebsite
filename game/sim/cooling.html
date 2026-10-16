@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cooling Diagnosis Simulator | Trade Study Bench</title>
+<meta name="description" content="Diagnose a split air conditioner with gauges, superheat, subcooling, temperatures and amps.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'">
+<link rel="stylesheet" href="sim.css"></head><body>
+<div class="wrap" role="main">
+<div class="top"><h1>Cooling Diagnosis Simulator</h1><nav><a href="../../index.html">Trade Study Bench</a> &middot; <a href="index.html">Furnace simulator</a> &middot; <a href="cooling.html">Cooling simulator</a> &middot; <a href="heatpump.html">Heat pump simulator</a> &middot; <a href="minisplit.html">Mini-split simulator</a> &middot; <a href="boiler.html">Boiler simulator</a> &middot; <a href="condensing.html">Condensing boiler simulator</a> &middot; <a href="steam.html">Steam simulator</a> &middot; <a href="ecm.html">ECM blower simulator</a> &middot; <a href="rtu.html">Rooftop economizer simulator</a> &middot; <a href="refrig.html">Commercial refrigeration simulator</a> &middot; <a href="steamhx.html">Steam heat exchanger simulator</a> &middot; <a href="../index.html">Fix-It Van (kids)</a> &middot; <a href="about.html">About</a></nav></div>
+<p class="small">Training simulator for students and adults. A fictional 3-ton R-410A split system with a TXV. Real refrigerant work requires EPA 608 certification. Collects and sends nothing.</p>
+<section id="menu"></section>
+<section id="work" class="hidden">
+ <div class="bar" id="bar"></div>
+ <div class="cols">
+  <div class="left"><svg id="fur" viewBox="0 0 600 440" role="group" aria-label="Split air conditioner. Select a part to test."></svg>
+   <p class="small">Select a part, then choose a test. System data: R-410A, TXV, nameplate charge 8 lb 4 oz, target subcooling 10 F, target superheat 8 to 14 F.</p></div>
+  <div class="right">
+   <div class="panel" id="comp"></div>
+   <div class="panel" id="meter" aria-live="polite"></div>
+   <div class="panel"><div class="row"><button class="btn" id="runCycle">Run cooling 10 min</button><button class="btn alt" id="hint">Hint (-5)</button><button class="btn alt" id="finish">Finish call</button></div><div id="repair"></div></div>
+   <div class="panel"><strong>Service notes</strong><ol id="log" class="log"></ol></div>
+  </div>
+ </div>
+</section>
+<section id="report" class="hidden panel"></section>
+<!--sources--><details class="panel" id="sources"><summary>Sources and how numbers are labeled</summary><p class="small">Where the facts in these calls come from. Links open other sites; the simulator itself makes no network calls. <a href="sources.html">All sources</a></p><ul><li><a href="https://files.climatemaster.com/tbg004-climatemaster-txv-diagnostic-and-replacement-guidelines-technical-bulletin-residential-geothermal-heat-pump-systems.pdf" rel="noopener">ClimateMaster: TXV diagnostic and replacement guidelines</a>. <span class="small">MFR. TXV bulb placement and diagnosis.</span></li><li><a href="https://www.law.cornell.edu/cfr/text/40/82.156" rel="noopener">40 CFR 82.156: required evacuation levels (Cornell LII)</a>. <span class="small">REG. Evacuate before opening; confirm the current text.</span></li><li><a href="https://www.law.cornell.edu/cfr/text/40/82.158" rel="noopener">40 CFR 82.158: standards for recovery and recycling equipment (Cornell LII)</a>. <span class="small">REG. Confirm the current text.</span></li><li><a href="https://www.epa.gov/section608/section-608-technician-certification-requirements" rel="noopener">EPA: Section 608 technician certification requirements</a>. <span class="small">GOV. Who may handle refrigerant.</span></li><li><a href="https://www.hvacrschool.com/videos/how-to-evacuate-an-air-conditioning-system-fast-and-deep-vacuum/" rel="noopener">HVAC School: how to evacuate an air conditioning system fast</a>. <span class="small">TRADE. Evacuation practice (a presenter's target of about 300 microns, not a rule).</span></li><li><a href="https://hvacprosales.com/es-419/blog/capacitor-contactor-diagnostics-preventative-maintenance/" rel="noopener">HVAC contractor-supplier blog: capacitor and contactor diagnostics</a>. <span class="small">TRADE. Capacitor and contactor checks.</span></li></ul><p class="small"><strong>How numbers are labeled.</strong> Readings, prices, set points, timers, blink codes and trip values in the calls are <em>practice examples</em> made up for the game unless a call says a source gives them. Words like about, example and practice mark them. Where a number comes from one maker's document (for example Hoshizaki timers or Trane flash codes), it is that maker's example and other makers differ. Rules of thumb (such as coolers about 35 to 38 F) are common practice, not rules. Laws and codes are cited by name: confirm the current text. Always follow the equipment maker's instructions and local code.</p></details><!--/sources-->
+</div>
+<script src="art.js"></script>
+<script src="langload.js"></script>
+<script src="i18n.js"></script>
+<script src="cooling.js"></script>
+<script src="circuit.js" data-mode="cool"></script>
+<script src="offline.js"></script>
+</body></html>

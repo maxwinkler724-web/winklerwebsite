@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fix-It Van | Trade Study Bench</title>
+<meta name="description" content="A kid-friendly, offline game where you drive a service van around a small town and fix furnaces the safe way.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'">
+<link rel="stylesheet" href="game.css"></head><body>
+<div class="wrap" role="main">
+<div class="top"><h1>Fix-It Van</h1><div class="hud"><span id="hStars">Stars: 0</span><span id="hJobs">Jobs: 0/25</span><button class="btn alt sm" id="snd" aria-pressed="true">Sound: On</button></div><a href="../index.html">Back to Trade Study Bench</a> &middot; <a href="../premium.html">Premium</a></div>
+<div id="town">
+ <canvas id="cv" width="880" height="560" role="img" aria-label="Top-down town map. Drive the van to a house with a bouncing arrow."></canvas>
+ <p class="small" id="hint">Drive with the arrow keys or WASD. Stop near a house with a bouncing arrow, then press Space or tap Knock.</p>
+ <div class="pad" aria-label="Touch controls"><span></span><button data-d="u" aria-label="Up">&#9650;</button><span></span><button data-d="l" aria-label="Left">&#9664;</button><button data-d="d" aria-label="Down">&#9660;</button><button data-d="r" aria-label="Right">&#9654;</button></div>
+ <div style="text-align:center"><button class="btn" id="knock" disabled>Knock on door</button></div>
+<details class="panel" id="boardwrap"><summary>Call board (pick a job without driving)</summary><div id="board"></div></details>
+ <div style="text-align:center"><button class="btn hidden" id="certBtn">See my certificate</button></div>
+</div>
+<div id="job" class="hidden">
+ <canvas id="scene" width="880" height="260" role="img" aria-label="Picture of the job"></canvas>
+ <div class="panel helper"><div class="face" aria-hidden="true">&#128119;</div><div><strong>Sparky the helper:</strong> <span id="story"></span></div></div>
+ <div class="panel" id="q" tabindex="-1"></div>
+ <div class="panel hidden" id="why" aria-live="polite"></div>
+</div>
+<div id="end" class="hidden panel" style="text-align:center"></div>
+<div id="lock" class="hidden panel" style="text-align:center"></div>
+<div id="cert" class="hidden"><div class="certificate"><div class="small">Trade Study Bench presents</div><h2>Junior Fix-It Tech Certificate</h2><p>Awarded to</p><p class="cname" id="cname">A Great Helper</p><p>for fixing every call in town the safe way, with <span id="cstars">0</span> stars.</p><p class="small">Always remember: power off first, stay safe, and leave real repairs to trained adults.</p></div>
+ <p class="nameedit"><label for="nm">Type your name (it stays on this screen only and is never saved or sent)</label><br><input id="nm" maxlength="24" autocomplete="off"></p>
+ <p><button class="btn" id="cprint">Print</button> <button class="btn alt" id="cback">Back to town</button></p></div>
+<p class="small">Privacy: this game runs entirely in your browser. It collects nothing, sends nothing and has no ads. Progress is saved only on this device. <a href="guide.html">For parents and teachers</a></p>
+</div>
+<script src="jobs.js"></script><script src="langload.js"></script>
+<script src="i18n.js"></script>
+<script src="game.js"></script>
+<script src="offline.js"></script>
+</body></html>

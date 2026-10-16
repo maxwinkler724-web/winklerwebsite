@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ECM Blower Diagnosis Simulator | Trade Study Bench</title>
+<meta name="description" content="Diagnose an ECM blower: motor versus control, harness pins and restriction.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'">
+<link rel="stylesheet" href="sim.css"></head><body>
+<div class="wrap" role="main">
+<div class="top"><h1>ECM Blower Diagnosis Simulator</h1><nav><a href="../../index.html">Trade Study Bench</a> &middot; <a href="index.html">Furnace simulator</a> &middot; <a href="cooling.html">Cooling simulator</a> &middot; <a href="heatpump.html">Heat pump simulator</a> &middot; <a href="minisplit.html">Mini-split simulator</a> &middot; <a href="boiler.html">Boiler simulator</a> &middot; <a href="condensing.html">Condensing boiler simulator</a> &middot; <a href="steam.html">Steam simulator</a> &middot; <a href="ecm.html">ECM blower simulator</a> &middot; <a href="rtu.html">Rooftop economizer simulator</a> &middot; <a href="refrig.html">Commercial refrigeration simulator</a> &middot; <a href="steamhx.html">Steam heat exchanger simulator</a> &middot; <a href="../index.html">Fix-It Van (kids)</a> &middot; <a href="about.html">About</a></nav></div>
+<p class="small">Training simulator for students and adults. A fictional air handler with an ECM blower motor. Collects and sends nothing.</p>
+<section id="menu"></section>
+<section id="work" class="hidden">
+ <div class="bar" id="bar"></div>
+ <div class="cols">
+  <div class="left"><svg id="fur" viewBox="0 0 600 440" role="group" aria-label="Air handler with ECM blower. Select a part to test."></svg>
+   <p class="small">Select a part, then choose a test. ECM motors and modules are matched parts.</p></div>
+  <div class="right">
+   <div class="panel" id="comp"></div>
+   <div class="panel" id="meter" aria-live="polite"></div>
+   <div class="panel"><div class="row"><button class="btn" id="runCycle">Run blower 10 min</button><button class="btn alt" id="hint">Hint (-5)</button><button class="btn alt" id="finish">Finish call</button></div><div id="repair"></div></div>
+   <div class="panel"><strong>Service notes</strong><ol id="log" class="log"></ol></div>
+  </div>
+ </div>
+</section>
+<section id="report" class="hidden panel"></section>
+<!--sources--><details class="panel" id="sources"><summary>Sources and how numbers are labeled</summary><p class="small">Where the facts in these calls come from. Links open other sites; the simulator itself makes no network calls. <a href="sources.html">All sources</a></p><ul><li><a href="https://files.climatemaster.com/ECM-Blower-Motor-Replacement-Guide.pdf" rel="noopener">ClimateMaster: ECM blower motor replacement guide</a>. <span class="small">MFR. One maker's ECM motor and module guidance (example).</span></li><li><a href="https://www.hvacrschool.com/properly-diagnosing-a-gas-furnace-pressure-switch/" rel="noopener">HVAC School: properly diagnosing a gas furnace pressure switch (airflow restriction logic)</a>. <span class="small">TRADE.</span></li></ul><p class="small"><strong>How numbers are labeled.</strong> Readings, prices, set points, timers, blink codes and trip values in the calls are <em>practice examples</em> made up for the game unless a call says a source gives them. Words like about, example and practice mark them. Where a number comes from one maker's document (for example Hoshizaki timers or Trane flash codes), it is that maker's example and other makers differ. Rules of thumb (such as coolers about 35 to 38 F) are common practice, not rules. Laws and codes are cited by name: confirm the current text. Always follow the equipment maker's instructions and local code.</p></details><!--/sources-->
+</div>
+<script src="langload.js"></script>
+<script src="i18n.js"></script>
+<script src="ecm.js"></script>
+<script src="generic.js"></script>
+<script src="offline.js"></script>
+</body></html>

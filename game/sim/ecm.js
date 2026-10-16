@@ -1,0 +1,65 @@
+(function(){
+function rd(v,u,e){return'<div class="reading">'+(typeof v==="number"?(Math.abs(v)<10?v.toFixed(1):Math.round(v)):v)+(u?" "+u:"")+'</div><p class="small">'+e+"</p>"}
+window.SIMCFG={key:"ecm",
+intro:"An air handler with an ECM (electronically commutated) blower motor. Motors and modules are matched parts, so test before you replace.",
+foot:"Values marked about are one maker's example. Use the motor maker's replacement guide.",
+startNote:"Put on PPE, check voltages and the harness first, then the motor. Disconnect power and wait about five minutes before opening the motor.",
+powerLabel:"Disconnect",callLabel:"Thermostat calling (fan)",panelLabel:"Blower door open",
+okRun:"The blower ramps up smoothly, airflow is steady and there is no puffing or whistling.",
+badCheck:"No unsafe shortcut taken",verifyLabel:"Verified: airflow steady after repair",
+safety:"Educational simulation only. Disconnect power and wait about five minutes before opening an ECM motor. The power connector carries line voltage. Never work on the motor with AC applied. Never leave a system running without a filter.",
+verify:function(v){return v.good===1},verifyHtml:function(v){return'<div class="reading">'+v.sum+'</div><p class="small">Targets: steady airflow at the set speed, no hunting, static pressure in range.</p>'},
+V:{ok:{good:1,sum:"Steady airflow, static pressure in range"},motor:{good:0,sum:"No air, motor will not run"},plug:{good:0,sum:"No air, intermittent"},hunt:{good:0,sum:"Air puffs in and out"}},
+runText:{motor:"The thermostat calls for the fan. Heat comes on but no air moves.",plug:"The blower runs for a moment, stops, and restarts on its own. Sometimes there is no air at all.",hunt:"Air puffs in and out at high speed with a whistle."},
+outline:'<rect x="10" y="10" width="560" height="350" rx="8" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/><text x="290" y="378" text-anchor="middle" font-size="12" fill="currentColor">Air handler</text>',
+parts:[
+ {id:"tstat",l:"Thermostat",x:480,y:20,w:90,h:50},
+ {id:"disc",l:"Disconnect",x:480,y:90,w:90,h:46},
+ {id:"ctrl",l:"ECM control module",x:30,y:30,w:150,h:60},
+ {id:"plug",l:"Harness plugs and pins",x:200,y:30,w:150,h:60},
+ {id:"motor",l:"ECM motor",x:30,y:120,w:150,h:60},
+ {id:"filt",l:"Air filter",x:200,y:120,w:150,h:60},
+ {id:"coil",l:"Evaporator coil",x:30,y:210,w:150,h:60},
+ {id:"duct",l:"Ducts and registers",x:200,y:210,w:150,h:60},
+ {id:"sp",l:"Static pressure ports",x:30,y:290,w:150,h:50}
+],
+tests:{
+ ver:{c:"sp",l:"Verify: airflow, static pressure and noise (running)",k:"calc",fn:function(){return""}},
+ rc:{c:"ctrl",l:"Voltage R to C at the control (live)",k:"live",fn:function(){return rd(24.4,"VAC","About 24 VAC")}},
+ g:{c:"ctrl",l:"Is the thermostat calling G? Jumper R to G for a test (live)",k:"live",fn:function(f){return f==="motor"?"The control answers the call and sends the command. The motor does not respond.":f==="plug"?"The control answers, but the motor only responds some of the time.":"The control answers and the motor ramps up."}},
+ hv:{c:"plug",l:"Line voltage at the motor power plug (live)",k:"live",fn:function(){return rd(118,"VAC","About 120 VAC present at the motor")}},
+ pins:{c:"plug",l:"Inspect harness plug pins",k:"any",fn:function(f){return f==="plug"?"One pin in the small control plug is pushed back and not making contact.":"All pins are fully seated."}},
+ shell:{c:"motor",l:"Resistance from each motor lead to the motor shell, control removed (power off)",k:"dead",fn:function(f){return f==="motor"?rd("about 40","kohm","Under about 100 kohm to the shell means the motor is bad and a new control will not help (one maker's example)"):rd("very high","","Well above 100 kohm: motor is not leaking to the shell")}},
+ mshell:{c:"motor",l:"Look at the motor and shaft",k:"any",fn:function(f){return f==="motor"?"The shaft turns freely but there is a faint burnt smell at the motor.":"The motor looks fine and the shaft turns freely."}},
+ fil:{c:"filt",l:"Inspect the filter slot and filter",k:"any",fn:function(f){return f==="hunt"?"A thick high-MERV pleated filter is jammed into a slot built for a thin filter. It is loaded with dust.":"A clean standard filter."}},
+ coi:{c:"coil",l:"Inspect the evaporator coil",k:"any",fn:function(f){return f==="hunt"?"The coil is dusty but not iced yet.":"The coil is clean."}},
+ stat:{c:"sp",l:"Total external static pressure (running)",k:"run",fn:function(f){return f==="hunt"?rd("high","","Well above the system's design range. The motor is hunting against it"):rd("in range","","Within the system's design range")}},
+ nofil:{c:"sp",l:"Run briefly with the filter removed (test only)",k:"run",fn:function(f){return f==="hunt"?"The puffing stops with the filter out. Put the filter back and fix the restriction. Never leave it out.":"No change."}},
+ reg:{c:"duct",l:"Check registers",k:"any",fn:function(){return"Registers are open. Ducts look normal."}},
+ dis:{c:"disc",l:"Voltage at disconnect, load side",k:"vdead",fn:function(){return rd(0,"VAC","0 V. Wait about five minutes before opening an ECM motor.")}}
+},
+repairs:[
+ {id:"reseat",l:"Reseat and secure the harness pins",c:0},
+ {id:"ecmmotor",l:"Replace the motor with the correct matched motor and module",c:420},
+ {id:"universal",l:"Install a generic universal module on the old motor",c:90,wrongPts:20},
+ {id:"ctrlonly",l:"Replace only the control module",c:180,wrongPts:20},
+ {id:"filterbig",l:"Fit a larger-area filter or clean the coil to cut restriction",c:35},
+ {id:"cleancoil",l:"Clean the evaporator coil",c:0},
+ {id:"nofilter",l:"Leave the filter out permanently",c:0,bad:[30,"Leaving the filter out protects nothing: the coil clogs and the system can freeze or overheat"]},
+ {id:"lowflow",l:"Lower the maximum airflow setting",c:0}
+],
+scenarios:[
+ {id:"motor",f:"motor",need:["ecmmotor"],t:"Blower dead after the power surge",cust:"Mr. Lee",story:"The thermostat calls and heat comes on, but no air moves.",
+  hints:["Check 24 V, the call, the harness and line voltage before the motor.","Test the motor to its shell with the control removed and power off."],
+  why:"With 24 V present, the call answered and line voltage at the motor, the motor itself failed: its leads leaked to the shell at about 40 kohm, which on one maker's rule (under about 100 kohm) means a bad motor that a new control will not cure. Install the correct matched motor and module. A universal module will not run the motor even if it looks identical.",
+  src:"ClimateMaster ECM blower motor replacement guide."},
+ {id:"plug",f:"plug",need:["reseat"],t:"Blower stops and starts on its own",cust:"Ms. Costa",story:"Sometimes there is air, sometimes none, since the HVAC company cleaned the blower.",
+  hints:["The motor is sometimes fine. Check connections.","Inspect the harness plug pins."],
+  why:"An intermittent blower after someone worked in the cabinet is very often a pin pushed back in a harness plug. Reseat the plug and check the pins before condemning a motor or module. Disconnect power and wait before opening an ECM motor, and keep the line-voltage power connector correctly oriented.",
+  src:"ClimateMaster ECM blower motor replacement guide."},
+ {id:"hunt",f:"hunt",need:["filterbig"],ok:["cleancoil","lowflow"],t:"Surges and whistles after the new filter",cust:"The Marchettis",story:"Since we put in the fancy filter the blower puffs and whistles.",
+  hints:["Does the puffing stop with the filter removed? Measure static pressure.","A thick filter in a thin slot restricts the system."],
+  why:"A high-MERV filter in a slot built for a thin one, a dirty coil or closed registers push static pressure up and make the motor hunt. Cut the restriction with a larger filter area or a cleaner coil, and lower the maximum airflow only if the system allows. Never leave the filter out: the coil can freeze or a furnace can overheat and trip its limit.",
+  src:"ClimateMaster ECM blower motor replacement guide."}
+]};
+})();

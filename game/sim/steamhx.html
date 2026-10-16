@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Steam Heat Exchanger Simulator | Trade Study Bench</title>
+<meta name="description" content="Diagnose a small steam heat exchanger: a coil that floods at low load, steam hammer on start-up, and a trap that fails open.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'">
+<link rel="stylesheet" href="sim.css"></head><body>
+<div class="wrap" role="main">
+<div class="top"><h1>Steam Heat Exchanger Simulator</h1><nav><a href="../../index.html">Trade Study Bench</a> &middot; <a href="index.html">Furnace simulator</a> &middot; <a href="cooling.html">Cooling simulator</a> &middot; <a href="heatpump.html">Heat pump simulator</a> &middot; <a href="minisplit.html">Mini-split simulator</a> &middot; <a href="boiler.html">Boiler simulator</a> &middot; <a href="condensing.html">Condensing boiler simulator</a> &middot; <a href="steam.html">Steam simulator</a> &middot; <a href="ecm.html">ECM blower simulator</a> &middot; <a href="rtu.html">Rooftop economizer simulator</a> &middot; <a href="refrig.html">Commercial refrigeration simulator</a> &middot; <a href="steamhx.html">Steam heat exchanger simulator</a> &middot; <a href="../index.html">Fix-It Van (kids)</a> &middot; <a href="about.html">About</a></nav></div>
+<p class="small">Training simulator for students and adults. A fictional steam coil with a trap and vented receiver. Steam work is hazardous: follow plant procedures and the maker's instructions. Collects and sends nothing.</p>
+<section id="menu"></section>
+<details class="panel" id="refbox"><summary>Reference: stall, vacuum breakers, traps and steam hammer</summary>
+<h3>Stall</h3>
+<p>A small heat exchanger can stall when its steam pressure falls to or below the pressure the trap must discharge into after a load drop. Condensate then stands in the steam space and floods the coil. A vacuum breaker on the steam side lets air in so condensate drains by gravity to the trap. It does not help if condensate is lifted after the trap (a pump trap is the usual answer). Larger units usually avoid breakers because air in the steam space lowers heat transfer. Follow the maker: no set pressures are given in the sources used here.</p>
+<h3>Steam hammer</h3>
+<p>Common causes: condensate pockets, sagging pipe or wrong pitch, failed or undersized traps, opening valves quickly, and cold start-ups. Prevent it with drip legs and traps, dry steam, gradual valve opening and warm-up bypasses.</p>
+<h3>Failed traps</h3>
+<p>A trap that fails closed can be cleared at the strainer blowdown. A trap that fails open should be repaired or replaced, not valved off.</p>
+</details>
+
+<section id="work" class="hidden">
+ <div class="bar" id="bar"></div>
+ <div class="cols">
+  <div class="left"><svg id="fur" viewBox="0 0 600 440" role="group" aria-label="Steam heat exchanger. Select a part to test."></svg>
+   <p class="small">Select a part, then choose a test. Numbers marked about or example are practice values.</p></div>
+  <div class="right">
+   <div class="panel" id="comp"></div>
+   <div class="panel" id="meter" aria-live="polite"></div>
+   <div class="panel"><div class="row"><button class="btn" id="runCycle">Run unit 10 min</button><button class="btn alt" id="hint">Hint (-5)</button><button class="btn alt" id="finish">Finish call</button></div><div id="repair"></div></div>
+   <div class="panel"><strong>Service notes</strong><ol id="log" class="log"></ol></div>
+  </div>
+ </div>
+</section>
+<section id="report" class="hidden panel"></section>
+<!--sources--><details class="panel" id="sources"><summary>Sources and how numbers are labeled</summary><p class="small">Where the facts in these calls come from. Links open other sites; the simulator itself makes no network calls. <a href="sources.html">All sources</a></p><ul><li><a href="https://armstronginternational.com/wp-content/uploads/IOM_TAVB_VaccumBreaker_36_EN_20021201.pdf" rel="noopener">Armstrong TAVB thermostatic air vent and vacuum breaker bulletin</a>. <span class="small">MFR. How a vacuum breaker works; no set pressures given.</span></li><li><a href="https://www.forbesmarshall.com/?p=3042" rel="noopener">Forbes Marshall: stalling of small heat exchangers</a>. <span class="small">MFR/trade. Why small units stall and when a vacuum breaker or pump trap is used.</span></li><li><a href="https://www.plantengineering.com/water-hammer-in-steam-systems-cause-and-effect" rel="noopener">Spirax Sarco (Plant Engineering, 2006): water hammer in steam systems, cause and effect</a>. <span class="small">MFR author. Causes of steam hammer; failed-open traps are repaired, not valved shut.</span></li><li><a href="https://www.energy.gov/sites/prod/files/2014/05/f16/steam1_traps.pdf" rel="noopener">U.S. DOE Steam Tip Sheet 1: inspect and repair steam traps</a>. <span class="small">GOV.</span></li><li><a href="https://www.tlv.com/global/US/steam-theory/steam-trap-test.html" rel="noopener">TLV: steam trap test</a>. <span class="small">MFR.</span></li><li><a href="https://www.plantengineering.com/best-practices-for-testing-steam-traps/" rel="noopener">Plant Engineering: best practices for testing steam traps</a>. <span class="small">TRADE.</span></li><li><a href="https://trapsizer.spiraxsarco.com/static/Steam_Trap_Selection_Guide.pdf" rel="noopener">Spirax Sarco: steam trap selection guide</a>. <span class="small">MFR.</span></li></ul><p class="small"><strong>How numbers are labeled.</strong> Readings, prices, set points, timers, blink codes and trip values in the calls are <em>practice examples</em> made up for the game unless a call says a source gives them. Words like about, example and practice mark them. Where a number comes from one maker's document (for example Hoshizaki timers or Trane flash codes), it is that maker's example and other makers differ. Rules of thumb (such as coolers about 35 to 38 F) are common practice, not rules. Laws and codes are cited by name: confirm the current text. Always follow the equipment maker's instructions and local code.</p></details><!--/sources-->
+</div>
+<script src="langload.js"></script>
+<script src="i18n.js"></script>
+<script src="steamhx.js"></script>
+<script src="generic.js"></script>
+<script src="offline.js"></script>
+</body></html>
