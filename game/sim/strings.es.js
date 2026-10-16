@@ -1,6 +1,11 @@
 /* Spanish strings (beta). Keys are the exact English text. A value "short|long" uses the short form inside diagrams.
    Needs native-speaker review. */
 window.ES_DICT={
+"No accounts, ads, tracking or data collection. Progress stays on this device.": "Sin cuentas, anuncios, rastreo ni recopilación de datos. El progreso se guarda solo en este dispositivo.",
+"Privacy for parents": "Privacidad para padres",
+"For parents and teachers: Trade Study Bench": "Para padres y maestros: Trade Study Bench",
+"For parents and teachers: Premium": "Para padres y maestros: Premium",
+"For parents and teachers: Trade Study Bench home": "Para padres y maestros: inicio de Trade Study Bench",
 "Service Call Simulator": "Simulador de llamadas de servicio",
 "Trade Study Bench": "Trade Study Bench",
 "Furnace simulator": "Simulador de horno",

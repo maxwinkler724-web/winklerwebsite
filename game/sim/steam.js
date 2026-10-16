@@ -111,7 +111,7 @@ function renderBar(){
 }
 function drawUnit(){
  var s='<rect x="10" y="10" width="310" height="365" rx="8" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/><text x="165" y="393" text-anchor="middle" font-size="12" fill="currentColor">Boiler room</text><rect x="320" y="190" width="170" height="210" rx="8" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="6 4"/><text x="405" y="418" text-anchor="middle" font-size="12" fill="currentColor">Radiators</text>';
- PARTS.forEach(function(p){s+='<g class="part" id="p-'+p.id+'" role="button" tabindex="0" aria-label="'+p.l+'"><rect x="'+p.x+'" y="'+p.y+'" width="'+p.w+'" height="'+p.h+'" rx="6"/><text x="'+(p.x+p.w/2)+'" y="'+(p.y+p.h/2+4)+'" text-anchor="middle">'+p.l+'</text></g>'});
+ PARTS.forEach(function(p){s+=(window.ART?ART.part("steam",p):'')+'<g class="part'+(window.ART&&ART.part("steam",p)?' art':'')+'" id="p-'+p.id+'" role="button" tabindex="0" aria-label="'+p.l+'"><rect x="'+p.x+'" y="'+p.y+'" width="'+p.w+'" height="'+p.h+'" rx="6"/><text x="'+(p.x+p.w/2)+'" y="'+(window.ART&&ART.part("steam",p)?(p.h>=44?p.y+p.h-5:p.y+p.h+12):p.y+p.h/2+4)+'" text-anchor="middle">'+p.l+'</text></g>'});
  $("fur").innerHTML=s;
  PARTS.forEach(function(p){var g=$("p-"+p.id);function go(){S.sel=p.id;document.querySelectorAll("svg .part").forEach(function(x){x.classList.remove("sel")});g.classList.add("sel");renderComp()}
   g.addEventListener("click",go);g.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();go()}})});

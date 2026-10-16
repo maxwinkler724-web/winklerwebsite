@@ -154,3 +154,5 @@ footer.site .wrap{padding-left:16px;padding-right:16px}footer.site a{display:inl
 .gbtn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:#fff;color:#1f1f1f;border:1px solid #747775}
 .or{text-align:center;margin:16px 0;color:var(--mut);position:relative}.or span{background:var(--card);padding:0 10px;position:relative}.or:before{content:"";position:absolute;left:0;right:0;top:50%;border-top:1px solid var(--line)}
 .authrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.authrow .btn{flex:1 1 140px}
+.placeholder{overflow-wrap:anywhere}
+.tq{border-top:1px solid var(--line);padding:6px 0 10px}.tq h2{font-size:1.1rem;margin:.8em 0 .4em}.tq .opts{margin:.4em 0 .8em;padding-left:1.4em}.tq details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px}.tq summary{cursor:pointer;font-weight:600}
