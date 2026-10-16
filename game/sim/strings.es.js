@@ -1,6 +1,10 @@
 /* Spanish strings (beta). Keys are the exact English text. A value "short|long" uses the short form inside diagrams.
    Needs native-speaker review. */
 window.ES_DICT={
+"Terms": "Términos",
+"Disclaimer": "Aviso legal",
+"Skip to content": "Saltar al contenido",
+
 "No accounts, ads, tracking or data collection. Progress stays on this device.": "Sin cuentas, anuncios, rastreo ni recopilación de datos. El progreso se guarda solo en este dispositivo.",
 "Privacy for parents": "Privacidad para padres",
 "For parents and teachers: Trade Study Bench": "Para padres y maestros: Trade Study Bench",
