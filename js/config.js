@@ -11,7 +11,6 @@ window.TSB = {
     "nj-black-seal-prep": "",
     "a2l-refrigerants-field-guide": "",
     "field-guide-bundle-6": "",
-    "field-guide-bundle-5": "",
     "chillers-cooling-towers-guide": "",
     "rtu-economizers-field-guide": "",
     "steam-prv-field-guide": "",
