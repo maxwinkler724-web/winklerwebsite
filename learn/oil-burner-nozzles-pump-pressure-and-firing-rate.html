@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oil Burner Nozzles, Pump Pressure and Firing Rate</title>
+<meta property="og:title" content="Oil Burner Nozzles, Pump Pressure and Firing Rate"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Read an oil nozzle&#39;s GPH, angle and pattern, see why pump pressure changes firing rate by a square root, and turn GPH into Btu/h with an example.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Oil Burner Nozzles, Pump Pressure and Firing Rate", "about": "Oil heat", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/oil-burner-nozzles-pump-pressure-and-firing-rate.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/oil-burner-nozzles-pump-pressure-and-firing-rate.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/oil-burner-nozzles-pump-pressure-and-firing-rate.html"><meta property="og:description" content="Read an oil nozzle&#39;s GPH, angle and pattern, see why pump pressure changes firing rate by a square root, and turn GPH into Btu/h with an example."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Gas and Oil Heat Guide", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/gas-heat-guide.html"}, {"@type": "ListItem", "position": 4, "name": "Oil Burner Nozzles, Pump Pressure and Firing Rate", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/oil-burner-nozzles-pump-pressure-and-firing-rate.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Oil heat</span>
+<h1>Oil Burner Nozzles, Pump Pressure and Firing Rate</h1>
+<p class="small hubline">Part of the <a href="gas-heat-guide.html">Gas and Oil Heat Guide</a></p>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">An oil burner's firing rate is not set by a dial. It comes from two things working together: the size stamped on the nozzle and the pressure the fuel pump pushes oil through it. This lesson shows how to read a nozzle, why pressure changes the flow, and how to turn gallons per hour into Btu per hour.</p>
+<h2>Who does the adjusting</h2>
+<p><strong>Read this first.</strong> This page explains the ideas so you can follow a service call. Changing a nozzle, setting pump pressure or adjusting air is work for a qualified oil burner technician following the burner and appliance maker's instructions. New Jersey licensing for this work is not settled on this site, so check with the state agencies before you assume who may do what. Nothing here tells you to adjust anything yourself.</p>
+<h2>What the markings on a nozzle mean</h2>
+<p>A pressure-jet oil burner forces oil through a tiny orifice in the nozzle so it breaks into a fine mist that can burn. The nozzle box or body carries three pieces of information, for example <strong>0.75 &middot; 70 &middot; B</strong> (the order and punctuation vary by brand).</p>
+<ul>
+<li><strong>Flow rate in gallons per hour (GPH).</strong> The Danfoss data sheet for its Hago nozzles states capacity at a test point of 100 psi. The Oil nozzles article says the same in plain words: a .75 nozzle sprays .75 gallons per hour at 100 psi. The number is true at 100 psi only. At any other pressure the flow changes.</li>
+<li><strong>Spray angle in degrees.</strong> Danfoss lists 45, 60 and 80 degrees, and the Oil nozzles article explains that a smaller angle gives a narrower cone, which suits a narrow combustion chamber, while a wider angle suits a short, wide one. The burner maker's chart says which angle belongs on your burner.</li>
+<li><strong>Spray pattern.</strong> Danfoss describes hollow (H) as having more oil concentrated at the outer edge of the cone, solid (B) as evenly distributed, and semi-solid (S-S) as a compromise where the exact air pattern is not known. The Oil nozzles article, using Delavan's lettering, lists solid as B, hollow as A and semi-solid as W. Brands use different letters, so read the maker's key and use the nozzle the burner maker specifies. It warns that a semi-solid nozzle is often swapped in for the others but is not the best choice.</li>
+</ul>
+<h2>Why pump pressure changes the firing rate</h2>
+<p>Think of squeezing water through a small hole. More pressure pushes more through, but not in step. For a fixed opening, flow rises with the <strong>square root</strong> of the pressure. ACHR News states the rule in words: multiply the nozzle rating by the square root of the new pressure divided by 100. Its example is a 1 GPH nozzle that gives 1.41 GPH at 200 psi, so doubling the pressure raises flow by only about 41 percent, "not as much as one might think."</p>
+<figure>
+<svg viewBox="0 0 420 250" role="img" aria-label="Curve of nozzle flow in GPH against pump pressure in psi for a 0.75 GPH nozzle, rising slowly. Marked points: 0.75 GPH at 100 psi and 0.887 GPH at 140 psi." style="max-width:100%;height:auto;display:block;margin:0 auto" fill="none" stroke="currentColor">
+<title>Flow versus pump pressure for a 0.75 GPH nozzle</title>
+<line x1="50" y1="210" x2="390" y2="210" stroke-width="1.5"/>
+<line x1="50" y1="30" x2="50" y2="210" stroke-width="1.5"/>
+<polyline points="95.7,177.3 141.4,152 187.1,128.9 232.9,108.2 278.6,88.4 324.3,70 370,52.6" stroke-width="2.5"/>
+<line x1="141.4" y1="152" x2="141.4" y2="210" stroke-dasharray="4 3"/>
+<line x1="232.9" y1="108.2" x2="232.9" y2="210" stroke-dasharray="4 3"/>
+<line x1="50" y1="152" x2="141.4" y2="152" stroke-dasharray="4 3"/>
+<line x1="50" y1="108.2" x2="232.9" y2="108.2" stroke-dasharray="4 3"/>
+<circle cx="141.4" cy="152" r="4" fill="currentColor"/>
+<circle cx="232.9" cy="108.2" r="4" fill="currentColor"/>
+<g fill="currentColor" stroke="none" font-size="12" font-family="sans-serif">
+<text x="141.4" y="226" text-anchor="middle">100</text>
+<text x="232.9" y="226" text-anchor="middle">140</text>
+<text x="370" y="226" text-anchor="middle">200</text>
+<text x="220" y="244" text-anchor="middle">Pump pressure (psi)</text>
+<text x="44" y="156" text-anchor="end">0.75</text>
+<text x="44" y="112" text-anchor="end">0.887</text>
+<text x="14" y="30" text-anchor="start">GPH</text>
+<text x="150" y="168">100 psi: 0.75</text>
+<text x="242" y="124">140 psi: 0.887</text>
+</g></svg>
+<figcaption>Flow from a 0.75 GPH nozzle as pump pressure rises. The curve flattens: 40 percent more pressure gives about 18 percent more oil.</figcaption>
+</figure>
+<p>The same Oil nozzles article adds a practical consequence. A higher pump pressure can deliver the same input with a smaller nozzle, so the same firing rate can be reached with different nozzle and pressure pairs. It also advises against changing nozzle size or pressure during an inspection without a reason, and says to note any change from the manufacturer's setup on the equipment. The burner and appliance makers publish the nozzle size and pressure they approved, and those are the numbers to follow.</p>
+<h2>Worked example: 0.75 GPH nozzle at 140 psi</h2>
+<p>Suppose a burner is found with a 0.75 GPH nozzle and the pump set to 140 psi instead of 100 psi.</p>
+<ol>
+<li>Pressure ratio: 140 &divide; 100 = 1.40.</li>
+<li>Square root of 1.40 = 1.183.</li>
+<li>New flow: 0.75 &times; 1.183 = 0.887 GPH (rounded).</li>
+<li>Heat content: the U.S. Energy Information Administration lists heating oil at 138,500 Btu per gallon.</li>
+<li>Input at 100 psi: 0.75 &times; 138,500 = 103,875 Btu/h.</li>
+<li>Input at 140 psi: 0.887 &times; 138,500 = about 122,850 Btu/h.</li>
+</ol>
+<p>Now compare to the nameplate. Say the appliance label shows a maximum input of 105,000 Btu/h (a made-up figure for this example). At 100 psi the burner fires at about 99 percent of that. At 140 psi it fires at about 117 percent, roughly 18,000 Btu/h over. An overfired appliance can run hot and sooty, so the label limit is not a suggestion. The appliance's own rating plate and instructions are the final word. Also remember that 138,500 is a typical value and real flow depends on oil temperature and viscosity, so this math is a sanity check, not a measurement.</p>
+<h2>How a tech checks pump pressure and cutoff</h2>
+<p>The fuel unit has a port for a pressure gauge. The Suntec data sheet for its A-series pump lists a 1/8 inch pipe-thread gauge port and a nozzle pressure range of 100 to 150 psi with a 100 psi setting, and explains that a spring-loaded piston sets the pressure that reaches the nozzle. Beckett's annual tune-up checklist gives the sequence a tech follows:</p>
+<ul>
+<li>Bleed air from the pump until no froth shows at the bleed port.</li>
+<li>Set pump pressure to at least 100 psi, or to the figure the appliance maker specifies.</li>
+<li>Check the <strong>cutoff</strong>. When the burner shuts off, the pump should close the oil line to the nozzle quickly so the nozzle does not drip and smoke. Beckett says pressure should fall to about 80 psi and hold there.</li>
+</ul>
+<p>Pump data sheets also limit suction-side vacuum, for example 6 inches of mercury on a single-pipe line and 12 on a two-pipe line in the Suntec sheet. The tank, line and filter all affect that number. For tank-side issues see <a href="home-heating-oil-tanks-in-new-jersey-basics-leaks-and-what-owners-should-know.html">Home Heating Oil Tanks in New Jersey</a>. For a Webster pump, follow Webster's instructions for the exact model.</p>
+<h2>Annual nozzle and filter habits</h2>
+<p>Beckett's annual tune-up checklist has the tech replace the nozzle with an equivalent unit without over-tightening it, and install a new oil filter kit with the canister clean and tight. It also calls for regularly scheduled nozzle replacement, and the Oil nozzles article agrees that periodic replacement keeps the burner clean and reliable. Sludge or water in the filter is a clue to look at the tank. A nozzle is cheap, and a worn or partly plugged one changes the spray and the real firing rate even when the stamped size is right.</p>
+<h2>Smoke test comes before the CO2 or O2 adjustment</h2>
+<p>Once the burner runs steadily, the tech draws a flue gas sample through a smoke tester. Fuel Oil News describes ten full pump strokes and then matching the paper spot to the scale. Beckett's checklist has the tech set the air for a trace of smoke, then open the air to lower CO2 about 1.5 points so smoke reads zero and a cushion is left. ACHR News makes a similar point: take a smoke test and a CO2 reading, and do not leave a burner on the edge of smoke. Reading the oxygen and CO2 numbers themselves is covered in <a href="combustion-analyzer-readings-o2-co2-co-air-free-and-excess-air.html">Combustion Analyzer Readings</a>. How the primary control starts the burner and proves the flame is in <a href="residential-oil-burner-sequence-cad-cell-and-primary-control.html">Residential Oil Burner Sequence</a>.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Oil Burner Nozzles, Pump Pressure and Firing Rate</h2><p><em>Nozzle size is true at 100 psi only.</em></p><ul><li>Nozzle marks: GPH at 100 psi, spray angle, pattern (hollow, solid, semi-solid).</li><li>New GPH = rated GPH &times; square root of (psi &divide; 100).</li><li>Btu/h input = GPH &times; 138,500 (EIA heating oil value).</li><li>Example: 0.75 &times; 1.183 = 0.887 GPH, about 122,850 Btu/h at 140 psi.</li><li>Compare to the appliance rating plate, not to guesses.</li><li>Gauge port, bleed, pressure, cutoff hold: per the pump maker.</li><li>Smoke test first, then the CO2 or O2 target from the maker.</li><li>Replace nozzle and filter on the annual tune-up.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="combustion-analyzer-readings-o2-co2-co-air-free-and-excess-air.html">Combustion Analyzer Readings: O2, CO2, CO Air-Free and Excess Air</a></li><li><a href="residential-oil-burner-sequence-cad-cell-and-primary-control.html">Residential Oil Burner Sequence: Cad Cell and Primary Control</a></li><li><a href="home-heating-oil-tanks-in-new-jersey-basics-leaks-and-what-owners-should-know.html">Home Heating Oil Tanks in New Jersey</a></li><li><a href="flame-safeguard-and-ignition-basics.html">Flame Safeguard and Ignition Basics</a></li><li><a href="start-here.html">Start Here</a></li><li><a href="../products.html">Study packs and printables</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Under review.</strong> Not taught as fact here: which New Jersey license or registration a person needs to adjust an oil burner for pay. Check the issuing agencies.</div>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources"><li><a href="https://hvacrschool.com/oil_nozzles/">Trade article &quot;Oil nozzles&quot; (hvacrschool.com) (rating at 100 psi, pattern letters, angle)</a></li><li><a href="https://assets.danfoss.com/documents/42114/AI262246880255en-010102.pdf">Danfoss: Hago oil nozzle data sheet (100 psi rating, angles, hollow, solid, semi-solid)</a></li><li><a href="https://assets.danfoss.com/documents/latest/69679/AI070386451895en-020401.pdf">Danfoss: OD oil nozzle data sheet (100 psi specification point, patterns)</a></li><li><a href="https://achrnews.com/articles/90596-recommended-burner-setup-procedures">ACHR News: Recommended Burner Setup Procedures (square-root rule, smoke test)</a></li><li><a href="https://www.beckettcorp.com/annual-appliance-tune-up-service-checklist-sequence-outline/">Beckett: Annual appliance tune-up service checklist (pump pressure, cutoff, nozzle, filter, smoke, CO2)</a></li><li><a href="https://www.industrialstores.com/media/industrialstores/product/attachments/Suntec-A1YA-7912-Oil-Pump-Data-Sheet.pdf">Suntec: A1YA 7912 oil pump data sheet (gauge port, pressure range, cut-off, vacuum limits)</a></li><li><a href="https://www.eia.gov/energyexplained/units-and-calculators/british-thermal-units.php">U.S. Energy Information Administration: British thermal units (heating oil 138,500 Btu per gallon)</a></li><li><a href="https://fueloilnews.com/2008/01/01/smoke-spots/">Fuel Oil News: Smoke Spots (smoke test method)</a></li></ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>

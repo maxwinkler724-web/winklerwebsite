@@ -51,6 +51,8 @@ window.TSB = {
   signup: { action: "", emailField: "email", method: "post" },
   /* Accounts (js/auth.js, account.html). Uses Google Firebase Authentication, free tier: Google sign-in plus email and password. Steps in SETUP-PAYMENTS-ADS-NEWSLETTER.md. Leave enabled false until you paste the Firebase web config. These keys are meant to be public; restrict them in the Firebase console to your site's domain. */
   auth: { enabled: false, firebase: { apiKey: "", authDomain: "", projectId: "", appId: "" } },
+  /* Automatic file delivery (thanks.html + delivery-worker/ in the project folder, not part of the site). Leave enabled false until the Worker is deployed and tested; then paste its address (for example https://tsb-delivery.YOURNAME.workers.dev, no trailing slash) into apiBase. Public address only: never put a Square token or password here. */
+  delivery: { enabled: false, apiBase: "" },
   /* Optional PayPal link per product (same keys as store.links), for example a PayPal.me or PayPal payment link with the price filled in. Shown as a second button under Buy. */
   paypal: { links: {} },
   /* lessonGate: when true, lessons tagged "Premium lesson" show only the intro and first section, then a card linking to premium.html. Honor system: no accounts or payments, and the hidden text stays in the page source. Leave false until a real login exists. */
