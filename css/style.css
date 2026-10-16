@@ -128,3 +128,29 @@ header.site .wrap,.util .wrap,footer.site .wrap{max-width:1040px}
 button.btn{border:0;cursor:pointer;font:inherit;font-weight:700}
 .hero2 h1{max-width:22ch;line-height:1.1}
 .newsitem h2{font-size:1.15rem;margin:.2em 0}.newsitem h2 a{color:var(--fg)}
+/* v4 mobile pass: compact header, single-row scrolling nav, full-width search, comfortable tap targets */
+@media(max-width:640px){
+.util .wrap{padding:5px 16px}.util .wrap span+span{display:none}
+header.site{position:static}
+header.site .wrap{flex-direction:column;align-items:flex-start;gap:6px;padding:10px 16px 6px}
+header.site nav{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:100%;margin:0 -16px;padding:0 16px 6px;width:calc(100% + 32px)}
+header.site nav::-webkit-scrollbar{display:none}
+header.site nav a{flex:0 0 auto;white-space:nowrap;padding:9px 12px;font-size:.95rem;min-height:40px}
+.hero2{padding:26px 0 24px}.hero2 h1{font-size:2rem;line-height:1.15}.hero2 .lede{font-size:1.02rem}
+.hero2 form{flex-direction:column;gap:10px}.hero2 form input,.hero2 form .btn,.hero2 form button{width:100%;box-sizing:border-box}
+.paths{grid-template-columns:1fr}
+.newsrow,.tips{grid-template-columns:1fr}
+.secthead{flex-wrap:wrap;gap:4px}
+.trust{display:grid;grid-template-columns:1fr;gap:6px}
+table{font-size:.9rem}
+footer.site .wrap{padding-left:16px;padding-right:16px}footer.site a{display:inline-block;padding:6px 4px}
+.btn,button.btn{min-height:44px}
+}
+@media(max-width:640px){.hero2 form input{flex:none;height:auto;min-height:48px}header.site nav{-webkit-mask-image:linear-gradient(90deg,#000 88%,transparent);mask-image:linear-gradient(90deg,#000 88%,transparent);padding-right:36px}}
+@media(max-width:640px){.hero2 input[type=search]{flex:0 0 auto}}
+/* account page */
+.authbox{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin:20px 0;max-width:460px}
+.authbox label{display:block;font-weight:600;margin:12px 0 4px}.authbox input{width:100%;box-sizing:border-box;padding:12px;border:2px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);font:inherit}
+.gbtn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;background:#fff;color:#1f1f1f;border:1px solid #747775}
+.or{text-align:center;margin:16px 0;color:var(--mut);position:relative}.or span{background:var(--card);padding:0 10px;position:relative}.or:before{content:"";position:absolute;left:0;right:0;top:50%;border-top:1px solid var(--line)}
+.authrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.authrow .btn{flex:1 1 140px}

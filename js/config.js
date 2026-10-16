@@ -39,6 +39,10 @@ window.TSB = {
   payments: { zelle: { recipient: "", name: "" }, supportEmail: "", deliveryNote: "After payment we email your files, usually within one business day." },
   /* Opt-in email signup (js/signup.js). Leave action empty to keep the form switched off. Paste the form-post URL your email service gives you (for example Buttondown or MailerLite) and, if it needs a different field name, change emailField. Never shown on game pages. */
   signup: { action: "", emailField: "email", method: "post" },
+  /* Accounts (js/auth.js, account.html). Uses Google Firebase Authentication, free tier: Google sign-in plus email and password. Steps in SETUP-PAYMENTS-ADS-NEWSLETTER.md. Leave enabled false until you paste the Firebase web config. These keys are meant to be public; restrict them in the Firebase console to your site's domain. */
+  auth: { enabled: false, firebase: { apiKey: "", authDomain: "", projectId: "", appId: "" } },
+  /* Optional PayPal link per product (same keys as store.links), for example a PayPal.me or PayPal payment link with the price filled in. Shown as a second button under Buy. */
+  paypal: { links: {} },
   /* lessonGate: when true, lessons tagged "Premium lesson" show only the intro and first section, then a card linking to premium.html. Honor system: no accounts or payments, and the hidden text stays in the page source. Leave false until a real login exists. */
   premium: { enabled: false, url: "premium.html", lessonGate: false },
   /* Affiliate "recommended tools" boxes (js/affiliates.js). Leave url empty until you have joined a program (for example Amazon Associates) and have your own link. A box shows only when at least one item has a url, except in ads.mode "preview", which shows all items as placeholders. Keep affiliate links and ads off every page under game/. Wording of the disclosure follows the FTC's examples; check each program's own required statement (Amazon requires its own Associate statement). */

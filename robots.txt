@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://YOUR-DOMAIN/sitemap.xml
+Sitemap: https://maxwinkler724-web.github.io/winklerwebsite/sitemap.xml
