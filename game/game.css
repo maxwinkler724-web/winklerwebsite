@@ -38,3 +38,5 @@ summary{cursor:pointer;font-weight:700}
 .small a{color:#9fd0ff}@media (prefers-color-scheme:light){.small a{color:#0b5cad}}
 .langsw{display:flex;gap:6px;align-items:center}.langsw .btn[aria-pressed="true"]{background:var(--btn)}.betanote{border-left:4px solid #a86a00;padding:6px 10px;background:var(--card)}
 .btn.sm{min-width:44px}summary{padding:10px 0;min-height:44px}
+
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:#000;padding:10px 14px;z-index:100;font-weight:700}.skip:focus{left:8px;top:8px;outline:3px solid #0a58ca}

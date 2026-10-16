@@ -156,3 +156,9 @@ footer.site .wrap{padding-left:16px;padding-right:16px}footer.site a{display:inl
 .authrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}.authrow .btn{flex:1 1 140px}
 .placeholder{overflow-wrap:anywhere}
 .tq{border-top:1px solid var(--line);padding:6px 0 10px}.tq h2{font-size:1.1rem;margin:.8em 0 .4em}.tq .opts{margin:.4em 0 .8em;padding-left:1.4em}.tq details{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 12px}.tq summary{cursor:pointer;font-weight:600}
+
+/* accessibility pass 2026-10-16: light-mode link hover was 2.7:1, now 6.7:1 (WCAG AA needs 4.5:1) */
+a:hover{color:#9a3a0d}
+@media (prefers-color-scheme:dark){a:hover{color:#f08a4b}}
+header.site nav a:hover{color:#fff}
+.util a:hover,footer.site a:hover{color:inherit;text-decoration:underline}

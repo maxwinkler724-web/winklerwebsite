@@ -1,4 +1,4 @@
-:root{--bg:#f4f6f8;--ink:#14263a;--card:#fff;--line:#c4cdd6;--navy:#0d2b45;--accent:#c2410c;--btn:#b83a12;--ok:#1f8a4c;--bad:#b3261e;--warn:#a86a00}
+:root{--bg:#f4f6f8;--ink:#14263a;--card:#fff;--line:#c4cdd6;--navy:#0d2b45;--accent:#c2410c;--btn:#b83a12;--ok:#1a7a43;--bad:#b3261e;--warn:#8a5700}
 @media (prefers-color-scheme:dark){:root{--bg:#0f1b27;--ink:#e8eef4;--card:#182838;--line:#3a5368;--accent:#ff8a63;--btn:#b83a12;--ok:#4cc38a;--bad:#ff8a80;--warn:#ffc266}}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,Segoe UI,Arial,sans-serif}
@@ -49,3 +49,5 @@ svg .part.art rect{fill:transparent;stroke:rgba(35,50,60,.35);stroke-width:1.5;s
 svg .part.art:hover rect,svg .part.art.sel rect{fill:rgba(255,210,122,.38);stroke:#b36b00;stroke-width:2.5;stroke-dasharray:none}
 svg .part.art text{font-size:11px;paint-order:stroke;stroke:#fff;stroke-width:3.5px;stroke-linejoin:round;font-weight:700}
 svg .part.art:focus-visible rect{stroke:#0a58ca;stroke-width:3;stroke-dasharray:none}
+
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:#000;padding:10px 14px;z-index:100;font-weight:700}.skip:focus{left:8px;top:8px;outline:3px solid #0a58ca}
