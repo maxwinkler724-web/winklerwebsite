@@ -1,4 +1,4 @@
-/* Store buy buttons. Put each product's Square Payment Link in js/config.js under store.links (keys match data-buy). Empty = button stays inactive.
+/* Store buy buttons. Put each product's Stripe Payment Link in js/config.js under store.links (keys match data-buy). Empty = button stays inactive.
    Optional: paypal.links with the same keys adds a "Pay with PayPal" link under the button. */
 (function(){var T=window.TSB||{},L=(T.store||{}).links||{},P=(T.paypal||{}).links||{};
 document.querySelectorAll("[data-buy]").forEach(function(a){var k=a.getAttribute("data-buy"),u=L[k];

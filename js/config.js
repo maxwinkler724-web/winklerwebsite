@@ -45,13 +45,13 @@ window.TSB = {
     "poster-p3-printable": "",
     "poster-p4-printable": ""
   } },
-  /* Payments. Square: make a Payment Link per product in your Square dashboard and paste the URL into store.links above (the Buy button then opens Square checkout). No Square code runs on this site. Zelle cannot be automated: fill recipient (the email or phone registered for Zelle) and the box below the Store page appears. */
-  payments: { zelle: { recipient: "", name: "" }, supportEmail: "", deliveryNote: "After payment we email your files, usually within one business day." },
+  /* Payments. Stripe: make a Payment Link per product in your Stripe dashboard and paste the URL into store.links above (the Buy button then opens Stripe checkout). No Stripe code runs on this site. Only public payment-link URLs go here, never a secret or restricted key. Zelle cannot be automated: fill recipient (the email or phone registered for Zelle) and the box below the Store page appears. */
+  payments: { zelle: { recipient: "", name: "" }, supportEmail: "winklerhvac724@gmail.com", deliveryNote: "After payment we email your files, usually within one business day." },
   /* Opt-in email signup (js/signup.js). Leave action empty to keep the form switched off. Paste the form-post URL your email service gives you (for example Buttondown or MailerLite) and, if it needs a different field name, change emailField. Never shown on game pages. */
   signup: { action: "", emailField: "email", method: "post" },
   /* Accounts (js/auth.js, account.html). Uses Google Firebase Authentication, free tier: Google sign-in plus email and password. Steps in SETUP-PAYMENTS-ADS-NEWSLETTER.md. Leave enabled false until you paste the Firebase web config. These keys are meant to be public; restrict them in the Firebase console to your site's domain. */
   auth: { enabled: false, firebase: { apiKey: "", authDomain: "", projectId: "", appId: "" } },
-  /* Automatic file delivery (thanks.html + delivery-worker/ in the project folder, not part of the site). Leave enabled false until the Worker is deployed and tested; then paste its address (for example https://tsb-delivery.YOURNAME.workers.dev, no trailing slash) into apiBase. Public address only: never put a Square token or password here. */
+  /* Automatic file delivery (thanks.html + delivery-worker/ in the project folder, not part of the site). Leave enabled false until the Worker is deployed and tested; then paste its address (for example https://tsb-delivery.YOURNAME.workers.dev, no trailing slash) into apiBase. Public address only: never put a Stripe key or password here. */
   delivery: { enabled: false, apiBase: "" },
   /* Optional PayPal link per product (same keys as store.links), for example a PayPal.me or PayPal payment link with the price filled in. Shown as a second button under Buy. */
   paypal: { links: {} },
