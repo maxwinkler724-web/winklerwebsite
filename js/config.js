@@ -33,7 +33,17 @@ window.TSB = {
     "printables-bundle-wave1": "",
     "hvac-tech-forms-bundle": "",
     "complete-hvac-tech-pack": "",
-    "complete-technician-library": ""
+    "complete-technician-library": "",
+    "controls-bas-field-guide": "",
+    "boiler-steam-basics-field-guide": "",
+    "refrigerant-leak-log": "",
+    "facilities-onboarding-bundle": "",
+    "sticker-sheet-a": "",
+    "sticker-sheet-b": "",
+    "poster-p1-printable": "",
+    "poster-p2-printable": "",
+    "poster-p3-printable": "",
+    "poster-p4-printable": ""
   } },
   /* Payments. Square: make a Payment Link per product in your Square dashboard and paste the URL into store.links above (the Buy button then opens Square checkout). No Square code runs on this site. Zelle cannot be automated: fill recipient (the email or phone registered for Zelle) and the box below the Store page appears. */
   payments: { zelle: { recipient: "", name: "" }, supportEmail: "", deliveryNote: "After payment we email your files, usually within one business day." },
