@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Boiler Room Detective | Trade Study Bench</title>
+<meta name="description" content="Inspect an illustrated boiler room, find the fault, and pick the safe fix. Every fault card cites its source.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'none'">
+<!--seo--><link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/game/boilerroom.html"><!--/seo-->
+<style>
+:root{--bg:#fff8e8;--ink:#17324d;--card:#fff;--line:#c9b98f;--btn:#b83a12;--btnt:#fff;--ok:#1a7a43;--mute:#4a5b6b}
+@media (prefers-color-scheme:dark){:root{--bg:#10202f;--ink:#f4ead6;--card:#1b3347;--line:#365a78;--btn:#ffb59d;--btnt:#10202f;--ok:#7fe0a5;--mute:#c4d2de}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 system-ui,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:12px 16px 40px}
+a{color:inherit}
+.skip{position:absolute;left:-999px;top:0;background:#fff;color:#000;padding:10px 14px;z-index:100;font-weight:700}.skip:focus{left:8px;top:8px;outline:3px solid #0a58ca}
+h1{font-size:1.6rem;margin:.4em 0}h2{font-size:1.25rem}h3{font-size:1.05rem;margin:.6em 0 .3em}
+.panel{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:12px 14px;margin:12px 0}
+#callno{font-size:.9rem;color:var(--mute);margin:0}#who{margin:.2em 0 0;font-weight:700}#line{margin:.1em 0}
+svg#scene{width:100%;height:auto;display:block;border:2px solid var(--line);border-radius:12px;background:#dfe7ec}
+svg#scene text{font-family:system-ui,sans-serif}
+svg#scene [data-p]:hover>*{stroke:#c2410c}svg#scene .seen>rect:first-child,svg#scene .seen>circle:first-child{stroke:#1a7a43;stroke-width:3}
+.ib,.opt,.go{font:inherit;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink);padding:9px 12px;margin:4px 4px 4px 0;cursor:pointer;min-height:44px;text-align:left}
+.ib.seen{border-color:var(--ok)}.opt{display:block;width:100%}.go{background:var(--btn);color:var(--btnt);border-color:var(--btn);font-weight:700}
+.go:disabled{opacity:.6;cursor:not-allowed}.opt:disabled{opacity:.55}
+button:focus-visible,a:focus-visible,#q:focus-visible{outline:3px solid #0a58ca;outline-offset:2px}
+#q{outline:none}.tool{color:var(--mute);font-size:.9rem}.hint{color:var(--mute);font-size:.9rem}
+.goodline{color:var(--ok)}
+ul.j{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.card{background:var(--card);border:2px solid var(--line);border-radius:12px;padding:10px 12px;margin:0}.card.locked{color:var(--mute);border-style:dashed}
+dt{font-weight:700;font-size:.85rem;margin-top:.5em}dd{margin:0}
+.small{font-size:.9rem;color:var(--mute)}
+@keyframes fl{50%{transform:scaleY(1.2)}}@keyframes dr{50%{transform:translateY(5px)}}
+.flame{transform-origin:280px 262px;animation:fl .5s infinite}.drip{animation:dr 1.2s infinite}
+@media (prefers-reduced-motion:reduce){.flame,.drip{animation:none}}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<main id="main"><div class="wrap">
+<p><a href="index.html">Fix-It Van</a> &middot; <a href="sim/index.html">Service Call Simulator</a> &middot; <a href="../index.html">For parents and teachers: Trade Study Bench</a></p>
+<h1>Boiler Room Detective</h1>
+<p>A customer calls with a problem. Check the parts with the right tool, name the fault, then pick the safe fix. The six faults come from the fault journal in our TradeSchoolSim video game, and each one cites its source below. For ages 10 and up. <strong>This is a game picture, not a repair guide.</strong> Real boilers need a trained, licensed person and the maker's manual.</p>
+<div class="panel" tabindex="-1" id="q">
+<p id="callno"></p><p id="who"></p><p id="line"></p></div>
+<svg id="scene" viewBox="0 0 760 420" role="img" aria-label="Boiler room illustration"></svg>
+<div class="panel"><h2>Inspect</h2><div id="inspect"></div><div id="read" role="status" aria-live="polite"></div><div id="act"></div></div>
+<h2>Your journal</h2><p id="jcount" class="small"></p>
+<ul class="j" id="journal"></ul>
+<h2>Sources</h2>
+<p>Each journal card names the numbered source for that fault. All links open the original document.</p>
+<ul id="srclist"></ul>
+<p class="small">Also: in New Jersey a licensed operator is needed for larger low-pressure boilers in occupied buildings (over 100 hp, 499 sq ft of heating surface, 4,000,000 BTU or 1,000 kW), per <a href="https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-12-90-3-5" rel="noopener" target="_blank">N.J.A.C. 12:90-3.5</a>. Readings in this game are simplified. Equipment, people and businesses shown are fictional. Progress is saved only on this device. No ads, tracking or accounts. <a href="privacy.html">Privacy for parents</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../disclaimer.html">Disclaimer</a></p>
+</div></main>
+<script src="boilerroom.js"></script>
+</body></html>
