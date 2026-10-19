@@ -162,3 +162,16 @@ a:hover{color:#9a3a0d}
 @media (prefers-color-scheme:dark){a:hover{color:#f08a4b}}
 header.site nav a:hover{color:#fff}
 .util a:hover,footer.site a:hover{color:inherit;text-decoration:underline}
+
+/* home: how it works, at a glance, FAQ (2026-10-19) */
+.how,.faq{margin:34px 0}
+.steps{counter-reset:s;list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 16px 16px 54px;position:relative}
+.steps li:before{content:counter(s);position:absolute;left:14px;top:14px;width:28px;height:28px;border-radius:50%;background:var(--acc);color:#fff;font-weight:700;display:grid;place-items:center}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin:30px 0}
+.facts div{border-left:4px solid var(--acc);padding:6px 14px}
+.facts b{display:block;font-size:1.9rem;line-height:1.1}
+.facts span{color:var(--mut);font-size:.92rem}
+.faq details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:8px 0}
+.faq summary{cursor:pointer;font-weight:600}
+.faq details p{margin:8px 0 2px}
