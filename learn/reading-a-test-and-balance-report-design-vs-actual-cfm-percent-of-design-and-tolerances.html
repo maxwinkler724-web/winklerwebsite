@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Reading a Test and Balance Report: Design vs Actual CFM</title>
+<meta property="og:title" content="Reading a Test and Balance Report: Design vs Actual CFM"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="How to read a test and balance (TAB) report: design vs actual CFM, percent of design, tolerances from public specs, static pressure, rpm, amps and notes.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Reading a Test and Balance Report: Design vs Actual CFM", "about": "Airflow", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/reading-a-test-and-balance-report-design-vs-actual-cfm-percent-of-design-and-tolerances.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/reading-a-test-and-balance-report-design-vs-actual-cfm-percent-of-design-and-tolerances.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/reading-a-test-and-balance-report-design-vs-actual-cfm-percent-of-design-and-tolerances.html"><meta property="og:description" content="A general guide to the New Jersey Master HVACR contractor license from the state board: what work it covers, how it differs from the Black Seal operator…"><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Reading a Test and Balance Report: Design vs Actual CFM", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/reading-a-test-and-balance-report-design-vs-actual-cfm-percent-of-design-and-tolerances.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Airflow</span>
+<h1>Reading a Test and Balance Report: Design vs Actual CFM</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">Somewhere in the mechanical room closeout binder there is usually a thick report full of tables with the same few columns: design, actual, percent. That is the test, adjusting and balancing (TAB) report. If you can read it, you have a measured snapshot of how the building ran on the day it was handed over, and that is a very handy thing to hold when you are called back years later.</p>
+<h2>What a TAB report is and who makes it</h2>
+<p>NEBB, one of the industry bodies, describes the work in three parts: testing (measuring airflow, pressure and temperature to find where a system falls short of design), adjusting (setting dampers, valves and fans) and balancing (spreading air and water flow so every area gets what it should). A University of California energy center summary says the same thing in plainer terms: air and hydronic flows are measured, adjusted and documented to meet the design and local codes.</p>
+<p>Three industry bodies are named again and again in public specifications: AABC (Associated Air Balance Council), NEBB (National Environmental Balancing Bureau) and TABB (Testing, Adjusting and Balancing Bureau). The specs we read require the TAB firm to be accredited or approved through one of them and to follow that body's procedural standard. A federal spec we read says that where the body's own standard is stricter, the stricter one applies. We do not rank them here. We only point to NEBB's public <a href="https://www.nebb.org/disciplines/testing-adjusting-and-balancing/">TAB explainer page</a>, which is the one body page we opened.</p>
+<h2>The sheets you will find</h2>
+<p>Report layouts differ, but the content is fairly standard. Public design standards list what the final report must carry:</p>
+<ul>
+<li><strong>Air handler and fan sheets.</strong> Total supply airflow, total system static pressure, fan rpm, discharge and suction static pressure, filter and coil pressure drops, outdoor and return air, damper positions. A federal spec we read also asks for full-load amps, service factor and measured amps on each phase of the motor.</li>
+<li><strong>Outlet and grille sheets.</strong> Design cfm, actual cfm, velocity and the percent of design for each diffuser, grille or register.</li>
+<li><strong>VAV box sheets.</strong> Maximum and minimum airflow, checked against what the controls were set to.</li>
+<li><strong>Pump sheets.</strong> Water flow, pressure difference, pump rpm, impeller size and amps.</li>
+<li><strong>Hydronic coil sheets.</strong> Entering and leaving air and water temperatures, plus airflow or water pressure drop.</li>
+</ul>
+<p>One university standard also requires a static pressure profile drawing of each air handler, and a variable speed drive's maximum and "as-left" frequency setting. Another asks for balancing devices to be permanently marked at their final settings so they can be put back if someone moves them.</p>
+<h2>Design, actual and percent of design</h2>
+<p>The key columns are simple. <em>Design</em> is what the engineer scheduled on the drawings. <em>Actual</em> (sometimes called final) is what the balancer measured after adjusting. <em>Percent of design</em> is actual divided by design, times 100. A value of 100 means a perfect match, below 100 means short, above 100 means over. Many reports also show a preliminary column, the "as found" reading before adjustment, so you can see how much the system needed to move.</p>
+<h2>What tolerances mean</h2>
+<p>A tolerance is the window around 100 percent that the specification allows. There is no single universal number. Here is what the public specs we read say, for supply and outlet airflow:</p>
+<ul>
+<li>A federal veterans-health spec hosted by WBDG allows room air outlets and other airflows from minus 2 to plus 10 percent of design, with 0 to plus 5 percent where the space receives 100 cfm or less. It allows air handlers and fans 0 to plus 10 percent, and VAV maximums minus 2 to plus 10 percent.</li>
+<li>A Duke University standard sets it by room type: offices and classrooms minus 5 to plus 10 percent, laboratory supply minus 0 to minus 10 percent, and chilled and heating water plus 0 to plus 5 percent.</li>
+<li>Johns Hopkins lists air terminal devices at plus or minus 5 percent and fans at 0 to plus 10 percent.</li>
+<li>A Yale standard calls for flow within plus or minus 5 percent of design.</li>
+</ul>
+<p>The windows differ from spec to spec, so the actual project spec is what counts. Always check which window the report was held to. Note that several specs let a result run over design more than under it, because a little extra air rarely causes a complaint while a shortfall does.</p>
+<h2>Static pressure profile</h2>
+<p>A profile is a set of static pressure readings at points along the duct and across the equipment: across the filter and coil, at fan inlet and discharge, partway down the main duct, and at VAV inlets. Yale's spec asks for readings at 25, 50, 75 and 100 percent of the main duct length. Laid on a one-line diagram, it shows where pressure is being lost. Our <a href="airflow-and-static-pressure-basics.html">airflow and static pressure basics</a> lesson explains what those numbers mean.</p>
+<h2>Worked example: an outlet sheet</h2>
+<p>Here is a small stated sheet with three diffusers on one branch. Design cfm values are 200, 150 and 250. The balancer's final actual readings are 182, 160 and 214 cfm. The arithmetic below is Our own.</p>
+<p><strong>Step 1, percent of design for each outlet (actual / design x 100). Our own:</strong></p>
+<ul>
+<li>Diffuser 1: 182 / 200 = 0.910, so 91.0 percent.</li>
+<li>Diffuser 2: 160 / 150 = 1.0667, so 106.7 percent.</li>
+<li>Diffuser 3: 214 / 250 = 0.856, so 85.6 percent.</li>
+</ul>
+<p><strong>Step 2, compare with cited windows. Our own:</strong></p>
+<table class="tbl"><thead><tr><th>Outlet</th><th>% of design</th><th>-2 / +10 (federal spec)</th><th>-5 / +10 (Duke office)</th><th>&plusmn;5 (Johns Hopkins)</th></tr></thead><tbody>
+<tr><td>1 (200 design)</td><td>91.0</td><td>Low, flag</td><td>Low, flag</td><td>Low, flag</td></tr>
+<tr><td>2 (150 design)</td><td>106.7</td><td>Pass</td><td>Pass</td><td>High, flag</td></tr>
+<tr><td>3 (250 design)</td><td>85.6</td><td>Low, flag</td><td>Low, flag</td><td>Low, flag</td></tr></tbody></table>
+<p>Diffusers 1 and 3 miss under every window shown. Diffuser 2 passes two and misses the tight plus or minus 5 percent window.</p>
+<p><strong>Step 3, totals. Our own:</strong></p>
+<ul>
+<li>Total design: 200 + 150 + 250 = 600 cfm.</li>
+<li>Total actual: 182 + 160 + 214 = 556 cfm.</li>
+<li>Percent of design: 556 / 600 = 0.9267, so 92.7 percent, which is 44 cfm short.</li>
+</ul>
+<figure><svg viewBox="0 0 320 150" role="img" aria-label="Bar chart of percent of design for three diffusers against a shaded 95 to 110 percent window" style="max-width:100%;height:auto" fill="none" stroke="currentColor"><title>Percent of design for three diffusers</title>
+<rect x="130" y="20" width="90" height="90" stroke-dasharray="4 3"/>
+<line x1="160" y1="14" x2="160" y2="116"/>
+<text x="160" y="10" font-size="9" fill="currentColor" stroke="none" text-anchor="middle">100%</text>
+<rect x="40" y="38" width="66" height="14"/><text x="262" y="49" font-size="10" fill="currentColor" stroke="none">91.0</text>
+<rect x="40" y="60" width="160" height="14"/><text x="262" y="71" font-size="10" fill="currentColor" stroke="none">106.7</text>
+<rect x="40" y="82" width="34" height="14"/><text x="262" y="93" font-size="10" fill="currentColor" stroke="none">85.6</text>
+<text x="4" y="49" font-size="10" fill="currentColor" stroke="none">D1</text><text x="4" y="71" font-size="10" fill="currentColor" stroke="none">D2</text><text x="4" y="93" font-size="10" fill="currentColor" stroke="none">D3</text>
+<text x="150" y="136" font-size="9" fill="currentColor" stroke="none" text-anchor="middle">Dashed box: -5 to +10 percent window (scale starts at 80%)</text></svg>
+<figcaption>Percent of design for the three diffusers. The dashed box marks a window of minus 5 to plus 10 percent around 100. The scale starts at 80 percent, so bar lengths are not proportional to the full value.</figcaption></figure>
+<p>The shortfall matters in two ways. A single fan reading can look fine while individual rooms are off, and outlets that read well can still sum to less than the fan total when ducts leak. Compare the outlet sum with the fan or traverse figure; a federal spec we read does exactly this cross-check.</p>
+<h2>Remarks and deficiency notes</h2>
+<p>Read these first. Specs we read tell the balancer to put a deficiency summary at the front of the report, mark items needing action, and explain any result that did not reach design. Typical causes are a damper that will not move, undersized equipment, a missing balancing valve or a design that cannot deliver. A note such as "unable to achieve design, see remarks" is a flag that someone else owes a fix.</p>
+<h2>Using the report later as a baseline</h2>
+<p>The report records what a clean, newly adjusted system did. We use it as a starting point, with caution: building use, filters, ductwork and controls change. Nothing we read says "use it as a baseline" in those words; this is our reasoning, and the specs support the pieces. They require marked final settings and re-documenting after changes. On a call-back:</p>
+<ul>
+<li>Compare today's fan rpm and motor amps with the recorded values. Our <a href="fan-laws-airflow-static-pressure-and-horsepower-when-you-change-fan-speed.html">fan laws lesson</a> shows how rpm relates to airflow and power.</li>
+<li>Compare static pressure across the filter and coil with the profile to see where pressure rose.</li>
+<li>Measure a few outlets with a hood and compare with the sheet; see <a href="measuring-airflow-cfm-flow-hoods-anemometers-and-the-temperature-rise-method.html">measuring airflow</a>.</li>
+<li>Check that valve and damper marks still match the report.</li>
+</ul>
+<p>For outdoor air and ventilation targets, see <a href="ventilation-rates-and-balancing-basics-ashrae-62-2.html">ventilation rates and balancing basics</a>. One trade article we read suggests periodic re-balancing, about every three years with good maintenance, and says AABC has no standing published recommendation on frequency.</p>
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Reading a TAB Report</h2><p><em>Design, actual, percent: then read the remarks.</em></p><ul><li>Percent of design = actual / design x 100.</li><li>The window comes from the project spec; check which one applies.</li><li>Read the deficiency summary before the tables.</li><li>Sum outlets and compare to the fan or traverse total.</li><li>Fan rpm, amps and static pressure profile are your baseline for later calls.</li><li>Check that marked damper and valve settings still match.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="measuring-airflow-cfm-flow-hoods-anemometers-and-the-temperature-rise-method.html">Measuring Airflow (CFM): Flow Hoods, Anemometers and the Temperature Rise Method</a></li><li><a href="airflow-and-static-pressure-basics.html">Airflow and Static Pressure Basics</a></li><li><a href="ventilation-rates-and-balancing-basics-ashrae-62-2.html">Ventilation Rates and Balancing Basics (ASHRAE 62.2)</a></li><li><a href="fan-laws-airflow-static-pressure-and-horsepower-when-you-change-fan-speed.html">Fan Laws: Airflow, Static Pressure and Horsepower When You Change Fan Speed</a></li><li><a href="start-here.html">Start Here</a></li><li><a href="../products.html">Study packs and printables</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li><a href="https://www.nebb.org/disciplines/testing-adjusting-and-balancing/">NEBB: Testing, Adjusting and Balancing (discipline page)</a></li>
+<li><a href="https://wcec.ucdavis.edu/?p=5916">UC Davis Western Cooling Efficiency Center: TAB summary</a></li>
+<li><a href="https://www.wbdg.org/FFC/VA/VANCAS/VANCA230593.pdf">WBDG (federal): Section 23 05 93 Testing, Adjusting and Balancing for HVAC (VA national CAD standard spec)</a></li>
+<li><a href="https://facilities.duke.edu/sites/default/files/23%2005%2093%20Testing%2C%20Adjusting%20and%20Balancing%20for%20HVAC.pdf">Duke University Facilities: 23 05 93 Testing, Adjusting and Balancing for HVAC</a></li>
+<li><a href="https://jhfre.jhu.edu/wp-content/uploads/2024/12/SECTION-230593-Testing-Adjusting-and-Balancing-for-HVAC.pdf">Johns Hopkins Facilities: Section 230593 Testing, Adjusting and Balancing for HVAC</a></li>
+<li><a href="https://facilities.yale.edu/sites/default/files/files/Design%20Standards/Updated%20Design%20Standards/23%20HVAC/23%2005%2093%20Testing%2C%20Adjusting%2C%20and%20Balancing%20for%20HVAC_20250110_FINAL%20V1.pdf">Yale Facilities: 23 05 93 Testing, Adjusting and Balancing for HVAC</a></li>
+<li><a href="https://fdo.wwu.edu/division-23-testing-adjusting-balancing">Western Washington University Facilities: Division 23 Testing, Adjusting and Balancing</a></li>
+<li><a href="https://www.csemag.com/recommendations-for-periodic-testing-adjusting-and-balancing-of-existing-buildings/">Consulting-Specifying Engineer: Recommendations for periodic TAB of existing buildings</a></li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
