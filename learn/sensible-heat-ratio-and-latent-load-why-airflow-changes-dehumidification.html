@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sensible Heat Ratio and Latent Load: Why Airflow Changes Dehumidification</title>
+<meta property="og:title" content="Sensible Heat Ratio and Latent Load: Why Airflow Changes Dehumidification"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Sensible vs latent cooling, how to compute sensible heat ratio with the 1.08 equation, and why lower cfm per ton removes more moisture.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Sensible Heat Ratio and Latent Load: Why Airflow Changes Dehumidification", "about": "Cooling", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/sensible-heat-ratio-and-latent-load-why-airflow-changes-dehumidification.html"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 2, "name": "Sensible Heat Ratio and Latent Load: Why Airflow Changes Dehumidification", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/sensible-heat-ratio-and-latent-load-why-airflow-changes-dehumidification.html"}]}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/sensible-heat-ratio-and-latent-load-why-airflow-changes-dehumidification.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/sensible-heat-ratio-and-latent-load-why-airflow-changes-dehumidification.html"><meta property="og:description" content="Sensible vs latent cooling, how to compute sensible heat ratio with the 1.08 equation, and why lower cfm per ton removes more moisture."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"></head>
+<body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Cooling</span>
+<h1>Sensible Heat Ratio and Latent Load: Why Airflow Changes Dehumidification</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">An air conditioner's rated capacity is one number, but it does two different jobs: cooling the air and drying it. How much of each you get depends on how much air crosses the coil. This lesson shows how to split capacity into sensible and latent parts, how to compute the sensible heat ratio, and why slowing the airflow shifts the split toward moisture removal.</p>
+
+<h2>Two kinds of cooling</h2>
+<p>Sensible heat is heat you can measure with a thermometer. Latent heat is the energy carried by water vapor; when vapor condenses on the coil, that energy leaves the air even though the air temperature does not change from it. Add them and you get total capacity. Our <a href="psychrometrics-for-technicians.html">psychrometrics lesson</a> explains why the coil sweats, and our <a href="house-feels-humid-with-the-ac-running-causes-and-fixes.html">humid-house lesson</a> covers the field causes. Here we focus on the numbers.</p>
+<p>The <strong>sensible heat ratio</strong> (SHR) is sensible capacity divided by total capacity. An SHR of 0.72 means 72 percent of the cooling went to temperature and 28 percent to moisture. Some maker tables print the same idea as "S/T" (sensible over total).</p>
+
+<h2>The air equations, as sources state them</h2>
+<p>Green Building Advisor, in a 2018 article by Allison Bailes, gives the sensible equation as Btu/h = 1.08 x cfm x change in temperature, and the total-heat equation as Btu/h = (1.08 x cfm x change in temperature) + (0.68 x cfm x change in humidity ratio), where the humidity ratio change is in grains of water vapor per pound of dry air. It derives 1.08 from air density (0.075), the specific heat of air (0.24) and 60 minutes per hour, and warns that the constant fits air near sea level and ordinary room temperatures, so it needs adjusting at altitude. The second term is the latent part.</p>
+<p>Some references write the total as 4.5 x cfm x change in enthalpy. We did not read a source we could cite for that form this time, so we do not use it here. Check the one your textbook or maker uses, and note which air conditions it assumes.</p>
+
+<h2>Worked example</h2>
+<p>Our own arithmetic, using the 1.08 equation from the source above. Assume a system moving 1,200 cfm with a 20 F dry-bulb drop across the coil, and a stated total capacity of 36,000 Btu/h (3 tons).</p>
+<figure>
+<svg viewBox="0 0 440 130" role="img" aria-label="A bar for 36,000 Btu per hour total capacity split into 25,920 sensible and 10,080 latent" style="max-width:100%;height:auto" fill="none" stroke="currentColor" stroke-width="2"><title>36,000 Btu/h split into sensible and latent</title><rect x="20" y="40" width="288" height="40"/><rect x="308" y="40" width="112" height="40"/><text x="164" y="65" text-anchor="middle" font-size="13" fill="currentColor" stroke="none">Sensible 25,920</text><text x="364" y="65" text-anchor="middle" font-size="13" fill="currentColor" stroke="none">Latent 10,080</text><text x="220" y="25" text-anchor="middle" font-size="13" fill="currentColor" stroke="none">Total 36,000 Btu/h</text><text x="220" y="110" text-anchor="middle" font-size="13" fill="currentColor" stroke="none">SHR = 25,920 / 36,000 = 0.72</text></svg>
+<figcaption>Our own split of the example: 72 percent sensible, 28 percent latent.</figcaption>
+</figure>
+<ol>
+<li>Sensible: 1.08 x 1,200 cfm x 20 F = 1.08 x 24,000 = <strong>25,920 Btu/h</strong>.</li>
+<li>Latent: total minus sensible = 36,000 - 25,920 = <strong>10,080 Btu/h</strong>.</li>
+<li>SHR: 25,920 / 36,000 = <strong>0.72</strong>.</li>
+<li>Airflow per ton: 36,000 / 12,000 = 3 tons, and 1,200 / 3 = <strong>400 cfm per ton</strong>.</li>
+<li>Check against the latent term: 10,080 = 0.68 x 1,200 x change in grains, so the change is 10,080 / 816 = about <strong>12.4 grains per pound</strong> removed.</li>
+</ol>
+<p>Now drop the blower to 1,000 cfm (about 333 cfm per ton). We cannot give an SHR for this particular system, because that comes from the maker's table for the exact model, not from a formula. The direction is predictable, though: a slower stream is cooled more, the coil runs colder, and more of the capacity goes to condensation. Sensible capacity falls and the SHR drops. In the next section we show real numbers from a table.</p>
+
+<h2>What a maker table shows</h2>
+<p>An ACCA blog article by Matt Akins reproduces a performance figure for a 2.5-ton air conditioner at 75 F indoor dry bulb, 75 F outdoor and 63 F entering wet bulb. It lists three airflows. The article does not name the source table in its text, so treat it as an illustration of what tables look like; the model's own literature governs.</p>
+<table>
+<thead><tr><th>Airflow</th><th>Per ton</th><th>Total (Btu/h)</th><th>S/T</th><th>Sensible (Btu/h)</th><th>Latent (Btu/h)</th></tr></thead>
+<tbody>
+<tr><td>875 cfm</td><td>350</td><td>29,500</td><td>52%</td><td>15,340</td><td>14,160</td></tr>
+<tr><td>1,000 cfm</td><td>400</td><td>29,800</td><td>58%</td><td>17,284</td><td>12,516 (our own subtraction)</td></tr>
+<tr><td>1,125 cfm</td><td>450</td><td>30,300</td><td>61%</td><td>18,483</td><td>11,817 (our own subtraction)</td></tr>
+</tbody></table>
+<p>Read it from the bottom up. Our own arithmetic: cutting airflow from 1,125 to 875 cfm lowers total capacity by only 800 Btu/h (30,300 - 29,500), but latent capacity rises from 11,817 to 14,160, an increase of 2,343 Btu/h, and the S/T falls from 61 to 52 percent. Nearly all of the change is a shift from sensible to latent, not new capacity. That matches the article's advice that 350 cfm per ton suits hot, humid climates while 450 lets the same system deliver more sensible capacity in drier ones. The table also states its entering conditions. Our own advice: read the row that matches the conditions on your job.</p>
+
+<h2>Why slower air removes more moisture</h2>
+<p>Bailes' 2024 Green Building Advisor article states it plainly: slower air means colder air, and slower air also means drier air. With less air passing, each pound spends longer on the coil, the coil surface runs colder, and more vapor reaches a surface below its dew point. He gives guide ranges of 300 to 350 cfm per ton for humid climates, about 400 as nominal, and 450 to 550 for dry climates, and calls them guides, not hard limits. He also quotes an ACCA instructor saying correct airflow meets the sensible load, meets the latent load, and does not exceed the total by 15 to 30 percent depending on compressor technology.</p>
+<p>There is a floor. Colder is the point, but a coil that gets too cold is the reason makers publish an allowed airflow range, and why too little air leads to the problems in our <a href="ac-evaporator-coil-frozen-ice-on-the-lines-causes-and-fixes.html">frozen coil lesson</a>. Measure airflow and static pressure first (see <a href="airflow-and-static-pressure-basics.html">Airflow and Static Pressure Basics</a>), and change blower settings only within the manufacturer's range. Refrigerant side checks belong with <a href="superheat-and-subcooling-basics.html">superheat and subcooling</a>.</p>
+
+<h2>Why oversizing hurts moisture removal</h2>
+<p>The U.S. Department of Energy's Building America guide "Why to Rightsize" calls latent capacity the key reason to right-size, and notes that in most homes the central cooling system is the sole source of dehumidification. An oversized unit quickly meets the sensible requirement and shuts off without significantly removing moisture. Short runs also leave no time for condensate to drain, so water left on the coil can evaporate back into the airstream while the fan keeps running. Slowing the blower on an oversized system can help a little, but it does not fix the cause; the guide recommends load calculations (Manual J and Manual S, which ACCA publishes) and a duct design (Manual D) before equipment is chosen. See <a href="heat-load-calculation-intro-manual-j.html">our Manual J intro</a>.</p>
+
+<section class="card"><h2>Field card: SHR and airflow</h2><ul>
+<li>SHR = sensible / total. Latent = total - sensible.</li>
+<li>Sensible Btu/h = 1.08 x cfm x temperature drop (near sea level, room-temperature air).</li>
+<li>Total adds 0.68 x cfm x grains removed per pound.</li>
+<li>Lower cfm per ton: colder coil, lower SHR, more moisture removed.</li>
+<li>Humid climate guides: about 300 to 400 cfm per ton; dry climates higher (Green Building Advisor).</li>
+<li>Read the model's own table at your entering conditions and airflow.</li>
+<li>Stay inside the manufacturer's airflow range; too little air is a freeze risk.</li>
+<li>Oversizing meets temperature fast and skips moisture.</li>
+</ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+
+<section class="related"><h2>Related lessons</h2><ul><li><a href="psychrometrics-for-technicians.html">Psychrometrics for Technicians</a></li><li><a href="house-feels-humid-with-the-ac-running-causes-and-fixes.html">House Feels Humid With the AC Running: Causes and Fixes</a></li><li><a href="airflow-and-static-pressure-basics.html">Airflow and Static Pressure Basics</a></li><li><a href="superheat-and-subcooling-basics.html">Superheat and Subcooling Basics</a></li><li><a href="ac-evaporator-coil-frozen-ice-on-the-lines-causes-and-fixes.html">AC Evaporator Coil Frozen: Causes and Fixes</a></li><li><a href="heat-load-calculation-intro-manual-j.html">Heat Load Calculation Intro: Manual J</a></li><li><a href="acca-manual-s-picking-equipment-size-after-the-load-calculation.html">ACCA Manual S: Picking Equipment Size After the Load Calculation</a></li><li><a href="ac-short-cycling-causes-oversizing-charge-thermostat-and-safeties.html">AC Short Cycling: Causes</a></li><li><a href="start-here.html">Start Here</a></li><li><a href="../products.html">Study packs and printables</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources"><li><a href="https://greenbuildingadvisor.com/article/converting-heating-and-cooling-loads-to-air-flow-needs">Green Building Advisor: Converting heating and cooling loads to air flow needs (Allison Bailes, 2018; the 1.08 and 0.68 equations)</a></li><li><a href="https://www.greenbuildingadvisor.com/article/getting-the-right-airflow-for-an-air-conditioning-system">Green Building Advisor: Getting the right airflow for an air conditioning system (Allison Bailes, 2024; cfm per ton ranges)</a></li><li><a href="https://hvac-blog.acca.org/400-cfm-per-ton-or-is-it/">ACCA HVAC Blog: 400 CFM Per Ton, Or Is It? (Matt Akins, 2021; capacity figures at 875, 1,000 and 1,125 cfm)</a></li><li><a href="https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/why_to_rightsize_guide.pdf">U.S. DOE Building America: Why to Rightsize (latent capacity, oversizing, short cycling)</a></li></ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
