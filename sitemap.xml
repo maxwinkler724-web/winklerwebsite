@@ -85,6 +85,7 @@
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/bacnet-modbus-and-lonworks-plain-english.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/balancing-valves-and-pressure-independent-control-valves-cv-and-flow-checks.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/bas-alarms-trend-logs-and-how-techs-use-them.html</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/bas-analog-signals-4-20-ma-and-0-10-v-transducers-wiring-scaling-and-troubleshooting-with-a-meter.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/bas-commissioning-checklists-and-functional-testing.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/bas-point-types-and-reading-the-graphics.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/bas-sensor-types-calibration-drift-and-setpoint-habits.html</loc><lastmod>2026-10-23</lastmod></url>
@@ -154,12 +155,14 @@
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/combustion-and-co-safety-basics.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/combustion-appliance-zone-worst-case-depressurization-and-spillage-testing.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/commercial-boiler-burner-controls-single-point-linkage-parallel-positioning-o2-trim-and-excess-air.html</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/commercial-boiler-gas-trains-safety-shutoff-valves-valve-proving-high-and-low-gas-pressure-switches-and-leak-test-cocks.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/commercial-building-air-leakage-testing-whole-building-pressure-tests-cfm75-air-barriers-and-what-it-means-for-hvac.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/commercial-cooling-guide.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/commercial-duct-and-air-handler-cleaning-when-it-is-needed-inspection-source-removal-and-coil-cleaning.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/commercial-duct-pressure-classes-seal-classes-and-leakage-testing-spiral-vs-rectangular-and-what-the-test-report-shows.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/commercial-kitchen-hot-water-dishwasher-booster-heaters-180-f-sanitizing-rinse-recovery-sizing-and-scale.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/commercial-kitchen-ventilation-hoods-and-make-up-air-basics.html</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/commercial-laundry-rooms-dryer-exhaust-ducts-makeup-air-lint-fire-risk-and-heat-loads-in-laundromats-and-apartment-buildings.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/commercial-refrigeration-cold-holding-41-f-and-food-safety-checks.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/commercial-steam-humidifiers-dispersion-tubes-absorption-distance-and-water-quality.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/communicating-controls-basics.html</loc><lastmod>2026-10-23</lastmod></url>
@@ -244,6 +247,7 @@
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/fire-dampers-and-smoke-dampers-what-they-do-access-and-inspection-intervals.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/fire-tube-vs-water-tube-boilers-construction-passes-steam-capacity-and-what-inspectors-look-at.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/flame-safeguard-and-ignition-basics.html</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/flame-sensing-on-commercial-burners-flame-rods-uv-and-ir-scanners-self-check-scanners-and-reading-flame-signal.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/flame-sensor-cleaning-and-microamps.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/flare-fittings-on-mini-splits-making-the-flare-and-torque-values.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/flash-steam-and-flash-tanks-percent-flash-from-condensate-and-low-pressure-recovery.html</loc><lastmod>2026-10-23</lastmod></url>
@@ -516,6 +520,7 @@
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/smell-gas-near-the-furnace-or-water-heater-what-to-do.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/solar-panels-and-heat-pumps-estimating-how-much-pv-covers-heating-and-cooling.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/some-radiators-or-baseboards-cold-air-in-a-hot-water-heating-system.html</loc><lastmod>2026-10-23</lastmod></url>
+<url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/stainless-steel-special-gas-vent-for-category-iii-and-iv-boilers-al29-4c-vs-316l-joints-condensate-drains-and-ul-1738.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/stairwell-pressurization-and-smoke-control-systems-pressure-differences-door-opening-force-and-periodic-testing.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/start-here.html</loc><lastmod>2026-10-23</lastmod></url>
 <url><loc>https://maxwinkler724-web.github.io/winklerwebsite/learn/steam-and-hot-water-preheat-coils-in-air-handlers-freeze-protection-and-face-and-bypass.html</loc><lastmod>2026-10-23</lastmod></url>
