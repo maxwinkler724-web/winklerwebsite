@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cooling Electrical Rooms and Elevator Machine Rooms: Transformer Losses, UPS Heat and Ventilation vs Mechanical Cooling</title>
+<meta property="og:title" content="Cooling Electrical Rooms and Elevator Machine Rooms: Transformer Losses, UPS Heat and Ventilation vs Mechanical Cooling"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="How to estimate heat from transformers, UPS and drives in electrical and elevator machine rooms, and when exhaust ventilation is enough versus cooling.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Cooling Electrical Rooms and Elevator Machine Rooms: Transformer Losses, UPS Heat and Ventilation vs Mechanical Cooling", "about": "Facilities", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/cooling-electrical-rooms-and-elevator-machine-rooms-transformer-losses-ups-heat-and-ventilation-vs-mechanical-cooling.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/cooling-electrical-rooms-and-elevator-machine-rooms-transformer-losses-ups-heat-and-ventilation-vs-mechanical-cooling.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/cooling-electrical-rooms-and-elevator-machine-rooms-transformer-losses-ups-heat-and-ventilation-vs-mechanical-cooling.html"><meta property="og:description" content="How to estimate heat from transformers, UPS and drives in electrical and elevator machine rooms, and when exhaust ventilation is enough versus cooling."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Cooling Electrical Rooms and Elevator Machine Rooms: Transformer Losses, UPS Heat and Ventilation vs Mechanical Cooling", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/cooling-electrical-rooms-and-elevator-machine-rooms-transformer-losses-ups-heat-and-ventilation-vs-mechanical-cooling.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Facilities</span>
+<h1>Cooling Electrical Rooms and Elevator Machine Rooms: Transformer Losses, UPS Heat and Ventilation vs Mechanical Cooling</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">Electrical gear is never 100 percent efficient, and the part that is lost becomes heat in the room. A dry-type transformer, a UPS and a few drives can turn a closet-sized electrical room into an oven. This lesson shows how to estimate that heat from an efficiency number, what temperatures the makers allow, when a fan and a louver can carry the load, and when you need real cooling. It also covers elevator machine rooms, which have their own temperature range.</p>
+
+<h2>Where the heat comes from</h2>
+<p>Every device in the room wastes some of the power passing through it. The main sources are:</p>
+<ul>
+<li><strong>Dry-type transformers.</strong> Core (no-load) loss runs all the time. Winding (load) loss climbs with the square of the current, so a lightly loaded transformer wastes less than a heavily loaded one.</li>
+<li><strong>UPS units.</strong> Power conversion and the fans inside the cabinet. Schneider Electric's published heat tables for one 480 V UPS family show heat rising with load and changing with operating mode (normal, ECO, battery), so the same unit gives off different amounts of heat on different days.</li>
+<li><strong>Variable frequency drives.</strong> ABB's catalog for its ACS580 drives states 98 percent efficiency at nominal power and lists the heat dissipation of each size in watts and Btu/h, calling it a reference for cabinet thermal design.</li>
+<li><strong>Switchgear and panelboards.</strong> Bus, breakers and connections give off some heat. We have no general number, so ask the maker for the heat loss of the actual line-up.</li>
+</ul>
+<p>For power quality and drive input chokes, see <a href="vfd-harmonics-in-buildings-thd-line-reactors-dc-chokes-and-filters-for-facility-techs.html">VFD Harmonics in Buildings</a>. For IT rooms, see <a href="cooling-a-small-server-room-or-network-closet-heat-loads-and-equipment-choices.html">Cooling a Small Server Room or Network Closet</a>.</p>
+
+<h2>Estimating heat from efficiency</h2>
+<p>If a device delivers a known output at a known efficiency, the loss is the input minus the output. Written in one step:</p>
+<p><strong>Our own:</strong> loss (kW) = output load (kW) &times; (1 &divide; efficiency &minus; 1). Then Btu/h = kW &times; 3,412.</p>
+<p>The 3,412 is the standard watt to Btu/h conversion. Use the output load as it actually runs, not the nameplate.</p>
+
+<h2>What DOE says about transformer efficiency</h2>
+<p>The U.S. Department of Energy sets minimum efficiency for distribution transformers sold in the U.S. DOE's page says the covered range for dry-type units is 15 to 2,500 kVA, and that standards have applied since 2007. The numbers are in 10 CFR 431, subpart K, section 431.196 in the eCFR. We read the table through Cornell's mirror of that section. For a three-phase, low-voltage dry-type unit rated 75 kVA, it lists:</p>
+<table>
+<thead><tr><th>Manufactured</th><th>Minimum efficiency at 35% load</th></tr></thead>
+<tbody>
+<tr><td>Jan. 1, 2007 to before Jan. 1, 2016</td><td>98.0%</td></tr>
+<tr><td>Jan. 1, 2016 to before Apr. 23, 2029</td><td>98.60%</td></tr>
+<tr><td>On or after Apr. 23, 2029</td><td>98.88%</td></tr>
+</tbody></table>
+<p>Two cautions. First, these are minimums measured at 35 percent of rated load for low-voltage dry-type units, so a transformer running much harder wastes a larger share. Second, a unit built before 2007 predates the first tier in this table, so its efficiency may be lower still. DOE's April 2024 final rule in the Federal Register gives the April 23, 2029 date for the newest tier. The best number for a real job is the loss data in the maker's catalog for that exact unit. Eaton's dry-type design guide, for example, publishes loss tables by size.</p>
+
+<h2>What the makers allow for room temperature</h2>
+<ul>
+<li><strong>Dry-type transformers.</strong> Eaton's design guide says its ratings assume a 40&deg;C (104&deg;F) maximum ambient with a 30&deg;C (86&deg;F) average over 24 hours. Virginia Transformer's manual gives the same two numbers as a guideline. That manual also says that for transformers in vaults or restricted spaces, provide about 100 cfm of air per kW of transformer loss, and keep ventilated units 12 to 18 inches from walls unless the design says otherwise.</li>
+<li><strong>Drives.</strong> ABB lists -15 to +50&deg;C (up to 122&deg;F) for the ACS580-01 family, with derating from +40&deg;C (104&deg;F) on larger frames, and 5 to 95 percent relative humidity with no condensation.</li>
+<li><strong>UPS.</strong> Schneider's Galaxy VS environment page lists 0 to 50&deg;C (32 to 122&deg;F), with load derated by 2.5 percent per &deg;C above 40&deg;C. Batteries are the weak spot. A Schneider blog post says rated capacity assumes 25&deg;C (77&deg;F) and that battery life is cut in half for every 15&deg;F above that, although a reader comment on the same page gives a different rule. Check the battery maker's datasheet for the job.</li>
+</ul>
+<p>The lowest limit in the room is the one that counts. Lined up, the batteries want the coolest air and the transformer and drives tolerate the warmest.</p>
+
+<figure>
+<svg viewBox="0 0 560 260" role="img" aria-label="Plan of an electrical room with a transformer, a UPS, an exhaust fan on one wall and a split-system indoor unit on another, with arrows showing heat rising from the equipment" style="max-width:100%;height:auto;" fill="none" stroke="currentColor" stroke-width="2">
+<title>Electrical room heat sources and cooling options</title>
+<rect x="20" y="20" width="520" height="220" rx="4"/>
+<rect x="60" y="120" width="120" height="90" rx="3"/>
+<text x="120" y="160" text-anchor="middle" font-size="14" fill="currentColor" stroke="none">Dry-type</text>
+<text x="120" y="178" text-anchor="middle" font-size="14" fill="currentColor" stroke="none">transformer</text>
+<rect x="230" y="120" width="110" height="90" rx="3"/>
+<text x="285" y="170" text-anchor="middle" font-size="14" fill="currentColor" stroke="none">UPS</text>
+<path d="M100 110 C95 90 105 80 100 60 M140 110 C135 90 145 80 140 60 M265 110 C260 90 270 80 265 60 M305 110 C300 90 310 80 305 60" stroke-dasharray="5 4"/>
+<text x="195" y="52" text-anchor="middle" font-size="13" fill="currentColor" stroke="none">heat from losses</text>
+<rect x="528" y="70" width="12" height="70" fill="currentColor"/>
+<circle cx="500" cy="105" r="22"/>
+<path d="M500 87 L500 123 M482 105 L518 105"/>
+<text x="470" y="150" text-anchor="middle" font-size="13" fill="currentColor" stroke="none">exhaust fan</text>
+<path d="M410 105 L455 105 M447 98 L455 105 L447 112"/>
+<rect x="380" y="28" width="110" height="26" rx="3"/>
+<text x="435" y="46" text-anchor="middle" font-size="13" fill="currentColor" stroke="none">split unit, indoor</text>
+<path d="M420 258 L420 226 M413 234 L420 226 L427 234"/>
+<text x="420" y="214" text-anchor="middle" font-size="13" fill="currentColor" stroke="none">makeup air (louver)</text>
+</svg>
+<figcaption>Plan view, not to scale. Heat from the transformer and UPS must leave the room, either carried out by an exhaust fan with makeup air or removed by a dedicated split unit. Water piping stays out of the room.</figcaption>
+</figure>
+
+<h2>Worked example (Our own)</h2>
+<p><strong>Our own example and assumptions.</strong> A 75 kVA three-phase low-voltage dry-type transformer made in 2020 feeds a UPS and other loads. We assume it is loaded to 35 percent of rating at a power factor of 1, so the output is 75 &times; 0.35 = 26.25 kW. We use the DOE minimum of 98.60 percent from the table above. A 40 kW (output) double-conversion UPS runs at an assumed 94 percent efficiency. That 94 percent is our own cautious guess; the maker's table for your unit should replace it. (For comparison, a Schneider table for one 480 V, 50 kW UPS lists 3,584 Btu/h at 75 percent load. If that load is output power, 37.5 kW, the unit is about 97 percent efficient by our arithmetic.) Design air rise is 15&deg;F. The constant 1.08 comes from standard air: 0.075 lb/ft&sup3; &times; 0.24 Btu/lb&middot;&deg;F &times; 60 min/h.</p>
+<ol>
+<li>Transformer loss: 1 &divide; 0.986 = 1.01420, minus 1 = 0.01420. 26.25 kW &times; 0.01420 = 0.373 kW.</li>
+<li>Transformer heat: 0.373 kW &times; 3,412 = 1,272 Btu/h.</li>
+<li>UPS loss: 1 &divide; 0.94 = 1.06383, minus 1 = 0.06383. 40 kW &times; 0.06383 = 2.553 kW.</li>
+<li>UPS heat: 2.553 kW &times; 3,412 = 8,712 Btu/h.</li>
+<li>Total: 1,272 + 8,712 = 9,984 Btu/h (2.93 kW).</li>
+<li>Airflow for a 15&deg;F rise: cfm = Btu/h &divide; (1.08 &times; &Delta;T) = 9,984 &divide; (1.08 &times; 15) = 9,984 &divide; 16.2 = about 616 cfm.</li>
+</ol>
+<p>For a 10&deg;F rise the same load needs 9,984 &divide; 10.8 = about 924 cfm. If the transformer were an older 2007-tier unit at 98.0 percent, its loss would be 26.25 &times; 0.02041 = 0.536 kW, or 1,828 Btu/h, about 556 Btu/h more.</p>
+
+<h2>Exhaust-only ventilation or mechanical cooling?</h2>
+<p>Ventilation works only if outdoor air is cooler than the room limit by at least the temperature rise you designed for. With the example above, a 15&deg;F rise and a room limit of 86&deg;F (the 24-hour average the transformer makers use) means the incoming air must be 71&deg;F or cooler. On a hot afternoon it will not be. <strong>Our own</strong> rule of thumb: use exhaust with a filtered intake louver where design outdoor air is well below the equipment limits, and use a dedicated split system or computer-room unit where it is not, or where the room must stay closed against dust, humidity or a UPS battery that wants 77&deg;F. Many rooms use both, with the fan as backup. For cooling, 9,984 Btu/h is about 0.83 ton of sensible load, before adding other heat in the room. Hot- and cold-aisle layout, CRAC and CRAH units are covered in <a href="data-center-cooling-hot-and-cold-aisles-crac-vs-crah-and-inlet-temperatures.html">Data Center Cooling</a>.</p>
+<p>An exhaust fan pulls the same air in from somewhere, so plan the intake and its filter for dust and humidity. A failed fan should alarm to someone who will respond, because Schneider's spec above shows a UPS has to derate its load once the room passes 40&deg;C (104&deg;F).</p>
+
+<h2>Keep water piping out of the electrical room</h2>
+<p>The National Electrical Code, NFPA 70, reserves a dedicated space above and in front of switchboards, panelboards and similar gear. An Electrical Contractor magazine article on the rule says "piping, ducts, leak protection apparatus or other equipment foreign to the electrical installation" may not sit in that space, and gives a plumbing pipe below a panelboard as a violation. That reaches the cooling system. Do not run chilled water, steam or condensate lines through the zone, and do not mount a split unit's indoor coil, line set or condensate pipe where a leak could drip into the gear. Locate the unit off to the side, pipe its condensate to a drain outside the zone, and ask the electrical inspector about sprinkler lines and edition-specific details.</p>
+
+<h2>Elevator machine and control rooms</h2>
+<p>Elevator controllers contain drives and electronics, and they have their own temperature range. TK Elevator's page says machine room temperatures should meet the elevator maker's recommendation, which "typically range from 55 degrees Fahrenheit to 90 degrees Fahrenheit," and that meeting them is required by code. MEI's machine room page, for freight traction elevators, gives 55 to 90&deg;F and a maximum relative humidity of 85 percent. TK adds that cooler climates can sometimes use an independent ventilation system, while warmer ones typically need air conditioning. Overheating, the page says, can cause erratic performance and shutdowns.</p>
+<p>The range for your job is the one in the installed elevator's own documents, not a typical number from a web page. ASME A17.1 is the elevator safety code, so ask the elevator contractor which edition applies and what the maker requires, and tell them before you change the room's heat load or airflow. <strong>Our own</strong> note: 55&deg;F is a lower limit too, so an oversized unit or an economizer that overcools in winter can be as much a problem as heat.</p>
+<p>Because the work is near live parts, review <a href="arc-flash-and-shock-safety-for-hvac-techs-labels-ppe-and-meter-ratings.html">Arc Flash and Shock Safety for HVAC Techs</a> before opening any panel, and see <a href="three-phase-voltage-imbalance-how-to-calculate-it-and-why-motors-overheat.html">Three-Phase Voltage Imbalance</a> for another cause of hot transformers and motors.</p>
+
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Cooling Electrical Rooms and Elevator Machine Rooms</h2><p><em>Efficiency is the key to heat: the lost part stays in the room.</em></p><ul><li>Loss (kW) = output load (kW) &times; (1 &divide; efficiency &minus; 1). Btu/h = kW &times; 3,412.</li><li>cfm = Btu/h &divide; (1.08 &times; &Delta;T). Example: 9,984 Btu/h at 15&deg;F is about 616 cfm.</li><li>DOE minimum for a 75 kVA three-phase low-voltage dry-type made 2016 to 2029: 98.60 percent at 35 percent load. Maker loss data beats the minimum.</li><li>Transformer makers: 40&deg;C maximum, 30&deg;C 24-hour average. Batteries are usually the coolest requirement.</li><li>Exhaust only works when outdoor air is cooler than the limit by your design rise.</li><li>No piping or foreign systems in the dedicated electrical space (NFPA 70).</li><li>Elevator rooms: use the range in the elevator maker's documents (examples read: 55 to 90&deg;F, 85 percent maximum humidity).</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="cooling-a-small-server-room-or-network-closet-heat-loads-and-equipment-choices.html">Cooling a Small Server Room or Network Closet: Heat Loads and Equipment Choices</a></li><li><a href="data-center-cooling-hot-and-cold-aisles-crac-vs-crah-and-inlet-temperatures.html">Data Center Cooling: Hot and Cold Aisles, CRAC vs CRAH and Inlet Temperatures</a></li><li><a href="vfd-harmonics-in-buildings-thd-line-reactors-dc-chokes-and-filters-for-facility-techs.html">VFD Harmonics in Buildings: THD, Line Reactors, DC Chokes and Filters for Facility Techs</a></li><li><a href="arc-flash-and-shock-safety-for-hvac-techs-labels-ppe-and-meter-ratings.html">Arc Flash and Shock Safety for HVAC Techs: Labels, PPE and Meter Ratings</a></li><li><a href="three-phase-voltage-imbalance-how-to-calculate-it-and-why-motors-overheat.html">Three-Phase Voltage Imbalance: How to Calculate It and Why Motors Overheat</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li><a href="https://www.law.cornell.edu/cfr/text/10/431.196">10 CFR 431.196 (Cornell LII mirror of the eCFR, subpart K): energy conservation standards for distribution transformers</a></li>
+<li><a href="https://www.energy.gov/eere/buildings/distribution-transformers">U.S. Department of Energy: Distribution Transformers</a></li>
+<li><a href="https://www.federalregister.gov/documents/2024/04/22/2024-07480/energy-conservation-program-energy-conservation-standards-for-distribution-transformers">Federal Register, April 22, 2024: DOE final rule, Energy Conservation Standards for Distribution Transformers</a></li>
+<li><a href="https://www.eaton.com/content/dam/eaton/products/design-guides---consultant-audience/eaton-dtdt-general-purpose-design-guide-dg009001en.pdf">Eaton: Dry-type Distribution Transformers design guide</a></li>
+<li><a href="https://www.vatransformer.com/resources/documentation-brochures/dry-type-installation-and-operation-manual/">Virginia Transformer: Dry Type Installation and Operation Manual</a></li>
+<li><a href="https://library.e.abb.com/public/dc3c65b11b2d44cf9f6c7e9079a34d13/EN_ACS580_catalog_3AUA0000145061_RevG.pdf">ABB: general purpose drives ACS580 catalog</a></li>
+<li><a href="https://productinfo.se.com/galaxyvs_ul/990-91140_master-galaxy-vs-technical-specifications-ul/English/990-91140%20Technical%20Specifications%20UL%2010-100%20kVA_0000171451.xml/$/HeatDissipationfor480VREF_0000256829">Schneider Electric: Galaxy VS UPS heat dissipation in Btu/h (480 V)</a></li>
+<li><a href="https://productinfo.se.com/galaxyvs_ul/990-91140_master-galaxy-vs-technical-specifications-ul/English/990-91140%20Technical%20Specifications%20UL%2010-100%20kVA_0000171451.xml/$/EnvironmentREF_0000170326">Schneider Electric: Galaxy VS UPS environment specifications</a></li>
+<li><a href="https://blog.se.com/digital-transformation/it-management/2014/08/28/recommendations-prolonging-life-ups-battery/">Schneider Electric blog: recommendations for prolonging the life of your UPS battery</a></li>
+<li><a href="https://www.ecmag.com/magazine/articles/article-detail/codes-standards-general-installation-requirements-part-xxvi">Electrical Contractor magazine: General Installation Requirements, Part XXVI (dedicated equipment space)</a></li>
+<li><a href="https://www.tkelevator.com/us-en/company/insights/2021/keep-your-elevator-machine-room-cool.html">TK Elevator: Keep Your Elevator Machine Room Cool</a></li>
+<li><a href="https://meiusa.com/elevators/freight-elevators/machine-room-layout/">MEI: Freight Elevator Machine Room Layout</a></li>
+<li>NFPA 70, National Electrical Code, and ASME A17.1, Safety Code for Elevators and Escalators (named for reference; we did not read the standards themselves)</li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
