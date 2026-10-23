@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BTU Meters and HVAC Submetering: Flow, Sensors and Low Delta T</title>
+<meta property="og:title" content="BTU Meters and HVAC Submetering: Flow, Sensors and Low Delta T"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="How a BTU meter turns flow and temperature into energy, why a small sensor error becomes a big energy error at low delta T, and how to install the meter.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "BTU Meters and HVAC Submetering: Flow, Sensors and Low Delta T", "about": "Controls", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/btu-meters-and-hvac-submetering-flow-meters-matched-temperature-sensors-accuracy-at-low-delta-t-and-installation.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/btu-meters-and-hvac-submetering-flow-meters-matched-temperature-sensors-accuracy-at-low-delta-t-and-installation.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/btu-meters-and-hvac-submetering-flow-meters-matched-temperature-sensors-accuracy-at-low-delta-t-and-installation.html"><meta property="og:description" content="How a BTU meter turns flow and temperature into energy, why a small sensor error becomes a big energy error at low delta T, and how to install the meter."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "BTU Meters and HVAC Submetering: Flow, Sensors and Low Delta T", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/btu-meters-and-hvac-submetering-flow-meters-matched-temperature-sensors-accuracy-at-low-delta-t-and-installation.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Controls</span>
+<h1>BTU Meters and HVAC Submetering: Flow, Sensors and Low Delta T</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">A BTU meter does not measure heat directly. It measures how much water is moving and how much that water warmed or cooled, then multiplies. That is why a half-degree sensor error can ruin the answer when the water temperature difference is small. This lesson covers the parts, how they go in the pipe, and how to judge the numbers.</p>
+
+<h2>What a BTU meter computes</h2>
+<p>A thermal energy meter works out the heat carried by a circulating fluid. One trade-press article from the instrument field writes it as energy equals mass flow times specific heat times temperature difference, and a typical installation has a flow meter, two matched temperature sensors (one in the supply, one in the return) and the calculator itself. The federal metering guide from DOE and PNNL says the same thing for heated and chilled water: energy is the product of the fluid's mass flow and its temperature differential, and a flow computer, built into the meter or sold as a separate part, has to combine the flow reading with the two temperature readings. Because water gets slightly denser and its heat capacity shifts with temperature, the computer usually corrects for that.</p>
+
+<h2>Flow meter types and straight runs</h2>
+<p>The federal guide groups the flow meters used on circulating water into three families: positive displacement (rare on circulation loops, more often on make-up lines), differential pressure (orifice, venturi, annubar) and velocity meters (turbine, vortex-shedding and ultrasonic). Magnetic meters, which this guide does not list in the part we read, are covered by maker manuals below. Each one wants smooth, fully developed flow, so each one has a straight-pipe rule.</p>
+<ul>
+<li><strong>Magnetic.</strong> No moving parts; the fluid must conduct electricity. One maker's insertion magnetic meter manual asks for 10 pipe diameters upstream after a single bend that itself follows 9 or more diameters of straight pipe, 20 after a pump discharge or outflowing tee, and 30 after a control valve or multiple bends. A different maker model, an inline magnetic meter, asks for only 3 diameters upstream and 2 downstream. Both need a full pipe. The inline model also needs a good earth ground. Do not assume one number covers every magnetic meter; read the manual for the exact model.</li>
+<li><strong>Turbine.</strong> A maker manual gives 20 diameters upstream and 5 downstream for a single insertion turbine, 10 and 5 for a dual-turbine insertion style, and 10 and 5 for its inline style (though its own inline drawing shows 20 upstream, a conflict we flag below). The same manual strongly recommends a strainer upstream and says to flush the system of flux, solder and slag first.</li>
+<li><strong>Ultrasonic, clamp-on and inline.</strong> The federal guide notes ultrasonic meters do not intrude on the flow, and that the coupling gel between the transducer and the pipe is critical to signal strength. Follow the maker's mounting distances.</li>
+<li><strong>Vortex.</strong> Listed as a velocity meter in the federal guide. We did not confirm a straight-run number for it, so use the maker's sheet.</li>
+</ul>
+<p>The federal guide adds that run requirements are counted in pipe diameters, are in addition to the length of the meter, and can be reduced with flow straighteners or conditioners. When the pipe is short, two maker manuals say to split what you have, about 80 percent upstream and 20 percent downstream, and to put any extra straight pipe upstream. The guide also says to size an in-line meter to the expected flow range, never to the pipe size, and to confirm the meter is rated for the fluid temperature.</p>
+
+<h2>Matched sensors and why low delta T hurts</h2>
+<p>The meter only cares about the difference between the supply and return readings. A sensor that reads high by the same amount on both legs cancels out. A mismatch does not cancel; it lands straight in the delta T. One maker gives a blunt example: a 5 F delta T measured with two sensors, each off by 1 F, can produce an error of up to 40 percent. The same maker says trimming a pair so both read alike only helps if it is done near the real operating temperature.</p>
+<p>That is why European practice, under the standard EN 1434, requires a temperature sensor pair to be tested at three temperatures during production, according to one maker's explanation. The same explanation gives the allowed pair error as a fixed part plus a part that grows as the actual delta T shrinks. A spec sheet that lists only a single sensor accuracy tells you little. Look for a statement about the pair, and about the delta T where it holds.</p>
+<p>Wiring and cable length matter too. A different maker reports that with two-wire sensors, a 10 m cable can raise the reading by up to 0.8 K, and two meters with 10 m and 3 m cables can differ by about 0.5 K. It calls low delta T on chilled water "unfortunately very common." One maker's figures show platinum RTDs holding a tighter percent error than its thermistors at higher temperatures, and 100 ohm RTDs want at least a 3-wire connection. For resistance tables and test steps, see the thermistor lesson linked below.</p>
+
+<h2>Worked example (Our own)</h2>
+<p><strong>Our own.</strong> These are teaching numbers, not data from any site. Assumptions: water, a flow of 300 gpm, a meter that reads flow perfectly, and the common shortcut of 500 BTU per hour per gpm per degree F. That 500 is our own derivation: about 8.33 lb of water per gallon, times 60 minutes, times 1 BTU per lb per degree F, which rounds to 500. We also assume the supply and return sensors disagree by a net 0.2 F.</p>
+<p><strong>Case A, delta T of 10 F.</strong> Energy rate = 500 x 300 gpm x 10 F = 1,500,000 BTU/h, or 125 tons (12,000 BTU/h per ton). A 0.2 F mismatch changes the delta T from 10 to 9.8 or 10.2. Error = 0.2 / 10 = 2 percent, which is 30,000 BTU/h (500 x 300 x 0.2).</p>
+<p><strong>Case B, delta T of 4 F.</strong> Energy rate = 500 x 300 x 4 = 600,000 BTU/h, or 50 tons. The same 0.2 F mismatch is still 30,000 BTU/h, but now the error = 0.2 / 4 = 5 percent of the reading.</p>
+<p><strong>What it shows.</strong> The absolute error is identical. The percent error is 2.5 times larger at the low delta T because the true signal shrank while the sensor error did not. A real 0.2 F mismatch is also optimistic: the maker figures above run from tenths of a degree to a full degree. Spread that over a billed season and a 5 percent miss can matter in a tenant bill.</p>
+
+<figure>
+<svg viewBox="0 0 640 260" role="img" aria-label="Chilled water pipe with a flow meter, supply and return temperature sensors and a BTU calculator wired to the building automation system" style="max-width:100%;height:auto" fill="none" stroke="currentColor" stroke-width="2">
+<title>Chilled water BTU metering layout</title>
+<rect x="20" y="70" width="600" height="30" rx="3"/>
+<text x="26" y="62" font-size="13" fill="currentColor" stroke="none">Supply (cold) to coils</text>
+<rect x="20" y="170" width="600" height="30" rx="3"/>
+<text x="26" y="222" font-size="13" fill="currentColor" stroke="none">Return (warmer) from coils</text>
+<path d="M70 85 H110 M96 78 l14 7 -14 7" stroke-width="2"/>
+<path d="M570 185 H530 M544 178 l-14 7 14 7" stroke-width="2"/>
+<rect x="230" y="64" width="60" height="42" rx="4"/>
+<text x="238" y="90" font-size="12" fill="currentColor" stroke="none">Flow</text>
+<path d="M260 64 V40 H320"/>
+<path d="M150 70 V40 H320 M150 70 l0 12"/>
+<circle cx="150" cy="96" r="5"/>
+<text x="120" y="122" font-size="12" fill="currentColor" stroke="none">Supply sensor</text>
+<path d="M420 180 V150 H400"/>
+<circle cx="420" cy="176" r="5"/>
+<text x="385" y="168" font-size="12" fill="currentColor" stroke="none" text-anchor="end">Return sensor</text>
+<rect x="320" y="20" width="150" height="130" rx="6" stroke-dasharray="0"/>
+<text x="332" y="48" font-size="13" fill="currentColor" stroke="none">BTU calculator</text>
+<text x="332" y="68" font-size="11" fill="currentColor" stroke="none">flow x delta T x fluid</text>
+<text x="332" y="86" font-size="11" fill="currentColor" stroke="none">(glycol setting here)</text>
+<path d="M470 85 H530"/>
+<rect x="530" y="55" width="90" height="60" rx="6"/>
+<text x="546" y="82" font-size="13" fill="currentColor" stroke="none">BAS</text>
+<text x="538" y="100" font-size="10" fill="currentColor" stroke="none">trend, bill</text>
+</svg>
+<figcaption>Layout of a chilled water BTU meter: flow meter on the straight pipe, a matched sensor pair in the supply and return, and a calculator that sends energy and flow to the BAS.</figcaption>
+</figure>
+
+<h2>Glycol</h2>
+<p>If the loop carries glycol, water settings give the wrong answer. One maker says typical heat transfer fluids are 25 to 40 percent ethylene or propylene glycol, that such mixtures have lower heat capacity than water so they need up to 30 percent more flow for the same energy, and that using water-only parameters can cause a cumulative heat measurement error as high as 40 percent. Their point is that the error can be compensated when the correct fluid parameters are entered. Concentration drifts when someone tops off with water, so ask for a concentration check before trusting the numbers, and see the heat exchanger lesson for how fouling shows up in the same temperatures.</p>
+
+<h2>Electric submetering for HVAC equipment</h2>
+<p>Energy for a chiller or air handler is also tracked on the electrical side. The federal guide says electric meters need current transformers (CTs), and often potential transformers and safety switches, and lists chillers, boilers, cooling towers and pump motors as common end-use metering targets. It also notes that the 2013 edition of ANSI/ASHRAE/IES Standard 90.1 calls for monitoring electrical energy for HVAC separately from lighting and receptacle circuits at intervals no longer than 15 minutes. Pair kW with the BTU meter's tons and you can calculate kW per ton. Work inside live electrical gear belongs to qualified electrical personnel. Follow the site's lockout rules and the meter maker's instructions.</p>
+
+<h2>Connecting to the BAS</h2>
+<p>Makers offer different outputs, so match them to the controller input. The manuals we read list a 4-20 mA flow output, scaled pulse outputs for totalizing, and frequency outputs; one maker's inline magnetic manual does not mention BACnet or Modbus, so confirm the protocol option on your exact model. Never put power on an analog or pulse signal wire. After the signals land, log them on a trend so you can see drift. See <a href="bas-alarms-trend-logs-and-how-techs-use-them.html">BAS alarms and trend logs</a> and <a href="bacnet-modbus-and-lonworks-plain-english.html">BACnet, Modbus and LonWorks in plain English</a>.</p>
+
+<h2>What the data is used for</h2>
+<p>The federal guide lists proper allocation of costs or billing of reimbursable tenants, benchmarking building energy use, and understanding how chillers, boilers and air handlers operate as reasons to meter. Tenant billing needs an accurate, repeatable meter. Plant efficiency work needs flow, delta T and kW on the same time stamps. Benchmarking feeds the annual reports described in <a href="building-energy-benchmarking-energy-star-portfolio-manager-eui-scores-and-new-jersey-reporting.html">the benchmarking lesson</a>. For design practice on measurement, engineers refer to ASHRAE Guideline 22, which we name here without reproducing it.</p>
+
+<h2>Where this can go wrong</h2>
+<ul>
+<li>Not enough straight pipe, so the flow reading drifts.</li>
+<li>A flow meter picked for the pipe size rather than the real flow range.</li>
+<li>Sensors not in the same kind of well, or one in poor contact.</li>
+<li>Glycol left at the water setting.</li>
+<li>Air in the line or an empty pipe on a magnetic meter. One manual raises an alarm for an empty pipe.</li>
+</ul>
+<p>One inconsistency to know about: the turbine manual we read gives 10 diameters for its inline style in the text, but 20 in its drawing. When a manual disagrees with itself, use the larger number or call the maker.</p>
+
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: BTU Meters and HVAC Submetering</h2><p><em>Flow times delta T times fluid. Small delta T makes small errors big.</em></p><ul><li>Energy comes from flow, the supply and return temperature difference, and fluid properties.</li><li>Check the straight run for the exact meter model; the counts differ a lot between makers.</li><li>The meter needs a full pipe, a strainer for turbines, and a ground where the manual says so.</li><li>Sensor mismatch does not cancel. At a 4 F delta T, 0.2 F is 5 percent (our own example); at 10 F it is 2 percent.</li><li>Glycol requires the right fluid setting or the reading can be far off.</li><li>Do not put power on pulse or analog signal wires.</li><li>Trend the flow, delta T and kW in the BAS.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+
+<section class="related"><h2>Related lessons</h2><ul><li><a href="bas-alarms-trend-logs-and-how-techs-use-them.html">BAS Alarms, Trend Logs and How Techs Use Them</a></li><li><a href="bacnet-modbus-and-lonworks-plain-english.html">BACnet, Modbus and LonWorks in Plain English</a></li><li><a href="hvac-thermistors-and-temperature-sensors-resistance-tables-and-how-to-test.html">HVAC Thermistors and Temperature Sensors: Resistance Tables and How to Test</a></li><li><a href="building-energy-benchmarking-energy-star-portfolio-manager-eui-scores-and-new-jersey-reporting.html">Building Energy Benchmarking: ENERGY STAR Portfolio Manager, EUI Scores and New Jersey Reporting</a></li><li><a href="plate-heat-exchanger-fouling-and-approach.html">Plate Heat Exchanger Fouling and Approach</a></li></ul></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources"><li><a href="https://www.pnnl.gov/publications/metering-best-practices-guide-achieving-utility-resource-efficiency-release-30">PNNL for US DOE FEMP: Metering Best Practices, A Guide to Achieving Utility Resource Efficiency, Release 3.0 (PNNL-23892)</a></li><li><a href="https://www.automation.com/article/importance-temperature-accuracy-btu-measurement">Automation.com: The Importance of Temperature Accuracy in BTU Measurement</a></li><li>Badger Meter: temperature sensor accuracy note (maker PDF hosted by a distributor, so no link)</li><li><a href="https://www.kamstrup.com/en-en/insights/how-to-improve-data-quality-in-a-bms-system">Kamstrup: Combat the low delta T syndrome with smart cooling meters</a></li><li><a href="https://www.kamstrup.com/en-en/insights/blog-series-part-2-a-thermal-energy-meter-you-can-trust">Kamstrup: A thermal energy meter that you can trust, part 2</a></li><li><a href="https://www.onicon.com/wp-content/uploads/2023/01/ft-3400-insertion-electromagnetic-flow-meter-manual-DOC-0005859.pdf">ONICON: FT-3400 insertion electromagnetic flow meter manual</a></li><li><a href="https://onicon.com/wp-content/uploads/F-3100-Inline-Magmeter-Manual.pdf">ONICON: F-3100 inline magnetic flow meter manual</a></li><li><a href="https://www.onicon.com/wp-content/uploads/2026/05/F-1000-series-turbine-flow-meter-manual-DOC-0004089.pdf">ONICON: F-1000 series turbine flow meter manual</a></li><li><a href="https://blog.belimo.com/blog/the-glycol-measurement-challenge">Belimo: The Glycol Measurement Challenge</a></li></ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
