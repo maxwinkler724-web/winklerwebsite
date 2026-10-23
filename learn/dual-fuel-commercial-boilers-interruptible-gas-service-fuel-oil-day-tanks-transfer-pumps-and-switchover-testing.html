@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dual-Fuel Commercial Boilers: Interruptible Gas, Oil Day Tanks, Transfer Pumps and Switchover Testing</title>
+<meta property="og:title" content="Dual-Fuel Commercial Boilers: Interruptible Gas, Oil Day Tanks, Transfer Pumps and Switchover Testing"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Dual-fuel commercial boilers: interruptible gas, oil day tanks, transfer pumps, float switches, switchover tests and a worked oil runtime example.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Dual-Fuel Commercial Boilers: Interruptible Gas, Oil Day Tanks, Transfer Pumps and Switchover Testing", "about": "Boilers", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/dual-fuel-commercial-boilers-interruptible-gas-service-fuel-oil-day-tanks-transfer-pumps-and-switchover-testing.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/dual-fuel-commercial-boilers-interruptible-gas-service-fuel-oil-day-tanks-transfer-pumps-and-switchover-testing.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/dual-fuel-commercial-boilers-interruptible-gas-service-fuel-oil-day-tanks-transfer-pumps-and-switchover-testing.html"><meta property="og:description" content="Dual-fuel commercial boilers: interruptible gas, oil day tanks, transfer pumps, float switches, switchover tests and a worked oil runtime example."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Dual-Fuel Commercial Boilers: Interruptible Gas, Oil Day Tanks, Transfer Pumps and Switchover Testing", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/dual-fuel-commercial-boilers-interruptible-gas-service-fuel-oil-day-tanks-transfer-pumps-and-switchover-testing.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Boilers</span>
+<h1>Dual-Fuel Commercial Boilers: Interruptible Gas, Oil Day Tanks, Transfer Pumps and Switchover Testing</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">Some commercial boilers in New Jersey burn natural gas most of the year and keep a second fuel, light fuel oil, in reserve. This lesson explains why, what the oil side of the plant looks like from the storage tank to the burner, and why the backup has to be tested before the day it is needed. Home oil systems are covered in other lessons, so we keep to the commercial piece here.</p>
+
+<h2>Why a boiler would burn gas or oil</h2>
+<p>Some gas customers buy interruptible service. The idea is a trade. The customer gets a lower rate, and the utility may order the customer to stop using gas when the system is stressed. A 2024 order of the New Jersey Board of Public Utilities (BPU) put it plainly: interruptible customers get a lower tariff rate in exchange for agreeing to accept interruption during periods of peak demand. In that case the college's cogeneration plant was on PSE&G's cogeneration interruptible rate, and the tariff required the customer to stop using gas after notice of eight hours or more. The college kept a No. 2 fuel oil backup.</p>
+<p>The order also shows what failing to switch costs. After a January 2018 interruption, the utility calculated a penalty of $2,359,532 for gas the customer kept burning. The tariff provisions the Board described include a charge of $1.89 per therm for the first hour's maximum requirement in a day and ten times the highest Gas Daily index price for usage beyond that. The Board also noted that under a related non-firm transportation schedule, customers certify each year that they will suspend operations or have an alternate fuel, with at least seven days of fuel available. The Board noted the college had no written emergency procedures and no day tank maintenance records for the prior year. That is the lesson for a technician: the oil system is not a prop. It is part of the rate agreement, and its condition is a compliance item.</p>
+<p>We did not find a single current NJ rate table to quote, and tariffs differ by utility and change. Your site's tariff, the utility, and the BPU are the authority on what your account requires.</p>
+
+<h2>The dual-fuel burner</h2>
+<p>A combination burner has a gas train and an oil pump and nozzle, on one air register and one flame safeguard. Power-Flame's published data sheet for one line of such burners lists light oil ratings "based on No. 2 fuel oil with heating value of 140,000 Btu per gallon," and notes that combination units carry both gas and light oil characteristics. A selector switch (or a control input from the building system) tells the burner which fuel to light. The flame safeguard still runs its purge and trial for ignition; see <a href="boiler-controls-and-safety-devices-test-record-what-to-write-down.html">Boiler Controls and Safety Devices: Test, Record, What to Write Down</a>.</p>
+
+<h2>Oil side: main tank, transfer pump, day tank</h2>
+<p>Residential oil systems run a single line from the tank to the burner pump. A commercial plant usually splits the job into three parts. A large main storage tank holds the reserve. A smaller day tank near the boiler holds a working supply. A transfer pump set moves oil from the main tank to the day tank so that the burner pump never has to pull a long, high lift.</p>
+<p>Viking Pump's duplex fuel oil pump set brochure gives a good picture of the controls. The standard panel connects three normally closed float switches, with options for low and high level alarms and a signal to stop the pump on a low main tank level. Two pumps alternate under an auto selector, each with a hand-off-auto switch, and if the lead pump fails the lag pump starts and a light shows. The pump sets use continuous bypass relief valves that send oil back to the tank. A university facilities spec we read for generators adds another idea: an overflow tank sized to take back excess fuel after a control failure. Both documents are written for other uses, so treat them as examples of the parts, not as rules for your boiler.</p>
+<figure style="margin:1.5rem 0">
+<svg viewBox="0 0 720 330" role="img" aria-label="Diagram of a dual-fuel boiler oil system: main tank, transfer pump, day tank with high and low float switches and an overflow return line, a filter, the burner with a gas train and a gas or oil selector" style="max-width:100%;height:auto;color:inherit" xmlns="http://www.w3.org/2000/svg">
+<title>Dual-fuel boiler fuel path</title>
+<g fill="none" stroke="currentColor" stroke-width="2">
+<rect x="20" y="170" width="120" height="110"/>
+<circle cx="200" cy="255" r="16"/>
+<rect x="260" y="170" width="110" height="110"/>
+<rect x="410" y="225" width="34" height="30"/>
+<rect x="500" y="190" width="100" height="100"/>
+<rect x="600" y="190" width="100" height="100"/>
+<rect x="380" y="40" width="100" height="34"/>
+<rect x="495" y="100" width="110" height="34"/>
+<path d="M140 255H184M216 255H260M370 240H410M444 240H500"/>
+<path d="M480 57H550V100M550 134V190"/>
+<path d="M330 170V130H80V170" stroke-dasharray="6 5"/>
+<path d="M265 200H365M265 260H365" stroke-dasharray="2 4"/>
+<circle cx="300" cy="200" r="5"/>
+<circle cx="300" cy="260" r="5"/>
+</g>
+<g fill="currentColor" font-family="sans-serif" font-size="12" text-anchor="middle">
+<text x="80" y="230">Main tank</text>
+<text x="200" y="292">Transfer pump</text>
+<text x="330" y="226">Day tank</text>
+<text x="338" y="194">High float</text>
+<text x="338" y="278">Low float</text>
+<text x="205" y="122">Overflow return line</text>
+<text x="427" y="272">Filter</text>
+<text x="550" y="244">Burner</text>
+<text x="650" y="244">Boiler</text>
+<text x="430" y="62">Gas train</text>
+<text x="550" y="122">Gas / oil selector</text>
+<text x="430" y="28">Gas supply (interruptible)</text>
+</g>
+</svg>
+<figcaption>Simplified path: oil moves from the main tank by transfer pump to the day tank; float switches start and stop the pump, and an overflow line sends excess back to the main tank. Oil then passes a filter to the burner, where a selector chooses oil or the gas train.</figcaption>
+</figure>
+<p>For the oil line from the day tank to the burner (filters, line sizing, air leaks), the home-system lesson <a href="oil-burner-fuel-filters-oil-lines-and-air-leaks-losing-prime.html">Oil Burner Fuel Filters, Oil Lines and Air Leaks</a> covers the same failure modes, and they apply here too.</p>
+
+<h2>Fuel quality and storage life</h2>
+<p>A tank that rarely supplies the burner is a quiet place for problems to grow. The National Oilheat Research Alliance (NORA) storage manual says heating fuel ages from heat, oxygen, microorganisms, metals and oxides, and that aged fuel plus moisture makes sludge that clogs lines, filters, pumps and nozzles. It says bacteria can live in water in the tank and feed on the fuel, water settles at the bottom, and condensation alone can add water to a partly full tank. It describes finding water with a gauge stick and water-finding paste, and says pumping out water treats the symptom: find where it came from. It also recommends keeping oil filters indoors. For the NJ side of tank care, see <a href="home-heating-oil-tanks-in-new-jersey-basics-leaks-and-what-owners-should-know.html">Home Heating Oil Tanks in New Jersey</a>, which is written for homes but describes the same leak and sludge issues.</p>
+<p>Our own suggestion, not from a source: record the water check and the filter condition each time you test, and compare the entries. A filter that plugs more often than before points back to the tank.</p>
+
+<h2>Switchover and test burns</h2>
+<p>Exact steps depend on the burner, so follow the maker's manual and your site's written procedure. As a general outline of what a procedure should cover, we would expect: confirm the main tank level and that the transfer pumps are in auto; confirm the day tank level and filter; check the oil valves; change the fuel selection; then watch the burner run through its normal start sequence and verify stable flame and combustion on oil. The BPU order is the argument for writing it down. A utility notice may arrive with a few hours of warning, and the order shows what can go wrong when nobody has a procedure or a log.</p>
+<p>How often to test is not set by any source we read. The tariff, the utility, the owner's insurer and the boiler maker's manual are where to look. We would at least run a test long enough to turn over the day tank piping, because oil that has sat in a line is the oil most likely to cause a nozzle or filter problem.</p>
+
+<h2>Re-tune on oil</h2>
+<p>Gas and oil do not burn the same, so a burner tuned only on gas is not tuned. The EPA's boiler tune-up guide says to measure oxygen and carbon monoxide with a flue gas analyzer at high fire or typical load, and gives typical steam-boiler oxygen ranges. With automatic oxygen trim, the table lists 1.5 to 3.0 percent for natural gas and 2.0 to 3.0 percent for No. 2 oil (wet basis); with simple positioning control it lists 3.0 to 7.0 percent for both. The guide says to use manufacturer specifications first and that its table is for when those are not available. It adds that NOx adjustments come after combustion adjustments and that low-NOx setups can need higher oxygen. See <a href="combustion-analyzer-readings-o2-co2-co-air-free-and-excess-air.html">Combustion Analyzer Readings</a> for how to read the numbers, and <a href="boiler-nox-emissions-low-nox-burners-flue-gas-recirculation-and-new-jersey-air-permit-basics.html">Boiler NOx Emissions</a>, because an air permit can limit what you may do on each fuel.</p>
+
+<h2>Worked example: how long does the oil last?</h2>
+<p>This example is Our own. All inputs are assumptions except the heating value.</p>
+<ul>
+<li>Assumed burner input: 6,000 MBH, which is 6,000,000 Btu per hour.</li>
+<li>Heating value: the U.S. Energy Information Administration lists 137,380 Btu per gallon for distillate fuel oil with 15 ppm sulfur or less (Monthly Energy Review, Table A1). We use that.</li>
+<li>Assumed main tank: 10,000 gallons, with 80 percent usable, so 8,000 gallons.</li>
+<li>Assumed runtime: the equivalent of 12 hours per day at full input.</li>
+</ul>
+<p>Step 1, gallons per hour: 6,000,000 Btu/h divided by 137,380 Btu/gal is about 43.7 gal/h.</p>
+<p>Step 2, gallons per day: 43.7 gal/h times 12 h is about 524 gal/day.</p>
+<p>Step 3, days of run: 8,000 gal divided by 524 gal/day is about 15.3 days.</p>
+<p>Check against a seven-day target: the BPU order says a related schedule asks for at least seven days of fuel. At 24 hours a day, 43.7 gal/h is about 1,048 gal/day, and seven days is about 7,337 gallons. The 8,000 usable gallons clears that by roughly 660 gallons. Real boilers seldom fire at full input all day, and the actual requirement comes from your tariff.</p>
+<p>Day tank check: with an assumed 275-gallon day tank, 275 divided by 43.7 is about 6.3 hours at full input. That is how long the plant runs if the transfer pumps stop, which is why the pump alternator, float switches and alarms matter.</p>
+
+<h2>Tank rules in New Jersey: the basics</h2>
+<p>Underground tanks: an NJDEP fact sheet says heating oil tanks used for residential heating are exempt at any size, non-residential heating oil tanks are regulated under state law above 2,000 gallons in total, and heating oil used in a commercial process is covered. The NJDEP UST FAQ adds that people working on regulated tanks must be certified by the department in the right classification, and that a tank empty more than 12 months generally must be closed.</p>
+<p>Aboveground tanks: the EPA's SPCC brochure says the federal plan rule applies at more than 1,320 gallons of aggregate aboveground oil storage, counting containers of 55 gallons or more, when a discharge to navigable waters is reasonably expected. A day tank therefore counts toward the total. The plan covers containment, overfill prevention and visual inspections. New Jersey also has its own discharge prevention rules, N.J.A.C. 7:1E, with plans for larger "major facilities"; a consultancy article we read gave the thresholds, so confirm with NJDEP. For installation of oil-burning equipment, NFPA 31 is the standard to name. We do not link or copy it. Your inspector decides what applies.</p>
+
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Dual-Fuel Boilers and Oil Backup</h2><p><em>The backup is part of the rate. Test it, log it.</em></p><ul><li>Interruptible gas is cheaper because the utility can order a stop; one NJ order cites 8 hours notice.</li><li>Oil path: main tank, transfer pump, day tank, filter, burner.</li><li>Float switches run the pump; alarms and an overflow return protect the tank.</li><li>Water settles low in a tank; check it and find the source.</li><li>Re-tune on each fuel with a flue gas analyzer; follow the maker.</li><li>Gallons per hour = Btu/h input divided by Btu per gallon.</li><li>Keep written procedures and test logs.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="oil-burner-fuel-filters-oil-lines-and-air-leaks-losing-prime.html">Oil Burner Fuel Filters, Oil Lines and Air Leaks</a></li><li><a href="home-heating-oil-tanks-in-new-jersey-basics-leaks-and-what-owners-should-know.html">Home Heating Oil Tanks in New Jersey</a></li><li><a href="boiler-nox-emissions-low-nox-burners-flue-gas-recirculation-and-new-jersey-air-permit-basics.html">Boiler NOx Emissions and New Jersey Air Permit Basics</a></li><li><a href="combustion-analyzer-readings-o2-co2-co-air-free-and-excess-air.html">Combustion Analyzer Readings</a></li><li><a href="boiler-controls-and-safety-devices-test-record-what-to-write-down.html">Boiler Controls and Safety Devices: Test, Record, What to Write Down</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li><a href="https://www.nj.gov/bpu/pdf/boardorders/2024/20240724/2A%20ORDER%20TCNJ%20Penalty.pdf">NJ Board of Public Utilities: Order, Docket No. GC18111234 (July 24, 2024), interruptible service, alternate fuel and penalty</a></li>
+<li><a href="https://www.nj.gov/bpu/pdf/boardorders/2023/20230217/2C%20ORDER%20TCNJ%20PSE&amp;G%20Penalty%20Relief.pdf">NJ Board of Public Utilities: Order (February 17, 2023), January 2018 oil switchover notice</a></li>
+<li><a href="https://nj.pseg.com/-/media/pseg/global/gathercontentdocuments/8-4-3-5bpunjno12august12000january82002/gtariff_2000_oct10.ashx">PSE&amp;G gas tariff sheets, effective October 10, 2000: interruptible rate schedule names</a></li>
+<li><a href="https://www.nj.gov/dep/srp/bust/regulated_ust_fact_sheet.pdf">NJDEP: Regulated underground storage tanks fact sheet</a></li>
+<li><a href="https://www.nj.gov/dep/srp/bust/faq.htm">NJDEP: Underground storage tank program FAQ</a></li>
+<li><a href="https://19january2021snapshot.epa.gov/sites/static/files/documents/spccbluebroch.pdf">U.S. EPA: SPCC regulation brochure (archived snapshot)</a></li>
+<li><a href="https://www.epa.gov/sites/production/files/2016-09/documents/tune-up_guide.pdf">U.S. EPA: Boiler tune-up guide</a></li>
+<li><a href="https://www.eia.gov/totalenergy/data/monthly/pdf/sec12.pdf">U.S. Energy Information Administration: Monthly Energy Review, Appendix A, Table A1, approximate heat content of petroleum</a></li>
+<li><a href="https://jhfre.jhu.edu/wp-content/uploads/2024/12/SECTION-231100-Fuel-Oil-Specialties.pdf">Johns Hopkins University facilities: Section 231100, Fuel Oil Specialties (example owner specification)</a></li>
+<li><a href="https://www.all4inc.com/4-the-record-articles/state-specific-considerations-for-spcc-plans-ny-and-nj/">ALL4: State-specific considerations for SPCC plans, NY and NJ (consultancy article, secondary)</a></li>
+<li>National Oilheat Research Alliance (NORA), Advanced Heating Fuel Storage Manual (2020), as reposted by a third party; cited without a link.</li>
+<li>Viking Pump, Inc., Duplex Fuel Oil Systems brochure, Form 333-B, as hosted by a distributor; cited without a link.</li>
+<li>Power-Flame Model WCR burner data sheet, Part No. 550-141-938/0625, as hosted on a boiler maker's site; cited without a link.</li>
+<li>NFPA 31, Standard for the Installation of Oil-Burning Equipment (2024 edition), named only; the standard is not linked or copied here.</li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
