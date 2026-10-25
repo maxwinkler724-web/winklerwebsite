@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chiller Evaporator Freeze-Up: Cutouts, Rupture and Post-Trip Checks</title>
+<meta property="og:title" content="Chiller Evaporator Freeze-Up: Cutouts, Rupture and Post-Trip Checks"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="How chiller evaporators freeze from low flow, low charge or bad sensors, what the cutouts do, what a rupture means, and what to check before a reset.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Chiller Evaporator Freeze-Up: Cutouts, Rupture and Post-Trip Checks", "about": "Plant systems", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/chiller-evaporator-freeze-up-low-flow-low-refrigerant-temperature-cutouts-tube-rupture-and-what-to-check-after-a-trip.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/chiller-evaporator-freeze-up-low-flow-low-refrigerant-temperature-cutouts-tube-rupture-and-what-to-check-after-a-trip.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/chiller-evaporator-freeze-up-low-flow-low-refrigerant-temperature-cutouts-tube-rupture-and-what-to-check-after-a-trip.html"><meta property="og:description" content="How chiller evaporators freeze from low flow, low charge or bad sensors, what the cutouts do, what a rupture means, and what to check before a reset."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Chiller Evaporator Freeze-Up: Cutouts, Rupture and Post-Trip Checks", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/chiller-evaporator-freeze-up-low-flow-low-refrigerant-temperature-cutouts-tube-rupture-and-what-to-check-after-a-trip.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Plant systems</span>
+<h1>Chiller Evaporator Freeze-Up: Cutouts, Rupture and Post-Trip Checks</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">Chilled water leaves the evaporator only a few degrees above freezing. When flow drops, the margin disappears fast. This lesson covers how freeze-ups start, which safeties watch for them, what ice does to tubes and plates, and what to check before you reset.</p>
+<h2>Check the unit manual</h2>
+<p><strong>Check the unit manual.</strong> Setpoints, reset steps and wiring differ by model. Your chiller's manual and your site procedure govern.</p>
+<h2>How an evaporator freezes</h2>
+<p>An evaporator freezes when the refrigerant in it gets colder than the freezing point of the fluid on the other side. A brazed plate maker's guide names three risk factors: low evaporating temperature, low water temperature, and low total or local water flow. One starved spot is enough.</p>
+<ul>
+<li><strong>Low flow.</strong> Closed valve, clogged strainer, failed pump or cavitation, per the same guide.</li>
+<li><strong>Low charge.</strong> A chiller maker's support article lists undercharge as a cause of a low refrigerant temperature trip.</li>
+<li><strong>Bad sensors.</strong> The same article lists a failed evaporator or suction temperature sensor.</li>
+<li><strong>Setpoints and glycol.</strong> A low leaving water setpoint, or a cutout not reset after glycol was added. The maker article says the cutout must suit the glycol in the loop.</li>
+<li><strong>Control behavior.</strong> The same article says load swings faster than the control can follow (it cites 1 to 2 F per minute) can dry out the evaporator and trip the low refrigerant cutout.</li>
+<li><strong>Shutdown and start-up.</strong> The plate guide names pump-down stops, the compressor and pump stopping together below 0 C, and low-ambient start-up. It says to run the pump for some minutes after the compressor stops.</li>
+</ul>
+<h3>Why the outlet end</h3>
+<p>Our own explanation: water gives up heat as it moves along the tubes, so it is coldest at the outlet end. That is where the figure shows ice.</p>
+<figure>
+<svg viewBox="0 0 640 300" role="img" aria-label="Side view of a chiller evaporator barrel with water entering at the left and leaving at the right, a flow switch on the inlet pipe, a leaving water sensor on the outlet pipe, a refrigerant temperature sensor on the shell, and ice forming at the tube outlet end" style="max-width:100%;height:auto" fill="none" stroke="currentColor" stroke-width="2">
+<title>Chiller evaporator barrel with flow switch, leaving water sensor, refrigerant temperature sensor and ice at the outlet end</title>
+<rect x="150" y="90" width="340" height="110" rx="14"/>
+<line x1="165" y1="115" x2="475" y2="115" stroke-width="1.5"/>
+<line x1="165" y1="145" x2="475" y2="145" stroke-width="1.5"/>
+<line x1="165" y1="175" x2="475" y2="175" stroke-width="1.5"/>
+<path d="M60 145 H150" stroke-width="5"/>
+<path d="M490 145 H580" stroke-width="5"/>
+<path d="M105 130 L125 145 L105 160" stroke-width="2"/>
+<path d="M535 130 L555 145 L535 160" stroke-width="2"/>
+<g fill="currentColor" fill-opacity="0.25" stroke-width="1.5">
+<circle cx="448" cy="115" r="9"/><circle cx="462" cy="145" r="10"/><circle cx="448" cy="175" r="9"/><circle cx="472" cy="130" r="7"/><circle cx="472" cy="162" r="7"/>
+</g>
+<rect x="88" y="95" width="34" height="22" rx="3"/>
+<line x1="105" y1="117" x2="105" y2="137"/>
+<line x1="540" y1="145" x2="540" y2="120"/>
+<circle cx="540" cy="112" r="8"/>
+<line x1="320" y1="200" x2="320" y2="225"/>
+<circle cx="320" cy="233" r="8"/>
+<g fill="currentColor" stroke="none" font-size="14" font-family="system-ui, sans-serif">
+<text x="30" y="176">Water in</text>
+<text x="520" y="176">Water out</text>
+<text x="30" y="86">Flow switch</text>
+<text x="470" y="82">Leaving water sensor</text>
+<text x="338" y="238">Refrigerant temperature sensor</text>
+<text x="388" y="62">Ice forms at tube outlet end</text>
+<text x="196" y="266">Refrigerant on the shell side, water in the tubes</text>
+</g>
+</svg>
+<figcaption>Our own drawing: single-pass evaporator with water in the tubes. The flow switch stops the compressor on low flow, the leaving water sensor and refrigerant temperature sensor trip on cold, and ice shows first where the water is coldest.</figcaption>
+</figure>
+<h2>The protective devices</h2>
+<p>Public specifications show how these devices are grouped. A federal water-cooled chiller specification lists loss of chilled water flow, low chilled water temperature and low evaporator refrigerant temperature (or pressure) as shutdowns that need a manual reset. A Department of Defense guide specification says the same and adds that a brazed plate cooler comes with factory flow switches.</p>
+<ul>
+<li><strong>Flow proof.</strong> A chiller maker's flow switch article says to wire the flow switch in series with the pump interlock and set it to open below the minimum flow in the unit data. Switch types are in <a href="proof-of-flow-on-chillers-and-boilers-paddle-switches-differential-pressure-switches-and-thermal-dispersion-sensors.html">Proof of Flow on Chillers and Boilers</a>.</li>
+<li><strong>Low leaving water temperature.</strong> The plate guide says this cutout should be as high as practical without disturbing normal operation.</li>
+<li><strong>Low refrigerant temperature or pressure.</strong> The plate guide says low pressure control protects well but is often bypassed during start-up, the riskiest period, and the compressor's own cutout is usually set far lower and will not protect a plate exchanger. It prefers saturation pressure at the evaporator outlet over line temperatures.</li>
+</ul>
+<p>The VA specification also describes a low-pressure switch set 5 psig above the factory switch that unloads the compressor first, so the chiller can ride through a near-trip. See <a href="chiller-startup-shutdown-sequence-and-safeties.html">Chiller Start-Up and Shutdown</a>, and <a href="variable-primary-flow-chilled-water-plants-minimum-evaporator-flow-bypass-valves-and-flow-rate-of-change.html">Variable Primary Flow Chilled Water</a>.</p>
+<h2>Worked example: how little margin low flow leaves</h2>
+<p>The constant 24 comes from 12,000 / 500. One ton is 12,000 Btu/h. The 500 is the water factor: about 8.33 lb per gallon times 60 minutes per hour times 1 Btu per lb per F, which is 499.8, rounded to 500. So gpm = tons x 12,000 / (500 x &Delta;T) = tons x 24 / &Delta;T. (Our own derivation.)</p>
+<p><strong>Assumptions (ours):</strong> a 200-ton chiller at full load, 54 F entering and 44 F leaving water, plain water, load unchanged when flow falls, entering water still 54 F, and an assumed low leaving water cutout of 36 F. That 36 F is our round number, not a published value; real cutouts are in the unit manual.</p>
+<ol>
+<li>Design &Delta;T = 54 &minus; 44 = 10 F.</li>
+<li>Design flow = 200 x 24 / 10 = 4,800 / 10 = <strong>480 gpm</strong>.</li>
+<li>Flow falls to 300 gpm, which is 300 / 480 = 62.5 percent of design.</li>
+<li>New &Delta;T = 200 x 24 / 300 = 4,800 / 300 = <strong>16 F</strong>.</li>
+<li>Leaving water = 54 &minus; 16 = <strong>38 F</strong>.</li>
+<li>Margin to the assumed cutout = 38 &minus; 36 = 2 F. Margin to freezing = 38 &minus; 32 = 6 F in the water.</li>
+</ol>
+<p>The 6 F is less comfortable than it looks: 38 F is an average, the refrigerant is colder than the water, and local low flow can freeze one spot. A real machine would also unload as leaving water falls, which this model ignores. The point is the trend: a 37.5 percent flow loss turned a 10 F drop into 16 F. A flow switch set near design flow trips before this, which is why the plate guide says to set it at the highest practical flow.</p>
+<h2>What a tube or plate rupture does</h2>
+<p>Ice expands. A trade-press article on antifreeze says flash freezing of evaporator plates can cause permanent heat-exchanger damage, with cracks and leaks from the expanding ice. A crack can let water into the refrigerant circuit or refrigerant into the water loop. We found no public source on which to expect, so check both sides.</p>
+<p>A training-site article on compressor plating says moisture and air are the most likely path to acid, which dissolves copper and brass and redeposits it inside the compressor. A chiller maker's support article for broken tubes says to drain the water quickly, dehydrate the refrigerant side with a vacuum pump, remove the heads, pressure test for leaking tubes, and have the remaining tubes eddy current tested. It adds that dehydration does not guarantee there is no damage, since internal bearings and rotors can corrode. We found no published acid limit for this case.</p>
+<h2>What to check after a freeze trip, before you reset</h2>
+<p>A trade supplier's article warns not to reset or bypass the flow switch until the cause of the low flow fault is found. The specifications above require manual reset on these trips so a person looks first. Our checklist:</p>
+<ol>
+<li><strong>Read the fault and the trend.</strong> Flow, leaving water or refrigerant temperature? Review the trend before the trip. See <a href="chiller-approach-temperatures-reading-the-trend.html">Chiller Approach Temperatures</a>.</li>
+<li><strong>Prove flow.</strong> Check pump running, valve positions, strainer, air in the loop and the flow switch itself. Confirm the pump starts before the compressor.</li>
+<li><strong>Check the setpoints.</strong> Leaving water setpoint, cutout setting and glycol concentration should agree.</li>
+<li><strong>Check the sensors.</strong> Compare the leaving water and refrigerant temperature readings with a known-good thermometer or gauge.</li>
+<li><strong>Check charge and the expansion device.</strong> The maker article lists undercharge and a sticking electronic expansion valve.</li>
+<li><strong>Look for a leak.</strong> Do not restart a machine you suspect has ruptured.</li>
+<li><strong>Reset once, with the cause fixed.</strong></li>
+</ol>
+<h2>Glycol for low setpoints</h2>
+<p>A trade-press article gives maximum concentrations of 40 percent ethylene and 50 percent propylene by weight, and warns that higher concentration lowers Btu output and pump flow. One small chiller manual sets the minimum controller setpoint at 46 F with plain water and 42 F with a 33 percent propylene solution. Glycol adds margin but does not replace flow protection. For coils in winter see <a href="winterizing-chilled-water-coils-draining-blowing-out-and-glycol-to-prevent-freeze-damage.html">Winterizing Chilled Water Coils</a>.</p>
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Chiller Evaporator Freeze-Up</h2><p><em>Find why the water stopped moving or the refrigerant got cold, then reset.</em></p><ul><li>Gpm = tons x 24 / &Delta;T. The 24 is 12,000 / 500.</li><li>Cutouts: flow proof, low leaving water, low refrigerant temperature or pressure. Specs call for manual reset.</li><li>Ice can crack tubes or plates. Water in refrigerant means acid risk: follow maker steps.</li><li>Glycol needs a matching cutout and costs capacity and pump flow.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="proof-of-flow-on-chillers-and-boilers-paddle-switches-differential-pressure-switches-and-thermal-dispersion-sensors.html">Proof of Flow on Chillers and Boilers</a></li><li><a href="chiller-startup-shutdown-sequence-and-safeties.html">Chiller Start-Up and Shutdown: Sequence and Safeties</a></li><li><a href="variable-primary-flow-chilled-water-plants-minimum-evaporator-flow-bypass-valves-and-flow-rate-of-change.html">Variable Primary Flow Chilled Water: Minimum Flow and Bypass Valves</a></li><li><a href="winterizing-chilled-water-coils-draining-blowing-out-and-glycol-to-prevent-freeze-damage.html">Winterizing Chilled Water Coils: Drain, Blow Out, Glycol</a></li><li><a href="chiller-approach-temperatures-reading-the-trend.html">Chiller Approach Temperatures: Reading the Trend</a></li><li><a href="start-here.html">Start Here</a></li><li><a href="../products.html">Study packs and printables</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources"><li><a href="https://www.wbdg.org/FFC/VA/VAASC/VA%2023%2064%2000.pdf">VA design specification 23 64 00, Packaged Water Chillers (WBDG): shutdown list, manual reset, unloading low-pressure switch</a></li><li>Unified Facilities Guide Specification 23 64 10, Chilled Water Supply System (WBDG): manual and automatic reset, flow switches (cited as plain text)</li><li><a href="https://www.achrnews.com/articles/90946-does-your-chiller-need-antifreeze">ACHR News: Does Your Chiller Need Antifreeze?</a></li><li>Brazed plate heat exchanger maker, refrigerant handbook section 8.4 and freeze protection guide (plain text, no link)</li><li>Chiller maker support articles: low evaporator refrigerant temperature, broken evaporator tubes, freeze avoidance and pump control, and evaporator flow switch requirements (plain text, no link)</li><li>Packaged chiller maker installation instructions for a small unit, low water temperature and glycol section (plain text, no link)</li><li>Chiller supplier article, chiller safety switches and cutouts (plain text, no link)</li><li>Training site article on copper plating inside the compressor (plain text, no link)</li></ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div>
+</main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
