@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Metering in Both Directions: Check Valves, Bi-Flow Devices and One-Mode-Only Problems</title>
+<meta property="og:title" content="Metering in Both Directions: Check Valves, Bi-Flow Devices and One-Mode-Only Problems"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Why each coil needs its own metering device, how check valves bypass the idle one, bi-flow valves and driers, and one-mode-only faults.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Metering in Both Directions: Check Valves, Bi-Flow Devices and One-Mode-Only Problems", "about": "Heat pumps", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/heat-pump-metering-in-both-directions-check-valves-bi-flow-txvs-pistons-bi-flow-filter-driers-and-one-mode-only-problems.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/heat-pump-metering-in-both-directions-check-valves-bi-flow-txvs-pistons-bi-flow-filter-driers-and-one-mode-only-problems.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/heat-pump-metering-in-both-directions-check-valves-bi-flow-txvs-pistons-bi-flow-filter-driers-and-one-mode-only-problems.html"><meta property="og:description" content="Why each coil needs its own metering device, how check valves bypass the idle one, bi-flow valves and driers, and one-mode-only faults."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Metering in Both Directions: Check Valves, Bi-Flow Devices and One-Mode-Only Problems", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/heat-pump-metering-in-both-directions-check-valves-bi-flow-txvs-pistons-bi-flow-filter-driers-and-one-mode-only-problems.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Heat pumps</span>
+<h1>Metering in Both Directions: Check Valves, Bi-Flow Devices and One-Mode-Only Problems</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">A heat pump moves refrigerant one way in cooling and the other way in heating, but a metering device only works well in one direction. This lesson shows how a heat pump handles that, and why a fault in the bypass path can leave a system that cools fine and heats badly.</p>
+<h2>Why each coil needs its own metering device</h2>
+<p>When the reversing valve flips, the outdoor coil changes from condenser to evaporator and the indoor coil does the opposite. Whichever coil is the evaporator needs liquid refrigerant throttled down right at its inlet. A U.S. patent on a bi-directional expansion device explains the problem plainly: the refrigerant must be throttled in the opposite direction between the heat exchangers when the mode changes. That patent also says a typical heat pump has used two expansion devices of different sizes, because the flow the system wants in cooling can be about 10 to 80 percent greater than in heating (see Sources). The cooling-sized device and the heating-sized device are not interchangeable, so a conventional split system keeps one near each coil.</p>
+<h2>Check valves bypass the idle device</h2>
+<p>Only one device should meter in a given mode. The patent describes it this way: the refrigerant bypasses the expansion device that is passive and is metered through the active one. Each metering device therefore has a check valve in parallel with it. A check valve is a one-way valve, usually a ball or disc held against a seat. Pressure difference pushes it open one way and presses it shut the other way.</p>
+<p>In cooling, liquid leaves the outdoor condenser, pushes the outdoor check valve open, and skips the outdoor device. At the indoor coil the same flow direction presses the indoor check valve shut, so the liquid has to go through the indoor device. In heating everything swaps. Figure 1 shows heating mode.</p>
+<figure>
+<svg viewBox="0 0 760 430" role="img" aria-label="Heat pump in heating mode: outdoor coil, indoor coil, reversing valve, and two metering devices each with a parallel check valve; liquid flows from the indoor coil through the open indoor check valve, then through the outdoor metering device into the outdoor coil" style="max-width:100%;height:auto;width:100%" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" font-family="inherit">
+<title>Heating-mode flow through two metering devices with parallel check valves</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M1 1 L9 5 L1 9 z" fill="currentColor" stroke="none"/></marker></defs>
+<rect x="50" y="130" width="110" height="160" rx="6"/>
+<rect x="600" y="130" width="110" height="160" rx="6"/>
+<rect x="300" y="40" width="160" height="50" rx="6"/>
+<g fill="currentColor" stroke="none" font-size="14" text-anchor="middle">
+<text x="105" y="160">Outdoor coil</text>
+<text x="655" y="160">Indoor coil</text>
+<text x="380" y="70">Reversing valve</text>
+<text x="105" y="205">Evaporator</text><text x="105" y="225" font-size="12">(heating mode)</text>
+<text x="655" y="205">Condenser</text><text x="655" y="225" font-size="12">(heating mode)</text>
+</g>
+<!-- vapor lines -->
+<path d="M105 130 V65 H300" marker-end="url(#ah)" stroke-dasharray="6 4"/>
+<path d="M460 65 H655 V130" marker-end="url(#ah)"/>
+<g fill="currentColor" stroke="none" font-size="12" text-anchor="middle">
+<text x="205" y="52">Vapor back to valve</text>
+<text x="555" y="52">Hot gas to indoor coil</text>
+</g>
+<!-- liquid line, heating flow right to left -->
+<path d="M655 290 V360 H610"/>
+<path d="M610 360 V322 H500" marker-end="url(#ah)"/>
+<path d="M500 360 H260" marker-end="url(#ah)"/>
+<path d="M610 360 H500" stroke-dasharray="3 5"/>
+<path d="M500 322 V360"/>
+<rect x="530" y="345" width="50" height="30" fill="none" stroke-dasharray="3 3"/>
+<path d="M260 360 H230"/>
+<rect x="180" y="345" width="50" height="30" />
+<path d="M180 360 H105 V290" marker-end="url(#ah)"/>
+<path d="M260 360 V322 H150 V360" stroke-dasharray="3 5"/>
+<circle cx="555" cy="322" r="9"/><path d="M549 322 H561" />
+<circle cx="205" cy="322" r="9"/><path d="M205 314 V330"/>
+<g fill="currentColor" stroke="none" font-size="12" text-anchor="middle">
+<text x="555" y="304">check valve</text>
+<text x="205" y="304">check valve</text>
+<text x="380" y="352">Liquid line (flow to the left)</text>
+<text x="555" y="398" font-size="13">Indoor device (idle)</text>
+<text x="555" y="416">check open, flow bypasses</text>
+<text x="205" y="398" font-size="13">Outdoor device (active)</text>
+<text x="205" y="416">check shut, flow is metered</text>
+</g>
+</svg>
+<figcaption>Figure 1. Heating mode (our own diagram, compressor not shown). Solid arrows show where refrigerant flows. Dotted paths carry no flow. The indoor check valve opens and bypasses the indoor device, the outdoor check valve is shut, and the outdoor device meters the liquid into the outdoor coil.</figcaption>
+</figure>
+<h2>Bi-flow devices: one device, both directions</h2>
+<p>Two devices and two check valves cost parts and labor, so makers have long looked for one device that works both ways. The patent literature describes bi-flow devices that restrict flow differently depending on direction, so one tube or one body replaces both devices and both check valves.</p>
+<ul>
+<li><strong>Piston (fixed orifice) with a check feature.</strong> The orifice sits in a piston that moves in its housing. Flow one way seats it and forces refrigerant through the orifice. Flow the other way pushes it off the seat so refrigerant passes around it. A patent describing this older design says the orifice is in a movable piston that does not always seal with its seat, and that turbulence may make it back off the seat in operation. That is the failure picture to keep in mind: a worn or dirty seat leaks.</li>
+<li><strong>Bi-flow TXV.</strong> A maker's valve catalog says a single bi-directional thermostatic expansion valve can control superheat in both modes, that only externally equalized valves can be used, and that balanced-port types suit the job because their internal design stops liquid bypass through the equalizer connection.</li>
+<li><strong>Bi-flow electronic valve.</strong> A patent on a reversible-flow electronic expansion valve says earlier heat pump designs with these valves typically used check valves to route refrigerant around the valve in reverse flow, and that a needle-type valve pulled far open still gave undesirable pressure differences. Its answer is a valve that handles reverse flow without a bypass. See <a href="electronic-expansion-valves-stepper-motors-sensors-and-field-checks.html">Electronic Expansion Valves: Stepper Motors, Sensors and Field Checks</a>. Follow the maker on whether a bypass is needed.</li>
+</ul>
+<h2>Bi-flow driers versus a standard drier installed wrong</h2>
+<p>A standard liquid-line drier is built for flow in one direction. If it sits in the common liquid line of a heat pump, the flow reverses every mode change. A maker's heat pump drier bulletin says reverse flow washes out dirt that was already collected and raises pressure drop. A bi-flow (reversible) drier has check valves built into the shell at both ends so that filtering always happens on the outside of the core, and dirt caught in one mode stays put when the flow reverses.</p>
+<p>Two other points from the same maker literature. A reversible drier belongs only in the reversing liquid line between the indoor and outdoor sections, never in the gas line, except small systems of 1 ton or less. And systems with a single bi-directional TXV or a special short restrictor should use a reversible drier between the device and the outdoor coil. Many makers instead use two standard driers, each seeing flow in only one direction, one ahead of each metering device. See <a href="filter-driers-and-sight-glasses-what-they-tell-you.html">Filter-Driers and Sight Glasses</a> for how driers work.</p>
+<h2>Where the drier goes after a compressor change</h2>
+<p>After a burnout, the maker literature we read says to recover the refrigerant, replace the compressor, and inspect the reversing valve, metering devices and check valves for contaminants, since those close-tolerance parts are where debris lodges. Then remove old driers and fit one of these arrangements:</p>
+<ul>
+<li>The same size or larger standard driers ahead of each metering device, plus a suction-line drier. If the unit had two liquid-line driers, change both.</li>
+<li>A reversible drier in the common liquid line, plus a suction-line drier if the piping allows. The suction-line drier goes between the reversing valve and the compressor, and after the accumulator is preferred where contaminants remain.</li>
+<li>A temporary standard drier in the common liquid line, with the unit run in one mode only, then replaced by a reversible drier. The bulletin says that is acceptable only because reverse flow would otherwise dump what the drier holds.</li>
+</ul>
+<p>For the cleanup steps themselves see <a href="compressor-burnout-cleanup-acid-tests-suction-filter-driers-and-oil-checks.html">Compressor Burnout Cleanup</a>.</p>
+<h2>Symptoms of a leaking or stuck check valve</h2>
+<p>The key clue is the mode. The check valve of the idle device does nothing in the other mode, so a fault often shows in only one.</p>
+<ul>
+<li><strong>Stuck closed (will not open).</strong> In the mode where it should bypass, all the liquid is forced through the idle device and then through the active one. Two restrictions in series starve the evaporator: low suction pressure, high superheat, and liquid backing up in the condenser so subcooling rises.</li>
+<li><strong>Leaking or stuck open (will not seal).</strong> In the mode where the device should meter, part of the liquid skips the device through the bypass. That tends to flood the evaporator: higher suction pressure, low superheat, lower head pressure, and a weak temperature rise or drop across the coils.</li>
+<li><strong>Plugged or damaged piston or strainer.</strong> The active device passes too little. Symptoms match the starved case, and a partly blocked orifice often frosts at the device or distributor.</li>
+</ul>
+<p>These patterns are our own reasoning from the refrigeration cycle, not figures from a maker. Always compare against the maker's data and rule out charge and airflow first; see <a href="checking-heat-pump-charge-in-heating-mode-why-makers-prefer-weigh-in-heating-charts-and-what-pressures-tell-you.html">Checking Heat Pump Charge in Heating Mode</a>.</p>
+<h2>Worked example (ours, with assumed readings)</h2>
+<p>This is our own example. Every reading below is an assumption chosen to show the method, not a field measurement or a maker value.</p>
+<p><strong>Cooling mode (all assumed):</strong> suction saturation 40&deg;F, suction line 50&deg;F. Superheat = 50 - 40 = 10&deg;F. Condensing saturation 105&deg;F, liquid line 95&deg;F. Subcooling = 105 - 95 = 10&deg;F. Both look reasonable, so charge, airflow and the active indoor device are probably fine.</p>
+<p><strong>Heating mode, outdoor air 35&deg;F (all assumed):</strong> suction saturation 8&deg;F, suction line 45&deg;F. Superheat = 45 - 8 = 37&deg;F. Condensing saturation 110&deg;F, liquid leaving the indoor coil 88&deg;F. Subcooling = 110 - 88 = 22&deg;F. Suction is very low and superheat very high, yet subcooling is high rather than low. A true undercharge would starve both, with subcooling near zero. High subcooling together with high superheat points to a restriction between the two coils.</p>
+<p><strong>Why the indoor check valve fits.</strong> Cooling used the indoor device and the outdoor check valve. Heating uses the indoor check valve and the outdoor device. If the indoor check valve is stuck closed, cooling never touches it and works fine. In heating the liquid cannot bypass the indoor device, so it is throttled there first and again at the outdoor device. The outdoor coil gets too little flow and runs deep into low suction.</p>
+<p><strong>Temperature drop confirms it.</strong> Clamp a thermometer on the line just before and just after the indoor device in heating. A healthy bypass should show little change across it, since there is no pressure drop to cause cooling. Suppose we read 88&deg;F in and 60&deg;F out. Drop = 88 - 60 = 28&deg;F across a device that should be idle, and it may be frosty or cold to the touch. That is the check valve stuck closed. If instead the drop appears across the outdoor device and there is a large step beyond what the active device normally shows, suspect a plugged piston or strainer there, and compare to the maker's expected values. Either way, recover refrigerant before opening the circuit, replace the part, fit a new drier, and evacuate before recharging.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Metering in both directions</h2><p><em>The idle device is bypassed. If the bypass fails, one mode suffers.</em></p><ul><li>Each mode meters at the evaporator inlet; the other device is bypassed by its check valve.</li><li>Bi-flow piston, bi-flow TXV and reversible electronic valves can replace two devices and two check valves.</li><li>A standard drier in the reversing line washes out dirt; use a reversible drier there.</li><li>Check valves stuck closed give a starved coil in one mode; leaking ones flood it.</li><li>Good in one mode, bad in the other: suspect a metering device or check valve before charge.</li><li>A temperature drop across a device that should be idle is the clue.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul>
+<li><a href="heat-pump-basics.html">Heat Pump Basics</a></li>
+<li><a href="reversing-valve-diagnosis-and-o-vs-b.html">Reversing Valve Diagnosis and O vs B</a></li>
+<li><a href="checking-heat-pump-charge-in-heating-mode-why-makers-prefer-weigh-in-heating-charts-and-what-pressures-tell-you.html">Checking Heat Pump Charge in Heating Mode</a></li>
+<li><a href="filter-driers-and-sight-glasses-what-they-tell-you.html">Filter-Driers and Sight Glasses: What They Tell You</a></li>
+<li><a href="txv-sensing-bulb-placement-equalizers-and-adjusting-superheat.html">TXV Sensing Bulb Placement, Equalizers and Adjusting Superheat</a></li>
+</ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li>U.S. Patent 5,345,780, bi-flow expansion device (background on two sized devices, 10 to 80 percent flow difference, check-valve bypass of the passive device). Public patent document, read 2026.</li>
+<li>U.S. Patent 5,052,192, dual flow expansion device for heat pump systems (background on reversing flow, parallel bypass arrangements, fixed orifices). Public patent document, read 2026.</li>
+<li>U.S. Patent 4,926,658, two-way flow control device (movable piston that does not always seal; turbulence moving the piston off its seat). Public patent document, read 2026.</li>
+<li>U.S. Patent 9,810,460, reversible flow electric expansion valve (check valves rerouting flow around an electronic valve in reverse operation). Public patent document, read 2026.</li>
+<li>Valve maker catalog on thermostatic expansion valve theory and applications, heat pump section (bi-directional TXV, externally equalized only, balanced port; plain-text citation).</li>
+<li>Filter-drier maker's bulletin on heat pump filter-driers (standard versus reversible driers, placement, burnout cleanup arrangements; plain-text citation).</li>
+<li>Filter-drier maker's installation sheet for reversible heat pump driers (built-in check valves, mounting, post-burnout steps; plain-text citation).</li>
+<li>Distributor catalog page for a bi-directional heat pump drier with internal nylon check valves (plain-text citation).</li>
+<li>Equipment maker's installation guide for a thermostatic expansion valve kit that replaces a fixed orifice, including the recommendation to install a liquid-line drier when the system has been open (plain-text citation).</li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
