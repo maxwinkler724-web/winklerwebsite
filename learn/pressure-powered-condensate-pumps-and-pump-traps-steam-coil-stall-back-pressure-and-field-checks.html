@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pressure-Powered Condensate Pumps and Pump Traps: Coil Stall and Field Checks</title>
+<meta property="og:title" content="Pressure-Powered Condensate Pumps and Pump Traps: Coil Stall and Field Checks"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Why modulating steam coils stall when coil pressure falls below trap back pressure, how pump traps fix it, plus a worked lift example and field checks.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Pressure-Powered Condensate Pumps and Pump Traps: Coil Stall and Field Checks", "about": "Plant systems", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/pressure-powered-condensate-pumps-and-pump-traps-steam-coil-stall-back-pressure-and-field-checks.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/pressure-powered-condensate-pumps-and-pump-traps-steam-coil-stall-back-pressure-and-field-checks.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/pressure-powered-condensate-pumps-and-pump-traps-steam-coil-stall-back-pressure-and-field-checks.html"><meta property="og:description" content="Why modulating steam coils stall when coil pressure falls below trap back pressure, how pump traps fix it, plus a worked lift example and field checks."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Pressure-Powered Condensate Pumps and Pump Traps: Coil Stall and Field Checks", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/pressure-powered-condensate-pumps-and-pump-traps-steam-coil-stall-back-pressure-and-field-checks.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Plant systems</span>
+<h1>Pressure-Powered Condensate Pumps and Pump Traps: Coil Stall and Field Checks</h1>
+<p class="small datel">Last updated: 2026-10-28</p>
+<p class="lede">A steam coil on a modulating control valve can run fine at design load and then flood on a mild day. The coil pressure fell below the pressure the trap has to push against. A pressure-powered pump, often called a pump trap, is the fix that uses steam instead of a motor. This lesson covers why stall happens, how the pump works, and how to check one in the field.</p>
+
+<h2>Why a modulating coil stalls</h2>
+<p>A trap moves condensate only when the pressure inside the coil is higher than the pressure on the trap outlet. That outlet pressure is the <strong>back pressure</strong>: the pressure in the return line plus the pressure needed to lift water to wherever the line goes. A Penn State facilities bulletin on coil drainage says pressure inside the coil holds the trap shut against the float, and that back pressure can keep a trap from draining the coil. A manufacturer's learning page describes the same thing as stall: at high load the steam pressure is above the back pressure, at low load it is below, and condensate then backs up and can flood the heat exchanger.</p>
+<p>A modulating valve causes this on purpose. As the load drops, the valve closes down and the coil pressure drops with it. A second Penn State selection guide asks for at least 0.5 psi of differential across any trap downstream of a modulating valve, and says not to lift condensate in that application. When the plan does not allow a gravity drain to a low return, a stalled coil is the result: cold spots, freeze risk, water hammer and corrosion from standing condensate.</p>
+<p>A manufacturer's learning page gives three ways out: keep the coil at or above atmospheric pressure with a vacuum breaker and drain by gravity, keep coil pressure steady and above back pressure, or accept the low pressure and use a pump trap. This lesson is about the third. For the trap itself, see <a href="steam-traps-explained.html">Steam Traps Explained</a> and <a href="steam-trap-types-and-where-each-fits.html">Steam Trap Types and Where Each Fits</a>.</p>
+
+<h2>How a pressure-powered pump works</h2>
+<p>The pump is a closed body with a float, a linked snap mechanism, and four connections. A manufacturer's installation summary for a pump trap describes the cycle:</p>
+<ol>
+<li><strong>Filling.</strong> Condensate flows in by gravity through the inlet check valve. The vent valve is open so the steam or air already in the body can be pushed out. The motive valve is closed.</li>
+<li><strong>Discharge.</strong> When the float reaches the upper trip point, the mechanism opens the motive valve and closes the vent. Motive steam (or air or gas) pressurizes the body, closes the inlet check, opens the outlet check and pushes the condensate out.</li>
+<li><strong>Reset.</strong> At the low trip point the motive valve closes and the vent opens. Pressure falls and the body refills.</li>
+</ol>
+<p>The two check valves keep the flow one way. The vent lets the body fill, and it must lead somewhere with lower pressure. A pump-trap combination adds a float trap inside the same body. When coil pressure is above back pressure, condensate passes through the trap and the pump never cycles. When the coil stalls, the pump takes over. A 1980s industry summary indexed by the U.S. Department of Energy's OSTI describes a float-operated pump of this kind running on steam, air or other gas at 5 to 125 psi, with no electric motor, using about 3 lb of steam to move 1,000 lb of liquid.</p>
+
+<h2>Filling head, reservoir and vent piping</h2>
+<p>The pump fills by gravity, so it sits below what it drains. The <strong>filling head</strong> is the vertical distance from the top of the pump body to the bottom of the reservoir above it. One manufacturer's summary lists capacity factors that rise from 0.70 at no head to 1.00 at 6 inches and 1.28 at 18 inches for its smaller inlets. Another manual recommends 6 inches for one model and 12 inches for another. A third brochure asks for at least 24 inches in a closed system when the vent ties back to the equipment inlet.</p>
+<p>The <strong>reservoir</strong> is a length of oversized pipe (or a tank) above the pump. It collects condensate that keeps arriving while the pump is discharging and closed to inflow. The manufacturer's summary sizes it from a table by load, and says custom reservoirs need vapor space. The <strong>vent line</strong> must be unobstructed and self-draining with no low points, and the same summary calls vent piping extremely important. A flooded reservoir can keep the pump from venting. Where the vent ties into a receiver, one brochure says a vacuum breaker is required.</p>
+
+<h2>Motive pressure versus back pressure</h2>
+<p>The motive supply must beat the back pressure with room to spare. One manual says motive pressure should be at least 5 psi above back pressure. Another suggests adjusting motive pressure to 0.6 to 1 bar (about 9 to 15 psi) above static back pressure when the pump is not keeping up. That manual also calls for a pressure-reducing valve and a relief valve when motive steam is above 125 psi. Take motive steam from a line that holds its pressure, not from the coil itself, which is the thing that is stalling. Put a gauge, isolation valve, strainer and drip trap on the motive line.</p>
+<p><strong>Sizing inputs.</strong> Capacity falls as back pressure rises, so use the maker's table. A pump-trap brochure lists the inputs as design (motive) pressure, back pressure, condensate inlet and outlet temperatures, and the stall load and its temperature, since the pump is sized for stall conditions.</p>
+
+<h2>Worked example (our own example)</h2>
+<p>A heating coil is fed 15 psig steam through a control valve. The trap discharges to a return main that is lifted 12 ft to an overhead return held at 2 psig. We assume the pipe is sized so friction loss is negligible, and the condensate is near water density. These numbers are our own; they are not from a real job.</p>
+<ol>
+<li><strong>Convert lift to pressure.</strong> Penn State's bulletin gives 1 psi = 2.31 ft of water column. So 12 ft &divide; 2.31 ft/psi = 5.19 psi, about 5.2 psi.</li>
+<li><strong>Add the return pressure.</strong> Back pressure = 5.19 + 2 = 7.19 psig, about 7.2 psig.</li>
+<li><strong>Find the stall point.</strong> The trap drains only while coil pressure is above 7.2 psig. Below that the coil stalls. Adding the 0.5 psi trap differential from the Penn State guide gives about 7.7 psig as a practical floor.</li>
+<li><strong>Compare with supply.</strong> At 15 psig the coil drains with 15 &minus; 7.2 = 7.8 psi to spare. Once the valve throttles the coil below 7.2 psig, and certainly below about 7.7 psig, the coil is stalled. In a heating coil that happens on mild days, which is why the problem shows up in spring and fall.</li>
+<li><strong>Check the motive supply.</strong> Taking motive steam from the 15 psig supply upstream of the control valve gives 15 &minus; 7.2 = 7.8 psi over back pressure. That passes the 5 psi minimum from one manual but is below the 9 to 15 psi range in the other. Confirm against the maker's capacity table for the pump, and note the pump will be slower at that margin.</li>
+</ol>
+
+<figure>
+<svg viewBox="0 0 760 370" role="img" aria-label="Diagram: a steam coil drains into a reservoir above a pressure-powered pump. The pump has motive steam in, a vent back to the reservoir and inlet and outlet check valves. It discharges up a 12 foot lift to an overhead return." style="max-width:100%;height:auto" fill="none" stroke="currentColor" stroke-width="2" font-family="sans-serif" font-size="13">
+<title>Coil, reservoir, pressure-powered pump and lift to an overhead return</title>
+<defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="currentColor" stroke="none"/></marker></defs>
+<text x="88" y="30" fill="currentColor" stroke="none">Steam supply, 15 psig</text>
+<line x1="75" y1="40" x2="75" y2="130"/>
+<polygon points="63,75 87,95 87,75 63,95"/>
+<text x="98" y="89" fill="currentColor" stroke="none">Control valve</text>
+<rect x="20" y="130" width="110" height="60"/>
+<text x="75" y="165" text-anchor="middle" fill="currentColor" stroke="none">Heating coil</text>
+<polyline points="75,190 75,225 180,225"/>
+<text x="92" y="217" fill="currentColor" stroke="none">Condensate</text>
+<rect x="180" y="200" width="80" height="45"/>
+<text x="220" y="227" text-anchor="middle" fill="currentColor" stroke="none">Reservoir</text>
+<line x1="220" y1="245" x2="220" y2="285"/>
+<polygon points="212,258 228,258 220,272" fill="currentColor"/>
+<text x="236" y="268" fill="currentColor" stroke="none">Inlet check</text>
+<line x1="120" y1="245" x2="120" y2="285" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<text x="112" y="268" text-anchor="end" fill="currentColor" stroke="none">Filling head</text>
+<rect x="170" y="285" width="100" height="60"/>
+<circle cx="195" cy="318" r="8"/>
+<text x="210" y="322" fill="currentColor" stroke="none">Float</text>
+<text x="220" y="338" text-anchor="middle" fill="currentColor" stroke="none">Pump body</text>
+<polyline points="270,292 330,292 330,215 260,215"/>
+<text x="340" y="250" fill="currentColor" stroke="none">Vent to reservoir</text>
+<line x1="400" y1="305" x2="270" y2="305" marker-end="url(#ar)"/>
+<text x="410" y="309" fill="currentColor" stroke="none">Motive steam in</text>
+<polyline points="270,332 480,332 480,60 740,60"/>
+<polygon points="322,324 322,340 338,332" fill="currentColor"/>
+<text x="330" y="358" text-anchor="middle" fill="currentColor" stroke="none">Outlet check</text>
+<line x1="515" y1="332" x2="515" y2="60" marker-start="url(#ar)" marker-end="url(#ar)"/>
+<text x="525" y="200" fill="currentColor" stroke="none">Lift 12 ft</text>
+<text x="525" y="48" fill="currentColor" stroke="none">Overhead return, 2 psig</text>
+</svg>
+<figcaption>Our own sketch: condensate fills the pump by gravity through the inlet check, motive steam pushes it out through the outlet check, and the vent returns to the reservoir.</figcaption>
+</figure>
+
+<h2>Field checks</h2>
+<ul>
+<li><strong>Vent and reservoir.</strong> Confirm the vent has no low points and the reservoir is not flooded.</li>
+<li><strong>Is it cycling?</strong> One manual says the pump should cycle periodically with an audible exhaust at the end of the pumping stroke. The manufacturer's summary says to check cycling at start-up. A counter, or a stopwatch count of strokes over a set time, gives a cycle rate. This count is our own practice: compare it with the maker's stroke volume and the known load.</li>
+<li><strong>Failed checks.</strong> That manual's checklist says a check stuck open floods the equipment while the pump still appears to cycle. An outlet check stuck closed floods the equipment and stops cycling. An inlet check stuck closed gives no trip and no exhaust.</li>
+<li><strong>Motive supply.</strong> Check gauge reading, strainer, drip trap and valves. Insufficient motive pressure or filling head is on both makers' no-operation checklists.</li>
+<li><strong>Blow-by.</strong> A leaking motive valve or internal trap shows up as steam at the vent, per the same summary.</li>
+<li><strong>Water hammer.</strong> A professional-society article on condensate-return hammer says steam pockets collapsing in a liquid line are the core mechanism, hammer can be worse in vertical pipe, and no flashing condensate or live steam should be sent into a pumped return. It names leaking traps and open bypasses as common causes. One manual says banging in the return main after discharge comes from vacuum and calls for a vacuum breaker at the top of the lift.</li>
+<li><strong>Safety.</strong> Relieve pressure and let the unit cool before opening, and keep clear of the vent connection, since hot condensate may flow out.</li>
+</ul>
+<p>For what happens after the lift, see <a href="condensate-return-and-feedwater-basics.html">Condensate Return and Feedwater Basics</a>, <a href="boiler-feed-pumps-and-condensate-receivers-receiver-sizing-pump-npsh-hot-condensate-and-vacuum-return-units.html">receivers and boiler feed pumps</a> and <a href="flash-steam-and-flash-tanks-percent-flash-from-condensate-and-low-pressure-recovery.html">flash steam</a>.</p>
+
+<div class="note"><strong>Check the owner's rules.</strong> Facility standards and maker manuals differ. One university facilities standard we read bars steam-powered traps, and another requires receiver vents to go outdoors on their own line. Follow the instructions for the unit on your job and the local code, and have a qualified person check steam work.</div>
+
+<h2>Related lessons</h2>
+<ul>
+<li><a href="steam-traps-explained.html">Steam Traps Explained</a></li>
+<li><a href="steam-trap-types-and-where-each-fits.html">Steam Trap Types and Where Each Fits</a></li>
+<li><a href="condensate-return-and-feedwater-basics.html">Condensate Return and Feedwater Basics</a></li>
+<li><a href="boiler-feed-pumps-and-condensate-receivers-receiver-sizing-pump-npsh-hot-condensate-and-vacuum-return-units.html">Boiler Feed Pumps and Condensate Receivers</a></li>
+<li><a href="flash-steam-and-flash-tanks-percent-flash-from-condensate-and-low-pressure-recovery.html">Flash Steam and Flash Tanks</a></li>
+</ul>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li><a href="https://www.osti.gov/biblio/6051200">U.S. Department of Energy OSTI record: industry summary of a pressure-powered pump for low-pressure condensate (steam, air or gas at 5 to 125 psi; about 3 lb steam per 1,000 lb liquid)</a></li>
+<li>Penn State facilities technical bulletin on steam coil drainage (plain-text citation): 2.31 ft per psi, 0.5 psi trap differential, back pressure that prevents draining, fill depth.</li>
+<li>Penn State facilities steam trap selection guide (plain-text citation): 0.5 psi minimum differential and no lift downstream of a modulating control valve.</li>
+<li><a href="https://umaec.umich.edu/desguide/tech/23/DG232216.pdf">University of Michigan design guide, steam and condensate systems: float and thermostatic traps on modulating valves</a></li>
+<li><a href="https://jhfre.jhu.edu/wp-content/uploads/2024/12/SECTION-232223-Steam-Condensate-Pumps.pdf">Johns Hopkins University facilities specification, steam condensate pumps: receiver vent outdoors</a></li>
+<li><a href="https://facilities.med.wustl.edu/app/uploads/2019/10/26_Pumps-Steam-Condensate.pdf">Washington University medical campus facilities standard, steam condensate pumps: steam-powered traps not allowed</a></li>
+<li>Manufacturer installation and maintenance summary for a pump trap (plain-text citation): operating cycle, checks, filling head, reservoir, vent piping, 5 psi motive margin, sample capacities.</li>
+<li>Manufacturer installation and maintenance manual for pressure-powered pumps (plain-text citation): audible cycling, failed-check symptoms, 0.6 to 1 bar motive margin, vacuum breaker, motive above 125 psi.</li>
+<li>Manufacturer pump-trap brochure (plain-text citation): stall, sizing inputs, 24 in fill head in closed systems, vent and vacuum breaker.</li>
+<li>Manufacturer learning page on preventing stall (plain-text citation): stall mechanism and the three approaches.</li>
+<li>Professional-society article on water hammer in condensate return lines (plain-text citation).</li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
