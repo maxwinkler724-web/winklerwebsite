@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Compressor Internal Overload Protectors: Open Readings, Reset Time and Repeated Trips</title>
+<meta property="og:title" content="Compressor Internal Overload Protectors: Open Readings, Reset Time and Repeated Trips"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="How a compressor internal line-break protector opens, why C-S and C-R read open while R-S reads, how long reset takes, and what causes repeated trips.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Compressor Internal Overload Protectors: Open Readings, Reset Time and Repeated Trips", "about": "Electrical and controls", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/compressor-internal-overload-protectors-line-break-thermal-protection-open-common-readings-reset-time-and-repeated-trips.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/compressor-internal-overload-protectors-line-break-thermal-protection-open-common-readings-reset-time-and-repeated-trips.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/compressor-internal-overload-protectors-line-break-thermal-protection-open-common-readings-reset-time-and-repeated-trips.html"><meta property="og:description" content="How a compressor internal line-break protector opens, why C-S and C-R read open while R-S reads, how long reset takes, and what causes repeated trips."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Compressor Internal Overload Protectors: Open Readings, Reset Time and Repeated Trips", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/compressor-internal-overload-protectors-line-break-thermal-protection-open-common-readings-reset-time-and-repeated-trips.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap"><span class="tag">Free lesson &middot; Electrical and controls</span>
+<h1>Compressor Internal Overload Protectors: Open Readings, Reset Time and Repeated Trips</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">A hot single-phase compressor that reads open between common and both other terminals has not necessarily lost its motor. Often a small protector inside the shell has opened and is waiting to cool. This lesson shows how to tell that case from a real open winding, how long to wait, and what keeps tripping it.</p>
+<h2>Check the unit's own literature</h2>
+<p><strong>Check the unit's own literature.</strong> Terminal layouts, protector types and wait times differ by compressor. The figures below come from maker documents we read and are examples, not limits for your machine. Use the data for the exact compressor in front of you.</p>
+<h2>What is inside the shell</h2>
+<p>A trade-press article on compressor electrical problems explains that single-phase compressors use an internal line-break overload that senses both motor current and winding temperature. When it opens, it breaks the current path and shuts the motor down. A compressor maker's technical bulletin describes the construction: a bimetallic disc that interrupts the current, mounted on or close to the motor, and hermetically sealed because it sits in refrigerant and oil. Heat from motor current, heat from the windings and shell temperature all push the disc toward snapping open.</p>
+<p>A maker's scroll bulletin says the overload opens the common connection on single-phase motors and the center of the Y connection on three-phase motors. That one detail explains most of the meter behavior below. A different style, the internal thermostat, senses winding temperature only and sits in the low-voltage control circuit, so when it opens the contactor drops out instead (same trade-press article).</p>
+<h2>Why a tripped protector looks like an open winding</h2>
+<p>Because the protector is in the common leg, every path that starts at C passes through it. An equipment maker's service procedures manual puts the single-phase rule this way: if start and run both read open to common, the internal overload is open. If only one winding is open to common while the other shows continuity, that winding is open. A compressor maker's mounting guide agrees from the other side: a path between the two winding terminals with open circuits to common means the protector has cut out, so wait for it to reset.</p>
+<figure><svg role="img" aria-label="Diagram of a single-phase compressor motor: terminal C connects through the internal protector to a junction, which feeds the run winding to terminal R and the start winding to terminal S. With the protector open, C to S and C to R read open, and R to S reads 3.4 ohms" viewBox="0 0 720 330" style="max-width:100%;height:auto" fill="none" stroke="currentColor" stroke-width="2"><title>Single-phase compressor terminals with the internal protector in the common leg</title>
+<rect x="20" y="40" width="380" height="260" rx="14"/>
+<text x="36" y="288" text-anchor="start" fill="currentColor" stroke="none" font-size="12">Hermetic shell</text>
+<text x="325" y="60" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">Internal protector</text>
+<rect x="290" y="70" width="70" height="40"/>
+<text x="325" y="95" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">open</text>
+<path d="M400 90 L360 90"/>
+<path d="M290 90 L240 90"/>
+<path d="M240 90 L240 250"/>
+<path d="M240 170 L270 170"/>
+<rect x="270" y="150" width="80" height="40"/>
+<text x="310" y="175" text-anchor="middle" fill="currentColor" stroke="none" font-size="11">Run winding</text>
+<path d="M350 170 L400 170"/>
+<path d="M240 250 L270 250"/>
+<rect x="270" y="230" width="80" height="40"/>
+<text x="310" y="255" text-anchor="middle" fill="currentColor" stroke="none" font-size="11">Start winding</text>
+<path d="M350 250 L400 250"/>
+<circle cx="400" cy="90" r="6" fill="currentColor"/>
+<circle cx="400" cy="170" r="6" fill="currentColor"/>
+<circle cx="400" cy="250" r="6" fill="currentColor"/>
+<text x="414" y="95" text-anchor="start" fill="currentColor" stroke="none" font-size="15" font-weight="bold">C</text>
+<text x="414" y="175" text-anchor="start" fill="currentColor" stroke="none" font-size="15" font-weight="bold">R</text>
+<text x="414" y="255" text-anchor="start" fill="currentColor" stroke="none" font-size="15" font-weight="bold">S</text>
+<text x="150" y="120" text-anchor="start" fill="currentColor" stroke="none" font-size="11">junction</text>
+<path d="M200 118 L238 90" stroke-dasharray="4 3"/>
+<path d="M440 170 L440 250" stroke-dasharray="5 4"/>
+<text x="480" y="50" text-anchor="start" fill="currentColor" stroke="none" font-size="13" font-weight="bold">Meter readings, protector open</text>
+<text x="480" y="100" text-anchor="start" fill="currentColor" stroke="none" font-size="13">C to S: open (OL)</text>
+<text x="480" y="140" text-anchor="start" fill="currentColor" stroke="none" font-size="13">C to R: open (OL)</text>
+<text x="480" y="180" text-anchor="start" fill="currentColor" stroke="none" font-size="13">R to S: 3.4 ohm</text>
+<text x="480" y="228" text-anchor="start" fill="currentColor" stroke="none" font-size="11">R to S goes through both windings</text>
+<text x="480" y="246" text-anchor="start" fill="currentColor" stroke="none" font-size="11">and never touches the protector.</text>
+</svg><figcaption>Our own diagram, not to scale. The protector sits in the common leg, so with it open every reading that includes C is open, while R to S still reads the two windings in series. Readings are our worked example below.</figcaption></figure>
+<p>The key reading is the one that does not touch the protector. Run and start windings are joined at the junction inside, so R to S still measures through both windings. If R to S reads a sensible low resistance, the windings are intact and the problem is a hot, open protector. If R to S is open too, that does not prove a bad motor yet, but a second reading after a long cool-down is required before you say so.</p>
+<h2>How long a hot compressor can take to reset</h2>
+<ul>
+<li>A compressor maker's technical bulletin says reset may take typically around one hour, perhaps longer.</li>
+<li>An equipment maker's service manual says to allow adequate time before condemning the compressor, that up to two hours may be needed if it is extremely hot, and that at least one hour of cooling is wanted before testing for a suspected open winding or defective protector.</li>
+<li>A compressor maker's mounting guide gives about 5 minutes for a cold compressor and up to about 45 minutes for a warm one, with the housing above 80 degrees C (176 degrees F).</li>
+<li>The trade-press article says resetting may take more than an hour, and that the motor should generally be below 115 degrees F before you check winding continuity through the overload.</li>
+</ul>
+<p>The numbers differ because compressor size, shell mass, ambient and protector design differ. The practical rule from all four is the same: do not condemn a hot compressor on an open reading. A residential service manual cautions that you should be sure the internal line-break overload is not temporarily open, and says the compressor should always cool and the protector close before troubleshooting.</p>
+<h2>External pilot-duty protectors and electronic protection units</h2>
+<p>Not every protector is a line-break device carrying motor current. The service procedures manual lists internal pilot-duty thermostats and external overloads shown on the wiring diagram, and says a three-phase winding is condemned only after every external protector checks good and voltage is present at all three winding terminals. A pilot-duty device carries only control current and opens the contactor circuit, so the compressor stays quiet with no voltage on its terminals. Check the diagram and the control circuit before you reach for the compressor leads.</p>
+<p>The same manual describes solid-state protection units on larger machines. Thermistor sensors in the windings feed a control unit that opens a control contact. Two styles are listed. In one, sensor resistance should read 60 to 150 ohms; above 90 ohms the motor is too hot to run and must cool, and above 150 ohms you check the sensor fuses first. In the other, the range is 2,000 to 45,000 ohms; above 10,000 ohms the motor must cool until it reads under 10,500, and above 45,000 ohms the sensors are damaged. The manual warns not to use a meter that applies more than 3 V DC to the sensors, and gives 21 to 30 V AC at the unit's supply terminals as a normal check. These are examples from one document, so read your own unit's data.</p>
+<h2>Why protectors keep tripping</h2>
+<p>A maker's bulletin notes that if the condition that caused the trip persists, the compressor will probably keep cycling on the overload until it is corrected. The service procedures manual lists the usual causes:</p>
+<ul>
+<li><strong>Voltage out of range.</strong> The manual says rated voltage plus or minus 10 percent. Low voltage also raises current and, at worst, causes locked-rotor starts. See <a href="voltage-drop-on-hvac-circuits-long-condenser-feeders-and-24-volt-control-wire-runs-the-formula-wire-size-and-symptoms-of-low-voltage.html">voltage drop on HVAC circuits</a>.</li>
+<li><strong>High head or high suction pressure.</strong> Dirty condenser, overcharge, blocked airflow, or a failed condenser fan motor or its capacitor.</li>
+<li><strong>Low charge or restrictions.</strong> High superheat means thin returning gas, so the motor loses cooling. The manual lists a compressor that runs but does not pump the same way.</li>
+<li><strong>Bad start or run capacitor, or a faulty start relay.</strong> See <a href="testing-capacitors-contactors-and-relays-with-a-meter.html">testing capacitors with a meter</a>.</li>
+<li><strong>Short cycling and tight bearings.</strong> A compressor maker's bulletin lists operation outside the approved voltage or suction range and extreme loads. Short cycling is our own addition: each hard start stacks heat on the protector. See <a href="ac-short-cycling-causes-oversizing-charge-thermostat-and-safeties.html">AC short cycling</a>.</li>
+</ul>
+<p>A compressor maker's bulletin adds that an external disc protector may not trip at low load until the windings are well above their limit and generally does not protect against lost charge. That is why low charge is hard on a motor even when the protector seems quiet.</p>
+<h2>What never to do</h2>
+<ul>
+<li><strong>Never bypass a protector or safety</strong> to keep a unit running, and never jumper a pilot-duty or control-circuit thermostat. This is our own safety rule. The protector is the only thing between a stressed winding and a burnout.</li>
+<li><strong>Never cool a live compressor with water.</strong> This is our own safety rule: water on energized terminals and wiring is a shock hazard. Shut off and lock out power first, and let it cool on its own.</li>
+<li><strong>Never take readings with power on.</strong> The maker warnings we read say to turn off all power, disconnect the leads at the compressor terminals, and discharge capacitors before resistance checks. They also say never to put your face or body in line with the terminals.</li>
+<li><strong>Never keep resetting a protector that trips repeatedly.</strong> Find the cause. The trade-press article also says that if the internal overload itself fails open, the compressor must be replaced.</li>
+</ul>
+<h2>Worked example (ours): tripped or truly open?</h2>
+<p>These are our own invented readings on a hot single-phase compressor with power locked out and leads off the terminals. Meter set to ohms.</p>
+<ol><li>First check: C to S reads open, C to R reads open, R to S reads 3.4 ohm.</li>
+<li>Both common paths are open, so either the protector is open or both windings are broken at the common. But R to S, which does not pass the protector, reads 3.4 ohm. A run winding and start winding that are both intact must give a reading, so the windings are good and the protector is the open item.</li>
+<li>Assumption: the compressor is extremely hot to the touch. Following the manual, we allow one hour, then retest.</li>
+<li>Retest after cool-down: C to R reads 1.4 ohm and C to S reads 2.0 ohm. Check: 1.4 + 2.0 = 3.4 ohm, matching R to S. The protector has closed; the motor is fine.</li>
+<li>Now the opposite case, also ours. If, after two hours, C to R still read open and C to S read 2.0 ohm, then R to S would read open too (the run side is broken). One winding open to common with the other showing continuity points to that winding, so the service manual says it is open.</li></ol>
+<p>The value of the first R to S reading: it tells you which story you are in without waiting an hour. See <a href="checking-compressor-windings-common-start-run-and-grounded-compressors.html">checking compressor windings</a> for the full set including ground tests. Once the protector is closed and the motor tests good, find out why it tripped before you start it. Check capacitors, voltage and pressures, and take amps once it runs (see <a href="measuring-amp-draw-with-a-clamp-meter-motors-and-compressors-vs-rla-and-fla.html">measuring amp draw</a>).</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Compressor Internal Protectors</h2><p><em>Open to common on both windings? Check R to S before you condemn.</em></p><ul><li>Single-phase line-break protector sits in the common leg.</li><li>Open protector: C to S open, C to R open, R to S still reads.</li><li>Example (ours): R to S 3.4 ohm, later C to R 1.4 plus C to S 2.0.</li><li>Wait at least one hour; up to two hours if extremely hot (one maker manual).</li><li>Pilot-duty and unit protectors open the control circuit instead; read the diagram.</li><li>Causes: voltage off by more than 10 percent, high head, low charge, bad capacitor, short cycling.</li><li>Never bypass, never water on a live unit, never test with power on.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul>
+<li><a href="checking-compressor-windings-common-start-run-and-grounded-compressors.html">Checking Compressor Windings</a></li>
+<li><a href="compressor-wont-start-hard-start-kits-and-potential-relays.html">Compressor Won't Start: Hard-Start Kits and Potential Relays</a></li>
+<li><a href="measuring-amp-draw-with-a-clamp-meter-motors-and-compressors-vs-rla-and-fla.html">Measuring Amp Draw with a Clamp Meter</a></li>
+<li><a href="testing-capacitors-contactors-and-relays-with-a-meter.html">Testing Capacitors, Contactors and Relays with a Meter</a></li>
+<li><a href="motor-starters-and-overload-relays-nema-vs-iec-trip-class-and-setting-the-dial.html">Motor Starters and Overload Relays</a></li>
+</ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li>Equipment maker's compressor service procedures manual, 2006 (internal line-break overload checks, reset wait up to two hours, causes of cycling, external protectors, solid-state protection-unit ranges), hosted by a distributor (plain text).</li>
+<li>Equipment maker's residential air conditioner and heat pump application guideline and service manual (internal line-break protector, cautions on a temporarily open overload, winding checks), hosted by a distributor (plain text).</li>
+<li>Compressor maker's technical bulletin on hermetic compressor motor protection (bimetallic disc construction, reset around one hour, causes of repeated tripping, external protector behavior) (plain text).</li>
+<li>Compressor maker's mounting instructions for hermetic AC compressors (winding protector, reset times by temperature, open-to-common fault check) (plain text).</li>
+<li>Compressor maker's application engineering bulletin for 1.5 to 5 ton scroll compressors (overload opens the common on single-phase and the Y center on three-phase) (plain text).</li>
+<li>Trade-press article on compressor electrical problems (internal line-break overload versus internal thermostat, cooling below 115 degrees F before testing) (plain text).</li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
