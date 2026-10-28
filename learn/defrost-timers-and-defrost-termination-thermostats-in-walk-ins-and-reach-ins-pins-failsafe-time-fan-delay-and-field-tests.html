@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Defrost Timers and Termination Thermostats in Walk-Ins and Reach-Ins</title>
+<meta property="og:title" content="Defrost Timers and Termination Thermostats in Walk-Ins and Reach-Ins"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="How a 24-hour defrost timer, pins, failsafe and a coil termination switch work in walk-ins, symptoms of failure, field tests and a heater energy example.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Defrost Timers and Termination Thermostats in Walk-Ins and Reach-Ins", "about": "Electrical and controls", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/defrost-timers-and-defrost-termination-thermostats-in-walk-ins-and-reach-ins-pins-failsafe-time-fan-delay-and-field-tests.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/defrost-timers-and-defrost-termination-thermostats-in-walk-ins-and-reach-ins-pins-failsafe-time-fan-delay-and-field-tests.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/defrost-timers-and-defrost-termination-thermostats-in-walk-ins-and-reach-ins-pins-failsafe-time-fan-delay-and-field-tests.html"><meta property="og:description" content="How a 24-hour defrost timer, pins, failsafe and a coil termination switch work in walk-ins, symptoms of failure, field tests and a heater energy example."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Defrost Timers and Termination Thermostats in Walk-Ins and Reach-Ins", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/defrost-timers-and-defrost-termination-thermostats-in-walk-ins-and-reach-ins-pins-failsafe-time-fan-delay-and-field-tests.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Electrical and controls</span>
+<h1>Defrost Timers and Termination Thermostats in Walk-Ins and Reach-Ins</h1>
+<p class="small datel">Last updated: 2026-10-28</p>
+<p class="lede">Most freezer coils do not ice up because of refrigerant. They ice up because a small clock or a small temperature switch quit doing its job. This lesson is about those two parts: the 24-hour defrost timer with its pins, and the termination switch that tells it the frost is gone.</p>
+<h2>Check the maker's data</h2>
+<p><strong>Check the maker's data.</strong> Terminal numbers, switch temperatures and failsafe settings differ by timer and by evaporator. The numbers below come from maker literature we read in 2026 and are examples only. The wiring diagram on the unit you are standing in front of wins. Lock out and tag the power before you open a timer or heater box.</p>
+<h2>What the timer does</h2>
+<p>The classic defrost timer is a small motor-driven dial that turns once every 24 hours. At set times it does two things at once. It closes a switch that powers the defrost heaters, and it opens the switch that feeds the box thermostat, the liquid line solenoid and, on freezers, the evaporator fans. So the compressor stops pumping and the heaters take over. When defrost ends, the contacts swap back. For the layout of the heaters, the drain and the gas-defrost alternative, see <a href="walk-in-coolers-and-freezers-evaporator-defrost-door-heaters-pressure-relief-ports-and-doe-efficiency-rules.html">the walk-in heater and efficiency lesson</a> and <a href="hot-gas-defrost-in-commercial-refrigeration-how-it-works-valves-and-sequence-drain-pan-heating-and-compared-with-electric-and-off-cycle-defrost.html">the hot gas lesson</a>.</p>
+<h2>Pins, trippers and defrosts per day</h2>
+<p>There are two common ways to set the schedule. A trade-magazine article on defrost control describes a standard timer with a 24-hour wheel that has 12 threaded holes, taking up to four initiation pins, plus an inner failsafe wheel. Its author suggests four defrosts a day, at 6 a.m., noon, 6 p.m. and midnight, which is what the figure below shows (a dial with four pins). Other timers use trippers instead. A maker's tripper-style timer sheet says each tripper stands for 15 minutes: raise one tripper over the start time for a 15-minute defrost, and raise adjacent trippers for a longer one, so two adjacent trippers give 30 minutes and three give 45. A walk-in maker's manual says its timer comes set for four cycles a day at 4:00, 10:00, 16:00 and 22:00, 45 minutes each, and that two to four cycles a day is typical with heavier frost loads needing more.</p>
+<p>Two habits matter. Set the clock to the right time of day after any power loss, because the pins fire by clock position, not by elapsed time. And turn the dial the way the maker says; one tripper timer sheet says rotate clockwise only, because forcing it backward can damage the mechanism.</p>
+<figure>
+<svg role="img" aria-label="A 24-hour timer dial with four defrost pins, and a separate termination switch with a sensing bulb high on an evaporator coil" viewBox="0 0 620 290" style="max-width:100%;height:auto" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2">
+<title>24-hour defrost timer dial with four pins, and a coil termination switch</title>
+<circle cx="150" cy="145" r="80"/>
+<circle cx="150" cy="145" r="46" stroke-dasharray="4 4"/>
+<rect x="144" y="53" width="12" height="14" fill="currentColor"/>
+<rect x="233" y="139" width="14" height="12" fill="currentColor"/>
+<rect x="144" y="223" width="12" height="14" fill="currentColor"/>
+<rect x="53" y="139" width="14" height="12" fill="currentColor"/>
+<g stroke="none" fill="currentColor" font-family="sans-serif" font-size="13" text-anchor="middle">
+<text x="150" y="30">00:00 pin 1</text>
+<text x="150" y="268">12:00 pin 3</text>
+<text x="150" y="141">24-hour</text>
+<text x="150" y="158">dial</text>
+<text x="294" y="150">06:00 pin 2</text>
+</g>
+<g stroke="none" fill="currentColor" font-family="sans-serif" font-size="13" text-anchor="end">
+<text x="44" y="150">18:00</text>
+<text x="44" y="166">pin 4</text>
+</g>
+<rect x="380" y="70" width="170" height="110" rx="4"/>
+<path d="M380 90H550M380 110H550M380 130H550M380 150H550"/>
+<path d="M388 168l10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10 10-10 10 10" stroke-width="1.5"/>
+<circle cx="520" cy="84" r="7" fill="currentColor"/>
+<path d="M520 84V56H578V232H520"/>
+<rect x="368" y="220" width="194" height="34" rx="4"/>
+<g stroke="none" fill="currentColor" font-family="sans-serif" font-size="13" text-anchor="middle">
+<text x="465" y="42">bulb high on coil</text>
+<text x="465" y="241">termination / fan delay switch</text>
+</g>
+<g stroke="none" fill="currentColor" font-family="sans-serif" font-size="13" text-anchor="end">
+<text x="372" y="172">heater</text>
+<text x="372" y="124">frosted coil</text>
+</g>
+</svg>
+<figcaption>Our own sketch. Left: a 24-hour timer dial with four defrost pins. Right: the termination switch is a separate part, with its bulb high on the coil where frost clears last. The timer sets when defrost starts; the bulb tells it when to stop. Simplified, not to scale.</figcaption>
+</figure>
+<h2>Terminals, in general terms</h2>
+<p>Do not trust brand wiring from memory. In general, the maker literature we read describes the same roles. One pair of timer terminals closes when defrost starts and feeds the heater circuit. Another pair opens when defrost starts and cuts the control circuit, so the solenoid and fans drop out. A neutral terminal, usually marked N, powers the timer motor and release solenoid. A maker sheet warns not to wire the termination thermostat to the neutral terminal, because then temperature termination will not occur and the heaters can burn out. An X terminal is where some timers take the termination thermostat connection; the same sheet says timers that use a pressure switch have separate terminals for it, that no outside voltage may be applied to that switch, and that its cut-out should be set 6 to 14 psi below its cut-in. Another maker sheet says its timer can also be applied so a normally closed contact switches fans off in defrost.</p>
+<h2>Time start, temperature stop, failsafe backstop</h2>
+<p>Most systems start on time and end on temperature or pressure. The maker sheets say the time setting then works as a failsafe: if the termination switch does not end defrost, the programmed time does. The walk-in maker's manual puts it plainly: if the termination thermostat fails to close, the failsafe setting ends the cycle. With a stuck switch, every defrost runs the full failsafe time.</p>
+<h2>The termination and fan delay switch</h2>
+<p>This is a small temperature switch with a sensing bulb on a capillary. A trade-magazine article says it has a single-pole, double-throw switch, with the bulb mounted high on the evaporator where frost clears last. When the bulb warms during defrost, one pair of contacts closes and ends defrost by releasing the timer, or, on a controller board, signals it to stop. When the coil later cools to a lower point, the other pair closes and lets the fans start. That second job is the fan delay. The article gives roughly 20 to 30 degrees F for the fan-on point, and says without it the fans blow warm, moist air on product and can push suction pressure and amps up enough to trip an overload.</p>
+<p>Typical numbers from maker literature: the walk-in maker's manual says its termination thermostat closes at about 55 degrees F and its fan relay at about 30 degrees F. One adjustable control's data sheet lists a fixed fan-on point of 20 degrees F and an adjustable termination range of 40 to 75 degrees F, and says to set it high enough that the coil clears and the water leaves the pan. Treat these as examples. On boards that use a coil sensor instead, the termination value is in the controller settings; see <a href="walk-in-cooler-and-freezer-defrost-evaporator-fan-delay-and-icing.html">the walk-in defrost lesson</a> for that side.</p>
+<h2>Symptoms of a bad timer or a bad switch</h2>
+<ul>
+<li><strong>Iced coil, rising box temperature.</strong> The trade article lists a frozen-up evaporator as the sign of a timer not tripping, a failed termination and fan delay stat, or both, and notes that the stat is often misdiagnosed and left in place.</li>
+<li><strong>Weak timer motor.</strong> The same article says a weak motor may not trip into defrost, and that turning the dial can bring it back for days or weeks, which is a clue, not a repair.</li>
+<li><strong>Every defrost runs to the failsafe.</strong> The switch is not closing, or the bulb is not seeing heat. Heaters are on far longer than needed, and the box warms during the long off period. Compare with <a href="reading-a-defrost-cycle-on-the-gauges.html">reading a defrost cycle</a>, where the same clue appears on heat pumps.</li>
+<li><strong>Fans start too early.</strong> Fog, water on product, high suction pressure; check the fan-on side of the switch.</li>
+<li><strong>Short or no defrost.</strong> The switch is closing at once, the bulb is loose or out of place, or the setting is too low to clear the coil.</li>
+</ul>
+<h2>Field tests</h2>
+<p>With the coil iced, the trade article gives a simple timer-motor test: mark the failsafe wheel at its pointer, wait about five minutes, and see whether it moved. If it did not move, the motor is weak and the timer needs replacing. Beyond that, the following is our own reasoning, not a maker procedure, so use the maker's steps if you have them.</p>
+<ul>
+<li>Check the schedule first: right time of day, pins or trippers at the intended times, failsafe not set longer than needed.</li>
+<li>On a lockout, step the timer into defrost by the maker's method and confirm the heater circuit closes and the fan and solenoid circuit opens, then that it returns. Only a qualified tech should do live checks.</li>
+<li>For the termination switch, remove it from the circuit with power off and read continuity across its contacts while the bulb sits in a cup of water next to a thermometer. Contacts should change near the temperature on the label as you warm the bulb, and change back as it cools. Then confirm the bulb sits tight on the coil in the right spot.</li>
+<li>If the switch checks fine, look at wiring, a bulb that has lost contact with the fins, and the heaters themselves.</li>
+</ul>
+<h2>Worked example: what a stuck switch costs</h2>
+<p>This example is ours. Assumptions, not source figures: a freezer defrosts 4 times a day, the failsafe is 45 minutes, a normal defrost ends at 20 minutes, the heaters draw 3,000 W (3 kW) together, and power costs $0.15 per kWh.</p>
+<ol>
+<li>Normal day: 4 defrosts &times; 20 minutes = 80 minutes = 1.33 hours of heater time.</li>
+<li>Energy: 3 kW &times; 1.33 h = 4.0 kWh per day.</li>
+<li>Stuck switch, every defrost runs to the failsafe: 4 &times; 45 minutes = 180 minutes = 3.0 hours.</li>
+<li>Energy: 3 kW &times; 3.0 h = 9.0 kWh per day.</li>
+<li>Extra: 9.0 &minus; 4.0 = 5.0 kWh per day, or 5.0 &times; 365 = 1,825 kWh a year.</li>
+<li>Cost: 1,825 kWh &times; $0.15 = about $274 a year in heater energy alone.</li>
+</ol>
+<p>That figure leaves out the harder-to-count costs: the compressor sitting idle through the longer outage, extra heat pushed into the box, and the warmer product. The switch is a cheap part that protects a lot of energy.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Defrost timers and termination switches</h2><p><em>The timer starts it. The bulb ends it. The failsafe is the backstop.</em></p><ul><li>Set the clock after any power loss; pins or trippers fire by dial position.</li><li>Tripper timers: 15 minutes per tripper. Pin timers: up to four pins is common.</li><li>Four defrosts a day is a common start; heavy frost loads may need more.</li><li>Never wire the termination thermostat to the neutral terminal on a timer where the maker says not to.</li><li>Example switch points from maker data: about 55 F to end defrost, about 20 to 30 F to start fans.</li><li>Every defrost ending at the failsafe time means check the switch and bulb.</li><li>Our example: 4 &times; 45 min at 3 kW costs about 5 kWh a day more than 4 &times; 20 min.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="walk-in-cooler-and-freezer-defrost-evaporator-fan-delay-and-icing.html">Walk-In Defrost: Termination, Fan Delay and Icing</a></li><li><a href="hot-gas-defrost-in-commercial-refrigeration-how-it-works-valves-and-sequence-drain-pan-heating-and-compared-with-electric-and-off-cycle-defrost.html">Hot Gas Defrost in Freezers: Valves, Pan Loop and Sequence</a></li><li><a href="reading-a-defrost-cycle-on-the-gauges.html">Reading a Defrost Cycle on the Gauges</a></li><li><a href="reach-in-and-display-case-defrost-and-care.html">Reach-In and Display Case Defrost, Gaskets, Drains and Coil Care</a></li><li><a href="walk-in-coolers-and-freezers-evaporator-defrost-door-heaters-pressure-relief-ports-and-doe-efficiency-rules.html">Walk-In DOE Efficiency Rules: Insulation, Door Heaters, Fan Motors and Defrost Energy</a></li></ul></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources"><li>A trade-magazine article on refrigeration defrost control (timer types, pins, failsafe wheel, failure signs, timer-motor check). Read 2026; not linked.</li><li>A trade-magazine article on defrost termination and fan delay controls (switch action, bulb location, fan-delay range). Read 2026; not linked.</li><li>A maker's installation sheet for a 24-hour tripper-style defrost timer, hosted by a distributor (trippers, terminals, termination, failsafe, pressure switch settings). Read 2026; not linked.</li><li>A second maker's installation sheet for a defrost timer (tripper timing, terminal roles). Read 2026; not linked.</li><li>A walk-in maker's service manual page on its electric defrost timer (four cycles of 45 minutes, switch temperatures, failsafe). Read 2026; not linked.</li><li>A control maker's instruction sheet for an adjustable defrost termination and fan delay control (fan-on and termination ranges, bulb placement). Read 2026; not linked.</li></ol>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sizing Liquid and Discharge Lines in Commercial Refrigeration: Pressure Drop Limits, Liquid Velocity, Lift, Equivalent Length and Field Checks</title>
+<meta property="og:title" content="Sizing Liquid and Discharge Lines in Commercial Refrigeration: Pressure Drop Limits, Liquid Velocity, Lift, Equivalent Length and Field Checks"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="How liquid and discharge lines are sized in commercial refrigeration: pressure drop limits, velocity, lift, fitting lengths, worked example, field checks.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Sizing Liquid and Discharge Lines in Commercial Refrigeration: Pressure Drop Limits, Liquid Velocity, Lift, Equivalent Length and Field Checks", "about": "Refrigerants", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/sizing-liquid-and-discharge-lines-in-commercial-refrigeration-pressure-drop-limits-liquid-velocity-lift-equivalent-length-and-field-checks.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/sizing-liquid-and-discharge-lines-in-commercial-refrigeration-pressure-drop-limits-liquid-velocity-lift-equivalent-length-and-field-checks.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/sizing-liquid-and-discharge-lines-in-commercial-refrigeration-pressure-drop-limits-liquid-velocity-lift-equivalent-length-and-field-checks.html"><meta property="og:description" content="How liquid and discharge lines are sized in commercial refrigeration: pressure drop limits, velocity, lift, fitting lengths, worked example, field checks."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Sizing Liquid and Discharge Lines in Commercial Refrigeration: Pressure Drop Limits, Liquid Velocity, Lift, Equivalent Length and Field Checks", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/sizing-liquid-and-discharge-lines-in-commercial-refrigeration-pressure-drop-limits-liquid-velocity-lift-equivalent-length-and-field-checks.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Refrigerants</span>
+<h1>Sizing Liquid and Discharge Lines in Commercial Refrigeration: Pressure Drop Limits, Liquid Velocity, Lift, Equivalent Length and Field Checks</h1>
+<p class="small datel">Last updated: 2026-10-28</p>
+<p class="lede">The suction line gets most of the attention when a refrigeration rack or condensing unit is piped, but the other two lines can hurt a system just as quietly. The liquid line has to deliver solid liquid to the metering device. The discharge line has to carry hot gas and oil without noise or wasted power. This lesson covers how makers size both, how fittings count as extra pipe, one worked example, and how to check a line in the field.</p>
+<h2>Check the maker's data</h2>
+<p><strong>Check the maker's data.</strong> The limits below come from piping guides for particular equipment and refrigerants. They are not the same everywhere. Use the guide for the equipment on your job and an engineer's design when the run is unusual.</p>
+<h2>Pressure drop limits are written in temperature</h2>
+<p>Pressure drop in a refrigerant line is usually limited as a change in saturation temperature, not in psi. The reason is that the same number of psi means a different temperature change at different pressures. A commercial refrigeration data guide says it directly: a 2 F change in saturation temperature does not equal a 2 psig change in pressure. The same guide sizes each discharge, suction and liquid segment for a loss of about 2 F or less.</p>
+<p>Other guides agree on the order of size, with different wording:</p>
+<ul>
+<li>A refrigerant maker's piping handbook says a typical liquid line drop should be no greater than 1 F of saturation temperature.</li>
+<li>A commercial air conditioning maker's piping guide says to keep the liquid line to no more than 2 to 3 F, and to aim for less than 2 F per line.</li>
+<li>A compressor maker's refrigeration manual sizes liquid lines for a drop equal to about 2 F of subcooling. For the discharge line it works in psi: about 5 psi is a sensible target, 5 psi has a very small effect on performance, and up to 10 psi is not greatly harmful if the condenser is sized adequately.</li>
+</ul>
+<p>So "about 1 to 2 F" is a fair rule for a liquid line, and about 2 F or a few psi for a discharge line. Friction is not the whole liquid line loss, though, as the next sections show.</p>
+<h2>Liquid lines: velocity, lift and flash gas</h2>
+<p><strong>Velocity.</strong> When a liquid line solenoid closes, the moving column of liquid stops at once and the pressure spikes. That is liquid hammer. The commercial air conditioning guide keeps liquid line velocity under 300 feet per minute to avoid it, and the compressor maker's manual says to avoid velocities above 300 feet per minute when liquid line solenoids are used. The commercial refrigeration data guide uses the same 300 feet per minute limit on its circuit liquid lines. One handbook lists a lower target of 100 feet per minute or less. A line sized only for low friction can still run too fast, so check both.</p>
+<p><strong>Lift.</strong> Friction depends on pipe size. The weight of a liquid column does not. The commercial refrigeration data guide adds 0.5 psig to the liquid line drop for each foot of liquid riser, and says subcooling is the usual way to make up for it. The commercial air conditioning guide lists 0.5 psi per foot for both R-22 and R-134a at 100 F liquid. For the full explanation of how this plays out with subcooling and flash gas, see the lesson linked below.</p>
+<p><strong>Flash gas.</strong> If total pressure loss before the metering device is larger than the subcooling the liquid left the condenser with, part of the liquid boils off. The metering device then gets a mix of liquid and vapor and the evaporator is starved. Subcooling is the margin, and the sizing job is to keep the sum of friction, lift, drier, solenoid and fittings below it.</p>
+<h2>Equivalent length: fittings count as extra pipe</h2>
+<p>A fitting is converted into a length of straight pipe that would cause the same drop. The commercial refrigeration data guide has a copper table: a 90 degree elbow is 1.0 ft of equivalent length at 5/8 inch, 1.5 ft at 7/8 inch, 1.8 ft at 1 1/8 inch and 2.8 ft at 1 5/8 inch. Valves are not in that table, so you read their lengths or rated drops from the valve maker. The same guide also gives a shortcut when the fittings are not counted one by one: add 20 to 30 percent to the straight length for segments of 100 ft or more, and 50 to 75 percent for segments under 100 ft. Always size on the equivalent length, not the tape measure length.</p>
+<h2>Discharge lines: oil, noise and risers</h2>
+<p>The discharge line has two jobs that pull in opposite directions. It must be small enough to keep gas moving fast enough to carry oil, and large enough to keep the drop and the noise down.</p>
+<ul>
+<li><strong>Too slow.</strong> The commercial air conditioning guide gives a minimum of 500 feet per minute in horizontal hot gas lines and 1000 feet per minute in hot gas risers. The compressor maker's manual gives no single number for oil return. It says to check riser size against its minimum-load charts.</li>
+<li><strong>Too fast.</strong> The compressor maker's manual says velocities of 3000 feet per minute or more may cause high noise. A refrigerant maker's handbook lists 2000 to 3500 feet per minute as a design goal for discharge lines.</li>
+<li><strong>Risers and traps.</strong> The compressor maker's manual says to loop the discharge line down toward the floor before it rises, so oil cannot drain back into the compressor head when it stops. It also says a trap at the foot of a hot gas riser is normally not needed, because oil moves more easily at discharge temperatures. The commercial air conditioning guide goes further: intermediate traps are unnecessary in a properly sized riser, a trap at the bottom should be as small as possible, and if the condenser sits above the compressor an inverted trap or check valve belongs at the condenser inlet. One handbook says it is customary to reduce a discharge riser by one pipe size, or to use two risers. These guides do not all say the same thing, so follow the one for your equipment.</li>
+</ul>
+<p>Suction line oil return is covered in the lessons on line set sizing and suction risers, linked below.</p>
+<h2>Worked example (ours)</h2>
+<p>This is our own example, not a field measurement. All inputs marked as assumptions are ours.</p>
+<p><strong>Setup.</strong> Medium temperature R-134a system. Liquid line of 5/8 inch copper from receiver to evaporator, 40 ft of straight pipe in total, which includes a 15 ft vertical rise. The line has 6 elbows. Assumptions: friction of 3 psi per 100 ft of equivalent length (an assumption for this example; a real job takes it from the maker's table for the line size, flow and refrigerant), 3 psi total for the drier and solenoid (assumption), and 10 F of subcooling leaving the condenser (assumption).</p>
+<p><strong>Step 1, equivalent length.</strong> A 5/8 inch 90 degree elbow is 1.0 ft in the data guide table. 6 elbows &times; 1.0 ft = 6 ft. Equivalent length = 40 + 6 = 46 ft.</p>
+<p><strong>Step 2, friction.</strong> 46 ft &divide; 100 &times; 3 psi = 1.4 psi.</p>
+<p><strong>Step 3, lift.</strong> 15 ft &times; 0.5 psi per ft = 7.5 psi, using the maker figure for R-134a.</p>
+<p><strong>Step 4, other parts.</strong> Drier and solenoid: 3.0 psi (assumption).</p>
+<p><strong>Step 5, total.</strong> 1.4 + 7.5 + 3.0 = 11.9 psi.</p>
+<p><strong>Step 6, convert to temperature.</strong> We need psi per degree near 100 F for R-134a. A university copy of NIST saturation data lists 900 kPa at 35.5 C and 1000 kPa at 39.4 C. That is 100 kPa, or 14.5 psi, over 3.9 C, or 7.0 F. 14.5 &divide; 7.0 = about 2.07 psi per F. (Our arithmetic from that table.)</p>
+<p><strong>Step 7, compare.</strong> Friction alone: 1.4 &divide; 2.07 = 0.7 F, inside the 1 to 2 F range. Lift alone: 7.5 &divide; 2.07 = 3.6 F. Total: 11.9 &divide; 2.07 = 5.7 F. Subcooling left at the metering device: 10 &minus; 5.7 = about 4.3 F.</p>
+<p><strong>Result.</strong> The friction limit passes easily, but lift and the two valves use more than half of the 10 F the condenser made. If the condenser made only 5 F, the line would be short by about 0.7 F (5 &minus; 5.7) and would flash. Notice that the pipe size was never the problem. Making the line one size larger would save only a fraction of one psi, while the lift is fixed by the building.</p>
+<figure><svg role="img" aria-label="Diagram of a commercial refrigeration condensing unit with compressor and condenser, a hot gas discharge line from compressor to condenser, a receiver, and a liquid line that rises 15 feet past a filter drier and solenoid valve to the evaporator" viewBox="0 0 720 380" style="max-width:100%;height:auto" fill="none" stroke="currentColor" stroke-width="2"><title>Discharge line and liquid line in a commercial refrigeration system, with a 15 ft liquid riser</title><defs><marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" stroke="none"/></marker></defs>
+<rect x="20" y="220" width="210" height="140" fill="currentColor" fill-opacity=".08"/>
+<text x="125" y="240" text-anchor="middle" fill="currentColor" stroke="none" font-size="13">Condensing unit</text>
+<circle cx="70" cy="300" r="24" fill="currentColor" fill-opacity=".12"/>
+<text x="70" y="346" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">Compressor</text>
+<rect x="140" y="270" width="70" height="50" fill="currentColor" fill-opacity=".12"/>
+<text x="175" y="346" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">Condenser</text>
+<path d="M70 276 L70 190 L175 190 L175 268" stroke-width="3" marker-end="url(#a)"/>
+<text x="122" y="176" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">Discharge (hot gas) line</text>
+<path d="M210 320 L268 320" stroke-width="2" marker-end="url(#a)"/>
+<rect x="270" y="300" width="90" height="40" rx="18" fill="currentColor" fill-opacity=".12"/>
+<text x="315" y="362" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">Receiver</text>
+<path d="M360 320 L420 320 L420 100 L538 100" stroke-width="3"/>
+<path d="M420 260 L420 215" stroke-width="2" marker-end="url(#a)"/>
+<text x="408" y="250" text-anchor="end" fill="currentColor" stroke="none" font-size="13">15 ft lift</text>
+<text x="408" y="268" text-anchor="end" fill="currentColor" stroke="none" font-size="12">liquid riser</text>
+<text x="434" y="340" text-anchor="start" fill="currentColor" stroke="none" font-size="12">Liquid line</text>
+<rect x="445" y="90" width="34" height="20" fill="currentColor" fill-opacity=".3"/>
+<text x="462" y="76" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">Filter drier</text>
+<rect x="495" y="90" width="28" height="20" fill="currentColor" fill-opacity=".3"/>
+<text x="509" y="132" text-anchor="middle" fill="currentColor" stroke="none" font-size="12">Solenoid</text>
+<rect x="540" y="50" width="160" height="100" fill="currentColor" fill-opacity=".12"/>
+<text x="620" y="105" text-anchor="middle" fill="currentColor" stroke="none" font-size="14">Evaporator</text>
+</svg><figcaption>Our own drawing, not to scale. The arrows show refrigerant flow. The suction line and the metering device are left off to keep the picture clean.</figcaption></figure>
+<h2>How to check a line in the field</h2>
+<ul>
+<li><strong>Pressure drop.</strong> Put a gauge at the start of the line and one at the far end, or at both sides of a drier or solenoid, on the same gauge if you can. Subtract. Convert the loss to saturation temperature with a pressure-temperature chart for the refrigerant and compare it with the design limit.</li>
+<li><strong>Subcooling at both ends.</strong> Measure pressure and pipe temperature at the receiver outlet, then again just ahead of the metering device. If the second reading is much lower, the line is losing it. If both are low, look at charge or condenser performance.</li>
+<li><strong>Temperature drop.</strong> A temperature difference across a line or a drier is a hint, not a measurement. A small restriction can be too small to feel. Use gauges to confirm.</li>
+<li><strong>Discharge line.</strong> Compare discharge pressure at the compressor with head pressure at the condenser inlet. A large gap points to a restriction or an undersized line. See the discharge temperature lesson linked below.</li>
+</ul>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Liquid and discharge line sizing</h2><p><em>Size on equivalent length. Spend subcooling on lift first, then friction.</em></p><ul>
+<li>Limits are usually written in saturation temperature: about 1 to 2 F for a liquid line, about 2 F or about 5 psi for a discharge line (maker guides differ).</li>
+<li>Liquid velocity: keep it under 300 feet per minute with a solenoid.</li>
+<li>Lift costs about 0.5 psi per foot of liquid riser (maker figure).</li>
+<li>Count each fitting as extra length from the maker table.</li>
+<li>Discharge velocity: fast enough for oil, but 3000 feet per minute or more may be noisy.</li>
+<li>Check with two gauges, not a hand on the pipe.</li>
+<li>Our example: 11.9 psi of loss used about 5.7 F of a 10 F supply.</li>
+</ul></section>
+<h2>Related lessons</h2>
+<ul>
+<li><a href="refrigerant-line-set-sizing-suction-velocity-oil-return-and-long-runs.html">Line Set Sizing for Long Runs: Velocity, Oil Return and Limits</a></li>
+<li><a href="liquid-line-pressure-drop-vertical-lift-and-flash-gas-why-subcooling-disappears-before-the-metering-device.html">Liquid Line Pressure Drop, Vertical Lift and Flash Gas: Why Subcooling Disappears Before the Metering Device</a></li>
+<li><a href="suction-risers-oil-traps-and-double-suction-risers-carrying-oil-up-vertical-refrigerant-lines-at-low-load.html">Suction Risers, Oil Traps and Double Risers: Carrying Oil Up at Low Load</a></li>
+<li><a href="filter-driers-and-sight-glasses-what-they-tell-you.html">Filter Driers and Sight Glasses: What They Tell You</a></li>
+<li><a href="compressor-discharge-line-temperature-as-a-diagnostic-where-to-measure-compression-ratio-and-what-high-readings-mean.html">Compressor Discharge Line Temperature as a Diagnostic</a></li>
+</ul>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li>Commercial refrigeration equipment maker: line sizing refrigeration data guide (2017 PDF), 2 F change per segment, 300 feet per minute liquid velocity, 0.5 psig per foot of liquid riser, copper fitting equivalent lengths and the 20 to 30 percent and 50 to 75 percent allowances (plain text, not linked)</li>
+<li>Commercial air conditioning maker: refrigerant piping design guide, liquid line 2 to 3 F limit, 300 feet per minute to avoid liquid hammering, riser loss table at 100 F, hot gas minimum velocities, discharge riser and trap guidance (distributor copy, plain text, not linked)</li>
+<li>Compressor maker: refrigeration manual, system design part (distributor copy), liquid line sizing at 2 F of subcooling, 300 feet per minute with solenoids, discharge line about 5 psi, 3000 feet per minute noise, discharge line loop at the base (plain text, not linked)</li>
+<li>Refrigerant maker: refrigerant piping handbook, liquid line 1 F, discharge velocity 2000 to 3500 feet per minute, riser guidance (plain text, not linked)</li>
+<li><a href="https://people.ohio.edu/urieli/thermo/property_tables/R134a/R134a_PresSat.html">Ohio University: R-134a saturation properties, pressure table (data from the NIST Chemistry WebBook)</a></li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
