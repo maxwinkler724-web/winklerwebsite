@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heat Pump Thermostat Wiring: O vs B, Y1, Y2, W2/AUX, E, L and Smart Thermostat Setup</title>
+<meta property="og:title" content="Heat Pump Thermostat Wiring: O vs B, Y1, Y2, W2/AUX, E, L and Smart Thermostat Setup"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="How heat pump thermostat terminals work: O vs B reversing valve, Y1, Y2, W2/AUX, E, L, dual-fuel wiring, smart thermostat setup and meter tests.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Heat Pump Thermostat Wiring: O vs B, Y1, Y2, W2/AUX, E, L and Smart Thermostat Setup", "about": "Electrical and controls", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/heat-pump-thermostat-wiring-o-vs-b-reversing-valve-terminals-y1-y2-w2-aux-and-emergency-heat-fault-terminals-and-smart-thermostat-setup.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/heat-pump-thermostat-wiring-o-vs-b-reversing-valve-terminals-y1-y2-w2-aux-and-emergency-heat-fault-terminals-and-smart-thermostat-setup.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/heat-pump-thermostat-wiring-o-vs-b-reversing-valve-terminals-y1-y2-w2-aux-and-emergency-heat-fault-terminals-and-smart-thermostat-setup.html"><meta property="og:description" content="How heat pump thermostat terminals work: O vs B reversing valve, Y1, Y2, W2/AUX, E, L, dual-fuel wiring, smart thermostat setup and meter tests."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Heat Pump Thermostat Wiring: O vs B, Y1, Y2, W2/AUX, E, L and Smart Thermostat Setup", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/heat-pump-thermostat-wiring-o-vs-b-reversing-valve-terminals-y1-y2-w2-aux-and-emergency-heat-fault-terminals-and-smart-thermostat-setup.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Electrical and controls</span>
+<h1>Heat Pump Thermostat Wiring: O vs B, Y1, Y2, W2/AUX, E, L and Smart Thermostat Setup</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">A heat pump thermostat has more jobs than a furnace-and-AC thermostat. It must start the compressor, pick which way the refrigerant flows, and decide when backup heat is allowed. One wrong setting, usually O versus B, can make a working system blow the wrong temperature. This lesson walks the terminals, the replacement settings and the meter checks.</p>
+
+<h2>How we label what is sourced</h2>
+<p>Government and national-lab pages give us the lockout numbers and the control concepts. They say little about individual terminal letters, so those parts are marked <strong>Our own</strong>: general trade practice that we have not tied to a government page. Terminal letters and board layouts vary by maker. The wiring diagram on the equipment and the instructions for the thermostat win over anything on this page.</p>
+
+<h2>The terminals, one at a time</h2>
+<ul>
+<li><strong>R and C.</strong> R is the 24 volt supply from the transformer and C is its return path. Our own: the transformer secondary is nominally 24 volts. See <a href="relays-transformers-and-24v-control.html">Relays, Transformers and 24V Control</a> for how it is made.</li>
+<li><strong>G.</strong> Calls the indoor fan relay. A published thermostat-wiring tutorial by an engineer says G completes the circuit from the R leg to the blower contactor.</li>
+<li><strong>Y1 and Y2.</strong> The same tutorial says Y energizes the compressor and condenser contactor. Y1 is first-stage cooling or first-stage compression. Our own: Y2 is the second stage on two-stage equipment, and it stays unused on single-stage equipment.</li>
+<li><strong>O and B.</strong> These two names describe two valve designs. The same tutorial says O powers the reversing valve in cooling, for valves that sit unpowered in heating, and B powers it in heating, for valves that sit unpowered in cooling. If a thermostat uses O it does not use B. The U.S. Department of Energy only notes that the reversing valve changes the direction of refrigerant flow, and that it is also used to defrost the outdoor coil. The valve in your unit decides which letter is right, not the thermostat.</li>
+<li><strong>W2 or AUX.</strong> The tutorial says first-stage heat on a heat pump thermostat comes from the reversing valve and compressor, and back-up heat comes from R to W2. Our own: W2 usually feeds the heat strip relay or sequencer in the air handler. <a href="heat-pump-backup-heat-strips-kw-sizing-breakers-and-staging.html">Heat Strip Size for a Heat Pump</a> covers strip sizing.</li>
+<li><strong>E.</strong> Our own: E asks for emergency heat, where the compressor is off and only backup heat runs. On many installations E is jumpered to W2 at the equipment, or the thermostat does the job from its own EM HEAT setting. Read the board. <a href="emergency-heat-vs-auxiliary-heat-and-lockouts.html">Emergency Heat vs. Auxiliary Heat and Lockouts</a> explains the difference between emergency and auxiliary.</li>
+<li><strong>L or X.</strong> Our own: on some outdoor units L is a fault or status output that lights an alert on the thermostat, and on others the letter means something else. Never treat it as a power terminal. Look it up on the equipment diagram, and leave it unconnected if the diagram does not use it.</li>
+<li><strong>Outdoor sensor terminals.</strong> Our own: usually two terminals marked with S or OS, not 24 volts. The sensor is a thermistor, so you check it with the meter on ohms, power off, against the maker&#39;s temperature chart. Lockouts depend on it; the Bonneville Power Administration reference lists an outdoor sensor, a weather-station thermostat, the outdoor unit board or a mechanical lockout as ways to get a lockout.</li>
+</ul>
+
+<figure><svg viewBox="0 0 800 420" role="img" aria-label="Wiring diagram: thermostat terminals R, C, G, Y1, O/B and W2 connect to the air handler board. R and C carry 24 volts from the board toward the thermostat. G goes to the fan relay and W2 goes to the heat strip relay. C, Y1 and O continue to the outdoor unit coil return, contactor coil and reversing valve coil." style="max-width:100%;height:auto;color:inherit" font-family="inherit">
+<title>Heat pump thermostat to air handler board to outdoor unit</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+<g fill="none" stroke="currentColor" stroke-width="1.5">
+<rect x="20" y="30" width="130" height="370" rx="6"/>
+<rect x="300" y="30" width="170" height="370" rx="6"/>
+<rect x="620" y="30" width="170" height="370" rx="6"/>
+<rect x="360" y="180" width="105" height="40" rx="4"/>
+<rect x="360" y="330" width="105" height="40" rx="4"/>
+</g>
+<g fill="currentColor" font-size="13">
+<text x="85" y="56" text-anchor="middle" font-weight="bold">Thermostat</text>
+<text x="385" y="56" text-anchor="middle" font-weight="bold">Air handler board</text>
+<text x="705" y="56" text-anchor="middle" font-weight="bold">Outdoor unit</text>
+<text x="35" y="104">R</text><text x="35" y="154">C</text><text x="35" y="204">G</text><text x="35" y="254">Y1</text><text x="35" y="304">O/B</text><text x="35" y="354">W2/AUX</text>
+<text x="312" y="104">R</text><text x="312" y="154">C</text><text x="312" y="204">G</text><text x="312" y="254">Y1</text><text x="312" y="304">O</text><text x="312" y="354">W2</text>
+<text x="345" y="104" font-size="12">from transformer</text>
+<text x="412" y="204" text-anchor="middle">Fan relay</text>
+<text x="412" y="354" text-anchor="middle">Heat strip relay</text>
+<text x="634" y="154">C: coil return</text>
+<text x="634" y="254">Y1: contactor coil</text>
+<text x="634" y="304">O: valve coil</text>
+</g>
+<g fill="currentColor" font-size="12" text-anchor="middle">
+<text x="225" y="92">24 V supply</text>
+<text x="225" y="142">return path</text>
+<text x="225" y="192">fan call</text>
+<text x="225" y="242">compressor call</text>
+<text x="225" y="292">valve signal</text>
+<text x="225" y="342">backup heat call</text>
+<text x="545" y="142">return</text>
+<text x="545" y="242">compressor call</text>
+<text x="545" y="292">valve signal</text>
+</g>
+<g fill="none" stroke="currentColor" stroke-width="1.5" marker-end="url(#ah)">
+<path d="M300,100 H152"/>
+<path d="M300,150 H152"/>
+<path d="M150,200 H298"/>
+<path d="M150,250 H298"/>
+<path d="M150,300 H298"/>
+<path d="M150,350 H298"/>
+<path d="M336,200 H358"/>
+<path d="M336,350 H358"/>
+<path d="M336,150 H618"/>
+<path d="M336,250 H618"/>
+<path d="M336,300 H618"/>
+</g>
+</svg>
+<figcaption>Our own diagram, simplified. Arrows point the way each signal or supply travels. R and C bring 24 volts from the board transformer to the thermostat. The calls G, Y1, O/B and W2 go from the thermostat to the board, which passes Y1, O and the common to the outdoor unit and sends W2 to the heat strip relay.</figcaption></figure>
+
+<h2>What happens when O/B is set wrong</h2>
+<p>The thermostat decides when the valve terminal is live. The valve decides what live means. If they disagree, the valve sits in the opposite position from what the thermostat intends. Our own rule of thumb: a heat pump that makes the wrong temperature in one mode, with the compressor, outdoor fan and indoor fan all running, should have its O/B setting checked before anyone touches refrigerant. The refrigerant circuit is working, just in the opposite direction. On a cooling call with the setting backward, the indoor coil does the heating, so the register blows warm air and the outdoor fan blows cool air out of the unit. On a heating call it is the reverse. The Department of Energy notes the reversing valve is also what defrosts the outdoor coil in winter, so a wrong setting can send defrost the wrong way too.</p>
+
+<h2>Replacing a thermostat with a smart one</h2>
+<p>The Department of Energy&#39;s Building America Solution Center says to shut off power at the breaker panel, confirm the wires are dead, photograph the wiring and label each wire with its terminal letter before disconnecting. It also says some smart thermostat models need the C wire for continuous power, and that heat pump homes should have adaptive recovery to avoid costly electric resistance heat. After the install, test heating, cooling and the fan, moving the setpoint about 3 degrees from room temperature to see the system respond.</p>
+<p>Then set the thermostat in its installer menu. Our own list of what to check:</p>
+<ul>
+<li><strong>System type:</strong> heat pump, with the right number of compressor stages and backup stages. Do not leave it as conventional.</li>
+<li><strong>O/B:</strong> match the valve, as above. Verify it with the meter, not the factory default.</li>
+<li><strong>Aux lockout temperature:</strong> the Bonneville Power Administration program sets auxiliary heat lockout to 35&deg;F or lower, and its reference says incorrect lockout settings caused the majority of its inspection failures. In a national-lab report of cold-climate field homes, the 11 sites that listed an aux lockout ranged from 20&deg;F to 40&deg;F, and six of them used 35&deg;F. That is a program requirement and a research summary, not a code rule. The right number depends on the house and the equipment.</li>
+<li><strong>Compressor lockout:</strong> the same program asks for it disabled or 5&deg;F or lower. The same national-lab report notes that most systems already have a hard-coded compressor lockout at a colder temperature to protect the equipment.</li>
+<li><strong>Outdoor sensor:</strong> the lockouts only work if the control can see outdoor temperature.</li>
+<li><strong>Compressor minimum off time:</strong> none of the government thermostat sheets we read give a number. Our own: many controls hold the compressor off for a few minutes after it stops so pressures can equalize, so use the maker&#39;s setting and do not shorten it to speed up a test.</li>
+</ul>
+
+<h2>Dual fuel at the furnace board</h2>
+<p>Our own: in a dual-fuel setup, a dual-fuel board or furnace control often sits between the thermostat and the equipment. The thermostat sends its heat pump call to the board, which sends the compressor call and reversing valve signal to the outdoor unit and decides when the furnace burner takes over. The terminal names on the board differ by maker, so wire from its diagram, not from this page. Whether the board lets a heat pump call and a furnace call run together depends on the control, so read its manual. The changeover temperature itself is covered in <a href="dual-fuel-heat-pump-with-a-gas-furnace-how-the-changeover-temperature-is-set.html">Dual Fuel Heat Pump With a Gas Furnace</a>. A Pacific Northwest National Laboratory report on DOE cold climate heat pump field tests saw the switchover to auxiliary heat at around 30 to 35&deg;F, programmed in the thermostat.</p>
+
+<h2>Testing with a meter</h2>
+<p>Our own sequence. Low-voltage checks are done live; anything on the line-voltage side is done with the power off, locked out and tagged, and verified dead with the meter.</p>
+<ol>
+<li><strong>At the air handler board:</strong> AC volts from R to C. You expect about 24 volts. No voltage means the transformer, its fuse or its supply, not the thermostat.</li>
+<li>Call cooling and read Y1 to C, G to C and O to C at the board terminals. Then call heating and read them again. Compare the O to C reading to what the valve needs.</li>
+<li>Call backup heat (or emergency heat) and read W2 to C. If it reads 24 volts but nothing heats, move to the relay coil and the strip circuit. See <a href="relays-transformers-and-24v-control.html">Relays, Transformers and 24V Control</a>. Strip heat draws large current, so check the breaker and wire size against the nameplate.</li>
+<li><strong>At the outdoor unit:</strong> read Y1 to C at the low-voltage terminals, and O to C at the valve coil leads. If the board shows a signal but the unit does not, you have a wire, splice or terminal problem between them.</li>
+<li>With the power off and locked out, take the valve coil lead off and read coil resistance. A reading near zero or open means a bad coil. The right resistance comes from the maker, not from us.</li>
+</ol>
+<p>Check the control power too: the <a href="hvac-control-transformers-208-vs-240-volt-primary-taps-va-sizing-for-added-accessories-class-2-limits-and-secondary-voltage-checks.html">Control Transformers lesson</a> covers primary taps, VA and secondary voltage checks.</p>
+
+<h2>Worked example: cooling blows warm, O/B is set to B</h2>
+<p>This is our own teaching case, with assumed numbers. The house has a heat pump whose valve coil is the O type, so it is energized in cooling. A new smart thermostat was installed with O/B left on its factory B setting. The customer says cooling blows warm, and it has not been run in heating yet this season.</p>
+<p><strong>Assumptions:</strong> room 78&deg;F; the transformer secondary reads 25.1 V; the outdoor unit and indoor fan run normally; line voltage at the outdoor contactor reads 242 V when pulled in; the readings below are at the outdoor unit&#39;s low-voltage terminals.</p>
+<table>
+<thead><tr><th scope="col">Call</th><th scope="col">Thermostat O/B setting</th><th scope="col">Y1 to C</th><th scope="col">O to C</th><th scope="col">What the O-type valve does</th></tr></thead>
+<tbody>
+<tr><td>Cooling</td><td>B (wrong)</td><td>25.1 V</td><td>0.0 V</td><td>Unpowered, so it sits in heating position</td></tr>
+<tr><td>Heating</td><td>B (wrong)</td><td>25.1 V</td><td>25.1 V</td><td>Powered, so it moves to cooling position</td></tr>
+<tr><td>Cooling</td><td>O (fixed)</td><td>25.1 V</td><td>25.1 V</td><td>Powered, cooling position</td></tr>
+<tr><td>Heating</td><td>O (fixed)</td><td>25.1 V</td><td>0.0 V</td><td>Unpowered, heating position</td></tr>
+</tbody></table>
+<p><strong>Step by step.</strong> (1) On a cooling call, Y1 to C reads 25.1 V, so the call is reaching the outdoor unit and the wiring from the board is not the problem. (2) O to C reads 0.0 V, but an O-type valve needs power in cooling. (3) We read the supply air at a register as 92&deg;F against the 78&deg;F room, so 92 &minus; 78 = +14&deg;F: a rise where we want a drop. (4) The same setting would power O on a heating call, moving the valve to its cooling position, so winter heat would blow cool air. Nobody has called for heat yet this fall, which is why only cooling was noticed. (5) The fix is in the thermostat installer menu: change O/B from B to O, then repeat the four readings. Cooling now shows 25.1 V on O to C and the supply air should fall below the room temperature. We did not touch refrigerant.</p>
+
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Heat Pump Thermostat Wiring, O vs B and Setup</h2><p><em>The valve decides O or B. The thermostat only has to agree.</em></p><ul><li>R is 24 V supply, C is return, G is fan, Y1 and Y2 are compressor stages, W2 is backup heat.</li><li>O powers the valve in cooling, B in heating. Use one, never both.</li><li>Cooling blows warm and heating blows cool: check O/B before anything else.</li><li>Meter O to C in both modes. It should be live in only one.</li><li>Aux lockout 35&deg;F or lower and compressor lockout off or 5&deg;F or lower in one utility program. Check your own maker.</li><li>Label and photograph wires, power off first, and wire dual fuel from the board diagram.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="thermostat-wiring-and-smart-thermostats.html">Thermostat Wiring and Smart Thermostats</a></li><li><a href="emergency-heat-vs-auxiliary-heat-and-lockouts.html">Emergency Heat vs. Auxiliary Heat and Lockout Temperatures</a></li><li><a href="relays-transformers-and-24v-control.html">Relays, Transformers and 24V Control</a></li><li><a href="hvac-control-transformers-208-vs-240-volt-primary-taps-va-sizing-for-added-accessories-class-2-limits-and-secondary-voltage-checks.html">HVAC Control Transformers: 208 vs 240 Volt Primary Taps, VA Sizing and Secondary Voltage Checks</a></li><li><a href="dual-fuel-heat-pump-with-a-gas-furnace-how-the-changeover-temperature-is-set.html">Dual Fuel Heat Pump With a Gas Furnace: How the Changeover Temperature Is Set</a></li></ul></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li><a href="https://www.energy.gov/energysaver/heat-and-cool/heat-pump-systems/air-source-heat-pumps">U.S. Department of Energy, Energy Saver: Air-Source Heat Pumps</a> (reversing valve, defrost)</li>
+<li><a href="https://www.bpa.gov/-/media/Aep/energy-efficiency/residential/residential-ptcs-essentials/lockout-and-bp-reference.pdf">Bonneville Power Administration: lockout and balance point reference</a> (35&deg;F aux lockout, inspection failures, how lockouts are done)</li>
+<li><a href="https://www.bpa.gov/-/media/Aep/energy-efficiency/residential/residential-ptcs-essentials/Tstat-support-sheets-all.pdf">Bonneville Power Administration: heat pump thermostat support sheets</a> (compressor lockout disabled or 5&deg;F or lower; aux 35&deg;F or lower)</li>
+<li><a href="https://basc.pnnl.gov/resource-guides/thermostat-controls">DOE Building America Solution Center (PNNL): Thermostat Controls</a> (C wire, labeling, adaptive recovery, testing)</li>
+<li><a href="https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-37127.pdf">Pacific Northwest National Laboratory, PNNL-37127: performance results from DOE cold climate heat pump field tests</a> (switchover about 30 to 35&deg;F)</li>
+<li>DOE national-laboratory field validation report on cold-climate air-source heat pumps (2023), hosted on the DOE heat pump data site (Table 5 lockout settings at 13 sites). Plain text only.</li>
+<li>A published engineer&#39;s tutorial on thermostatic wiring principles (2011, from an engineering firm), for O, B, W2, Y and G terminal functions. Plain text only.</li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
