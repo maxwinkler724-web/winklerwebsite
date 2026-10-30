@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Backpressure Steam Turbine Drives in Plants: PRV Replacement, Governors, Trip Tests and Drains</title>
+<meta property="og:title" content="Backpressure Steam Turbine Drives in Plants: PRV Replacement, Governors, Trip Tests and Drains"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Backpressure steam turbine drives: replacing PRVs for power, governors, overspeed trip tests, warm-up and drains, lube oil, vibration and safety.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Backpressure Steam Turbine Drives in Plants: PRV Replacement, Governors, Trip Tests and Drains", "about": "Plant systems", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-30", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/backpressure-steam-turbine-drives-in-plants-replacing-prvs-governors-overspeed-trip-testing-warmup-drains-and-power-from-pressure-drop.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/backpressure-steam-turbine-drives-in-plants-replacing-prvs-governors-overspeed-trip-testing-warmup-drains-and-power-from-pressure-drop.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/backpressure-steam-turbine-drives-in-plants-replacing-prvs-governors-overspeed-trip-testing-warmup-drains-and-power-from-pressure-drop.html"><meta property="og:description" content="Backpressure steam turbine drives: replacing PRVs for power, governors, overspeed trip tests, warm-up and drains, lube oil, vibration and safety."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Backpressure Steam Turbine Drives in Plants: PRV Replacement, Governors, Trip Tests and Drains", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/backpressure-steam-turbine-drives-in-plants-replacing-prvs-governors-overspeed-trip-testing-warmup-drains-and-power-from-pressure-drop.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Plant systems</span>
+<h1>Backpressure Steam Turbine Drives in Plants: Replacing PRVs, Governors, Overspeed Trip Testing, Warm-Up, Drains and Power From Pressure Drop</h1>
+<p class="small datel">Last updated: 2026-10-30</p>
+<p class="lede">A pressure-reducing valve wastes the push in high-pressure steam as it throttles it down. A small backpressure turbine uses that push to turn a pump, a fan or a generator, then hands the exhaust to the low-pressure header. This lesson covers where these drives fit, how to estimate their power, and how to start, test and live safely around them.</p>
+<h2>Check the exact site</h2>
+<p><strong>Check the exact site.</strong> Every plant has its own turbine nameplate, trip settings, procedures and lockout rules. Use the maker's manual and your site procedures, and follow the API and ASME standards your plant is built to. The numbers in the worked example are estimates for learning, not design data.</p>
+<figure><svg viewBox="0 0 800 440" role="img" aria-label="Diagram of a backpressure steam turbine drive. Steam flows down the high-pressure header on the left, then right through a trip valve and a governor valve into the turbine, and out as exhaust to the low-pressure header on the right. A shaft runs down from the turbine to a pump, with feedwater arrows flowing left to right through the pump. A casing drain leaves the bottom of the turbine casing. A pressure-reducing valve bypass runs along the bottom from the high-pressure header to the low-pressure header." style="max-width:100%;height:auto;font-family:inherit" fill="none" stroke="currentColor" stroke-width="1.5"><title>Backpressure steam turbine drive with PRV bypass and casing drains</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor" stroke="none"/></marker></defs>
+<text x="10" y="26" font-size="13" fill="currentColor" stroke="none">High-pressure header</text>
+<text x="790" y="26" text-anchor="end" font-size="13" fill="currentColor" stroke="none">Low-pressure header</text>
+<line x1="50" y1="34" x2="50" y2="62" marker-end="url(#ah)"/>
+<line x1="50" y1="62" x2="50" y2="370" stroke-width="5"/>
+<line x1="730" y1="62" x2="730" y2="370" stroke-width="5"/>
+<line x1="730" y1="372" x2="730" y2="410" marker-end="url(#ah)"/>
+<text x="790" y="428" text-anchor="end" font-size="12" fill="currentColor" stroke="none">To low-pressure loads</text>
+<line x1="50" y1="120" x2="124" y2="120" marker-end="url(#ah)"/>
+<path d="M126,108 L154,132 L154,108 L126,132 Z"/>
+<text x="140" y="92" text-anchor="middle" font-size="12" fill="currentColor" stroke="none">Trip valve</text>
+<line x1="154" y1="120" x2="220" y2="120" marker-end="url(#ah)"/>
+<path d="M221,108 L249,132 L249,108 L221,132 Z"/>
+<line x1="235" y1="120" x2="235" y2="104"/>
+<text x="235" y="76" text-anchor="middle" font-size="12" fill="currentColor" stroke="none">Governor valve</text>
+<line x1="250" y1="120" x2="298" y2="120" marker-end="url(#ah)"/>
+<path d="M300,100 L400,85 L400,155 L300,140 Z"/>
+<text x="350" y="125" text-anchor="middle" font-size="12" fill="currentColor" stroke="none">Turbine</text>
+<line x1="400" y1="120" x2="722" y2="120" marker-end="url(#ah)"/>
+<text x="560" y="108" text-anchor="middle" font-size="12" fill="currentColor" stroke="none">Exhaust steam</text>
+<line x1="350" y1="155" x2="350" y2="244" stroke-dasharray="6 4"/>
+<text x="362" y="205" font-size="12" fill="currentColor" stroke="none">Shaft and guarded coupling</text>
+<circle cx="350" cy="270" r="26"/>
+<text x="350" y="274" text-anchor="middle" font-size="12" fill="currentColor" stroke="none">Pump</text>
+<line x1="110" y1="270" x2="322" y2="270" marker-end="url(#ah)"/>
+<text x="216" y="260" text-anchor="middle" font-size="12" fill="currentColor" stroke="none">Feedwater in</text>
+<line x1="378" y1="270" x2="560" y2="270" marker-end="url(#ah)"/>
+<text x="470" y="260" text-anchor="middle" font-size="12" fill="currentColor" stroke="none">Discharge to boiler</text>
+<line x1="315" y1="142" x2="315" y2="185"/>
+<path d="M308,157 L322,173 L322,157 L308,173 Z"/>
+<line x1="315" y1="185" x2="228" y2="185" marker-end="url(#ah)"/>
+<text x="220" y="189" text-anchor="end" font-size="12" fill="currentColor" stroke="none">Casing drains to trap</text>
+<line x1="50" y1="370" x2="364" y2="370" marker-end="url(#ah)"/>
+<path d="M366,358 L394,382 L394,358 L366,382 Z"/>
+<line x1="380" y1="370" x2="380" y2="350"/>
+<line x1="394" y1="370" x2="722" y2="370" marker-end="url(#ah)"/>
+<text x="540" y="358" text-anchor="middle" font-size="12" fill="currentColor" stroke="none">PRV in parallel (backup path)</text>
+</svg><figcaption>Figure: the turbine and the PRV sit side by side between the same two headers. Steam flows from the high-pressure header, through the trip and governor valves, to the exhaust header. This is our own schematic.</figcaption></figure>
+<h2>Two jobs for a backpressure turbine</h2>
+<p>A <strong>backpressure</strong> (noncondensing) turbine sends all its exhaust into the plant steam system at the pressure the heating or process load needs. The DOE combined heat and power fact sheet says the exhaust pressure is set by those loads, with common distribution levels of 50, 150 and 250 psig. It also says a steam turbine can take over the pressure-reducing job of a PRV while making electricity, and that these turbines are typically installed in parallel with a conventional PRV for redundancy.</p>
+<p>The first job is <strong>mechanical drive</strong>. DOE Steam Tip Sheet 21 lists boiler feedwater pumps, forced and induced draft fans, blowers and air compressors as good fits. It says to consider a turbine when the boiler pressure is higher than the process needs, when electricity costs well above fuel, when a pump needs variable speed, or when equipment must keep running through a power outage. It also describes a motor and a turbine on opposite ends of one shaft for backup, picking either by setting turbine speed relative to the motor. A Department of Defense central heating plant criteria document (inactive, 2004) agrees that turbine drives pay when the exhaust has a use, and asks for enough motor-driven units to start the plant cold. For the pump side, see our <a href="boiler-feed-pumps-and-condensate-receivers-receiver-sizing-pump-npsh-hot-condensate-and-vacuum-return-units.html">boiler feed pump lesson</a>.</p>
+<p>The second job is <strong>power from the pressure drop</strong>: a turbine-generator in parallel with the PRV. Tip Sheet 20 gives practical limits: a steady steam flow of at least 3,000 lb/hr, a pressure drop of at least 100 psi, and a turbine of about 50 kW or more. It also notes the exhaust leaves cooler than it would from a PRV, so the boiler must make up that heat. Our <a href="prv-station-basics.html">PRV station lesson</a> covers the valve this turbine sits beside, and the <a href="combined-heat-and-power-chp-basics-for-facility-techs-heat-recovery-efficiency-and-operations.html">CHP lesson</a> shows the bigger picture.</p>
+<h2>Worked example (our own): power and yearly kWh</h2>
+<p>Both estimates below use numbers from the DOE tip sheets. The flows, run times and grid price are <strong>our own assumptions</strong>.</p>
+<p><strong>A. Generator in parallel with a PRV.</strong> Tip Sheet 20 gives a rule of thumb as a chart of kW per 1,000 lb/hr (Mlb/hr) of steam, with reference lines at 10, 18 and 25 kW per Mlb/hr. The chart assumes 50 percent isentropic turbine efficiency, 96 percent generator efficiency and dry saturated inlet steam. Multiply the value you read by the steam flow.</p>
+<ol>
+<li>Assume 10,000 lb/hr of steam, so 10 Mlb/hr, and assume your pressures fall on the 18 line.</li>
+<li>Power = 10 Mlb/hr x 18 kW per Mlb/hr = 180 kW. The 10 and 25 lines would give 100 kW and 250 kW, so the answer depends on the pressure pair.</li>
+<li>Assume 6,000 run hours per year: 180 kW x 6,000 h = 1,080,000 kWh per year (600,000 to 1,500,000 kWh across the 10 and 25 lines).</li>
+<li>Tip Sheet 20 estimates generated power at $8.00 per MMBtu fuel as about $0.036/kWh (fuel cost x 0.003412 / (80 percent boiler x 95 percent generator)). At an assumed grid price of $0.12/kWh, the gap is $0.084/kWh, or about $90,720 per year before maintenance and capital cost.</li>
+</ol>
+<p><strong>B. Turbine driving a feed pump.</strong> Tip Sheet 21 works a 300 hp feedwater pump on 600 psig, 750 F steam exhausting at 40 psig, at 43 percent isentropic efficiency and a steam rate of 26 lb/hp-hr.</p>
+<ol>
+<li>Steam flow = 26 lb/hp-hr x 300 hp = 7,800 lb/hr.</li>
+<li>Shaft power = 300 hp x 0.7457 kW/hp = 223.7 kW (our conversion). Per Mlb/hr that is 223.7 / 7.8 = about 28.7 kW.</li>
+<li>The electric motor it replaces, at 95 percent efficiency: 223.7 / 0.95 = about 235.5 kW, matching the 235.6 kWh per hour in the tip sheet.</li>
+<li>At an assumed 6,000 h per year: 235.6 kW x 6,000 h = about 1,413,600 kWh of electricity avoided, and 7,800 lb/hr x 6,000 h = 46.8 million lb of steam used.</li>
+<li>The tip sheet's fuel check: 7,800 lb/hr x 103 Btu/lb = 0.80 MMBtu/hr, which at 80 percent boiler efficiency and $8.00 per MMBtu is about $8.00 per hour. Break-even electricity price is about $0.034/kWh. Its table shows about $22,620 per year saved at $0.05/kWh and 6,000 h.</li>
+</ol>
+<p>Savings swing with power price, fuel price and hours, so run the numbers with your own rates.</p>
+<h2>Governors and speed control</h2>
+<p>The governor valve is the throttle. Tip Sheet 21 says throttling valves or nozzle governors set steam flow, which lets a turbine do the job of a motor with a variable-speed drive. A Texas A&amp;M Turbomachinery Laboratory paper describes mechanical shaft governors and hydraulic governors, and calls hydraulic ones more accurate, easier to adjust and inherently more reliable and safe.</p>
+<p>Governor trouble is a common cause of trips. A Nuclear Regulatory Commission study of auxiliary pump turbines found most overspeed trips traced to the governor or to the trip valve and trip mechanism. Examples include a governor valve that bound while closing, hydraulic fluid trapped in the speed-setting cylinder (up to 30 minutes to decay), and a speed setting left too high during testing. Check the speed setting before every start.</p>
+<h2>Overspeed trip and trip testing</h2>
+<p>The trip is the last defense if the governor fails. It closes the trip valve independent of the governor. The Texas A&amp;M paper on general purpose turbines describes an electronic overspeed trip set 10 percent above maximum continuous speed and a mechanical trip set at 12 percent, with 1 percent tolerance. Your nameplate and maker's manual govern, not those figures.</p>
+<p>The same paper gives no fixed test interval. It ties tests to events: hand-trip the turbine whenever it leaves service, run an overspeed test when it is uncoupled, and check the trip valve closed on return to service. The maritime manual includes a hand-trip and reset in every start. Use the interval your site and the maker require, follow a written procedure, and keep people clear of the coupling during the test.</p>
+<h2>Warming up and draining the casing</h2>
+<p>Water in a turbine is the big enemy. The Nuclear Regulatory Commission study found four plants with overspeed trips from water in the steam supply: condensate carries less energy than steam, so the turbine slows, the governor opens wide, and when the water clears the governor cannot close fast enough. Its fix at several plants was warming the turbine through a small bypass line first.</p>
+<p>The maritime manual lays out a feed pump start in this order: lube oil running, sealing steam on, governor at minimum, casing and steam line drains open, exhaust valve opened slowly, then the inlet valve opened slowly while watching the drain lines, closing drains once they run clear. Our <a href="water-hammer-in-steam-and-hot-water.html">water hammer lesson</a> covers why slugs are so violent. DOE's operating experience summary adds: do not introduce steam into piping until you have confirmed no liquid water is present, and keep trap blowdown valves open until liquid stops flowing. In its Brookhaven example, two people died after steamfitters used an in-line gate valve to clear condensate instead of the installed drains, with no written startup instructions.</p>
+<h2>Steam quality, condensate, lube oil and vibration</h2>
+<p>The DOE fact sheet gives backpressure exhaust quality of 98 to 100 percent in its examples, so the exhaust is near saturation. The Texas A&amp;M author reports no fouling or blade damage at a plant with dry, clean steam.</p>
+<p>Water also gets into the oil. The Texas A&amp;M lube oil paper says gland seal leakage constantly adds water to turbine lube oil. It gives a warning level of 1,000 ppm (0.1 percent), an in-service target below 200 ppm, typical bearing temperatures of 49 to 71 C (120 to 160 F), and notes that oil oxidation roughly doubles for every 10 C above 60 C (140 F). Tin-babbitt bearings begin to fail at 121 C (250 F).</p>
+<p>For vibration, trend against a baseline taken when the machine was new or after overhaul. A Texas A&amp;M case study of backpressure turbines found intermittent vibration spikes, with phase angle drifting through 360 degrees, caused by a rub at the oil seal from carbonized oil. Low seal air pressure and a clogged breather were behind it.</p>
+<h2>Safety around rotating equipment and hot steam</h2>
+<ul>
+<li><strong>Lock out before service.</strong> OSHA 3120 describes the steps: prepare, shut down, isolate, apply locks, release or restrain stored energy, and confirm the isolation worked. Steam lines hold stored energy; a closed valve alone is not proof.</li>
+<li><strong>Guard the shaft.</strong> OSHA's interpretation of 29 CFR 1910.219 says there is no size or speed exemption, and rotating shafts seven feet or less from the floor or platform generally must be enclosed. An older OSHA letter accepted a sleeve fully covering a coupling. Put the guard back after every job.</li>
+<li><strong>Treat every line as hot and possibly wet.</strong> In the DOE example at Los Alamos, a pipefitting crew restoring an isolated system with a general startup procedure had a flange fracture because condensate was not drained, releasing 340 F steam for about 5 minutes. The crew heard noises and backed away, and no one was hurt.</li>
+</ul>
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Backpressure Steam Turbine Drives</h2><p><em>Warm slowly, drain first, test the trip, guard the shaft.</em></p><ul><li>Turbine sits in parallel with the PRV; exhaust goes to the low-pressure header.</li><li>DOE rule of thumb for a generator: 10 to 25 kW per 1,000 lb/hr, read from the chart.</li><li>Tip sheet minimums: 3,000 lb/hr, 100 psi drop, about 50 kW.</li><li>Open casing and line drains, then admit steam slowly; close drains when they run clear.</li><li>Check the governor speed setting before every start.</li><li>Trip test per the maker and site procedure; lock out before service.</li><li>Watch oil water (warning 1,000 ppm), bearing temperature and vibration trend.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="prv-station-basics.html">PRV Station Basics</a></li><li><a href="combined-heat-and-power-chp-basics-for-facility-techs-heat-recovery-efficiency-and-operations.html">Combined Heat and Power (CHP) Basics for Facility Techs</a></li><li><a href="water-hammer-in-steam-and-hot-water.html">Water Hammer in Steam and Hot Water</a></li><li><a href="boiler-feed-pumps-and-condensate-receivers-receiver-sizing-pump-npsh-hot-condensate-and-vacuum-return-units.html">Boiler Feed Pumps and Condensate Receivers</a></li><li><a href="low-vs-high-pressure-steam.html">Low-Pressure vs High-Pressure Steam</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li><a href="https://nrel.gov/docs/fy12osti/52768.pdf">U.S. DOE Advanced Manufacturing Office: Steam Tip Sheet 20, Replace pressure-reducing valves with backpressure turbogenerators (2012)</a></li>
+<li><a href="https://nrel.gov/docs/fy12osti/52755.pdf">U.S. DOE Advanced Manufacturing Office: Steam Tip Sheet 21, Consider steam turbine drives for rotating equipment (2012)</a></li>
+<li><a href="https://betterbuildingssolutioncenter.energy.gov/sites/default/files/attachments/CHP_Steam_Turbines.pdf">U.S. DOE: CHP steam turbines technology fact sheet</a></li>
+<li>U.S. Department of Defense: Unified Facilities Criteria 3-430-08N, Central Heating Plants (2004, inactive), sections 3.9.1 and 3.9.2. Plain-text citation.</li>
+<li><a href="https://www.nrc.gov/documents-reports/generic-communications/information-notices/1986/in86014s1">U.S. Nuclear Regulatory Commission: Information Notice 86-14, Supplement 1, turbine-driven pump overspeed trips (1986)</a></li>
+<li><a href="https://ehss.energy.gov/oesummary/oesummary2006/2006-11screen.pdf">U.S. DOE: Operating Experience Summary, water hammer events (2006)</a></li>
+<li><a href="https://oaktrust.library.tamu.edu/server/api/core/bitstreams/e56527bf-bc22-4b48-9444-cbbf1fd91817/content">Texas A&amp;M University Turbomachinery Laboratory: General purpose steam turbine reliability</a></li>
+<li><a href="https://turbolab.tamu.edu/wp-content/uploads/2018/08/METS2Tutorial8.pdf">Texas A&amp;M University Turbomachinery Laboratory: steam turbine lubrication tutorial</a></li>
+<li><a href="https://turbolab.tamu.edu/wp-content/uploads/2018/08/METS2CaseStudy5.pdf">Texas A&amp;M University Turbomachinery Laboratory: Resolving intermittent vibration spikes on steam turbines</a></li>
+<li><a href="https://weh.maritime.edu/campus/TSPS/manual/FeedSysOps.html">State maritime college engineering manual: feed system operations</a></li>
+<li><a href="https://www.osha.gov/sites/default/files/publications/OSHA3120.pdf">OSHA: Control of Hazardous Energy, Lockout/Tagout (OSHA 3120)</a></li>
+<li><a href="https://www.osha.gov/laws-regs/standardinterpretations/2006-01-09">OSHA: Standard interpretation on guarding of shafts, 29 CFR 1910.219 (2006)</a></li>
+<li><a href="https://www.osha.gov/laws-regs/standardinterpretations/1975-06-23">OSHA: Standard interpretation on guarding shaft couplings (1975, archived)</a></li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
