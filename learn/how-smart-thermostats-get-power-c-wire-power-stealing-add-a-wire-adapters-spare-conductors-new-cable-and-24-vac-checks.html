@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How Smart Thermostats Get Power: C Wire, Power Stealing, Adapters and a 24 VAC Check</title>
+<meta property="og:title" content="How Smart Thermostats Get Power: C Wire, Power Stealing, Adapters and a 24 VAC Check"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="How Wi-Fi thermostats get power: the C wire, power stealing and its side effects, spare conductors, add-a-wire adapters, new cable and a 24 VAC check.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "How Smart Thermostats Get Power: C Wire, Power Stealing, Adapters and a 24 VAC Check", "about": "Electrical and controls", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/how-smart-thermostats-get-power-c-wire-power-stealing-add-a-wire-adapters-spare-conductors-new-cable-and-24-vac-checks.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/how-smart-thermostats-get-power-c-wire-power-stealing-add-a-wire-adapters-spare-conductors-new-cable-and-24-vac-checks.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/how-smart-thermostats-get-power-c-wire-power-stealing-add-a-wire-adapters-spare-conductors-new-cable-and-24-vac-checks.html"><meta property="og:description" content="How Wi-Fi thermostats get power: the C wire, power stealing and its side effects, spare conductors, add-a-wire adapters, new cable and a 24 VAC check."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "How Smart Thermostats Get Power: C Wire, Power Stealing, Adapters and a 24 VAC Check", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/how-smart-thermostats-get-power-c-wire-power-stealing-add-a-wire-adapters-spare-conductors-new-cable-and-24-vac-checks.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Electrical and controls</span>
+<h1>How Smart Thermostats Get Power: C Wire, Power Stealing, Adapters and a 24 VAC Check</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">A mechanical thermostat was just a switch. A Wi-Fi thermostat has a screen, a radio and a processor that never sleep, so it needs steady power. This lesson covers where that power comes from, what goes wrong when it is borrowed through the heating or cooling wires, and the fixes a technician has, from a spare wire in the cable to new cable. New to the site? Begin at <a href="start-here.html">Start Here</a>.</p>
+<h2>Check before you rely on this</h2>
+<p><strong>Check the equipment label.</strong> This page is general education built from federal, state-agency, national-lab and university pages read in 2026. Terminal layouts and thermostat instructions differ. Follow the installation instructions for your equipment and thermostat, and ask a qualified electrician or HVAC professional when in doubt. Ordinary control wiring is 24 volts, but the transformer feeding it is connected to line voltage, so shut the power off at the equipment before touching wiring.</p>
+<h2>The circuit in plain terms</h2>
+<p>PNNL&#39;s Building America solution center notes that most smart thermostats need a low-voltage circuit of 24 volts AC, and that there are no thermostats compatible with both 24 volt and 120 or 240 volt systems. The 24 volts comes from a transformer on the furnace or air handler. R is the hot side of that transformer. The equipment calls (W for heat, Y for cooling, G for the fan) are relay or contactor coils that complete their circuit back to the transformer&#39;s other side, which is the common, labeled C. A thermostat call simply connects R to one of those terminals. If you want the full chain, see <a href="relays-transformers-and-24v-control.html">Relays, Transformers and 24V Control</a>.</p>
+<p>Now add a thermostat that needs power all the time. ENERGY STAR says that most, but not all, smart thermostats work by receiving power through a "C-wire," or common wire. A PNNL guide adds that the C wire provides continuous power so features such as the LED display work. A C wire gives the thermostat its own complete loop from R to C, and that loop has nothing to do with calling for heat or cooling.</p>
+<h2>Power stealing: how it works and why it bites</h2>
+<p>When there is no C wire, some thermostats borrow power instead. This part is our own explanation, because we did not find a government or university page that describes it. The idea is that the thermostat sends a little current from R, through its own power circuit, and out a call terminal such as W or Y, on through that equipment&#39;s relay coil, and back to the transformer. The current is kept small so that the coil should not pull in. It works until it does not.</p>
+<figure><svg role="img" aria-label="Wiring diagram: a thermostat on the left with R, W, Y, G and C terminals, wired to a furnace control board on the right that holds a 24 volt transformer and relay coils. A dashed path shows power stealing: current leaves the transformer R side, passes through the thermostat power circuit, goes out the W wire, through the heat relay coil and back to the transformer C side." viewBox="0 0 800 450" style="max-width:100%;height:auto;display:block;margin:0 auto" xmlns="http://www.w3.org/2000/svg" font-family="system-ui,sans-serif">
+<title>Power stealing path from the transformer through the thermostat and the heat relay coil</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#e8590c" stroke="none"/></marker></defs>
+<g fill="none" stroke="currentColor" stroke-width="2">
+<rect x="20" y="30" width="200" height="350" rx="6"/>
+<rect x="360" y="30" width="420" height="350" rx="6"/>
+<rect x="670" y="60" width="90" height="280" rx="4"/>
+<rect x="50" y="96" width="100" height="28" rx="4"/>
+<g stroke-opacity=".55">
+<path d="M220 80 H670"/><path d="M220 140 H520"/><path d="M600 140 H640"/><path d="M220 200 H520"/><path d="M600 200 H640"/><path d="M220 260 H520"/><path d="M600 260 H640"/><path d="M640 140 V320"/><path d="M220 320 H670"/>
+</g>
+<rect x="520" y="128" width="80" height="24"/><rect x="520" y="188" width="80" height="24"/><rect x="520" y="248" width="80" height="24"/>
+</g>
+<g fill="currentColor" stroke="none"><circle cx="220" cy="80" r="4"/><circle cx="220" cy="140" r="4"/><circle cx="220" cy="200" r="4"/><circle cx="220" cy="260" r="4"/><circle cx="220" cy="320" r="4"/><circle cx="360" cy="80" r="4"/><circle cx="360" cy="140" r="4"/><circle cx="360" cy="200" r="4"/><circle cx="360" cy="260" r="4"/><circle cx="360" cy="320" r="4"/><circle cx="640" cy="200" r="3"/><circle cx="640" cy="260" r="3"/><circle cx="640" cy="320" r="3"/></g>
+<g fill="none" stroke="#e8590c" stroke-width="3" stroke-dasharray="8 6">
+<path d="M670 80 H100 V92" marker-end="url(#ah)"/><path d="M100 128 V140 H330" marker-end="url(#ah)"/><path d="M345 140 H514" marker-end="url(#ah)"/><path d="M602 140 H640 V320 H664" marker-end="url(#ah)"/>
+</g>
+<g fill="currentColor" stroke="none" font-size="13">
+<text x="120" y="55" text-anchor="middle" font-weight="600" stroke="none">Thermostat</text>
+<text x="570" y="55" text-anchor="middle" font-weight="600" stroke="none">Furnace control board</text>
+<text x="100" y="114" text-anchor="middle" font-size="11" stroke="none">Power circuit</text>
+<text x="205" y="70" text-anchor="end" stroke="none">R</text><text x="205" y="130" text-anchor="end" stroke="none">W</text><text x="205" y="190" text-anchor="end" stroke="none">Y</text><text x="205" y="250" text-anchor="end" stroke="none">G</text><text x="205" y="310" text-anchor="end" stroke="none">C</text>
+<text x="375" y="70" stroke="none">R</text><text x="375" y="130" stroke="none">W</text><text x="375" y="190" stroke="none">Y</text><text x="375" y="250" stroke="none">G</text><text x="375" y="310" stroke="none">C</text>
+<text x="560" y="168" text-anchor="middle" font-size="11" stroke="none">heat relay coil</text>
+<text x="560" y="228" text-anchor="middle" font-size="11" stroke="none">cooling contactor coil</text>
+<text x="560" y="288" text-anchor="middle" font-size="11" stroke="none">fan relay coil</text>
+<text x="715" y="196" text-anchor="middle" stroke="none">24 V</text><text x="715" y="214" text-anchor="middle" stroke="none">transformer</text>
+<text x="684" y="72" font-size="11" stroke="none">R</text><text x="684" y="312" font-size="11" stroke="none">C</text>
+<text x="290" y="312" text-anchor="middle" font-size="11" stroke="none">C wire, if present</text>
+<text x="80" y="413" stroke="none">Dashed path: power stealing through the W circuit</text>
+<text x="80" y="436" stroke="none">Solid line: conductor in the cable or on the board</text>
+</g>
+<path d="M30 410 H68" fill="none" stroke="#e8590c" stroke-width="3" stroke-dasharray="8 6"/>
+<path d="M30 433 H68" fill="none" stroke="currentColor" stroke-opacity=".55" stroke-width="2"/>
+</svg><figcaption>Our own simplified diagram. With no C wire, the thermostat borrows a trickle of current from R, passes it through its own power circuit, and returns it out the W wire and through the heat relay coil to the transformer. The coil sits in the middle of that stolen current. Real boards differ, so follow the equipment label.</figcaption></figure>
+<p>Why it causes trouble (our own explanation):</p>
+<ul>
+<li><strong>The coil is a real load in the path.</strong> A relay or contactor coil is built to respond to a current. If the stolen current rises, or the coil is more sensitive than expected, the coil can pull in. The furnace or compressor then starts with no call for it.</li>
+<li><strong>Chatter.</strong> Once the coil pulls in, the thermostat may stop stealing on that path, the current falls, and the coil drops out again. The cycle repeats, so you hear a relay buzzing or ticking, and a board may lock out or log faults. The worked example below shows the numbers.</li>
+<li><strong>Weak supply.</strong> The trickle that is safe to steal is small. A busy radio or backlight can want more than the trickle supplies, so the battery drains, the display resets, or Wi-Fi drops.</li>
+<li><strong>Equipment sensitivity.</strong> Newer boards and low-power relays can respond to less current than old ones, so a setup that worked for years on one furnace may misbehave on another.</li>
+</ul>
+<p>For scale, one university thermostat design project reports that the original thermostat base board drew roughly 4 volts of power from the 24 volt supply at up to 10 milliamps, and the author expected about 10 milliamps on the 24 volt side. That is a tiny load, but it shows that a thermostat&#39;s needs are measured in milliamps, the same range in which a relay coil can start to respond. The California Energy Commission&#39;s thermostat research report (Appendix A) takes the same cautious view: it says that it could be assumed that a C-wire is not necessarily available, and its reference design can run on batteries or on 24 volts AC when a C-wire exists.</p>
+<h2>Worked example (our own, with assumed numbers)</h2>
+<p>These inputs are assumptions chosen to show the idea. They are not measurements and not rated values for any real relay.</p>
+<ul>
+<li>Assumed pull-in current for the furnace control relay coil: 40 mA (the current needed to close it from rest).</li>
+<li>Assumed hold-in current: 25 mA (the current that keeps it closed once it is in).</li>
+<li>Assumed thermostat draw while its radio is busy: 50 mA. Assumed draw when it is idle: 12 mA.</li>
+</ul>
+<p>Step 1. Busy draw compared with pull-in: 50 mA / 40 mA = 1.25. The ratio is above 1, so the coil can pull in even though no one called for heat.</p>
+<p>Step 2. Idle draw compared with hold-in: 12 mA / 25 mA = 0.48. The ratio is below 1, so a closed coil cannot be held by the idle draw and it drops out.</p>
+<p>Step 3. With the radio busy again, the ratio is back to 1.25 and the coil pulls in again. The repeating pull-in and drop-out is the chatter. If the busy draw stays above 25 mA after the coil is in (50 / 25 = 2.0), the coil would instead stay latched and the equipment would run on its own until the thermostat settles.</p>
+<p>Moral: the margin between "a small trickle" and "a real call" can be only a factor of one or two, because the coil only cares about current.</p>
+<h2>Fixes, from simplest to most work</h2>
+<h3>1. Use a spare conductor</h3>
+<p>Thermostat cable often has more conductors than the old thermostat used. Our own tip: check both ends. If an unused conductor is in the cable at the thermostat, look at the furnace board end, identify it, and land it on the board&#39;s C terminal and the thermostat&#39;s C terminal. Label each wire with tape before disconnecting, as the PNNL guide advises, and check the board marking rather than trusting colors. The PNNL guide also describes a three-wire fallback: moving the G (fan) wire to C at both ends, at the cost of independent fan control.</p>
+<h3>2. Add-a-wire adapters (generic)</h3>
+<p>PNNL says that with only two wires, you typically need an AC power adapter or a third-party device. Our own description of a generic add-a-wire kit: a small device at the furnace that lets two existing conductors carry what used to take three, creating a usable common at the thermostat. Use it only with a thermostat that is listed as compatible, only when no spare conductor exists, and only by following the kit&#39;s instructions exactly.</p>
+<h3>3. Run new cable</h3>
+<p>The most reliable repair is new thermostat cable with enough conductors for C and for future needs. Our own advice: pull it where the building allows, keep it away from line-voltage wiring, and check local rules. Cable pulling can be hard in finished walls, which is why the options above exist.</p>
+<h3>4. A plug-in transformer is not the same as fixing the wiring</h3>
+<p>A plug-in transformer (wall adapter) can power a thermostat, but our own view is that it is not the same as a proper repair. It adds a second 24 volt source with its own cord and outlet, and it does not remove the stealing or the stress on the call circuits unless it is connected exactly as the thermostat instructions allow. Tying two separate 24 volt sources together without knowing their relative polarity can cancel or add, and can overload one of the transformers. The adapter also leaves the real issue, a missing common in the cable, unaddressed. Ask what the thermostat maker allows before using one.</p>
+<h2>Checking 24 VAC between R and C</h2>
+<p>This check is live. Use a rated meter (see <a href="multimeter-safety-and-cat-ratings.html">Multimeter Safety and CAT Ratings</a>) and only do it if you are trained to. Our own steps:</p>
+<ol>
+<li>Set the meter to AC volts. Touch one probe to the R terminal and the other to C on the furnace board, with the thermostat wires still on if you are checking the loop.</li>
+<li>A reading near 24 volts shows the transformer is feeding the board. Zero or near zero means no 24 volt supply (check the fuse and power), so see <a href="low-voltage-short-blown-fuse-and-transformer-troubleshooting.html">Low-Voltage Short, Blown Fuse and Transformer Troubleshooting</a>.</li>
+<li>Move the probe to the thermostat&#39;s R and C terminals. Good at the board but near zero at the thermostat means the C conductor is open, broken or landed on the wrong terminal.</li>
+<li>Re-check with the heat and cooling off, then during a call. A voltage that sags a lot in a call suggests a weak transformer or a load problem.</li>
+</ol>
+<p>For testing relays, see <a href="testing-capacitors-contactors-and-relays-with-a-meter.html">Testing Capacitors, Contactors and Relays with a Meter</a>.</p>
+<h2>When a smart thermostat is the wrong fit</h2>
+<p>ENERGY STAR notes that smart thermostats are compatible with most forced-air systems installed after 1975, that most are not compatible with baseboard heating, and that variable-speed, multi-stage or zoned systems typically need a professional-grade thermostat and installer. PNNL also warns that thicker wires usually mean line voltage, which is the wrong kind of thermostat. See <a href="thermostat-wiring-and-smart-thermostats.html">Thermostat Wiring and Smart Thermostats</a> for terminal meanings.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: How Smart Thermostats Get Power</h2><p><em>Fix the common, do not borrow it.</em></p><ul>
+<li>Most, but not all, smart thermostats want a C wire.</li>
+<li>Symptoms of power stealing: relay buzz, equipment starting alone, dead batteries, Wi-Fi drops.</li>
+<li>Look for a spare conductor first, then an approved adapter, then new cable.</li>
+<li>Check R to C with AC volts at the board and at the thermostat.</li>
+<li>A plug-in transformer does not fix a missing common.</li>
+<li>Power off before changing wires. Label every wire.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<h2>Related lessons</h2><ul>
+<li><a href="thermostat-wiring-and-smart-thermostats.html">Thermostat Wiring and Smart Thermostats</a></li>
+<li><a href="low-voltage-short-blown-fuse-and-transformer-troubleshooting.html">Low-Voltage Short, Blown Fuse and Transformer Troubleshooting</a></li>
+<li><a href="relays-transformers-and-24v-control.html">Relays, Transformers and 24V Control</a></li>
+<li><a href="testing-capacitors-contactors-and-relays-with-a-meter.html">Testing Capacitors, Contactors and Relays with a Meter</a></li>
+<li><a href="multimeter-safety-and-cat-ratings.html">Multimeter Safety and CAT Ratings</a></li>
+<li><a href="start-here.html">Start Here</a></li></ul>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li>ENERGY STAR: How to Choose a Smart Thermostat (energystar.gov, cited as plain text)</li>
+<li>ENERGY STAR: Smart Thermostats (Home Upgrade) (energystar.gov, cited as plain text)</li>
+<li><a href="https://basc.pnnl.gov/diy-guides/determine-if-smart-thermostat-right-you">Pacific Northwest National Laboratory, Building America Solution Center: Determine if a Smart Thermostat is Right for You</a></li>
+<li><a href="https://basc.pnnl.gov/resource-guides/thermostat-controls">Pacific Northwest National Laboratory, Building America Solution Center: Thermostat Controls</a></li>
+<li><a href="https://www.energy.ca.gov/sites/default/files/2024-04/CEC-500-2024-032-AP.pdf">California Energy Commission: Energy Research and Development Division, thermostat project report, Appendix A (power, pp. A-2 and A-17)</a></li>
+<li><a href="https://photonics.engr.uga.edu/thermostat/part3.html">University of Georgia engineering: Design of a Comfortable Home HVAC Thermostat, part 3</a></li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
