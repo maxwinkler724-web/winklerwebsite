@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RTDs and Thermocouples in HVAC Controls</title>
+<meta property="og:title" content="RTDs and Thermocouples in HVAC Controls"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Pt100 and Pt1000 RTDs, 2-, 3- and 4-wire lead error with a worked example, thermocouple types J, K, T, cold junction, extension wire and field checks.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "RTDs and Thermocouples in HVAC Controls", "about": "Electrical and controls", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/rtds-and-thermocouples-in-hvac-controls-pt100-and-pt1000-elements-2-3-and-4-wire-lead-error-thermocouple-types-cold-junction-compensation-and-field-checks.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/rtds-and-thermocouples-in-hvac-controls-pt100-and-pt1000-elements-2-3-and-4-wire-lead-error-thermocouple-types-cold-junction-compensation-and-field-checks.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/rtds-and-thermocouples-in-hvac-controls-pt100-and-pt1000-elements-2-3-and-4-wire-lead-error-thermocouple-types-cold-junction-compensation-and-field-checks.html"><meta property="og:description" content="Pt100 and Pt1000 RTDs, 2-, 3- and 4-wire lead error with a worked example, thermocouple types J, K, T, cold junction, extension wire and field checks."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "RTDs and Thermocouples in HVAC Controls", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/rtds-and-thermocouples-in-hvac-controls-pt100-and-pt1000-elements-2-3-and-4-wire-lead-error-thermocouple-types-cold-junction-compensation-and-field-checks.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Electrical and controls</span>
+<h1>RTDs and Thermocouples in HVAC Controls</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">Thermistors get most of the attention in HVAC, but plant and commercial controls also use platinum RTDs and thermocouples. An RTD gives a steady, repeatable resistance, and the way you wire it decides how much of the wire shows up in the reading. A thermocouple gives a tiny voltage, and it only makes sense once you know where the cold junction is. This lesson covers both, with a worked wire-error example and the field checks that catch the common mistakes.</p>
+<div class="note"><strong>Scope.</strong> Thermistor curves and test tables are in <a href="hvac-thermistors-and-temperature-sensors-resistance-tables-and-how-to-test.html">HVAC Thermistors and Temperature Sensors</a>, calibration drift is in <a href="bas-sensor-types-calibration-drift-and-setpoint-habits.html">BAS Sensor Types, Calibration Drift and Setpoint Habits</a>, and wells, straps and duct placement are in <a href="hvac-temperature-sensor-mounting-immersion-wells-strap-on-and-averaging-duct-sensors-placement-and-errors.html">Temperature Sensor Mounting</a>. We do not repeat those here.</div>
+
+<h2>How a platinum RTD works</h2>
+<p>An RTD (resistance temperature detector) is a coil or thin film of platinum whose resistance rises in a smooth, repeatable way as it warms. An international metrology bureau&#39;s guide to industrial platinum resistance thermometers (copy hosted by the U.S. National Institute of Standards and Technology, NIST) says these sensors are named by their resistance at 0 &deg;C: a &quot;Pt100&quot; is nominally 100 ohms, and 500 or 1000 ohm versions, such as the Pt1000, are also made. The same guide gives the resistance ratio between 100 &deg;C and 0 &deg;C as about 1.3851 for industrial sensors built to the international industrial RTD standard. So a Pt100 reads about 100 ohms at 0 &deg;C and about 138.5 ohms at 100 &deg;C (our arithmetic: 100 x 1.3851).</p>
+<p>The guide defines the temperature coefficient as 0.003851 per &deg;C, and lists the sensitivity of a Pt100 as 0.391 ohm per kelvin at 0 &deg;C, easing to 0.293 at 850 &deg;C. Averaged over 0 to 100 &deg;C, a Pt100 changes about 0.385 ohm per &deg;C (our arithmetic: 100 x 0.003851). That is a small signal, which is the whole reason wire resistance matters. A Pt1000 has the same shape of curve with every resistance ten times larger, so it changes about 3.85 ohms per &deg;C (our arithmetic). The guide notes that a higher element resistance reduces the lead-resistance error.</p>
+<p>Two more points from the same guide. The standard&#39;s tolerance classes at 0 &deg;C run from 0.1 &deg;C to 0.6 &deg;C. And the measuring current warms the element: typically 2 to 20 millikelvin for a 100 ohm sensor in a fluid, but up to a few tenths of a degree in air. That is one reason RTD inputs use a small measuring current.</p>
+<p>You still have to tell the controller which element it is. Tenfold different resistances mean an input set for the wrong element shows a badly wrong temperature.</p>
+
+<h2>Two, three and four wires</h2>
+<p>The controller can only measure total resistance in the loop. Wiring decides what else is in that loop.</p>
+<ul>
+<li><strong>2-wire.</strong> The guide says the lead resistances are indistinguishable from the sensor, so the controller reads R(t) plus both lead resistances. The temperature error is the total lead resistance divided by R0 times the coefficient, which for a 100 ohm sensor is typically about 2.5 &deg;C per ohm of lead resistance. Its best 2-wire accuracy for a 100 ohm sensor, with adjustment, is about 0.2 &deg;C. It also says leads can reach 0.1 ohm per metre.</li>
+<li><strong>3-wire.</strong> A third wire lets the controller measure one lead and subtract it. The guide gives the result as R(t) + R_L1 &minus; R_L2, an error of about (R_L1 &minus; R_L2) divided by the same R0 times coefficient, and an accuracy under 0.1 &deg;C. The catch, in its words: it still requires the lead resistances to be equal. Use the same gauge and the same length for all three wires and keep them in one cable.</li>
+<li><strong>4-wire.</strong> Two wires carry current and two sense voltage, so there is no voltage drop in the sense leads and, the guide says, no lead resistance error. For accuracy better than about 0.2 &deg;C it recommends 4-wire measurement. Check the controller&#39;s input sheet for how many wires it accepts.</li>
+</ul>
+<p>If a 3-wire sensor lands on an input wired and set up as 2-wire, you get the 2-wire result. The third wire has to go to the terminal that the controller uses to compensate.</p>
+
+<h2>Worked example (our own): the lead error on a Pt100</h2>
+<p>This is our own example. Every assumed input is marked.</p>
+<p><strong>Assumptions.</strong> A Pt100 sensor with a coefficient of 0.003851 per &deg;C (from the guide above), so about 0.385 ohm per &deg;C. The sensor is 50 ft from the controller and each of its leads is 50 ft of 22 AWG solid copper (assumption). The Georgia State University HyperPhysics wire table lists 22 AWG copper at 16.14 ohms per 1000 ft at 20 &deg;C.</p>
+<p><strong>Step 1, lead resistance.</strong> Each lead is 50 ft, so 16.14 x 50 / 1000 = 0.807 ohm. A 2-wire hookup puts two leads in the loop: 0.807 + 0.807 = 1.614 ohms.</p>
+<p><strong>Step 2, error with 2-wire.</strong> 1.614 / 0.3851 = 4.19 &deg;C, so the controller reads about 4.2 &deg;C (7.5 &deg;F, our arithmetic) too warm. The guide&#39;s rule of thumb of 2.5 &deg;C per ohm gives 1.614 x 2.5 = 4.0 &deg;C, which agrees. On a Pt1000 the same wire adds 1.614 / 3.851 = 0.42 &deg;C, ten times less, for the reason the guide gives.</p>
+<p><strong>Step 3, 3-wire.</strong> The controller measures one lead and subtracts it, so the reading is R(t) + 0.807 &minus; 0.807 = R(t), and the error is zero when the leads match. The match is never perfect, so assume (assumption) a 0.02 ohm difference from a slightly loose terminal. Then 0.02 / 0.3851 = 0.05 &deg;C. That removes more than 98 percent of the 2-wire error (0.05 against 4.19). The wire is also warmer or cooler than 20 &deg;C in a ceiling or a boiler room, so the real numbers shift, but equal leads still track each other.</p>
+
+<figure>
+<svg viewBox="0 0 760 590" role="img" aria-labelledby="rtt rtd" style="max-width:100%;height:auto;font-family:inherit" fill="none" stroke="currentColor" stroke-width="2">
+<title id="rtt">RTD wiring compared with a thermocouple circuit</title>
+<desc id="rtd">Three panels show a controller input wired to a platinum RTD with two, three and four wires. The two-wire panel has lead resistance in series with the sensor. The three-wire panel has a third wire that lets the controller measure and subtract lead resistance. The four-wire panel has separate current and voltage wires. A lower panel shows a thermocouple with a hot junction in the process, two dissimilar metal wires, and a cold junction at the controller terminals where a sensor measures terminal temperature.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor" stroke="none"/></marker></defs>
+<!-- panel frames -->
+<rect x="10" y="10" width="236" height="290" rx="8" stroke-width="1.5"/>
+<rect x="262" y="10" width="236" height="290" rx="8" stroke-width="1.5"/>
+<rect x="514" y="10" width="236" height="290" rx="8" stroke-width="1.5"/>
+<!-- controller boxes -->
+<rect x="30" y="50" width="196" height="46" rx="4"/>
+<rect x="282" y="50" width="196" height="46" rx="4"/>
+<rect x="534" y="50" width="196" height="46" rx="4"/>
+<!-- RTD elements -->
+<rect x="60" y="200" width="136" height="38" rx="4"/>
+<rect x="312" y="200" width="136" height="38" rx="4"/>
+<rect x="564" y="200" width="136" height="38" rx="4"/>
+<!-- 2-wire -->
+<path d="M70 96V200" marker-end="url(#ah)"/>
+<path d="M186 200V96" marker-end="url(#ah)"/>
+<rect x="62" y="136" width="16" height="30" rx="2" stroke-width="1.5"/>
+<rect x="178" y="136" width="16" height="30" rx="2" stroke-width="1.5"/>
+<!-- 3-wire -->
+<path d="M322 96V200" marker-end="url(#ah)"/>
+<path d="M438 200V96" marker-end="url(#ah)"/>
+<path d="M394 96V176H438"/>
+<circle cx="438" cy="176" r="3" fill="currentColor"/>
+<!-- 4-wire -->
+<path d="M574 96V200" marker-end="url(#ah)"/>
+<path d="M690 200V96" marker-end="url(#ah)"/>
+<path d="M600 96V176H574"/>
+<circle cx="574" cy="176" r="3" fill="currentColor"/>
+<path d="M664 96V176H690"/>
+<circle cx="690" cy="176" r="3" fill="currentColor"/>
+<!-- thermocouple panel -->
+<rect x="10" y="316" width="740" height="264" rx="8" stroke-width="1.5"/>
+<rect x="28" y="380" width="170" height="150" rx="6" stroke-dasharray="6 5" stroke-width="1.5"/>
+<circle cx="120" cy="455" r="7" fill="currentColor"/>
+<path d="M120 455L330 420H500"/>
+<path d="M120 455L330 490H500" stroke-dasharray="14 5"/>
+<rect x="500" y="380" width="240" height="150" rx="6"/>
+<circle cx="500" cy="420" r="5" fill="currentColor"/>
+<circle cx="500" cy="490" r="5" fill="currentColor"/>
+<rect x="570" y="436" width="56" height="38" rx="3" stroke-width="1.5"/>
+<path d="M500 420H545" stroke-width="1.5"/>
+<path d="M500 490H545" stroke-width="1.5"/>
+<path d="M286 548H430" marker-end="url(#ah)" stroke-width="1.5"/>
+<g stroke="none" fill="currentColor" font-size="14">
+<text x="128" y="36" text-anchor="middle" font-weight="bold">2-wire</text>
+<text x="380" y="36" text-anchor="middle" font-weight="bold">3-wire</text>
+<text x="632" y="36" text-anchor="middle" font-weight="bold">4-wire</text>
+<text x="128" y="78" text-anchor="middle" font-size="13">Controller input</text>
+<text x="380" y="78" text-anchor="middle" font-size="13">Controller input</text>
+<text x="632" y="78" text-anchor="middle" font-size="13">Controller input</text>
+<text x="128" y="224" text-anchor="middle" font-size="13">Pt RTD element</text>
+<text x="380" y="224" text-anchor="middle" font-size="13">Pt RTD element</text>
+<text x="632" y="224" text-anchor="middle" font-size="13">Pt RTD element</text>
+<text x="84" y="156" font-size="12">lead R</text>
+<text x="134" y="156" font-size="12">lead R</text>
+<text x="52" y="258" font-size="12">Both lead R add</text>
+<text x="52" y="276" font-size="12">to the reading</text>
+<text x="274" y="258" font-size="12">3rd wire lets the controller</text>
+<text x="274" y="276" font-size="12">measure and subtract lead R</text>
+<text x="526" y="258" font-size="12">Separate current and sense</text>
+<text x="526" y="276" font-size="12">wires: lead R drops out</text>
+<text x="38" y="372" font-size="13">Hot (measuring) junction</text>
+<text x="38" y="550" font-size="12">in the process</text>
+<text x="226" y="410" font-size="13">Metal A (+)</text>
+<text x="226" y="516" font-size="13">Metal B (-)</text>
+<text x="520" y="372" font-size="13">Controller input</text>
+<text x="634" y="452" font-size="12">terminal-block</text>
+<text x="634" y="468" font-size="12">temperature sensor</text>
+<text x="500" y="552" font-size="13">Cold (reference) junction</text>
+<text x="500" y="568" font-size="13">at the controller terminals</text>
+<text x="300" y="570" font-size="12">millivolt signal</text>
+<text x="20" y="338" font-size="14" font-weight="bold">Thermocouple</text>
+</g>
+</svg>
+<figcaption>Our own schematic, not to scale. Top: the same platinum element wired three ways to a controller input. Arrows show the excitation current out and back. The small boxes in the 2-wire panel stand for lead resistance, which sits in the measured loop. Bottom: a thermocouple makes a small voltage from the temperature difference between the hot junction in the process and the cold junction at the controller terminals, where the controller measures terminal temperature and compensates.</figcaption>
+</figure>
+
+<h2>How a thermocouple makes a voltage</h2>
+<p>A thermocouple is two wires of different metals joined at one end. The same bureau&#39;s thermocouple guide says the Seebeck effect is the sole basis for the device, and that the voltage is generated along the wire where it sees a temperature gradient, not at the junction itself. What the instrument sees depends on the temperature difference between the hot (measuring) junction and the reference (cold) junction. The guide gives the Seebeck coefficient of base-metal thermocouples as 30 to 80 microvolts per &deg;C, so a 100 &deg;C difference makes only about 3 to 8 millivolts (our arithmetic). A cheap meter on the millivolt range can see that, but the numbers are small and every extra junction matters.</p>
+
+<h2>Types J, K and T</h2>
+<table><thead><tr><th>Type</th><th>Metals</th><th>NIST reference-function range</th><th>Notes from the guide</th></tr></thead><tbody>
+<tr><td>J</td><td>Iron vs a copper-nickel alloy</td><td>&minus;210 to 1200 &deg;C</td><td>Usable from 0 to 760 &deg;C in oxidizing or reducing atmospheres</td></tr>
+<tr><td>K</td><td>Nickel-chromium vs nickel-aluminum alloy</td><td>&minus;270 to 1372 &deg;C</td><td>Called the most widely used type</td></tr>
+<tr><td>T</td><td>Copper vs a copper-nickel alloy</td><td>&minus;270 to 400 &deg;C</td><td>Up to 370 &deg;C in air</td></tr>
+</tbody></table>
+<p>The NIST ranges are the span of its reference functions, not a promise for any one probe; the guide&#39;s notes are closer to what a probe survives. NIST also warns that composition varies from batch to batch for the letter types, particularly J, K and E, and that the negative leg of type J is not usually interchangeable with the negative leg of T or E. Never mix wire from different types.</p>
+
+<h2>Cold-junction compensation</h2>
+<p>NIST tables give the voltage with the reference junction at 0 &deg;C, which the guide calls easy to prepare with an ice bath to within 0.01 &deg;C. A controller cannot keep an ice bath, so it measures the temperature of its own terminal block with a small sensor and adds the matching voltage. That is cold-junction compensation. The guide says the simple analog version can be off by a couple of degrees when the surrounding temperature changes quickly, and that digital compensation is usually more accurate. For us the lessons are practical: keep the terminals out of drafts and away from heat, and do not let a heat source warm one end of the terminal block.</p>
+
+<h2>Extension wire and polarity</h2>
+<p>Run the thermocouple back to the controller in matching extension wire, never in plain copper, because a copper joint makes a new junction. The guide says extension leads are suited to a limited range of 0 to 100 &deg;C and that connectors should be kept isothermal. Its warning on polarity is blunt: a cable can be connected with the wrong polarity at one or both ends and the fault goes unnoticed. It also says insulation color codes are not harmonized, so color alone does not reliably tell you the type.</p>
+
+<h2>Field checks with a meter or calibrator</h2>
+<ul>
+<li><strong>RTD, sensor side.</strong> Disconnect the sensor from the controller, de-energize anything it shares, and read ohms across the element. Touch the meter leads together first and subtract that. An ice-point bath reads close to the 0 &deg;C value (100 ohms for a Pt100); see <a href="checking-hvac-meters-and-gauges-in-the-field-ice-point-bath-gauge-zero-micron-sensor-and-live-dead-live.html">Checking HVAC Meters and Gauges</a>. At room temperature, about 21 &deg;C (70 &deg;F), a Pt100 should read about 108 ohms (our estimate: 100 + 21 x 0.391) and a Pt1000 about 1080 ohms.</li>
+<li><strong>RTD, wire side.</strong> With the sensor lifted, a calibrator set to a known resistance, or a resistor, at the end of the cable should read the matching temperature on the controller. That tests the input, the wire and the configuration together. In a 2-wire run, shorting the sensor end and reading the loop shows the lead resistance directly.</li>
+<li><strong>Thermocouple.</strong> With the tip at room temperature and the cable at the same temperature, the millivolt reading should be near zero. Warm the tip with a heat gun at a safe distance: the reading should rise. If it goes negative, the polarity is reversed; the guide recommends checking polarity by heating a joint. A calibrator that sources millivolts for the correct type tests the controller input, and the controller type setting must match the wire.</li>
+<li><strong>Everywhere.</strong> A damp junction box, a nicked wire or a loose terminal looks like a drifting sensor. For full loop checkout see <a href="bas-point-to-point-checkout-verifying-every-sensor-and-output-wiring-scaling-and-signal-checks-0-10-v-and-4-20-ma.html">BAS Point-to-Point Checkout</a>.</li>
+</ul>
+
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: RTDs and thermocouples</h2><p><em>Know the element, the wires and the cold junction.</em></p><ul><li>Pt100 is 100 ohms at 0 &deg;C and about 0.385 ohm per &deg;C; Pt1000 is ten times that.</li><li>2-wire reads the leads too (about 2.5 &deg;C per ohm on a Pt100). 3-wire cancels them if the leads match. 4-wire removes them.</li><li>Our example: 100 ft of 22 AWG adds 1.614 ohms and about 4.2 &deg;C on a 2-wire Pt100.</li><li>Thermocouple volts come from the temperature difference between hot and cold junctions, 30 to 80 microvolts per &deg;C for base metals.</li><li>Match the type, the extension wire and the controller setting. Check polarity by warming the tip.</li><li>Check an RTD with ohms at a known temperature and a thermocouple with millivolts.</li></ul></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="hvac-thermistors-and-temperature-sensors-resistance-tables-and-how-to-test.html">HVAC Thermistors and Temperature Sensors: Resistance Tables and How to Test</a></li><li><a href="bas-sensor-types-calibration-drift-and-setpoint-habits.html">BAS Sensor Types, Calibration Drift and Setpoint Habits</a></li><li><a href="hvac-temperature-sensor-mounting-immersion-wells-strap-on-and-averaging-duct-sensors-placement-and-errors.html">HVAC Temperature Sensor Mounting: Immersion Wells, Strap-On and Averaging Duct Sensors</a></li><li><a href="checking-hvac-meters-and-gauges-in-the-field-ice-point-bath-gauge-zero-micron-sensor-and-live-dead-live.html">Checking HVAC Meters and Gauges in the Field</a></li><li><a href="bas-point-to-point-checkout-verifying-every-sensor-and-output-wiring-scaling-and-signal-checks-0-10-v-and-4-20-ma.html">BAS Point-to-Point Checkout: Verifying Every Sensor and Output</a></li></ul></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li><a href="https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=932587">International metrology bureau: Guide on Secondary Thermometry, Industrial Platinum Resistance Thermometers (copy hosted by the U.S. National Institute of Standards and Technology)</a></li>
+<li>International metrology bureau: Guide on Secondary Thermometry, Thermocouple Thermometry, Part 1 (plain text, not linked)</li>
+<li><a href="https://its90.nist.gov/ThermocoupleDef">National Institute of Standards and Technology: ITS-90 Thermocouple Database, thermocouple types definition (J, K, T ranges)</a></li>
+<li><a href="https://its90.nist.gov/OverviewThermo">National Institute of Standards and Technology: ITS-90 Thermocouple Database, overview (composition variation in types J, K and E)</a></li>
+<li><a href="https://its90.nist.gov/Table">National Institute of Standards and Technology: ITS-90 Thermocouple Database, letter designations and compositions (type J negative leg vs types E and T)</a></li>
+<li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/Tables/wirega.html">Georgia State University, HyperPhysics: Electrical Wire Gauges (22 AWG copper, 16.14 ohms per 1000 ft at 20 C)</a></li>
+<li>The international industrial RTD standard (tolerance classes and the 0.385 ohm per degree C curve), named here in plain text only, not linked.</li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
