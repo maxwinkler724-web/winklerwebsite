@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Will It Sweat? Cold Pipe and Duct Surface Temperature</title>
+<meta property="og:title" content="Will It Sweat? Cold Pipe and Duct Surface Temperature"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Predict duct and pipe sweating: find surface temperature from resistances in series, compare it to the dew point, and see what insulation does.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Will It Sweat? Cold Pipe and Duct Surface Temperature", "about": "Heat transfer", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/will-it-sweat-calculating-cold-pipe-and-duct-surface-temperature-with-resistances-in-series-and-comparing-to-dew-point.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/will-it-sweat-calculating-cold-pipe-and-duct-surface-temperature-with-resistances-in-series-and-comparing-to-dew-point.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/will-it-sweat-calculating-cold-pipe-and-duct-surface-temperature-with-resistances-in-series-and-comparing-to-dew-point.html"><meta property="og:description" content="Predict duct and pipe sweating: find surface temperature from resistances in series, compare it to the dew point, and see what insulation does."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Will It Sweat? Cold Pipe and Duct Surface Temperature", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/will-it-sweat-calculating-cold-pipe-and-duct-surface-temperature-with-resistances-in-series-and-comparing-to-dew-point.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Heat transfer</span>
+<h1>Will It Sweat? Calculating Cold Pipe and Duct Surface Temperature With Resistances in Series</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">A cold duct or pipe sweats when its outside surface is colder than the dew point of the air touching it. You can predict that with arithmetic: the surface temperature sits between the cold fluid and the room air, in proportion to the thermal resistances in the way. Add insulation and the surface moves toward room temperature. Leave a gap, squash the wrap, or skip the vapor retarder, and the page below shows why it can still drip.</p>
+
+<h2>The rule: surface temperature versus dew point</h2>
+<p>The National Weather Service defines dew point as a measure of how much moisture the air holds, and says dew or frost forms when a surface cools to its dew point. When saturation occurs, water vapor condenses into liquid droplets. A duct is no different from grass on a cool morning. If any part of its outer surface is at or below the dew point of the surrounding air, that part gets wet. If the whole surface stays above it, the surface stays dry.</p>
+<p>So the whole job is two numbers: the dew point of the room or attic air (from a psychrometer or a humidity meter, see <a href="measuring-wet-bulb-temperature-in-the-field-sling-and-digital-psychrometers-where-to-read-and-common-errors.html">measuring wet-bulb temperature in the field</a>) and the surface temperature, which we calculate next.</p>
+
+<h2>The resistance chain</h2>
+<p>Heat moving from warm air to cold air passes through layers one after another. Our lesson on <a href="heat-loss-through-walls-and-ceilings-r-values-in-series-u-factor-air-films-framing-and-thermal-bridging-and-whole-wall-r-value.html">heat loss through walls and ceilings</a> explains series R-values, and a Louisiana state education page makes the key point that even a thin film of air on each side of a wall has some insulation value and that the total is found by adding each layer. For a cold duct the chain, going from the attic inward, is:</p>
+<ol>
+<li>The outside air film on the surface of the insulation (resistance R<sub>out</sub>).</li>
+<li>The insulation itself (R<sub>ins</sub>).</li>
+<li>The thin metal wall, which we treat as zero resistance because sheet metal conducts heat easily.</li>
+<li>The inside air film, where the moving cold air meets the metal (R<sub>in</sub>).</li>
+</ol>
+<p>The same heat flow (Btu per hour per square foot) passes through every layer, and each layer drops the temperature by flow times its own resistance. So the temperature drop across a layer is the total temperature difference multiplied by that layer's share of the total resistance. For the outer surface:</p>
+<p><strong>T<sub>surface</sub> = T<sub>room</sub> &minus; (T<sub>room</sub> &minus; T<sub>fluid</sub>) &times; R<sub>out</sub> / (R<sub>in</sub> + R<sub>ins</sub> + R<sub>out</sub>)</strong></p>
+<p>Read it as: the surface is as far below room temperature as the outside film's share of the total resistance. A big insulation resistance makes that share tiny, so the surface hugs room temperature. This is the same series-resistance idea behind the overall U factor in our <a href="overall-heat-transfer-coefficient-u-and-fouling-factors-in-plant-heat-exchangers-series-resistances-design-allowance-and-trending-for-cleaning.html">heat exchanger U lesson</a>.</p>
+
+<figure>
+<svg viewBox="0 0 720 370" role="img" aria-labelledby="svgt svgd" style="max-width:100%;height:auto" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+<title id="svgt">Resistance chain and temperature profile for a cold duct in a warm attic</title>
+<desc id="svgd">Five zones left to right: cold duct air at 55 F, inside air film R 0.25, insulation R 4.2, outside air film R 0.68, attic air at 85 F. A solid temperature line rises from 55 F to 85 F across the layers, mostly across the insulation, ending 81.0 F at the outer surface. A dotted line shows a bare duct at 63.1 F. A dashed horizontal line marks the 75 F dew point.</desc>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor" stroke="none"/></marker></defs>
+<path d="M640 42H110" stroke-width="1.5" marker-end="url(#ah)"/>
+<rect x="60" y="60" width="90" height="240" stroke-width="1"/>
+<rect x="150" y="60" width="50" height="240" stroke-width="1"/>
+<rect x="200" y="60" width="250" height="240" stroke-width="1"/>
+<rect x="450" y="60" width="110" height="240" stroke-width="1"/>
+<rect x="560" y="60" width="90" height="240" stroke-width="1"/>
+<path d="M60 270H150L200 261.2L450 113.9L560 90H650" stroke-width="3"/>
+<path d="M150 270L200 221.6H450L560 90" stroke-width="2" stroke-dasharray="2 5"/>
+<path d="M60 150H650" stroke-width="2" stroke-dasharray="9 6"/>
+<circle cx="450" cy="113.9" r="4" fill="currentColor" stroke="none"/>
+<circle cx="450" cy="221.6" r="4" fill="currentColor" stroke="none"/>
+<path d="M420 99L443 110" stroke-width="1.2"/>
+<g stroke="none" fill="currentColor" font-size="12" font-family="inherit">
+<text x="150" y="32">Heat flows from the warm attic toward the cold duct air</text>
+<text x="8" y="304">50 F</text>
+<text x="8" y="244">60 F</text>
+<text x="8" y="184">70 F</text>
+<text x="8" y="124">80 F</text>
+<text x="215" y="143">Dew point 75 F (dashed)</text>
+<text x="290" y="96">Outer surface 81.0 F</text>
+<text x="300" y="243">Bare duct (R-0) surface 63.1 F</text>
+<text x="66" y="322">Duct air</text>
+<text x="66" y="338">55 F</text>
+<text x="152" y="322">Inside</text>
+<text x="152" y="338">film</text>
+<text x="152" y="354">R 0.25</text>
+<text x="290" y="322">Insulation</text>
+<text x="290" y="338">R 4.2 (example)</text>
+<text x="458" y="322">Outside film</text>
+<text x="458" y="338">R 0.68</text>
+<text x="566" y="322">Attic air</text>
+<text x="566" y="338">85 F</text>
+</g>
+</svg>
+<figcaption>The resistance chain from cold duct air (left) to attic air (right), not drawn to scale. The solid line is the temperature profile with R-4.2 insulation: most of the 30 F drop happens across the insulation, so the outer surface lands at 81.0 F, above the dashed 75 F dew point. The dotted line is a bare duct, whose surface sits at 63.1 F, below the dew point.</figcaption>
+</figure>
+
+<h2>Worked example (our own): a 55 F supply duct in a humid attic</h2>
+<p><strong>Our own example, with assumptions.</strong> We treat the duct wall as a flat wall, which is only an approximation (a round duct has curved geometry, and the air warms or cools along the run). Our assumptions:</p>
+<ul>
+<li>Supply air in the duct: 55 F. Attic air: 85 F. Attic dew point: 75 F. The U.S. Department of Energy Building America measure guide describes supply air at 50 to 55 F in a hot attic, so 55 F is a typical case; the 85 F and 75 F are our picks (that dew point is about 70 percent relative humidity at 85 F by our own estimate).</li>
+<li>Outside air film R = 0.68 (assumed). A Louisiana state education page lists 0.68 as an inside still-air film for walls; we borrow that figure for the still air in the attic. Wind or a moving fan would lower it.</li>
+<li>Inside air film R = 0.25 (assumed). We chose it for moving air inside a duct; we do not have a source for it.</li>
+<li>Metal wall resistance: zero. Insulation values: R-0 (bare), R-4.2, R-6 and R-8, treated as the full rated value.</li>
+</ul>
+<p>The total temperature difference is 85 &minus; 55 = 30 F, and the outside film's drop is 30 &times; 0.68 / R<sub>total</sub> = 20.4 / R<sub>total</sub>.</p>
+<ol>
+<li><strong>R-0:</strong> R<sub>total</sub> = 0.25 + 0 + 0.68 = 0.93. Drop = 20.4 / 0.93 = 21.9 F. Surface = 85 &minus; 21.9 = <strong>63.1 F</strong>.</li>
+<li><strong>R-4.2:</strong> R<sub>total</sub> = 5.13. Drop = 20.4 / 5.13 = 4.0 F. Surface = <strong>81.0 F</strong>.</li>
+<li><strong>R-6:</strong> R<sub>total</sub> = 6.93. Drop = 2.9 F. Surface = <strong>82.1 F</strong>.</li>
+<li><strong>R-8:</strong> R<sub>total</sub> = 8.93. Drop = 2.3 F. Surface = <strong>82.7 F</strong>.</li>
+</ol>
+<table>
+<thead><tr><th>Insulation</th><th>Total R</th><th>Outer surface</th><th>Margin over 75 F dew point</th><th>Sweats?</th></tr></thead>
+<tbody>
+<tr><td>R-0 (bare)</td><td>0.93</td><td>63.1 F</td><td>&minus;11.9 F</td><td>Yes</td></tr>
+<tr><td>R-4.2</td><td>5.13</td><td>81.0 F</td><td>+6.0 F</td><td>No</td></tr>
+<tr><td>R-6</td><td>6.93</td><td>82.1 F</td><td>+7.1 F</td><td>No</td></tr>
+<tr><td>R-8</td><td>8.93</td><td>82.7 F</td><td>+7.7 F</td><td>No</td></tr>
+</tbody></table>
+<p>Only the bare duct sweats in this example. Two lessons come out of the numbers. First, the first few R-values do almost all the work: to keep the surface at exactly 75 F we need a total resistance of 20.4 / 10 = 2.04, which means R<sub>ins</sub> of only about 1.1. Second, going from R-6 to R-8 raises the surface just 0.7 F, so extra insulation after that buys energy savings and safety margin, not much more dryness. The jump to R-6 or R-8 is still wise, since our <a href="duct-insulation-r-values-for-attics-crawl-spaces-and-basements-what-codes-and-doe-say.html">duct insulation lesson</a> covers the energy side, and the DOE measure guide notes that the 2009 energy code asks for R-8 on attic ducts and R-6 elsewhere in unconditioned spaces.</p>
+
+<h2>Why gaps, squashed wrap and missing retarders still cause sweating</h2>
+<p>The calculation above assumes perfect, full-thickness insulation with moist air kept away from the metal. Real jobs break each of those assumptions.</p>
+<ul>
+<li><strong>Gaps and bare spots.</strong> A gap, a missed hanger strap or an unwrapped connection exposes bare metal, and a bare spot behaves like our R-0 row. Heat conducting along the metal warms a tiny spot a little, but a gap of a few inches can still sit near the dew point and drip. The DOE measure guide says insulation should be sealed as much as possible around gaps where it cannot fully cover the duct.</li>
+<li><strong>Compressed insulation.</strong> The U.S. Department of Energy states that compressed insulation will not provide its full rated R-value, and the measure guide warns to size wrap to cover the duct without compression and to watch corners. Our own illustration: suppose wrap rated R-4.2 is crushed under a strap or squeezed against a joist until it only delivers R-1.0 (an assumed figure, not a measured one). Then R<sub>total</sub> = 1.93, the drop is 20.4 / 1.93 = 10.6 F, and the surface is 85 &minus; 10.6 = <strong>74.4 F</strong>, just below the 75 F dew point. A strip of sweat appears right where the wrap is flattened.</li>
+<li><strong>Missing or torn vapor retarder.</strong> Surface temperature is only half the story. The metal under the insulation is much colder than the outside surface: by our calculation it is about 56.5 F in the R-4.2 case (55 + 30 &times; 0.25 / 5.13). If humid attic air leaks through a torn jacket or an unsealed seam and reaches that metal, it condenses there, inside the insulation, even though the outside looks dry. The wet wrap then loses R-value, which pushes the surface colder, and the problem feeds itself. That is why the measure guide says to cover tears with tape or a patch that has an intact vapor barrier and to tape wrap seams, and why the PNNL Building America Solution Center says duct insulation should include a vapor barrier cover. Our <a href="mechanical-pipe-insulation-steam-heat-loss-chilled-water-condensation-and-vapor-retarders.html">pipe insulation and vapor retarder lesson</a> shows the same logic on chilled-water piping.</li>
+<li><strong>Air leaks.</strong> The measure guide says insulating ducts, even with tightly sealed insulation seams, will not reduce duct leakage. Seal the duct first, then insulate.</li>
+</ul>
+<p>The arithmetic is the same for a cold pipe: use the fluid temperature, the pipe-wall resistance (usually near zero for metal) and the insulation. See <a href="refrigerant-line-set-insulation-thickness-uv-damage-and-sweating-lines.html">refrigerant line set insulation</a> for the suction-line version, and <a href="sweating-ducts-and-vents-condensation-in-attics-and-basements.html">sweating ducts and vents</a> for field symptoms and fixes.</p>
+
+<h2>How to use this in the field</h2>
+<ol>
+<li>Get the dew point of the air at the cold surface, not just the thermostat reading. A humid attic or basement can have a much higher dew point than the living space.</li>
+<li>Estimate the fluid or air temperature inside, and the room temperature outside.</li>
+<li>Add up the resistances in series and compute the outer surface temperature.</li>
+<li>Compare to the dew point with a safety margin of several degrees, since films, wind and workmanship all vary.</li>
+<li>Then inspect the weak points: gaps, hangers, compressed corners, torn jackets and open seams.</li>
+</ol>
+<p>This is a flat-wall estimate for learning, not a design calculation. Round surfaces, wind, radiation, fittings and air warming along the duct all change the real numbers.</p>
+
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Will it sweat?</h2><p><em>Surface below the dew point means condensation.</em></p><ul><li>T<sub>surface</sub> = T<sub>room</sub> &minus; (T<sub>room</sub> &minus; T<sub>fluid</sub>) &times; R<sub>out</sub> / R<sub>total</sub>.</li><li>R<sub>total</sub> = inside film + insulation + outside film (metal about zero).</li><li>Our own example (assumed films 0.25 and 0.68; 55 F duct, 85 F attic, 75 F dew point): R-0 gives 63.1 F and sweats; R-4.2, R-6 and R-8 give 81.0, 82.1 and 82.7 F and stay dry.</li><li>Crushed wrap (assumed R-1.0) gives 74.4 F and sweats.</li><li>Check gaps, compression, torn jackets and open seams; keep a vapor barrier intact.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+
+<section class="related"><h2>Related lessons</h2><ul>
+<li><a href="sweating-ducts-and-vents-condensation-in-attics-and-basements.html">Sweating ducts and vents: condensation in attics and basements</a></li>
+<li><a href="refrigerant-line-set-insulation-thickness-uv-damage-and-sweating-lines.html">Refrigerant line set insulation thickness, UV damage and sweating lines</a></li>
+<li><a href="mechanical-pipe-insulation-steam-heat-loss-chilled-water-condensation-and-vapor-retarders.html">Mechanical pipe insulation, steam heat loss, chilled water condensation and vapor retarders</a></li>
+<li><a href="overall-heat-transfer-coefficient-u-and-fouling-factors-in-plant-heat-exchangers-series-resistances-design-allowance-and-trending-for-cleaning.html">Overall heat transfer coefficient U and fouling factors</a></li>
+<li><a href="heat-loss-through-walls-and-ceilings-r-values-in-series-u-factor-air-films-framing-and-thermal-bridging-and-whole-wall-r-value.html">Heat loss through walls and ceilings: R-values in series</a></li>
+</ul></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li><a href="https://www.weather.gov/ilx/swop-springtopics3">National Weather Service (Lincoln, IL): dew point definition, dew forming when a surface cools to its dew point</a></li>
+<li><a href="https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/meas_guide_seal_ducts.pdf">U.S. Department of Energy, Building America: Measure Guideline, Sealing and Insulating Ducts</a></li>
+<li><a href="https://www.energy.gov/energysaver/insulation">U.S. Department of Energy, Energy Saver: Insulation</a></li>
+<li><a href="https://basc.pnnl.gov/resource-guides/encapsulated-ducts">Pacific Northwest National Laboratory, Building America Solution Center: Encapsulated ducts</a></li>
+<li><a href="https://denr.louisiana.gov/assets/TAD/education/ECEP/constr/b/b.htm">Louisiana Department of Natural Resources: exterior wall insulation, R-value table and air films</a></li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
