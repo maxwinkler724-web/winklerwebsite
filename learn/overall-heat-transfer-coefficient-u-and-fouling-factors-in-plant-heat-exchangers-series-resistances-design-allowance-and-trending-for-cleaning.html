@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Overall Heat Transfer Coefficient U and Fouling Factors in Plant Heat Exchangers</title>
+<meta property="og:title" content="Overall Heat Transfer Coefficient U and Fouling Factors in Plant Heat Exchangers"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="How U adds film, fouling and wall resistances in series, why new exchangers look oversized, and how techs trend U to time cleaning.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Overall Heat Transfer Coefficient U and Fouling Factors in Plant Heat Exchangers", "about": "Plant systems", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/overall-heat-transfer-coefficient-u-and-fouling-factors-in-plant-heat-exchangers-series-resistances-design-allowance-and-trending-for-cleaning.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/overall-heat-transfer-coefficient-u-and-fouling-factors-in-plant-heat-exchangers-series-resistances-design-allowance-and-trending-for-cleaning.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/overall-heat-transfer-coefficient-u-and-fouling-factors-in-plant-heat-exchangers-series-resistances-design-allowance-and-trending-for-cleaning.html"><meta property="og:description" content="How U adds film, fouling and wall resistances in series, why new exchangers look oversized, and how techs trend U to time cleaning."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Overall Heat Transfer Coefficient U and Fouling Factors in Plant Heat Exchangers", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/overall-heat-transfer-coefficient-u-and-fouling-factors-in-plant-heat-exchangers-series-resistances-design-allowance-and-trending-for-cleaning.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Plant systems</span>
+<h1>Overall Heat Transfer Coefficient U and Fouling Factors in Plant Heat Exchangers</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">Every heat exchanger in a plant has one number that sums up how easily heat crosses from one fluid to the other: the overall heat transfer coefficient, U. It is built from layers, and the layers you cannot see (scale, biofilm, oil) are the ones that change over the years. This lesson shows how those layers add up, why a brand new exchanger can look too big, and how techs trend U to decide when to clean.</p>
+<h2>U is a stack of resistances in series</h2>
+<p>Heat leaving the hot fluid has to cross several layers in a row: the moving film of fluid on the hot side, any deposit on that surface, the metal wall, any deposit on the other surface, and the film on the cold side. When layers are in series, their resistances add, just as resistors do in a circuit. Each convection film has a resistance of 1/h, so the sum is:</p>
+<p><strong>1/U = 1/h<sub>inside</sub> + R<sub>fouling, inside</sub> + R<sub>wall</sub> + R<sub>fouling, outside</sub> + 1/h<sub>outside</sub></strong></p>
+<p>The University of Oklahoma design notes on heat transfer equipment state the principle as overall resistance equal to the sum of the resistances, with the film coefficients, the wall and the fouling layers each as a term. The notes' tube version also scales the inside terms by the tube diameter ratio because the inside and outside surfaces have different areas. The U.S. Department of Energy fundamentals handbook builds U from the two film coefficients and the wall (its equations 2-10 and 2-11) but does not carry a fouling term, so the fouling terms are the extra step plant designers add. In a thin metal plate exchanger the wall term is tiny and is often ignored. For the three ways heat moves through each layer, see <a href="conduction-convection-and-radiation-the-three-ways-heat-moves-in-furnaces-coils-boilers-and-ducts-with-field-examples.html">conduction, convection and radiation</a>.</p>
+<p>Units matter. U is in Btu/h per square foot per degree F. Each resistance, including a fouling factor, is in the reciprocal unit: h-ft&sup2;-F/Btu. That is why a fouling factor is not a temperature or a percent; it is one more term in the sum.</p>
+<figure>
+<svg viewBox="0 0 640 250" role="img" aria-label="Resistor chain across a tube wall: hot fluid, hot film, scale, wall, cold film, cold fluid" style="max-width:100%;height:auto" fill="none" stroke="currentColor" stroke-width="2">
+<title>Series resistances across a tube wall drawn as a resistor chain</title>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor" stroke="none"/></marker></defs>
+<g stroke="none" fill="currentColor" font-size="13" text-anchor="middle">
+<text x="50" y="100">Hot fluid</text><text x="590" y="100">Cold fluid</text>
+<text x="150" y="68">Hot film</text><text x="150" y="86" font-size="11">1/h hot</text>
+<text x="255" y="68">Scale</text><text x="255" y="86" font-size="11">R fouling</text>
+<text x="360" y="68">Wall</text><text x="360" y="86" font-size="11">R wall</text>
+<text x="465" y="68">Cold film</text><text x="465" y="86" font-size="11">1/h cold</text>
+<text x="320" y="170" font-size="14">Total: 1/U = sum of the four resistances</text>
+<text x="320" y="196" font-size="12">Heat flow, hot to cold. A bigger total means a smaller U.</text>
+<text x="320" y="224" font-size="12">Biofilm or oil on a surface adds one more box in the same chain.</text>
+</g>
+<path d="M85,110 H110" marker-end="url(#ar)"/>
+<path d="M110,110 H125"/><rect x="125" y="98" width="50" height="24"/><path d="M175,110 H230"/>
+<rect x="230" y="98" width="50" height="24"/><path d="M280,110 H335"/>
+<rect x="335" y="98" width="50" height="24"/><path d="M385,110 H440"/>
+<rect x="440" y="98" width="50" height="24"/><path d="M490,110 H530"/>
+<path d="M530,110 H545" marker-end="url(#ar)"/>
+<path d="M130,140 H510" marker-end="url(#ar)" stroke-dasharray="5 4"/>
+</svg>
+<figcaption>Our own diagram. Each layer between the hot and cold fluid is a box on one line. Add the boxes and you have 1/U.</figcaption></figure>
+<h2>What the layers are in plant equipment</h2>
+<p>The film on each side depends on flow, fluid and surface. Moving water gives a high h; oil, glycol mixes at low temperature, and slow or laminar flow give a lower h. The fouling layers are different: they grow with time. A 2023 power-industry research report on condenser tubes (hosted on the OSTI site) lists four internal fouling types: mineral scale, microbiological film, particles that stick to the surface, and corrosion products. A laboratory study of biofilm on condenser tubes, also on OSTI, found films that were 95 to 98 percent water, with a thermal conductivity close to that of water, so the film resists heat mostly through its thickness. Hard scale conducts heat poorly compared with the metal. We also treat an oil film on a refrigerant or process surface as one more low-conductivity layer. That is our own reasoning from the series model, not a figure from a source. For the water-chemistry side of scale and growth, see <a href="condenser-water-treatment-scale-corrosion-and-biological-growth.html">condenser water treatment</a>.</p>
+<h2>Why a new exchanger looks oversized</h2>
+<p>A designer does not size for the clean surface. Standards for shell-and-tube exchangers publish suggested fouling resistances for common services, and the designer adds a chosen fouling resistance to the sum so the unit still makes its duty after it gets dirty. The OSTI record on the cost of heat exchanger fouling in U.S. industry says designers usually add a fouling factor and that this raises capital cost; its 1982 estimate counted extra surface area bought to offset lost heat transfer.</p>
+<p>The result on day one is a clean exchanger with more surface than the job needs. It runs with a bigger margin: the leaving temperatures sit closer to the entering ones than the design sheet shows, and a valve may throttle more than expected. That is not a mistake. It is the allowance, and it is meant to be used up as deposit builds. The practical consequence for a tech is that a healthy new unit can look excellent, and the first sign of trouble may not show until the allowance is gone.</p>
+<h2>Our own worked example: clean U versus fouled U</h2>
+<p><strong>Our own example, not from a maker or a job.</strong> Assumptions: a water-to-water exchanger, clean film coefficients of 1,000 Btu/h-ft&sup2;-F on one side and 800 on the other, a negligible wall, and a fouling resistance of 0.001 h-ft&sup2;-F/Btu on one side only. For the duty comparison we also assume 100 ft&sup2; of surface and a clean LMTD of 20 F (see <a href="log-mean-temperature-difference-for-hvac-heat-exchangers-counterflow-vs-parallel-flow-approach-temperature-q-equals-ua-lmtd-and-fouling.html">log mean temperature difference</a>).</p>
+<ol>
+<li><strong>Clean resistance.</strong> 1/U = 1/1,000 + 1/800 = 0.00100 + 0.00125 = 0.00225 h-ft&sup2;-F/Btu.</li>
+<li><strong>Clean U.</strong> 1 / 0.00225 = about 444 Btu/h-ft&sup2;-F.</li>
+<li><strong>Fouled resistance.</strong> 0.00225 + 0.00100 = 0.00325.</li>
+<li><strong>Fouled U.</strong> 1 / 0.00325 = about 308 Btu/h-ft&sup2;-F.</li>
+<li><strong>Percent drop.</strong> (444 &minus; 308) / 444 = about 31 percent.</li>
+<li><strong>Clean duty.</strong> Q = U &times; A &times; LMTD = 444 &times; 100 &times; 20 = about 889,000 Btu/h.</li>
+<li><strong>Fouled duty, same area and LMTD.</strong> 308 &times; 100 &times; 20 = about 615,000 Btu/h, or 69 percent of the clean duty.</li>
+<li><strong>Extra area to keep 889,000 Btu/h at 20 F.</strong> 889,000 / (308 &times; 20) = about 144 ft&sup2;, which is 44 percent more than 100.</li>
+<li><strong>Or a higher LMTD with the same 100 ft&sup2;.</strong> 889,000 / (308 &times; 100) = about 28.9 F, which is 44 percent higher than 20 F. In a real plant that means hotter supply or colder return water than the process may allow.</li>
+</ol>
+<p>Notice that a fouling layer of only 0.001 cost about a third of U, because the clean sum was so small. High-h water-to-water service is more sensitive to fouling than a low-h service, where the films already dominate. The 44 percent also shows what a design allowance of this size looks like: a new unit sized for the fouled case has about 44 percent more area than the clean case needs.</p>
+<h2>How fouling shows up as approach</h2>
+<p>Approach is how close one stream gets to the other fluid's temperature. With fixed flows and entering temperatures, a lower U x A means less heat moves, so leaving temperatures drift away from where they used to sit and the approach widens. On a chiller condenser, the gap between leaving condenser water and the refrigerant condensing temperature grows. On a plate exchanger, the cold side leaves cooler than before. See <a href="plate-heat-exchanger-fouling-and-approach.html">plate heat exchanger fouling and approach</a> for the plate view. Pressure drop rising across the exchanger is a second clue, especially with debris or scale that narrows flow passages.</p>
+<h2>Trending U or approach to time cleaning</h2>
+<ul>
+<li><strong>Get a clean baseline.</strong> Record the four temperatures, the flow and the date right after a cleaning or startup. Record at similar load.</li>
+<li><strong>Compute U x A, not just U.</strong> You rarely know area exactly, but it does not change. Q divided by LMTD, using Q of about 500 &times; gpm &times; temperature change for water (our own rule of thumb from 8.33 lb per gallon times 60 minutes), gives U x A. Compare it to the baseline.</li>
+<li><strong>Or just trend approach.</strong> It needs fewer readings and techs can log it on rounds; see <a href="chiller-condenser-tube-cleaning-and-eddy-current-testing-brushing-fouling-and-plugging-tubes.html">chiller condenser tube cleaning</a> for what happens when the trend says clean.</li>
+<li><strong>Correct for load.</strong> Compare like with like. A part-load reading will look better than full load.</li>
+<li><strong>Set an action line.</strong> A common plant practice is to pick a percent drop from baseline (our own suggestion: whatever the owner or chiller maker documents) and plan the cleaning before the allowance runs out. That 2023 condenser study measured heat transfer coefficient about every two days over test runs of 30 days or more, which shows how continuous the monitoring can be when instruments allow.</li>
+</ul>
+<p>One reading proves little. A trend line that bends away from the baseline, with sensors checked against each other, is the evidence. Steam-to-hot-water converters have a similar signature; see <a href="steam-to-hot-water-converters-shell-and-tube-heat-exchangers-control-valves-traps-and-stall.html">steam converters</a>.</p>
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Overall Heat Transfer Coefficient U and Fouling Factors in Plant Heat Exchangers</h2><p><em>Add the layers, then watch the sum grow.</em></p><ul>
+<li>1/U = 1/h inside + R fouling inside + R wall + R fouling outside + 1/h outside.</li>
+<li>Fouling factors are resistances in h-ft&sup2;-F/Btu; they add to the sum.</li>
+<li>Design allowance makes a clean unit look oversized by design.</li>
+<li>Our own example: U drops from about 444 to 308 (31 percent) with 0.001 fouling.</li>
+<li>Same duty then needs about 44 percent more area or LMTD.</li>
+<li>Scale, biofilm and oil films each add a layer and widen approach.</li>
+<li>Log temperatures, flow and date at a clean baseline; trend U x A or approach; clean before the allowance is gone.</li></ul>
+<p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul>
+<li><a href="log-mean-temperature-difference-for-hvac-heat-exchangers-counterflow-vs-parallel-flow-approach-temperature-q-equals-ua-lmtd-and-fouling.html">Log Mean Temperature Difference for HVAC Heat Exchangers</a></li>
+<li><a href="plate-heat-exchanger-fouling-and-approach.html">Plate Heat Exchanger Fouling and Approach</a></li>
+<li><a href="steam-to-hot-water-converters-shell-and-tube-heat-exchangers-control-valves-traps-and-stall.html">Steam-to-Hot-Water Converters and Shell-and-Tube Exchangers</a></li>
+<li><a href="chiller-condenser-tube-cleaning-and-eddy-current-testing-brushing-fouling-and-plugging-tubes.html">Chiller Condenser Tube Cleaning and Eddy Current Testing</a></li>
+<li><a href="conduction-convection-and-radiation-the-three-ways-heat-moves-in-furnaces-coils-boilers-and-ducts-with-field-examples.html">Conduction, Convection and Radiation</a></li>
+<li><a href="start-here.html">Start Here</a></li>
+<li><a href="../products.html">Study packs and printables</a></li></ul>
+<p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li><a href="https://www.ou.edu/class/che-design/Design&amp;Safety-2018/Chapter-22-MoHeat-HEX.pdf">University of Oklahoma design notes, Chapter 22: Heat Transfer Equipment (resistances in series, fouling terms)</a></li>
+<li><a href="https://www.energy.gov/sites/default/files/2026-04/DOE-HDBK-1012-92_VOL2.pdf">U.S. Department of Energy: DOE Fundamentals Handbook, Thermodynamics, Heat Transfer, and Fluid Flow, Volume 2 (overall heat transfer coefficient, equations 2-10 and 2-11)</a></li>
+<li><a href="https://www.osti.gov/biblio/6574086">OSTI: The cost of heat exchanger fouling in the US industries (designers add a fouling factor; extra surface cost)</a></li>
+<li><a href="https://www.osti.gov/servlets/purl/7044527">OSTI: Power-industry research report CS-1554, Biofilm Development and Destruction (biofilm on condenser tubes, 1980)</a></li>
+<li><a href="https://www.osti.gov/servlets/purl/1961174">OSTI: power-industry final report on technologies to improve condenser heat transfer (four fouling types, heat transfer coefficient monitoring, 2023)</a></li>
+<li>Standards for shell-and-tube heat exchangers that publish suggested fouling resistances (named in plain text only, not linked; no values taken from them here).</li></ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
