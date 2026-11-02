@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sensible vs Latent Heat: Specific Heat, Fusion and Vaporization</title>
+<meta property="og:title" content="Sensible vs Latent Heat: Specific Heat, Fusion and Vaporization"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Sensible vs latent heat for technicians: specific heats, fusion (144 Btu/lb), vaporization (970), why boiling refrigerant and steam move so much heat.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Sensible vs Latent Heat: Specific Heat, Fusion and Vaporization", "about": "Heat transfer", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-10-16", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/sensible-vs-latent-heat-specific-heat-heat-of-fusion-and-vaporization-and-why-boiling-refrigerant-and-steam-move-so-much-heat.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/sensible-vs-latent-heat-specific-heat-heat-of-fusion-and-vaporization-and-why-boiling-refrigerant-and-steam-move-so-much-heat.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/sensible-vs-latent-heat-specific-heat-heat-of-fusion-and-vaporization-and-why-boiling-refrigerant-and-steam-move-so-much-heat.html"><meta property="og:description" content="Sensible vs latent heat for technicians: specific heats, fusion (144 Btu/lb), vaporization (970), why boiling refrigerant and steam move so much heat."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Sensible vs Latent Heat: Specific Heat, Fusion and Vaporization", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/sensible-vs-latent-heat-specific-heat-heat-of-fusion-and-vaporization-and-why-boiling-refrigerant-and-steam-move-so-much-heat.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Heat transfer</span>
+<h1>Sensible vs Latent Heat: Specific Heat, Heat of Fusion and Vaporization, and Why Boiling Refrigerant and Steam Move So Much Heat</h1>
+<p class="small datel">Last updated: 2026-10-16</p>
+<p class="lede">Some heat shows up on a thermometer and some does not. Warm a pound of water by one degree and the thermometer moves. Boil that pound and the thermometer sits still while the heat pours in. That hidden heat is why a refrigerant boiling in an evaporator can absorb so much with so little temperature change, why a pound of steam carries far more heat than a pound of hot water, and why a cooling coil that is dripping water is doing latent work. This lesson builds the idea from the numbers, with one worked example you can check on a calculator.</p>
+<div class="note"><strong>Scope.</strong> How latent load is split from sensible load in a cooling load is in <a href="sensible-heat-ratio-and-latent-load-why-airflow-changes-dehumidification.html">Sensible Heat Ratio and Latent Load</a>, measuring it in the air stream is in <a href="measuring-air-side-cooling-capacity-with-enthalpy-wet-bulb-readings-4-5-x-cfm-sensible-latent-and-shr.html">Measuring Air-Side Cooling Capacity With Enthalpy</a>, moist-air properties are in <a href="psychrometrics-for-technicians.html">Psychrometrics for Technicians</a>, and the airflow shortcut formulas are in <a href="hvac-heat-transfer-formulas-1-08-0-68-4-5-and-500-explained-with-field-checks.html">HVAC Heat Transfer Formulas</a>. We do not repeat those here. This page is about the water and refrigerant physics underneath them.</div>
+
+<h2>Sensible heat and specific heat</h2>
+<p>Sensible heat is heat you can sense: adding or removing it changes the temperature. The size of the change depends on the material, and that property is the specific heat, the heat needed to raise one pound by one degree Fahrenheit. Water&#39;s specific heat is about 1 Btu per pound per &deg;F. The U.S. Geological Survey&#39;s water pages say water has a high specific heat and absorbs a lot of heat before it gets hot, quoting 4.184 joules per gram per &deg;C.</p>
+<p>The other numbers on a technician&#39;s list are simply unit conversions of standard tables. The National Institute of Standards and Technology (NIST) gives the exact factor for specific heat: 1 Btu per pound-&deg;F equals 4,186.8 joules per kilogram-kelvin, which is 4.1868 joules per gram per degree. A university chemistry table lists ice at 2.09, liquid water at 4.184 and steam at 1.97 joules per gram per &deg;C. A university thermodynamics table gives air at 1.005 joules per gram per kelvin near 300 K. Dividing each by 4.1868 gives the values in the table below (our arithmetic).</p>
+<table><thead><tr><th>Substance</th><th>Source value (J/g-&deg;C)</th><th>Btu/lb-&deg;F (our arithmetic)</th></tr></thead><tbody>
+<tr><td>Ice</td><td>2.09</td><td>0.50</td></tr>
+<tr><td>Liquid water</td><td>4.184</td><td>1.00</td></tr>
+<tr><td>Steam</td><td>1.97</td><td>0.47, commonly rounded to about 0.48</td></tr>
+<tr><td>Air</td><td>1.005</td><td>0.24</td></tr>
+</tbody></table>
+<p>Two things to notice. Ice and steam take about half the heat per degree that liquid water does, and air takes about a quarter. These values drift a little with temperature, so treat them as working numbers, not constants of nature. The air figure is the same 0.24 that sits inside the familiar 1.08 airflow formula; the derivation is in the formulas lesson linked above.</p>
+
+<h2>Latent heat: heat that changes the state, not the temperature</h2>
+<p>Latent heat is the heat that goes into changing the state of a substance at constant temperature. Georgia State University&#39;s HyperPhysics page defines the heat of fusion as the energy needed to change a gram of a substance from solid to liquid without changing its temperature. For water it lists 80 calories per gram. A calorie per gram is 1.8 Btu per pound (our arithmetic, from 1 Btu/lb = 2.326 kJ/kg and 4.184 kJ/kg per kcal/kg), so water&#39;s heat of fusion is 80 x 1.8 = 144 Btu per pound. An open university physics text agrees on the metric side at 334 kJ per kilogram, and 334 / 2.326 is about 143.6 (our arithmetic).</p>
+<p>For vaporization the U.S. Department of Energy states that the latent heat of vaporization of water at atmospheric pressure is 970.3 Btu per pound. A University of Wisconsin chemistry page gives 2,260 joules per gram at 100 &deg;C, and 2,260 / 2.326 is about 972 Btu per pound (our arithmetic), the same value within rounding. We use 970.</p>
+<p>Put the two side by side. Melting a pound of ice takes 144 Btu, which is the same heat that warms a pound of liquid water about 144 degrees. Boiling a pound of water takes 970 Btu, which would warm that pound about 970 degrees if it stayed liquid. The change of state costs far more than any temperature step. The reverse is also true: freezing and condensing give the same heat back.</p>
+
+<h2>The staircase: temperature against heat added</h2>
+<p>If you add heat to ice at a steady rate and plot temperature, you get steps instead of a straight line. The slopes are the sensible stretches and the flat plateaus are the latent stretches, where heat goes in and the temperature does not move.</p>
+<figure>
+<svg viewBox="0 0 760 390" role="img" aria-labelledby="sct scd" style="max-width:100%;height:auto;font-family:inherit" fill="none" stroke="currentColor" stroke-width="2">
+<title id="sct">Temperature against heat added for 10 pounds of water from ice at 0 F to steam at 212 F</title>
+<desc id="scd">A staircase curve drawn to scale. Temperature rises from 0 to 32 F as the ice warms with 160 Btu. A flat plateau at 32 F follows while 1,440 Btu melts the ice. Temperature then rises from 32 to 212 F as the liquid water warms with 1,800 Btu. A long flat plateau at 212 F follows while 9,700 Btu boils the water to steam. The two plateaus take most of the total heat of 13,100 Btu.</desc>
+<defs><marker id="sa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor" stroke="none"/></marker></defs>
+<path d="M80 330V48" marker-end="url(#sa)" stroke-width="1.5"/>
+<path d="M80 330H742" marker-end="url(#sa)" stroke-width="1.5"/>
+<path d="M74 291H80M74 70H80M324 330V336M568 330V336M720 330V336" stroke-width="1.5"/>
+<path d="M80 330L88 291L158 291L246 70L720 70" stroke-width="3" stroke-linejoin="round"/>
+<g stroke="none" fill="currentColor" font-size="13">
+<text x="20" y="34" font-size="14" font-weight="bold">Temperature (F)</text>
+<text x="68" y="334" text-anchor="end">0</text>
+<text x="68" y="297" text-anchor="end">32</text>
+<text x="68" y="74" text-anchor="end">212</text>
+<text x="80" y="354" text-anchor="middle">0</text>
+<text x="324" y="354" text-anchor="middle">5,000</text>
+<text x="568" y="354" text-anchor="middle">10,000</text>
+<text x="716" y="354" text-anchor="middle">13,100</text>
+<text x="400" y="378" text-anchor="middle" font-size="14" font-weight="bold">Heat added to 10 lb of water (Btu, to scale)</text>
+<text x="96" y="236">Warm ice</text>
+<text x="96" y="252">160 Btu</text>
+<text x="100" y="312">Melting at 32 F: 1,440 Btu</text>
+<text x="222" y="180">Warm water</text>
+<text x="222" y="196">32 to 212 F</text>
+<text x="222" y="212">1,800 Btu</text>
+<text x="330" y="100">Boiling at 212 F: 9,700 Btu</text>
+<text x="330" y="118">(the longest step of the staircase)</text>
+</g>
+</svg>
+<figcaption>Our own diagram, drawn to scale for the worked example below: 10 lb of water at 1 atmosphere (atmospheric pressure), from ice at 0 &deg;F to steam at 212 &deg;F. The sloped runs are sensible heat. The two flat runs are latent heat, and the boiling plateau is longer than all the other steps combined.</figcaption>
+</figure>
+
+<h2>Worked example (our own): ice at 0 &deg;F to steam at 212 &deg;F</h2>
+<p>This is our own example. <strong>Assumptions:</strong> 10 lb of pure water at atmospheric pressure, so water melts at 32 &deg;F and boils at 212 &deg;F; specific heats of 0.5 (ice) and 1.0 (liquid water) Btu/lb-&deg;F from the table above; heat of fusion 144 Btu/lb; heat of vaporization 970 Btu/lb; no heat lost to the surroundings. We stop at saturated steam at 212 &deg;F and do not superheat it.</p>
+<ol>
+<li><strong>Warm the ice from 0 to 32 &deg;F.</strong> 10 lb x 0.5 Btu/lb-&deg;F x 32 &deg;F = 160 Btu.</li>
+<li><strong>Melt it at 32 &deg;F.</strong> 10 lb x 144 Btu/lb = 1,440 Btu. The temperature does not change.</li>
+<li><strong>Warm the water from 32 to 212 &deg;F.</strong> 10 lb x 1.0 Btu/lb-&deg;F x 180 &deg;F = 1,800 Btu.</li>
+<li><strong>Boil it at 212 &deg;F.</strong> 10 lb x 970 Btu/lb = 9,700 Btu. Again the temperature does not change.</li>
+</ol>
+<p><strong>Total:</strong> 160 + 1,440 + 1,800 + 9,700 = 13,100 Btu. Melting and boiling together are 1,440 + 9,700 = 11,140 Btu, which is 11,140 / 13,100 = 85 percent of the total. The three sensible steps share the other 1,960 Btu, or 15 percent. Boiling alone is 9,700 / 13,100 = 74 percent.</p>
+<div role="img" aria-label="Bar chart of heat for each step: warm ice 160 Btu, melt 1,440 Btu, warm water 1,800 Btu, boil 9,700 Btu" style="margin:1rem 0">
+<div style="display:grid;grid-template-columns:9.5rem 1fr 5rem;gap:.4rem .6rem;align-items:center;font-size:.95rem">
+<div>Warm ice (sensible)</div><div><div style="height:1.1rem;width:1.65%;min-width:4px;background:currentColor;opacity:.55"></div></div><div>160 Btu</div>
+<div><strong>Melt (latent)</strong></div><div><div style="height:1.1rem;width:14.85%;background:currentColor"></div></div><div>1,440 Btu</div>
+<div>Warm water (sensible)</div><div><div style="height:1.1rem;width:18.56%;background:currentColor;opacity:.55"></div></div><div>1,800 Btu</div>
+<div><strong>Boil (latent)</strong></div><div><div style="height:1.1rem;width:100%;background:currentColor"></div></div><div>9,700 Btu</div>
+</div>
+<p class="small" style="margin:.4rem 0 0">Our own chart of the four steps above, bar length in proportion to Btu. Solid bars are latent steps; lighter bars are sensible steps.</p>
+</div>
+
+<h2>Why boiling refrigerant moves so much heat</h2>
+<p>An evaporator works the same way as the boiling step, only at a lower temperature. Liquid refrigerant at low pressure boils inside the coil, and the heat of vaporization comes from the air or water passing over the outside. Because the refrigerant is changing state, it takes in heat while staying near its saturation temperature for the coil pressure. That is why the coil can stay cold while absorbing a large amount of heat, and why a pound of boiling refrigerant does far more work than a pound of liquid warmed a few degrees. The principle is the same as for water: the phase change is the main heat carrier. We do not quote refrigerant values here because they vary by refrigerant and temperature; read them from the pressure-temperature chart or property table for the refrigerant in front of you. The sensible part shows up after the liquid is gone: once all the liquid has boiled, the vapor warms above the boiling temperature, which is superheat. The cycle itself is in <a href="refrigeration-cycle-basics.html">Refrigeration Cycle Basics</a>.</p>
+<p>The same logic explains the condenser side. When the hot vapor condenses it gives the latent heat back at a nearly steady temperature, and that heat goes to the outdoor air or to a water loop.</p>
+
+<h2>Why steam heating carries more per pound than hot water</h2>
+<p>The U.S. Department of Energy&#39;s steam sourcebook says most of the heat content of steam is stored as latent heat, so large quantities of heat can be transferred efficiently at a constant temperature, and that in a heat exchanger the steam transfers its latent heat to the process fluid. A radiator or heating coil does that job: steam enters, condenses to water, and gives up its latent heat.</p>
+<p>Compare one pound of each, using our own assumption of a hot-water loop that cools 20 &deg;F across a radiator. Hot water gives up 1 x 20 = 20 Btu per pound. A pound of steam that condenses gives up about 970 Btu, so it carries about 970 / 20 = 48.5 times as much per pound (our arithmetic). That is why steam pipes and radiators can be small for the heat they move and why steam traps matter: the trap holds steam in until it has given up this latent heat. The practical side is in <a href="steam-system-fundamentals.html">Steam System Fundamentals</a>. Hot water has its own strengths, such as steady control, but its heat per pound is purely sensible.</p>
+
+<h2>Why a cooling coil removes moisture as latent load</h2>
+<p>Water vapor in air carries latent heat. If the coil surface is colder than the dew point of the air, vapor condenses on the coil and the condensation gives up its latent heat to the refrigerant. The U.S. Department of Energy&#39;s Building America right-sizing guide describes the effect from the home side: moisture needs time to condense on the evaporator coil and drain away, and an oversized system that satisfies the thermostat too quickly can shut off without removing much moisture. In most homes, it adds, the central cooling system is the sole source of dehumidification.</p>
+<p>A small illustration, again our own: suppose a coil condenses 10 lb of water out of the air in an hour. Using 970 Btu/lb as an approximation (assumption; the real figure varies a little with temperature), that is about 10 x 970 = 9,700 Btu per hour of latent load, roughly the same as 0.8 ton of cooling (9,700 / 12,000) used for drying alone, not for lowering the temperature. The splitting of total load into sensible and latent parts, and what airflow does to it, is the subject of the sensible heat ratio lesson linked above.</p>
+
+<h2>Field habits that follow</h2>
+<ul>
+<li>When a temperature stays flat while heat is clearly being added or removed (a coil with frost and ice, a boiling pan, a condensing line), a phase change is almost always the reason.</li>
+<li>Do not use 1.08 or 500-style shortcuts on a stream that is changing state. They assume sensible heat only.</li>
+<li>Frost and ice on a coil are a heat sink too: melting takes 144 Btu per pound of ice, which is why defrost needs real energy and time.</li>
+<li>Read refrigerant heat values from the property table for that refrigerant, not from water numbers.</li>
+</ul>
+
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: sensible vs latent heat</h2><p><em>Sensible moves the thermometer. Latent does not.</em></p><ul><li>Specific heats, Btu/lb-&deg;F: water 1.0, ice about 0.5, steam about 0.47 to 0.48, air about 0.24.</li><li>Water: fusion about 144 Btu/lb at 32 &deg;F; vaporization about 970 Btu/lb at atmospheric pressure.</li><li>Our example: 10 lb from ice at 0 &deg;F to steam at 212 &deg;F takes 13,100 Btu, and melting plus boiling is 85 percent of it.</li><li>Boiling refrigerant absorbs heat at a nearly steady temperature, which is why an evaporator stays cold while loaded.</li><li>Condensing steam gives up about 970 Btu/lb against about 20 Btu/lb for hot water cooling 20 &deg;F (our assumption).</li><li>Moisture condensing on a coil is latent load, not temperature drop.</li></ul></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="sensible-heat-ratio-and-latent-load-why-airflow-changes-dehumidification.html">Sensible Heat Ratio and Latent Load: Why Airflow Changes Dehumidification</a></li><li><a href="measuring-air-side-cooling-capacity-with-enthalpy-wet-bulb-readings-4-5-x-cfm-sensible-latent-and-shr.html">Measuring Air-Side Cooling Capacity With Enthalpy</a></li><li><a href="psychrometrics-for-technicians.html">Psychrometrics for Technicians</a></li><li><a href="hvac-heat-transfer-formulas-1-08-0-68-4-5-and-500-explained-with-field-checks.html">HVAC Heat Transfer Formulas: 1.08, 0.68, 4.5 and 500</a></li><li><a href="refrigeration-cycle-basics.html">Refrigeration Cycle Basics</a></li></ul></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li><a href="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8">National Institute of Standards and Technology: Guide to the SI, Appendix B.8 (Btu per pound = 2.326 kJ/kg; Btu per pound-F = 4.1868 kJ/kg-K)</a></li>
+<li><a href="https://people.chem.umass.edu/botch/Chem122S08/Chapters/Ch6/SpecificHeatCapacities.pdf">University of Massachusetts Amherst, chemistry: table of specific heat capacities (ice 2.09, water 4.184, steam 1.97 J/g-C)</a></li>
+<li><a href="https://people.ohio.edu/urieli/thermo/property_tables/gas/idealGas.html">Ohio University: properties of various ideal gases at 300 K (air Cp 1.005 kJ/kg-K)</a></li>
+<li><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/thermo/phase2.html">Georgia State University, HyperPhysics: phase changes (heat of fusion definition; 80 cal/g for water)</a></li>
+<li>Open Oregon Educational Resources: Physics of the Body, latent heats (fusion of water 334 kJ/kg) (plain text, not linked)</li>
+<li>University of Wisconsin-Madison, general chemistry online tutorial on heat of vaporization (2260 J/g for water at 100 C), cited here as plain text.</li>
+<li><a href="https://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/steam26a_condensing.pdf">U.S. Department of Energy, Advanced Manufacturing Office: steam tip sheet 26A (latent heat of vaporization of water at atmospheric pressure, 970.3 Btu/lb)</a></li>
+<li>U.S. Department of Energy: Improving Steam System Performance, a sourcebook for industry (latent heat share of steam, transfer at constant temperature) (plain text, not linked)</li>
+<li><a href="https://webarchive.library.unt.edu/web/20130217183914/http:/ga.water.usgs.gov/edu/heat-capacity.html">U.S. Geological Survey, heat capacity and water (archived copy hosted by the University of North Texas libraries; 4.184 J per gram per degree C)</a></li>
+<li><a href="https://www1.eere.energy.gov/buildings/publications/pdfs/building_america/why_to_rightsize_guide.pdf">U.S. Department of Energy, Building America: Why to Rightsize (moisture condensing on the evaporator coil, oversizing and dehumidification)</a></li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
