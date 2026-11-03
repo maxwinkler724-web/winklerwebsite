@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Frost on Evaporator Coils as a Heat Transfer Problem</title>
+<meta property="og:title" content="Frost on Evaporator Coils as a Heat Transfer Problem"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Why frost insulates a coil, blocks fin gaps and adds latent load, and a worked defrost heat budget: frost, coil metal and heat left over for the box.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Frost on Evaporator Coils as a Heat Transfer Problem", "about": "Heat transfer", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-11-03", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/frost-on-evaporator-coils-heat-transfer-insulating-frost-blocked-fin-gaps-sublimation-load-and-the-heat-a-defrost-must-supply.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/frost-on-evaporator-coils-heat-transfer-insulating-frost-blocked-fin-gaps-sublimation-load-and-the-heat-a-defrost-must-supply.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/frost-on-evaporator-coils-heat-transfer-insulating-frost-blocked-fin-gaps-sublimation-load-and-the-heat-a-defrost-must-supply.html"><meta property="og:description" content="Why frost insulates a coil, blocks fin gaps and adds latent load, and a worked defrost heat budget: frost, coil metal and heat left over for the box."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Frost on Evaporator Coils as a Heat Transfer Problem", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/frost-on-evaporator-coils-heat-transfer-insulating-frost-blocked-fin-gaps-sublimation-load-and-the-heat-a-defrost-must-supply.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Heat transfer</span>
+<h1>Frost on Evaporator Coils as a Heat Transfer Problem</h1>
+<p class="small datel">Last updated: 2026-11-03</p>
+<p class="lede">Frost is a heat transfer problem in three parts. It is a poor conductor between the air and the cold metal, it fills the gaps between the fins, and each pound of it is water vapor that gave up a lot of heat to become ice. Then the defrost has to put heat back in, and most of that heat does not go where you want it. This lesson puts numbers on each part.</p>
+
+<div class="note"><strong>Scope.</strong> Defrost operation is in <a href="defrost-cycle-and-auxiliary-heat.html">Defrost Cycle and Auxiliary Heat</a>, normal ice versus a problem is in <a href="heat-pump-iced-up-normal-defrost-or-problem.html">Heat Pump Iced Up in Winter</a>, and timers and termination are in <a href="defrost-timers-and-defrost-termination-thermostats-in-walk-ins-and-reach-ins-pins-failsafe-time-fan-delay-and-field-tests.html">Defrost Timers and Termination Thermostats</a>. Specific heat and heat of fusion basics are in <a href="sensible-vs-latent-heat-specific-heat-heat-of-fusion-and-vaporization-and-why-boiling-refrigerant-and-steam-move-so-much-heat.html">Sensible vs Latent Heat</a>. This page is the heat transfer physics underneath them.</div>
+
+<h2>When frost forms</h2>
+<p>Frost needs two things at once: a surface below the dew point of the air touching it, so vapor leaves the air, and a surface below freezing, so what lands turns to ice. An Oak Ridge National Laboratory literature review on defrost technologies says water vapor condenses and freezes when evaporator surfaces are below the dew point of the air, and puts heat pump outdoor-coil frosting in outdoor air from roughly -7 to 5 &deg;C (about 19 to 41 &deg;F) at relative humidity above about 65 percent. That is how a heat pump can frost on a damp 38 &deg;F morning: the air is above freezing, but the coil, running colder than the air to absorb heat, is below 32 &deg;F. A walk-in freezer coil is always far below freezing, so the question there is how much moisture the air brings in.</p>
+
+<h2>Frost is an insulator</h2>
+<p>Heat has to travel from the air, through whatever is on the surface, into the metal and on into the refrigerant. Frost sits first in line. A national laboratory preprint reviewing frost models lists three published equations for frost thermal conductivity as a function of frost density, and says the frost layer acts as extra insulation because it is porous. We ran them at an assumed frost density of 100 kg/m&sup3; (our assumption; real density varies) and got about 0.11, 0.16 and 0.10 W/m-K (our arithmetic). Georgia State University's HyperPhysics conductivity table gives the comparison:</p>
+<table><thead><tr><th>Material</th><th>Thermal conductivity (W/m-K)</th><th>Source</th></tr></thead><tbody>
+<tr><td>Air at 0 &deg;C</td><td>0.024</td><td>HyperPhysics table</td></tr>
+<tr><td>Frost at assumed 100 kg/m&sup3;</td><td>about 0.10 to 0.16</td><td>Our arithmetic from the preprint's equations</td></tr>
+<tr><td>Solid ice</td><td>1.6</td><td>HyperPhysics table</td></tr>
+<tr><td>Aluminum</td><td>205</td><td>HyperPhysics table</td></tr>
+<tr><td>Copper</td><td>385</td><td>HyperPhysics table</td></tr>
+</tbody></table>
+<p>Frost conducts roughly 10 to 16 times worse than solid ice and 1,300 to 2,000 times worse than aluminum (our arithmetic). Resistance to conduction through a flat layer is thickness divided by conductivity. Our own illustration: 3 mm of frost at an assumed 0.10 W/m-K is 0.003 / 0.10 = 0.03 m&sup2;-K/W, the same as 0.003 x 205 / 0.10 = 6.15 m of aluminum. The fin metal is not the bottleneck; the frost is. It is the series-resistance idea from <a href="overall-heat-transfer-coefficient-u-and-fouling-factors-in-plant-heat-exchangers-series-resistances-design-allowance-and-trending-for-cleaning.html">Overall Heat Transfer Coefficient U and Fouling Factors</a>, with frost playing the fouling.</p>
+<p>Direction matters. Heat flows warm to cold: box air, frost surface, through the frost, fin, tube wall, boiling refrigerant. Heat flow equals temperature difference divided by resistance (see <a href="conduction-convection-and-radiation-the-three-ways-heat-moves-in-furnaces-coils-boilers-and-ducts-with-field-examples.html">Conduction, Convection and Radiation</a>), so with more frost in that chain, either the metal runs colder or the coil moves less heat.</p>
+
+<h2>Frost blocks airflow between the fins</h2>
+<p>Conduction is only half the damage. The Oak Ridge review says frost hinders airflow and raises the pressure drop through the coil, so capacity drops. The laboratory preprint says excessive buildup can block the air passage, that air shifts toward the less blocked parts of the coil, and that frosting and defrosting cycles can cost up to 13 percent of seasonal heat pump efficiency (citing a published study). Our own geometry check: a coil with 4 fins per inch has fins about 25.4 / 4 = 6.35 mm apart, center to center. Frost grows on both facing fins, and two 3 mm layers use 6 mm of that gap, leaving a slit of about a third of a millimeter before you subtract the fin metal. For coil sizing and box humidity, see <a href="evaporator-design-td-in-walk-in-coolers-box-humidity-product-moisture-loss-coil-sizing-and-the-suction-pressure-check.html">Evaporator Design TD in Walk-In Coolers</a>.</p>
+
+<figure>
+<svg viewBox="0 0 640 330" role="img" aria-labelledby="fft ffd" style="max-width:100%;height:auto;font-family:inherit" fill="none" stroke="currentColor" stroke-width="2">
+<title id="fft">Cross-section of an evaporator fin with frost on both faces and the path heat takes</title>
+<desc id="ffd">A vertical metal fin stands on a tube wall with boiling refrigerant below it. A layer of frost covers both faces of the fin and the tube wall. Moist air flows down the gaps on each side. Heat arrows point from the air into the frost surface, through the frost toward the fin, down the fin toward the tube, and through the tube wall into the refrigerant. A two-headed arrow marks the frost thickness, which narrows the air gap.</desc>
+<defs>
+<marker id="ha" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#d9480f" stroke="none"/></marker>
+<marker id="ka" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="currentColor" stroke="none"/></marker>
+<marker id="aa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="currentColor" stroke="none"/></marker>
+</defs>
+<rect x="150" y="60" width="50" height="170" rx="6" fill="#7fb7e6" fill-opacity="0.4" stroke-width="1.5"/>
+<rect x="214" y="60" width="50" height="170" rx="6" fill="#7fb7e6" fill-opacity="0.4" stroke-width="1.5"/>
+<rect x="40" y="218" width="110" height="12" rx="4" fill="#7fb7e6" fill-opacity="0.4" stroke-width="1.5"/>
+<rect x="264" y="218" width="116" height="12" rx="4" fill="#7fb7e6" fill-opacity="0.4" stroke-width="1.5"/>
+<rect x="40" y="230" width="340" height="24" fill="currentColor" fill-opacity="0.25"/>
+<rect x="200" y="50" width="14" height="180" fill="currentColor" fill-opacity="0.25"/>
+<rect x="40" y="254" width="340" height="60" stroke-dasharray="6 4" stroke-width="1.5"/>
+<path d="M70 62V118" marker-end="url(#aa)" stroke-width="1.5"/>
+<path d="M330 62V118" marker-end="url(#aa)" stroke-width="1.5"/>
+<path d="M70 185H146" marker-end="url(#ha)" stroke="#d9480f" stroke-width="2.5"/>
+<path d="M372 185H268" marker-end="url(#ha)" stroke="#d9480f" stroke-width="2.5"/>
+<path d="M156 150H194" marker-end="url(#ha)" stroke="#d9480f" stroke-width="2.5"/>
+<path d="M258 150H220" marker-end="url(#ha)" stroke="#d9480f" stroke-width="2.5"/>
+<path d="M207 68V224" marker-end="url(#ha)" stroke="#d9480f" stroke-width="2.5"/>
+<path d="M207 234V268" marker-end="url(#ha)" stroke="#d9480f" stroke-width="2.5"/>
+<path d="M152 100H198" marker-start="url(#ka)" marker-end="url(#ka)" stroke-width="1.5"/>
+<circle cx="56" cy="185" r="10" stroke-width="1.5"/>
+<circle cx="175" cy="178" r="10" stroke-width="1.5"/>
+<circle cx="207" cy="36" r="10" stroke-width="1.5"/>
+<circle cx="300" cy="242" r="10" stroke-width="1.5"/>
+<circle cx="124" cy="100" r="10" stroke-width="1.5"/>
+<circle cx="410" cy="50" r="10" stroke-width="1.5"/>
+<circle cx="410" cy="94" r="10" stroke-width="1.5"/>
+<circle cx="410" cy="138" r="10" stroke-width="1.5"/>
+<circle cx="410" cy="182" r="10" stroke-width="1.5"/>
+<circle cx="410" cy="226" r="10" stroke-width="1.5"/>
+<rect x="400" y="262" width="22" height="12" fill="#7fb7e6" fill-opacity="0.4" stroke-width="1.5"/>
+<rect x="400" y="286" width="22" height="12" fill="currentColor" fill-opacity="0.25" stroke-width="1.5"/>
+<g stroke="none" fill="currentColor" font-size="12.5">
+<text stroke="none" x="42" y="30" font-weight="bold">Warmest: box air</text>
+<text stroke="none" x="44" y="136">Air flow</text>
+<text stroke="none" x="304" y="136">Air flow</text>
+<text stroke="none" x="60" y="290">Refrigerant boiling in the tube (coldest)</text>
+<g text-anchor="middle" font-size="12" font-weight="bold">
+<text stroke="none" x="56" y="189">1</text>
+<text stroke="none" x="175" y="182">2</text>
+<text stroke="none" x="207" y="40">3</text>
+<text stroke="none" x="300" y="246">4</text>
+<text stroke="none" x="124" y="104">5</text>
+<text stroke="none" x="410" y="54">1</text>
+<text stroke="none" x="410" y="98">2</text>
+<text stroke="none" x="410" y="142">3</text>
+<text stroke="none" x="410" y="186">4</text>
+<text stroke="none" x="410" y="230">5</text>
+</g>
+<text stroke="none" x="430" y="46">Heat from the warm, humid air</text>
+<text stroke="none" x="430" y="62">flows into the frost surface</text>
+<text stroke="none" x="430" y="90">Heat creeps through the frost,</text>
+<text stroke="none" x="430" y="106">a poor conductor</text>
+<text stroke="none" x="430" y="134">The fin carries heat down</text>
+<text stroke="none" x="430" y="150">toward the tube</text>
+<text stroke="none" x="430" y="178">The tube wall passes it to</text>
+<text stroke="none" x="430" y="194">the boiling refrigerant</text>
+<text stroke="none" x="430" y="222">Frost thickness: it narrows</text>
+<text stroke="none" x="430" y="238">the air gap between fins</text>
+<text stroke="none" x="432" y="272">Frost layer</text>
+<text stroke="none" x="432" y="296">Fin and tube wall (metal)</text>
+</g>
+</svg>
+<figcaption>Our own diagram, not to scale: a fin standing on a tube wall, frost on both faces, and the path heat takes from the air to the refrigerant (orange arrows, steps 1 to 4, mirrored on the other face). Every step runs from warmer to colder. Step 5 marks the frost thickness; as it grows, step 2 gets harder and the air gap closes.</figcaption>
+</figure>
+
+<h2>Frost adds a latent load: sublimation</h2>
+<p>Water vapor that lands on a surface below freezing goes straight to ice, and the refrigerant has to carry away the heat that vapor gave up. A National Bureau of Standards (now NIST) paper on ice gives 2,500.8 J/g for vaporization and 333.4 J/g for fusion at 0 &deg;C. Adding them gives about 2,834 J/g for sublimation, or 2,834 / 2.326 = about 1,218 Btu per pound (our arithmetic, with the NIST conversion 1 Btu/lb = 2.326 kJ/kg). Vapor going to liquid dew would give up about 1,075 Btu/lb (2,500.8 / 2.326), and melting the frost later takes just 144. This heat is part of the coil's latent load and is already inside the infiltration and moisture terms in <a href="walk-in-cooler-and-freezer-box-load-calculation-wall-transmission-door-infiltration-product-load-internal-heat-run-time-and-sizing.html">Walk-In Cooler and Freezer Box Load Calculation</a>; it is not an extra charge. The point is the ratio: forming a pound of frost loads the coil with about 8.5 times the heat it takes to melt it (1,218 / 144, our arithmetic).</p>
+
+<h2>What a defrost has to pay for</h2>
+<p>The Oak Ridge review lists where defrost heat goes: warming the coil metal, melting the frost, warming the meltwater, evaporating water left on the coil, and heating the surroundings. It quotes an estimate that only 15 to 25 percent of hot gas defrost heat goes into melting frost, says only a portion of electric heater heat is used for melting on a display case, and reports a maximum reverse cycle defrosting efficiency of about 60 percent in one test. A Purdue conference paper on a small reversible CO2 automotive test coil (not a walk-in) found that early in defrost most energy went to warming the coil metal and melting frost, with the frost gone in the first 20 to 35 seconds; later, meltwater and heat loss took a growing share. For hot gas versus electric, see <a href="hot-gas-defrost-in-commercial-refrigeration-how-it-works-valves-and-sequence-drain-pan-heating-and-compared-with-electric-and-off-cycle-defrost.html">Hot Gas Defrost in Commercial Refrigeration</a>.</p>
+
+<h2>Worked example (our own): one defrost of a walk-in freezer coil</h2>
+<p><strong>This is our own example.</strong> It is a made-up coil, not a measurement of any real unit.</p>
+<p><strong>Assumptions (all ours):</strong> 12 lb of frost between defrosts; coil and frost at -10 &deg;F at the start; defrost ends with the metal at 50 &deg;F; 18 lb of aluminum fins and 14 lb of copper tubing; electric heaters of 3,000 W running 20 minutes. <strong>Property values:</strong> ice 2.09, aluminum 0.900 and copper 0.385 J/g-&deg;C from University of Massachusetts Amherst chemistry tables, divided by 4.1868 to give 0.50, 0.215 and 0.092 Btu/lb-&deg;F (our arithmetic); heat of fusion 144 Btu/lb (80 cal/g on the HyperPhysics phase-change page, times 1.8; NIST's 333.4 J/g is 143.3, within half a percent).</p>
+<ol>
+<li><strong>Warm the frost from -10 to 32 &deg;F:</strong> 12 lb x 0.50 x 42 &deg;F = 252 Btu.</li>
+<li><strong>Melt it:</strong> 12 lb x 144 = 1,728 Btu.</li>
+<li><strong>Warm the aluminum, -10 to 50 &deg;F (60 &deg;F rise):</strong> 18 x 0.215 x 60 = 232 Btu.</li>
+<li><strong>Warm the copper, same rise:</strong> 14 x 0.092 x 60 = 77 Btu.</li>
+<li><strong>Total heat the coil needs:</strong> 252 + 1,728 + 232 + 77 = about 2,290 Btu. Melting is 75 percent of it, coil metal 14 percent, warming the frost 11 percent.</li>
+<li><strong>Heater output:</strong> 3,000 W x 3.412 Btu/h per W = 10,236 Btu/h; over 20 minutes (one third of an hour) that is 3,412 Btu, which is 1 kWh. The 3.412 comes from the NIST factor 0.2930711 W per Btu/h (our arithmetic).</li>
+<li><strong>Heat not needed for the frost or metal:</strong> 3,412 - 2,290 = about 1,120 Btu, or 33 percent of the heater output. It goes to the box air and surfaces, the drain pan and line, and the meltwater that runs away, none of which we counted.</li>
+</ol>
+<p>Two more results. If every Btu went into the coil, the job would take 2,290 / 10,236 = 0.224 h, about 13.4 minutes; real heaters lose heat, so 20 minutes may be reasonable, but each minute after the ice is gone adds 3,000 W x 1 min = about 171 Btu to the box. After the defrost, refrigeration must remove the 1,120 Btu that leaked into the box plus the 309 Btu stored in the warm metal (232 + 77), about 1,430 Btu. At an assumed four defrosts a day, the heaters alone use 4 x 365 x 1 kWh = 1,460 kWh a year in this made-up case.</p>
+
+<h2>Why defrost energy and timing matter</h2>
+<ul>
+<li><strong>Too late:</strong> thicker frost means more resistance, less airflow and less capacity, and more ice to melt next time.</li>
+<li><strong>Too long:</strong> once the ice is gone, heat only warms the box and coil; in the example each wasted minute is about 171 Btu to pull back out.</li>
+<li><strong>Too early or cut short:</strong> a lightly frosted coil still pays for 309 Btu of metal warming, and ice left in the fin gaps means the next cycle starts partly blocked.</li>
+<li><strong>Less frost to start with:</strong> frost grows with the moisture coming in, so door discipline and tight gaskets cut the sublimation load and the frost together.</li>
+</ul>
+
+
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Frost as a heat transfer problem</h2><p><em>Frost insulates, blocks and loads the coil; defrost heat mostly goes elsewhere.</em></p><ul><li>Frost needs a surface below the dew point and below 32 &deg;F.</li><li>Frost conducts about 0.1 to 0.16 W/m-K (assumed density 100 kg/m&sup3;), far below ice at 1.6 and aluminum at 205.</li><li>Heat flows air to frost to fin to tube to refrigerant; more frost means a bigger drop across the frost.</li><li>Frost narrows or closes the gaps between fins and cuts airflow.</li><li>Sublimation is about 1,218 Btu/lb; melting is 144 Btu/lb.</li><li>Our example: 12 lb of frost plus 18 lb aluminum and 14 lb copper needs about 2,290 Btu; a 20 minute, 3 kW heater supplies 3,412 Btu.</li><li>Leftover heat goes to the box; each extra minute of a 3 kW heater is about 171 Btu.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="defrost-cycle-and-auxiliary-heat.html">Defrost Cycle and Auxiliary Heat</a></li><li><a href="heat-pump-iced-up-normal-defrost-or-problem.html">Heat Pump Iced Up in Winter: Normal Defrost or a Problem?</a></li><li><a href="defrost-timers-and-defrost-termination-thermostats-in-walk-ins-and-reach-ins-pins-failsafe-time-fan-delay-and-field-tests.html">Defrost Timers and Termination Thermostats in Walk-Ins and Reach-Ins</a></li><li><a href="sensible-vs-latent-heat-specific-heat-heat-of-fusion-and-vaporization-and-why-boiling-refrigerant-and-steam-move-so-much-heat.html">Sensible vs Latent Heat</a></li><li><a href="hot-gas-defrost-in-commercial-refrigeration-how-it-works-valves-and-sequence-drain-pan-heating-and-compared-with-electric-and-off-cycle-defrost.html">Hot Gas Defrost in Commercial Refrigeration</a></li><li><a href="../products.html">Study packs and printables</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources"><li><a href="https://docs.nlr.gov/docs/fy24osti/89649.pdf">U.S. national laboratory preprint (also catalogued at OSTI): A Review of Modeling Approaches for Predicting Frost Growth and Defrosting on Tube-Fin Heat Exchangers (frost conductivity equations, insulating effect, airflow blockage, up to 13 percent seasonal COP loss)</a></li><li><a href="https://info.ornl.gov/sites/publications/Files/Pub117976.pdf">Oak Ridge National Laboratory: A Critical Literature Review of Defrost Technologies (frost below dew point, airflow and pressure drop, where defrost heat goes, hot gas 15 to 25 percent, reverse cycle efficiency)</a></li><li><a href="https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=3301&amp;context=iracc">Purdue University conference paper: The Experimental Study of Defrosting Energy of an Air-source Heat Pump (reversible CO2 test coil; energy early in defrost goes to coil metal and frost melt)</a></li><li><a href="https://nvlpubs.nist.gov/nistpubs/jres/081/1/v81.n01.a02.pdf">National Bureau of Standards (NIST): Wexler, Vapor Pressure Formulation for Ice, J. Res. NBS 81A, 1977 (fusion 333.4 J/g and vaporization 2,500.8 J/g at 0 &deg;C)</a></li><li><a href="https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8">NIST Guide to the SI, Appendix B.8 (1 Btu/lb = 2.326 kJ/kg; 1 Btu/lb-F = 4.1868 kJ/kg-K; 1 Btu/h = 0.2930711 W)</a></li><li><a href="https://people.chem.umass.edu/botch/Chem122S08/Chapters/Ch6/SpecificHeatCapacities.pdf">University of Massachusetts Amherst, chemistry: table of specific heat capacities (ice 2.09, aluminum 0.90, copper 0.39 J/g-C)</a></li><li><a href="https://owl.oit.umass.edu/departments/Chemistry/appendix/SpecificHeats.html">University of Massachusetts Amherst, chemistry appendix: specific heats (aluminum 0.900, copper 0.385 J/g-C)</a></li><li><a href="https://hyperphysics.phy-astr.gsu.edu/hbase/Tables/thrcn.html">Georgia State University, HyperPhysics: thermal conductivity table (ice 1.6, aluminum 205, copper 385, air 0.024 W/m-K)</a></li><li><a href="https://hyperphysics.phy-astr.gsu.edu/hbase/thermo/phase2.html">Georgia State University, HyperPhysics: phase changes (heat of fusion of water, 80 cal/g)</a></li></ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
