@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Heating Degree Days: Estimating Seasonal Fuel Use</title>
+<meta property="og:title" content="Heating Degree Days: Estimating Seasonal Fuel Use"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="What a heating degree day is, why 65 F is a convention, and how to turn design heat loss and HDD into seasonal therms and compare two winters.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Heating Degree Days: Estimating Seasonal Fuel Use", "about": "Heat transfer", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-11-03", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/heating-degree-days-estimating-seasonal-fuel-use-65-f-base-balance-temperature-ua-method-and-comparing-two-winters.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/heating-degree-days-estimating-seasonal-fuel-use-65-f-base-balance-temperature-ua-method-and-comparing-two-winters.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/heating-degree-days-estimating-seasonal-fuel-use-65-f-base-balance-temperature-ua-method-and-comparing-two-winters.html"><meta property="og:description" content="What a heating degree day is, why 65 F is a convention, and how to turn design heat loss and HDD into seasonal therms and compare two winters."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Heating Degree Days: Estimating Seasonal Fuel Use", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/heating-degree-days-estimating-seasonal-fuel-use-65-f-base-balance-temperature-ua-method-and-comparing-two-winters.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Heat transfer</span>
+<h1>Heating Degree Days: Estimating Seasonal Fuel Use</h1>
+<p class="small datel">Last updated: 2026-11-03</p>
+<p class="lede">A heat loss calculation tells you what a house needs on the coldest night. A customer asks a different question: how much fuel will it burn all winter? Heating degree days bridge the two. They turn a season of weather into one number you can multiply by the house's heat loss per degree.</p>
+<h2>What a degree day is</h2>
+<p>The U.S. Energy Information Administration explains it this way: take the day's mean temperature, which is the average of the high and low, and compare it with 65 F. If the mean is below 65 F, the shortfall counts as heating degree days (HDD). Its example is a day with a 29 F mean, which gives 36 HDD (65 minus 29). A day with a 65 F mean or warmer gives zero HDD. Add the daily numbers over a month or a winter and you have a total that tracks how much heating the weather demanded.</p>
+<p>The National Weather Service Climate Prediction Center, part of NOAA, describes degree days as an index of the demand for energy to heat or cool buildings, and it also uses 65 F as the base. Our own plain-language version: one HDD is one degree of "cold" held for one day, so a day that averages 10 degrees below the base is 10 HDD, and so is ten days that each average one degree below it.</p>
+<h2>Why 65 F, and why your house may differ</h2>
+<p>The 65 F base is a convention that lets everyone compare on the same scale. It is not a property of your house. A Lawrence Berkeley Laboratory study of degree days (Eto, 1988) describes the base as a rule of thumb tied to the balance point, the outdoor temperature at which free heat from people, lights, appliances and sun just offsets the building's losses. It adds that the base is "not a literal temperature" but an equivalent one below which heating is required, and that better-insulated homes suit lower bases.</p>
+<p>Here is our own way to see it. If the thermostat is at 70 F and the house gets 8,000 Btu/h of free heat on average, a house that loses 800 Btu/h per degree has a balance temperature of 70 minus 8,000/800, or 60 F. Outdoors at 60, the furnace stays off. A tighter house with more insulation has a smaller loss per degree, so the same free heat covers more degrees and the balance temperature drops further. Heating degree days counted from 65 F then overstate the demand, because days between 60 and 65 F add HDD that the house never needed fuel for. Some weather sources publish HDD for other bases; check the base before you use any total.</p>
+<h2>Where to get the data</h2>
+<p>The NOAA Climate Prediction Center publishes daily degree-day data for climate divisions, states, Census divisions and the contiguous U.S., daily 1981-2010 normals, weekly and monthly statistics, and city tables, with archives back to 1997. EIA also names the Climate Prediction Center as a source of historical temperature and degree-day data and points to utilities and weather websites. Two cautions from the Climate Prediction Center's own explanation page: most area figures are estimated from nearby stations rather than measured, and the state and regional totals are population weighted. For one house, a nearby station's figure is closer to the truth than a state average.</p>
+<p>Your gas utility bill may also print the billing period's HDD. See <a href="reading-your-gas-bill-therms-ccf-and-what-your-furnace-uses.html">Reading Your Gas Bill</a> for therms.</p>
+<h2>The estimate: UA, then energy</h2>
+<p>Start with the design heat loss from your load calculation, the outdoor design condition and the indoor setpoint. Our lessons on <a href="outdoor-design-temperatures-for-new-hvac-systems-99-and-1-percent-values-design-wet-bulb-and-why-record-highs-and-lows-oversize-equipment.html">outdoor design temperatures</a> cover where that outdoor number comes from. Then:</p>
+<ol>
+<li><strong>UA</strong> (Btu/h per degree F) = design heat loss divided by (indoor setpoint minus outdoor design temperature).</li>
+<li><strong>Heat the house needs over the season</strong> (Btu) = UA x 24 hours x HDD.</li>
+<li><strong>Fuel energy</strong> (Btu) = that heat divided by the heating system's efficiency, as a decimal.</li>
+<li>Convert to the fuel's unit. One therm of natural gas is 100,000 Btu by definition.</li>
+</ol>
+<p>The 24 appears because degree days are per day while UA is per hour. The result is a straight line: double the HDD and the fuel doubles, with slope UA x 24 / efficiency.</p>
+<h2>Worked example (our own, with assumed numbers)</h2>
+<p>These inputs are assumptions made up for teaching. They are not from a real house or a published weather table.</p>
+<ul>
+<li>Design heat loss: 48,000 Btu/h, at an indoor setpoint of 70 F and an outdoor design temperature of 10 F (assumed).</li>
+<li>Seasonal total: 5,000 HDD at the 65 F base (assumed).</li>
+<li>Gas furnace, seasonal efficiency 92 percent (assumed).</li>
+</ul>
+<p><strong>Step 1.</strong> Temperature difference = 70 minus 10 = 60 F. UA = 48,000 / 60 = 800 Btu/h per F.</p>
+<p><strong>Step 2.</strong> Heat needed = 800 x 24 x 5,000 = 96,000,000 Btu.</p>
+<p><strong>Step 3.</strong> Fuel energy = 96,000,000 / 0.92 = about 104,300,000 Btu.</p>
+<p><strong>Step 4.</strong> 104,300,000 / 100,000 = about 1,043 therms.</p>
+<p>Now apply the balance-temperature idea. Suppose the free heat is 8,000 Btu/h, so the balance temperature is 60 F as computed above, and suppose (assumed) that same winter has 3,600 HDD counted from 60 F. Then heat needed = 800 x 24 x 3,600 = 69,120,000 Btu, fuel = 69,120,000 / 0.92 = about 75,130,000 Btu, or about 751 therms. The choice of base moved the answer by almost 300 therms. That is why a quick 65 F estimate usually reads high for tight houses.</p>
+<p>The slope for the first case is 800 x 24 / 0.92 = about 20,870 Btu per HDD, or 0.2087 therms per HDD. The figure shows it as a line.</p>
+<figure>
+<svg viewBox="0 0 520 290" role="img" aria-label="Straight-line graph of heating fuel in therms against heating degree days, with two winters plotted near the line" style="max-width:100%;height:auto" stroke="currentColor" fill="none">
+<title>Seasonal heating fuel versus heating degree days</title>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor" stroke="none"/></marker></defs>
+<line x1="70" y1="230" x2="480" y2="230" stroke-width="1.5" marker-end="url(#ar)"/>
+<line x1="70" y1="230" x2="70" y2="22" stroke-width="1.5" marker-end="url(#ar)"/>
+<line x1="203.3" y1="230" x2="203.3" y2="235"/><line x1="336.7" y1="230" x2="336.7" y2="235"/><line x1="470" y1="230" x2="470" y2="235"/>
+<line x1="65" y1="168.5" x2="70" y2="168.5"/><line x1="65" y1="106.9" x2="70" y2="106.9"/><line x1="65" y1="45.4" x2="70" y2="45.4"/>
+<line x1="70" y1="230" x2="470" y2="37.4" stroke-width="2.5"/>
+<circle cx="416.7" cy="63.8" r="5" fill="currentColor"/>
+<circle cx="356.7" cy="88.5" r="5" fill="currentColor"/>
+<g stroke="none" fill="currentColor" font-size="12" font-family="sans-serif">
+<text x="70" y="251" text-anchor="middle">0</text><text x="203.3" y="251" text-anchor="middle">2,000</text><text x="336.7" y="251" text-anchor="middle">4,000</text><text x="470" y="251" text-anchor="middle">6,000</text>
+<text x="275" y="274" text-anchor="middle">Heating degree days (HDD, 65 F base)</text>
+<text x="60" y="234" text-anchor="end">0</text><text x="60" y="172" text-anchor="end">400</text><text x="60" y="111" text-anchor="end">800</text><text x="60" y="49" text-anchor="end">1,200</text>
+<text x="14" y="16" text-anchor="start">Heating therms</text>
+<text x="100" y="125" text-anchor="start">slope 0.2087 therms per HDD</text>
+<text x="396" y="104" text-anchor="end">Winter B</text>
+<text x="436" y="82" text-anchor="start">Winter A</text>
+</g>
+</svg>
+<figcaption>Our own example: the line is UA x 24 / efficiency for the assumed 800 Btu/h per F house at 92 percent. The two dots are the heating-only use of the two winters below.</figcaption>
+</figure>
+<h2>Comparing two winters from fuel bills</h2>
+<p>Raw bills mislead because winters differ. Normalize by dividing by degree days. Our own made-up numbers, in therms, for the same house:</p>
+<ul>
+<li>Winter A: 1,180 therms billed, 5,200 HDD.</li>
+<li>Winter B: 1,020 therms billed, 4,300 HDD.</li>
+<li>Non-heating gas (water heating, cooking), assumed 100 therms per winter, subtracted first.</li>
+</ul>
+<p>Heating-only therms: A = 1,180 minus 100 = 1,080. B = 1,020 minus 100 = 920. Per degree day: A = 1,080 / 5,200 = 0.2077. B = 920 / 4,300 = 0.2140. The ratio is 0.2140 / 0.2077 = 1.030, so winter B was about 3 percent worse per degree day.</p>
+<p>The raw view said B used 13.6 percent less gas (160 of 1,180). But B was 17.3 percent milder (900 of 5,200 HDD). Put B in A's weather: 0.2140 x 5,200 = about 1,113 heating therms, plus 100 = about 1,213 therms versus A's 1,180. Something got slightly worse, perhaps a thermostat habit, a window left open, or a burner needing service. Winter A's 0.2077 is also close to the 0.2087 the UA method predicted, which suggests the assumed loss is about right. Better still, plot several months as points of therms against HDD; the slope is the house's real UA x 24 / efficiency, and the intercept near the base load.</p>
+<h2>Limits of the method</h2>
+<ul>
+<li><strong>Weather beyond temperature.</strong> The Lawrence Berkeley paper notes that dry-bulb degree days stand in for all climate effects. Wind raises infiltration and sun lowers heating need; neither shows up in HDD.</li>
+<li><strong>Setback and schedules.</strong> The same paper says night and weekend shutdown breaks the steady-state assumption behind the method. See <a href="thermostat-setback-schedules-how-much-you-really-save.html">thermostat setback schedules</a>.</li>
+<li><strong>Base-year and weather luck.</strong> The paper found that choice of base year dominated accuracy. One winter is a noisy sample.</li>
+<li><strong>Design loss is not average loss.</strong> A load calculation often carries safety margin and a worst-night infiltration assumption, so the UA can run high. Calibrate from bills when you can. The <a href="infiltration-and-ventilation-in-a-new-home-load-calculation-ach50-to-natural-air-changes-cfm-to-btu-and-why-tight-houses-need-mechanical-air.html">infiltration lesson</a> and <a href="heat-loss-through-walls-and-ceilings-r-values-in-series-u-factor-air-films-framing-and-thermal-bridging-and-whole-wall-r-value.html">wall heat loss lesson</a> show where the number comes from.</li>
+<li><strong>Efficiency changes.</strong> Seasonal efficiency is one average. A furnace in mild weather cycles more, and a heat pump's efficiency swings with outdoor temperature, so a flat divide-by-efficiency does not fit it. See <a href="heat-pump-balance-point-and-low-temperature-capacity.html">heat pump balance point</a>.</li>
+<li><strong>Fuel price is a separate step.</strong> Multiply therms or gallons by your own local rate; see <a href="comparing-heating-fuel-costs-per-million-btu-gas-oil-propane-electric-and-heat-pump.html">comparing heating fuel costs per million Btu</a>.</li>
+</ul>
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Heating degree days</h2><p><em>UA x 24 x HDD / efficiency.</em></p><ul><li>HDD = sum of (65 F minus daily mean), counting only positive days.</li><li>UA = design loss / (indoor minus outdoor design temperature).</li><li>Therms = UA x 24 x HDD / efficiency / 100,000.</li><li>Balance temperature = setpoint minus free heat / UA; it is often below 65 F.</li><li>Compare winters with therms per HDD after removing non-heating gas.</li><li>Setback, wind, sun and variable efficiency limit accuracy.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul>
+<li><a href="outdoor-design-temperatures-for-new-hvac-systems-99-and-1-percent-values-design-wet-bulb-and-why-record-highs-and-lows-oversize-equipment.html">Outdoor Design Temperatures for New HVAC Systems</a></li>
+<li><a href="comparing-heating-fuel-costs-per-million-btu-gas-oil-propane-electric-and-heat-pump.html">Comparing Heating Fuel Costs per Million Btu</a></li>
+<li><a href="reading-your-gas-bill-therms-ccf-and-what-your-furnace-uses.html">Reading Your Gas Bill: Therms, CCF and What Your Furnace Uses</a></li>
+<li><a href="thermostat-setback-schedules-how-much-you-really-save.html">Thermostat Setback Schedules: How Much You Really Save</a></li>
+<li><a href="heat-pump-balance-point-and-low-temperature-capacity.html">Heat Pump Balance Point and Low-Temperature Capacity</a></li>
+<li><a href="start-here.html">Start Here</a></li><li><a href="../products.html">Study packs and printables</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources">
+<li><a href="https://www.eia.gov/energyexplained/units-and-calculators/degree-days.php">U.S. Energy Information Administration: Degree days</a></li>
+<li><a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/cdus/degree_days/">NOAA Climate Prediction Center: Degree days data products</a></li>
+<li><a href="https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/cdus/degree_days/ddayexp.shtml">NOAA Climate Prediction Center: Explanation of degree-day tables</a></li>
+<li><a href="https://simulationresearch.lbl.gov/sites/all/files/energy-bldgs-degree-days.pdf">Lawrence Berkeley Laboratory: Eto, On Using Degree-days to Account for the Effects of Weather on Annual Energy Use in Office Buildings (1988)</a></li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
