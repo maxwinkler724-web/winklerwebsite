@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How Fast a House Cools When the Heat Stops</title>
+<meta property="og:title" content="How Fast a House Cools When the Heat Stops"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="House cooling time constant (capacitance over UA), a tight vs leaky house example, and how to estimate hours until pipes are at risk.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "How Fast a House Cools When the Heat Stops", "about": "Heat transfer", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-11-03", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/how-fast-a-house-cools-when-the-heat-stops-time-constant-ua-and-thermal-capacitance-why-tight-houses-hold-heat-longer-which-rooms-and-pipes-freeze-first-and-hours-until-pipes-are-at-risk.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/how-fast-a-house-cools-when-the-heat-stops-time-constant-ua-and-thermal-capacitance-why-tight-houses-hold-heat-longer-which-rooms-and-pipes-freeze-first-and-hours-until-pipes-are-at-risk.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/how-fast-a-house-cools-when-the-heat-stops-time-constant-ua-and-thermal-capacitance-why-tight-houses-hold-heat-longer-which-rooms-and-pipes-freeze-first-and-hours-until-pipes-are-at-risk.html"><meta property="og:description" content="House cooling time constant (capacitance over UA), a tight vs leaky house example, and how to estimate hours until pipes are at risk."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "How Fast a House Cools When the Heat Stops", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/how-fast-a-house-cools-when-the-heat-stops-time-constant-ua-and-thermal-capacitance-why-tight-houses-hold-heat-longer-which-rooms-and-pipes-freeze-first-and-hours-until-pipes-are-at-risk.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Heat transfer</span>
+<h1>How Fast a House Cools When the Heat Stops</h1>
+<p class="small datel">Last updated: 2026-11-03</p>
+<p class="lede">When a boiler fails or the power goes out in winter, the first question is always the same: how long do we have? A house loses heat at a rate set by how leaky and poorly insulated it is, and it has a store of heat in its air, framing, drywall and contents that has to drain out first. Put those two numbers together and you get a time constant, which turns a guess into an estimate. This lesson shows how, with worked numbers for a tight house and a leaky one.</p>
+
+<div class="note"><strong>Scope.</strong> How brick, stone and slab hold heat is in <a href="thermal-mass-in-homes-why-brick-stone-and-slab-houses-heat-and-cool-slowly-time-lag-setback-recovery-and-night-cooling.html">Thermal Mass in Homes</a>. Carbon monoxide risks from generators and space heaters are in <a href="carbon-monoxide-during-winter-outages-generators-space-heaters-and-venting.html">Carbon Monoxide During Winter Outages</a>. Thawing, splits and refilling are in <a href="frozen-hot-water-heating-pipes-and-baseboard-where-loops-freeze-first-safe-thawing-finding-splits-pressure-testing-refilling-purging-air-glycol-and-prevention.html">Frozen Hot Water Heating Pipes and Baseboard</a>, and restarting equipment is in <a href="power-came-back-but-hvac-wont-start-restart-checks-after-an-outage.html">Power Came Back but HVAC Won't Start</a>. This page is only the cooling-rate arithmetic.</div>
+
+<h2>Two numbers set the pace</h2>
+<p>Treat the whole house as one lump at one temperature. Two properties matter:</p>
+<ul>
+<li><strong>UA</strong>, in Btu/h-&deg;F: how many Btu leave every hour for each degree the inside is warmer than the outside. It adds up wall, roof, window and floor losses (see <a href="heat-loss-through-walls-and-ceilings-r-values-in-series-u-factor-air-films-framing-and-thermal-bridging-and-whole-wall-r-value.html">Heat Loss Through Walls and Ceilings</a>) plus air leakage (see <a href="infiltration-and-ventilation-in-a-new-home-load-calculation-ach50-to-natural-air-changes-cfm-to-btu-and-why-tight-houses-need-mechanical-air.html">Infiltration and Ventilation in a New Home</a>). Better insulation and tighter construction lower it.</li>
+<li><strong>C</strong>, the effective thermal capacitance, in Btu/&deg;F: how many Btu the house gives up for each degree it cools. Air alone is a tiny part. The framing, drywall, floors and furnishings that follow the air temperature are most of it.</li>
+</ul>
+<p>The time constant is their ratio: <strong>&tau; = C / UA</strong>, in hours when C is in Btu/&deg;F and UA is in Btu/h-&deg;F. A Simon Fraser University heat transfer lecture note writes the same idea as a thermal capacitance times a resistance, and says that any increase in either one makes a body respond more slowly. More capacitance means more heat to drain; more UA means it drains faster.</p>
+
+<h2>The cooling curve</h2>
+<p>The same lecture note gives the lumped-system result: the body's temperature approaches the surrounding temperature exponentially. For a house with the heat off, that is:</p>
+<p><strong>T(t) = T<sub>out</sub> + (T<sub>in</sub> - T<sub>out</sub>) e<sup>-t/&tau;</sup></strong></p>
+<p>where T<sub>in</sub> is the starting indoor temperature and t is hours since the heat stopped. Three consequences follow from the math:</p>
+<ul>
+<li>At t = &tau; the gap between inside and outside has shrunk to 1/e, about 37 percent of where it started, so the house has covered about 63 percent of the way to outdoor temperature (our arithmetic).</li>
+<li>The curve is steepest at the start and flattens. The first hours are the fastest drop in degrees per hour. The starting rate is UA x (T<sub>in</sub> - T<sub>out</sub>) / C.</li>
+<li>Time to reach any target temperature is <strong>t = &tau; x ln[(T<sub>in</sub> - T<sub>out</sub>) / (T<sub>target</sub> - T<sub>out</sub>)]</strong>. Note the target is measured from the outdoor temperature, not from zero.</li>
+</ul>
+<p>The lecture note says lumped analysis is considered applicable when its Biot number is 0.1 or less. A whole house is not a single solid body, so treat the single-lump model as a first estimate, not a prediction. The limits are below.</p>
+
+<h2>Worked example (our own): a tight house and a leaky one</h2>
+<p><strong>This is our own example.</strong> Both houses are made up, and every input is an assumption.</p>
+<p><strong>Assumptions (all ours):</strong> indoor air 68 &deg;F when the heat stops; outdoor air steady at 10 &deg;F, so the starting gap is 58 &deg;F; no sun, no occupants and no appliance heat; both houses have the same effective capacitance C = 12,000 Btu/&deg;F. <strong>House A (tight, well insulated):</strong> UA = 400 Btu/h-&deg;F. <strong>House B (leaky, same size):</strong> UA = 800 Btu/h-&deg;F.</p>
+<ol>
+<li><strong>Time constants:</strong> A: 12,000 / 400 = 30 h. B: 12,000 / 800 = 15 h.</li>
+<li><strong>Starting heat loss:</strong> A: 400 x 58 = 23,200 Btu/h. B: 800 x 58 = 46,400 Btu/h.</li>
+<li><strong>Starting drop:</strong> A: 23,200 / 12,000 = 1.93 &deg;F per hour. B: 46,400 / 12,000 = 3.87 &deg;F per hour. This rate eases off as the gap closes.</li>
+<li><strong>Time to 50 &deg;F</strong> (gap 40 &deg;F): ln(58/40) = 0.372. A: 30 x 0.372 = 11.2 h. B: 15 x 0.372 = 5.6 h.</li>
+<li><strong>Time to 40 &deg;F</strong> (gap 30 &deg;F): ln(58/30) = 0.659. A: 30 x 0.659 = 19.8 h. B: 15 x 0.659 = 9.9 h.</li>
+<li><strong>Time to 32 &deg;F</strong> (gap 22 &deg;F): ln(58/22) = 0.969. A: 30 x 0.969 = 29.1 h. B: 15 x 0.969 = 14.5 h.</li>
+</ol>
+<table><thead><tr><th>Indoor air reaches</th><th>House A, UA 400 (&tau; = 30 h)</th><th>House B, UA 800 (&tau; = 15 h)</th></tr></thead><tbody>
+<tr><td>50 &deg;F</td><td>11.2 h</td><td>5.6 h</td></tr>
+<tr><td>40 &deg;F</td><td>19.8 h</td><td>9.9 h</td></tr>
+<tr><td>32 &deg;F</td><td>29.1 h</td><td>14.5 h</td></tr>
+</tbody></table>
+<p>Because the two houses differ only in UA, every time in House B is exactly half of House A. Real houses differ in capacitance too, so the ratio will not be that clean. As a check on step 4, A at 11.2 h: 10 + 58 x e<sup>-11.2/30</sup> = 10 + 58 x 0.689 = 50.0 &deg;F.</p>
+<p>Note what the example does not say. The air at 40 &deg;F is not a frozen pipe. This is the average indoor air; the cold corners, outside walls and unheated spaces get there much sooner, as the next sections show.</p>
+
+<figure>
+<svg viewBox="0 0 640 350" role="img" aria-labelledby="hct hcd" style="max-width:100%;height:auto;font-family:inherit" fill="none" stroke="currentColor" stroke-width="2">
+<title id="hct">Indoor air temperature falling over 60 hours for a tight house and a leaky house</title>
+<desc id="hcd">Two exponential curves start at 68 degrees F and fall toward the 10 degree F outdoor temperature. The tight house, with a 30 hour time constant, reaches 50 F at 11.2 hours, 40 F at 19.8 hours and 32 F at 29.1 hours. The leaky house, with a 15 hour time constant, reaches 50 F at 5.6 hours, 40 F at 9.9 hours and 32 F at 14.5 hours.</desc>
+<line x1="60" y1="40" x2="60" y2="280" stroke-width="1.5"/>
+<line x1="60" y1="280" x2="600" y2="280" stroke-width="1.5"/>
+<line x1="60" y1="120" x2="600" y2="120" stroke-width="1" stroke-dasharray="5 4" stroke-opacity="0.55"/>
+<line x1="60" y1="160" x2="600" y2="160" stroke-width="1" stroke-dasharray="5 4" stroke-opacity="0.55"/>
+<line x1="60" y1="192" x2="600" y2="192" stroke-width="1" stroke-dasharray="5 4" stroke-opacity="0.55"/>
+<line x1="60" y1="48" x2="600" y2="48" stroke-width="1" stroke-opacity="0.25"/>
+<polyline points="60.0,48.0 78.0,63.0 96.0,77.0 114.0,90.1 132.0,102.3 150.0,113.8 168.0,124.5 186.0,134.5 204.0,143.9 222.0,152.7 240.0,160.9 258.0,168.6 276.0,175.8 294.0,182.5 312.0,188.8 330.0,194.7 348.0,200.2 366.0,205.3 384.0,210.1 402.0,214.6 420.0,218.8 438.0,222.8 456.0,226.5 474.0,229.9 492.0,233.2 510.0,236.2 528.0,239.0 546.0,241.7 564.0,244.1 582.0,246.4 600.0,248.6" stroke="#1971c2" stroke-width="3"/>
+<polyline points="60.0,48.0 78.0,77.0 96.0,102.3 114.0,124.5 132.0,143.9 150.0,160.9 168.0,175.8 186.0,188.8 204.0,200.2 222.0,210.1 240.0,218.8 258.0,226.5 276.0,233.2 294.0,239.0 312.0,244.1 330.0,248.6 348.0,252.5 366.0,256.0 384.0,259.0 402.0,261.6 420.0,263.9 438.0,265.9 456.0,267.7 474.0,269.2 492.0,270.5 510.0,271.7 528.0,272.8 546.0,273.7 564.0,274.5 582.0,275.1 600.0,275.8" stroke="#d9480f" stroke-width="3"/>
+<circle cx="160.3" cy="120" r="4.5" fill="#1971c2" stroke="none"/>
+<text stroke="none" fill="#1971c2" font-size="12" font-weight="700" x="168.3" y="113">11.1 h</text>
+<circle cx="238.0" cy="160" r="4.5" fill="#1971c2" stroke="none"/>
+<text stroke="none" fill="#1971c2" font-size="12" font-weight="700" x="246.0" y="153">19.8 h</text>
+<circle cx="321.7" cy="192" r="4.5" fill="#1971c2" stroke="none"/>
+<text stroke="none" fill="#1971c2" font-size="12" font-weight="700" x="329.7" y="185">29.1 h</text>
+<circle cx="110.2" cy="120" r="4.5" fill="#d9480f" stroke="none"/>
+<text stroke="none" fill="#d9480f" font-size="12" font-weight="700" x="74" y="146">5.6 h</text>
+<circle cx="149.0" cy="160" r="4.5" fill="#d9480f" stroke="none"/>
+<text stroke="none" fill="#d9480f" font-size="12" font-weight="700" x="157.0" y="153">9.9 h</text>
+<circle cx="190.9" cy="192" r="4.5" fill="#d9480f" stroke="none"/>
+<text stroke="none" fill="#d9480f" font-size="12" font-weight="700" x="198.9" y="185">14.5 h</text>
+<g stroke="none" fill="currentColor" font-size="12">
+<text x="14" y="52">68 F</text>
+<text x="14" y="124">50 F</text>
+<text x="14" y="164">40 F</text>
+<text x="14" y="196">32 F</text>
+<text x="14" y="284">10 F</text>
+<text x="54" y="298">0</text>
+<text x="162" y="298">12</text>
+<text x="270" y="298">24</text>
+<text x="378" y="298">36</text>
+<text x="486" y="298">48</text>
+<text x="594" y="298">60</text>
+<text x="270" y="318">Hours after the heat stops</text>
+<text x="14" y="26">Indoor air temperature, outdoor held at 10 F</text>
+</g>
+<line x1="400" y1="62" x2="430" y2="62" stroke="#1971c2" stroke-width="3"/>
+<line x1="400" y1="84" x2="430" y2="84" stroke="#d9480f" stroke-width="3"/>
+<g stroke="none" fill="currentColor" font-size="12"><text x="438" y="66">House A, tight: tau = 30 h</text><text x="438" y="88">House B, leaky: tau = 15 h</text></g>
+</svg>
+<figcaption>Our own chart from the worked example below: T(t) = 10 + 58 e^(-t/tau) for both houses. Dots mark the hours to reach 50, 40 and 32 F. Doubling UA halves every time.</figcaption>
+</figure>
+
+<h2>Why tight, well-insulated houses hold heat longer</h2>
+<p>In the formula, better insulation and tighter construction lower UA, which raises &tau;. Our example shows the size of the effect: halve UA and every time to a target doubles. Pacific Northwest National Laboratory's 2023 report on resilience through energy efficiency, prepared with DOE, NREL and Lawrence Berkeley National Laboratory staff, defines passive survivability as a building's ability to maintain critical life-support conditions during an extended utility disruption, and says insulation, efficient windows, envelope air tightness and passive ventilation can prolong comfortable indoor conditions. Its simulations of a 7-day winter outage with no power for existing single-family homes found habitability for 1.4 days in Atlanta, 2.3 days if built to the 2021 International Energy Conservation Code, and 7.0 days for a very high-performance envelope design. In Minneapolis/St. Paul the figures were 0.6, 1.2 and 1.8 days. The report counts a home as uninhabitable once standard effective temperature degree hours outside the 54 to 86 &deg;F comfort band pass 216 in the 7 days. That is a different yardstick than air temperature, and the report does not separate insulation from air sealing, so do not read those days as a measure of any one upgrade. A National Renewable Energy Laboratory news item on its modeling work likewise says adding insulation and sealing against air leaks will increase resilience.</p>
+<p>Capacitance cuts the other way for rooms and heat-up. A heavy house has a larger C, so it cools slower, but it also takes longer to warm back up once heat returns. That tradeoff is in the thermal mass lesson linked above.</p>
+
+<h2>Which rooms and pipes reach freezing first</h2>
+<p>The house-average &tau; hides large differences inside. Each room or space has its own ratio of capacitance to heat loss, and what matters most for pipes is the temperature where the pipe sits, not the thermostat reading. These are our reasoning, not measured data:</p>
+<ul>
+<li><strong>Unheated spaces</strong>, such as attics, garages, vented crawl spaces and exterior wall cavities, hold little heat and leak a lot. They drift toward outdoor temperature in hours while the living area is still comfortable, and they are where pipes most often freeze. A pipe in an exterior wall cavity or against a cold surface can reach 32 &deg;F well before the room air does.</li>
+<li><strong>Rooms with a lot of exterior wall and glass</strong> for their volume, corner rooms and rooms with a drafty door or window (see <a href="drafty-doors-and-windows-finding-air-leaks-weatherstripping-door-sweeps-caulk-and-when-to-get-a-blower-door-test.html">Drafty Doors and Windows</a>) have a higher UA per unit of capacitance, so a shorter &tau;. Bathrooms and kitchens on outside walls deserve a check early because they hold supply and drain lines.</li>
+<li><strong>Interior rooms and the core of the house</strong> lose heat only through their neighbors, so they stay warmer longer.</li>
+<li><strong>Wind and falling outdoor temperature</strong> make the real house worse than the steady-10 &deg;F example. The outdoor temperature in the formula is a constant; a worsening storm is not.</li>
+</ul>
+<p>Water freezing is not instant at 32 &deg;F, and a pipe in a warm enough spot may never freeze, so treat 32 &deg;F at the pipe as the line you do not want to cross, not as a prediction of a split. The Pennsylvania state emergency preparedness page for winter storms tells people to set thermostats to 55 &deg;F or warmer, open cabinet doors so warmer air reaches plumbing, and let cold water drip from a faucet at a trickle. The CDC winter storm page gives the same open-cabinet and slow-drip advice, and says to thaw frozen pipes slowly with warm air from an electric hair dryer and not a torch. For a hot water heating system whose boiler has failed, see the frozen loops lesson linked above and <a href="heat-went-out-in-winter-how-to-keep-pipes-from-freezing.html">Heat Went Out in Winter</a>.</p>
+
+<h2>How to estimate the hours before pipes are at risk</h2>
+<ol>
+<li><strong>Find &tau;.</strong> Best is a real measurement. Note the indoor temperature and the outdoor temperature when the heat stops, then again a few hours later. Then &tau; = (hours elapsed) / ln[(T<sub>in,1</sub> - T<sub>out</sub>) / (T<sub>in,2</sub> - T<sub>out</sub>)]. Our example: 68 &deg;F falling to 62 &deg;F in 3 hours with 10 &deg;F outside gives &tau; = 3 / ln(58/52) = 3 / 0.109 = 27.5 h. Alternatively, use a calculated UA from a load calculation and an estimated C, if you have them.</li>
+<li><strong>Pick the target at the pipe.</strong> Use the temperature of the coldest space holding water, not the thermostat. If you cannot measure it, assume that space is colder than the room.</li>
+<li><strong>Apply t = &tau; x ln[(T<sub>now</sub> - T<sub>out</sub>) / (T<sub>target</sub> - T<sub>out</sub>)]</strong> and then subtract a safety margin. Using 55 &deg;F as the action line (the Pennsylvania page's thermostat figure) in our example gives 30 x ln(58/45) = 30 x 0.254 = 7.6 h for House A and 3.8 h for House B, before any margin.</li>
+<li><strong>Re-measure.</strong> A single &tau; fitted from early readings is rough. The air cools first and the heavy parts of the house follow, so the real curve usually drops faster at the start and slower later than a single exponential. Re-fit as new readings come in, and recompute if the outdoor temperature drops.</li>
+</ol>
+
+<h2>Limits of the single-lump model</h2>
+<ul>
+<li>Sun on windows, people, cooking and appliances add heat and stretch the times; wind and a falling outdoor temperature shorten them.</li>
+<li>C is hard to know. Our 12,000 Btu/&deg;F is an assumption, which is why a measured &tau; beats a guessed one.</li>
+<li>Open doors, a running fireplace or exhaust fan change UA. Closing off unneeded rooms and blocking drafts is advice the CDC gives for keeping heat in.</li>
+<li>Do not use an unsafe heat source to buy time. Carbon monoxide kills; see the outage lesson linked above. The CDC page also says to make temporary arrangements to stay elsewhere if you cannot keep your home warm, and to never let infants under one year sleep in a cold room.</li>
+</ul>
+
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: House cooling after the heat stops</h2><p><em>&tau; = C / UA; T(t) = T<sub>out</sub> + (T<sub>in</sub> - T<sub>out</sub>) e<sup>-t/&tau;</sup>.</em></p><ul><li>UA in Btu/h-&deg;F, C in Btu/&deg;F, &tau; in hours.</li><li>Time to target: t = &tau; x ln[(T<sub>now</sub> - T<sub>out</sub>) / (T<sub>target</sub> - T<sub>out</sub>)].</li><li>Our example, 68 to 10 &deg;F: UA 400 gives &tau; = 30 h and 11.2 / 19.8 / 29.1 h to 50 / 40 / 32 &deg;F; UA 800 gives &tau; = 15 h and 5.6 / 9.9 / 14.5 h.</li><li>Halve UA and every time doubles.</li><li>Pipes in unheated spaces and exterior walls get cold first, so use the temperature at the pipe.</li><li>Measure &tau; from two readings; re-measure as you go.</li><li>Never heat with an unsafe source; watch for carbon monoxide.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="thermal-mass-in-homes-why-brick-stone-and-slab-houses-heat-and-cool-slowly-time-lag-setback-recovery-and-night-cooling.html">Thermal Mass in Homes</a></li><li><a href="carbon-monoxide-during-winter-outages-generators-space-heaters-and-venting.html">Carbon Monoxide During Winter Outages</a></li><li><a href="frozen-hot-water-heating-pipes-and-baseboard-where-loops-freeze-first-safe-thawing-finding-splits-pressure-testing-refilling-purging-air-glycol-and-prevention.html">Frozen Hot Water Heating Pipes and Baseboard</a></li><li><a href="power-came-back-but-hvac-wont-start-restart-checks-after-an-outage.html">Power Came Back but HVAC Won't Start</a></li><li><a href="heat-loss-through-walls-and-ceilings-r-values-in-series-u-factor-air-films-framing-and-thermal-bridging-and-whole-wall-r-value.html">Heat Loss Through Walls and Ceilings</a></li><li><a href="../products.html">Study packs and printables</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources"><li><a href="https://www.pnnl.gov/main/publications/external/technical_reports/PNNL-32737.pdf">Pacific Northwest National Laboratory, PNNL-32737 Rev 1 (2023): Enhancing Resilience in Buildings Through Energy Efficiency (passive survivability definition, 7-day no-power habitability days, SET degree hours threshold)</a></li><li>Simon Fraser University lecture note: Transient Heat Conduction (lumped system equation, time constant as resistance times capacitance, Biot number 0.1 criterion) (plain text, not linked)</li><li><a href="https://www.cdc.gov/winter-weather/safety/stay-safe-during-after-a-winter-storm-safety.html">CDC: Safety guidelines during and after a winter storm (keeping heat in, drip taps and open cabinets, thaw pipes slowly with a hair dryer, infants, temporary shelter)</a></li><li><a href="https://www.pa.gov/agencies/ready/hazards/winter-storms">Pennsylvania state emergency preparedness agency: Winter storms (thermostat 55 &deg;F or warmer, cabinet doors, trickle of cold water)</a></li><li><a href="https://www.nlr.gov/news/detail/program/2024/nrel-explores-path-to-increase-occupant-safety-during-extreme-weather">National Renewable Energy Laboratory news item: NREL explores path to increase occupant safety during extreme weather (insulation and air sealing increase resilience)</a></li></ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
