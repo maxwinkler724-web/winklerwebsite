@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Warming Up a Cold Steam Main: Condensate Load, Drip Legs and Traps</title>
+<meta property="og:title" content="Warming Up a Cold Steam Main: Condensate Load, Drip Legs and Traps"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Estimate condensate from warming a cold steam main: pipe weight, steel specific heat, latent heat, and why traps, drip legs and slow warm-up matter.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Warming Up a Cold Steam Main: Condensate Load, Drip Legs and Traps", "about": "Plant systems", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-11-04", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/warming-up-a-cold-steam-main-condensate-load-pipe-weight-specific-heat-latent-heat-drip-leg-and-trap-sizing-for-startup-and-slow-warm-up-to-avoid-water-hammer.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/warming-up-a-cold-steam-main-condensate-load-pipe-weight-specific-heat-latent-heat-drip-leg-and-trap-sizing-for-startup-and-slow-warm-up-to-avoid-water-hammer.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/warming-up-a-cold-steam-main-condensate-load-pipe-weight-specific-heat-latent-heat-drip-leg-and-trap-sizing-for-startup-and-slow-warm-up-to-avoid-water-hammer.html"><meta property="og:description" content="Estimate condensate from warming a cold steam main: pipe weight, steel specific heat, latent heat, and why traps, drip legs and slow warm-up matter."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Warming Up a Cold Steam Main: Condensate Load, Drip Legs and Traps", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/warming-up-a-cold-steam-main-condensate-load-pipe-weight-specific-heat-latent-heat-drip-leg-and-trap-sizing-for-startup-and-slow-warm-up-to-avoid-water-hammer.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Plant systems</span>
+<h1>Warming Up a Cold Steam Main: Condensate Load, Drip Legs and Traps</h1>
+<p class="small datel">Last updated: 2026-11-04</p>
+<p class="lede">A steam main that is already hot loses only a little heat, so it makes only a little condensate. A cold main is a different animal. Every pound of steel has to be heated before the pipe settles down, and the steam that does the heating turns to water. This lesson shows how to estimate that warm-up condensate, why it dwarfs the running load, and what it means for drip legs, traps and how fast you open the valve.</p>
+<h2>Where the warm-up condensate comes from</h2>
+<p>Steam gives up heat by condensing. When it meets cold pipe, it hands over its latent heat, the energy released as vapor turns to liquid at the same temperature. That heat goes into the steel until the pipe reaches steam temperature. So the water you collect during warm-up equals the heat needed to raise the pipe temperature, divided by the latent heat of each pound of steam.</p>
+<p>Three numbers drive the estimate:</p>
+<ul>
+<li><strong>Pipe weight per foot.</strong> A federal pipe dimension table lists Schedule 40 steel pipe at 7.58 lb/ft for 3 inch, 10.79 lb/ft for 4 inch and 18.97 lb/ft for 6 inch. Weight climbs fast with size, and so does the warm-up load.</li>
+<li><strong>Specific heat of steel.</strong> This is the heat needed to raise one pound of steel one degree. A university materials database lists carbon steels at about 0.43 to 0.49 kJ/kg-K, which converts to roughly 0.10 to 0.12 Btu/lb-F. We use 0.12, the top of that range, so our estimate leans on the safe side.</li>
+<li><strong>Latent heat of the steam.</strong> It falls as pressure rises. A national standards lab table for saturated water gives 2202.1 kJ/kg at 120 C (about 2.0 bar absolute, roughly 14 psig). Dividing by 2.326 converts that to about 947 Btu/lb. At 180 C (about 10 bar absolute, roughly 131 psig) the same table gives 2014.2 kJ/kg, or about 866 Btu/lb.</li>
+</ul>
+<p>The relation is simple:</p>
+<p><strong>Condensate (lb) = pipe weight (lb) x 0.12 x (steam temperature - starting temperature) / latent heat (Btu/lb)</strong></p>
+<p>Real warm-up runs a bit higher, because insulation, flanges, valves and supports also soak up heat, and the pipe loses some to the room while it heats. We ignore those here, which is another reason to treat the answer as a floor.</p>
+<h2>Worked example (our own, with stated assumptions)</h2>
+<p>This is our own example, not from a source. The inputs are assumptions chosen for easy arithmetic.</p>
+<ul>
+<li>A 100 ft run of 4 inch Schedule 40 steel main, starting cold at 70 F.</li>
+<li>Steam at about 14 psig, saturated at 120 C, which is 248 F.</li>
+<li>Specific heat of steel 0.12 Btu/lb-F; latent heat 947 Btu/lb.</li>
+<li>Warm-up takes 15 minutes.</li>
+<li>Running heat loss of the insulated main: assume 50 Btu/h per foot.</li>
+</ul>
+<ol>
+<li>Pipe weight: 100 ft x 10.79 lb/ft = 1,079 lb.</li>
+<li>Temperature rise: 248 F - 70 F = 178 F.</li>
+<li>Heat into the steel: 1,079 lb x 0.12 x 178 F = about 23,050 Btu.</li>
+<li>Warm-up condensate: 23,050 / 947 = about 24.3 lb. That is about 3 gallons of water.</li>
+<li>Average rate over 15 minutes: 24.3 lb x 4 = about 97 lb/h.</li>
+<li>Running load: 100 ft x 50 Btu/h-ft = 5,000 Btu/h; 5,000 / 947 = about 5.3 lb/h.</li>
+<li>Ratio: 97 / 5.3 = about 18 times.</li>
+</ol>
+<p>Stretch the warm-up to 30 minutes and the average rate halves to about 49 lb/h, roughly 9 times the running load. The total water does not change, only how fast it arrives. That is the whole idea behind slow warm-up.</p>
+<figure><svg viewBox="0 0 640 260" role="img" aria-label="Cold steam main with a drip leg and trap. Steam enters from the left, heats the cold steel and condenses, and the condensate falls into the drip leg and out through the trap." style="max-width:100%;height:auto" fill="none" stroke="currentColor" stroke-width="2"><title>Warm-up condensate flow in a steam main</title><defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" stroke="none"/></marker></defs>
+<rect x="60" y="80" width="420" height="30"/>
+<rect x="440" y="110" width="20" height="70"/>
+<rect x="430" y="190" width="40" height="24"/>
+<line x1="12" y1="95" x2="52" y2="95" marker-end="url(#ah)"/>
+<line x1="200" y1="146" x2="200" y2="116" marker-end="url(#ah)"/>
+<line x1="450" y1="216" x2="450" y2="244" marker-end="url(#ah)"/>
+<text x="60" y="68" fill="currentColor" stroke="none" font-size="14">Steam main (cold steel)</text>
+<text x="12" y="125" fill="currentColor" stroke="none" font-size="14">Steam in</text>
+<text x="60" y="170" fill="currentColor" stroke="none" font-size="14">Heat into the steel (steam condenses)</text>
+<text x="60" y="194" fill="currentColor" stroke="none" font-size="14">Running: only a small heat loss</text>
+<text x="478" y="150" fill="currentColor" stroke="none" font-size="14">Drip leg</text>
+<text x="480" y="208" fill="currentColor" stroke="none" font-size="14">Trap</text>
+<text x="300" y="244" fill="currentColor" stroke="none" font-size="14">Condensate out</text>
+</svg><figcaption>Steam gives its latent heat to the cold pipe and becomes water. The water runs along the pitched main into the drip leg, and the trap passes it to the return.</figcaption></figure>
+<h2>Why traps and drip legs are sized for startup</h2>
+<p>A federal steam system sourcebook says drainage points face two very different conditions, normal operation and start-up, and that condensate flow swings most during start-ups. It adds that traps must let air and large quantities of condensate escape at that time, and it recommends adequate condensate drainage in both modes. A trap sized only for the running load of 5 lb/h would be far too small for a 97 lb/h warm-up.</p>
+<p>A steam-equipment maker bulletin we read recommends a safety factor of 1.5 on the calculated full-load capacity to handle unusual start-up loads. Treat that as one published rule of thumb, not a universal one. Also check with the trap maker's capacity tables at your actual pressure difference.</p>
+<p>Drip legs matter just as much. A drip leg is a short vertical pocket at low points and at intervals on the main. Water falls into it instead of being swept along by the steam, and the trap sits at its bottom. A university design guideline we read calls for steam piping to slope in the direction of flow at 1/4 inch per 10 feet, so gravity carries the water to the drip points. It also requires drip legs on risers. For spacing and leg diameter, follow your site standard and the trap maker's data.</p>
+<h2>Warm up slowly: water hammer</h2>
+<p>If steam is rushed into a cold main, condensate forms faster than the traps and drip legs can clear it. Steam moves much faster than water, and a fast slug of water that hits a fitting or valve makes the bang called water hammer. The same federal sourcebook says backed-up condensate can lead to water hammer. The university guideline warns that condensate risers that fill with water cause dangerous steam hammer.</p>
+<p>The usual field practice follows from the arithmetic above:</p>
+<ul>
+<li>Open drains or bypass traps and crack the supply valve only slightly at first, so steam arrives gently.</li>
+<li>Give the pipe time to heat. Slower is better, as the 15 minute versus 30 minute numbers show.</li>
+<li>Listen and watch. Stop and wait if you hear banging, and never stand in line with a drain or valve discharge.</li>
+<li>Open the valve fully only when the main is hot and the drains are passing steam instead of water.</li>
+</ul>
+<p>Your site's written start-up procedure comes first. This lesson explains why those steps exist; it does not replace them.</p>
+<h2>Thermal growth comes along for the ride</h2>
+<p>The sourcebook also notes that piping must accommodate thermal movement during start-ups and shutdowns. A 100 ft steel line that climbs 178 F gets longer, and a hurried warm-up makes the movement sudden. Loops, guides and anchors are covered in the thermal expansion lesson linked below.</p>
+<h2>What to remember for the exam and the job</h2>
+<ul>
+<li>Warm-up condensate is heating the steel, so more weight per foot means more water.</li>
+<li>Lower steam pressure means higher latent heat per pound, so slightly less condensate for the same heat.</li>
+<li>Start-up can be many times the running load for a few minutes, so traps, drip legs and drains must handle it.</li>
+<li>Slow warm-up spreads the same water over more time and reduces the risk of hammer.</li>
+</ul>
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Cold steam main warm-up</h2><p><em>Warm-up water = steel weight x 0.12 x temperature rise / latent heat.</em></p><ul><li>4 inch Schedule 40 steel is 10.79 lb/ft, so 100 ft is 1,079 lb.</li><li>Our own example: 70 F to 248 F gives about 24 lb of condensate.</li><li>Over 15 minutes that is about 18 times the assumed running load.</li><li>Size traps and drip legs for start-up, not only for running load.</li><li>Open slowly, drain first, and follow the site procedure.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="steam-traps-explained.html">Steam Traps Explained</a></li><li><a href="steam-trap-types-and-where-each-fits.html">Steam Trap Types and Where Each Fits</a></li><li><a href="water-hammer-in-steam-and-hot-water.html">Water Hammer in Steam and Hot Water</a></li><li><a href="sizing-steam-piping-by-velocity-and-pressure-drop-specific-volume-why-low-pressure-steam-moves-faster-erosion-noise-and-water-hammer-limits.html">Sizing Steam Piping by Velocity and Pressure Drop</a></li><li><a href="pipe-thermal-expansion-in-steam-and-hot-water-lines-loops-anchors-guides-and-expansion-joints.html">Pipe Thermal Expansion in Steam and Hot Water Lines</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources"><li>Federal steam system sourcebook (U.S. Department of Energy steam materials): start-up condensate, drainage in startup and operating modes, thermal movement, water hammer. Plain-text citation.</li><li>Federal steam trap tip sheet (U.S. Department of Energy): trap testing and failed traps. Plain-text citation.</li><li><a href="https://www.nrc.gov/docs/ml1233/ML12339A464.pdf">U.S. federal pipe dimension table: Schedule 40 weight per foot for 3, 4 and 6 inch pipe</a></li><li><a href="https://webbook.nist.gov/cgi/fluid.cgi?TLow=100&amp;THigh=200&amp;TInc=10&amp;Digits=5&amp;ID=C7732185&amp;Action=Load&amp;Type=SatP&amp;TUnit=C&amp;PUnit=bar&amp;DUnit=kg%2Fm3&amp;HUnit=kJ%2Fkg&amp;WUnit=m%2Fs&amp;VisUnit=uPa*s&amp;STUnit=N%2Fm&amp;RefState=DEF">NIST: saturation properties of water, 100 to 200 C</a></li><li><a href="https://www.firebid.umd.edu/material-database.php">University of Maryland materials property database: specific heat of carbon steels</a></li><li><a href="https://www.umsystem.edu/sites/default/files/media/fa/fpd/docs/232200%20Steam%20and%20Condensate%20Piping%20and%20Pump%20Systems.pdf">University design guideline for steam and condensate piping: pitch of 1/4 inch per 10 ft, drip legs on risers, steam hammer warning</a></li><li>Steam-equipment maker bulletin on heat exchanger condensate drainage, hosted on a university site: 1.5 safety factor for unusual start-up loads. Plain-text citation.</li></ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
