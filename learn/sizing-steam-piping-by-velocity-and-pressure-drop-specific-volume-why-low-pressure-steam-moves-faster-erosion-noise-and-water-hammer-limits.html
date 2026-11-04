@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sizing Steam Piping by Velocity and Pressure Drop</title>
+<meta property="og:title" content="Sizing Steam Piping by Velocity and Pressure Drop"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Sizing plant steam piping by velocity and pressure drop: the flow relation, specific volume, noise and erosion limits, and a worked 2 inch example.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Sizing Steam Piping by Velocity and Pressure Drop", "about": "Plant systems", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-11-04", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/sizing-steam-piping-by-velocity-and-pressure-drop-specific-volume-why-low-pressure-steam-moves-faster-erosion-noise-and-water-hammer-limits.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/sizing-steam-piping-by-velocity-and-pressure-drop-specific-volume-why-low-pressure-steam-moves-faster-erosion-noise-and-water-hammer-limits.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/sizing-steam-piping-by-velocity-and-pressure-drop-specific-volume-why-low-pressure-steam-moves-faster-erosion-noise-and-water-hammer-limits.html"><meta property="og:description" content="Sizing plant steam piping by velocity and pressure drop: the flow relation, specific volume, noise and erosion limits, and a worked 2 inch example."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Sizing Steam Piping by Velocity and Pressure Drop", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/sizing-steam-piping-by-velocity-and-pressure-drop-specific-volume-why-low-pressure-steam-moves-faster-erosion-noise-and-water-hammer-limits.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Plant systems</span>
+<h1>Sizing Steam Piping by Velocity and Pressure Drop</h1>
+<p class="small datel">Last updated: 2026-11-04</p>
+<p class="lede">A steam pipe does not care how many pounds per hour you want to move. It cares how fast the steam has to travel to get them through. That speed comes from one simple relation, and it changes a lot with pressure. This lesson shows how to read it, what limits designers use, and what to check when an old pipe gets a new job.</p>
+<h2>Why velocity matters</h2>
+<p>Steam is a gas, so a small pipe can make it move very fast. Fast steam causes four kinds of trouble, and they feed each other.</p>
+<ul>
+<li><strong>Noise.</strong> The U.S. Department of Energy steam sourcebook notes that larger pipe diameters help reduce the noise of steam flow. A university design guide goes further and asks for slower velocities where noise matters, such as basements and mechanical rooms.</li>
+<li><strong>Erosion.</strong> The same sourcebook says water droplets erode piping elbows, turbine blades and pressure reducing valves. Dry steam is gentle on metal; steam carrying droplets at high speed is not.</li>
+<li><strong>Water hammer.</strong> The sourcebook ties liquid water in steam lines to water hammer and says condensate backup can lead to it. Fast steam can push a slug of condensate along the pipe. See <a href="water-hammer-in-steam-and-hot-water.html">Water Hammer in Steam and Hot Water</a>.</li>
+<li><strong>Condensate carryover.</strong> High velocity can drag condensate off the pipe wall and out of drip legs, so it reaches coils, valves and traps instead of draining. The sourcebook says piping should be pitched to promote drainage and have enough drip legs. For the wet-steam side, see <a href="wet-steam-and-carryover-basics.html">Wet Steam and Carryover Basics</a>.</li>
+</ul>
+<h2>The flow relation</h2>
+<p>Velocity comes from continuity: the volume of steam passing each second, divided by the pipe's flow area.</p>
+<p><strong>velocity = mass flow &times; specific volume &divide; pipe area</strong></p>
+<p>Use pounds per second for mass flow (pounds per hour divided by 3,600), cubic feet per pound for specific volume, and square feet for area. The answer comes out in feet per second. Multiply by 60 for feet per minute, the unit many design guides use.</p>
+<h2>Why low-pressure steam moves faster</h2>
+<p>Mass flow and pipe area are the same in both cases, so the only thing that changes is specific volume, the space one pound of steam takes up. Steam at low pressure is thin. Each pound fills more volume, so the same pounds per hour needs more cubic feet per second to squeeze through the same pipe. Specific volume comes from the steam tables; see <a href="reading-a-saturated-steam-table-gauge-vs-absolute-pressure-hf-hfg-hg-converting-btu-per-hour-to-pounds-of-steam-and-boiler-horsepower.html">Reading a Saturated Steam Table</a> for how to find it and for the gauge versus absolute pressure trap. Our rule of thumb: when the pressure on a given load drops, expect the velocity to rise by about the ratio of the two specific volumes.</p>
+<h2>Worked example (our own)</h2>
+<p><strong>Our own example, with assumptions.</strong> We move 2,000 lb/h of saturated steam through a 2 inch schedule 40 pipe, once at 100 psig and once at 15 psig. We assume dry saturated steam, a straight pipe, atmospheric pressure of 14.7 psia, and that the whole 2,000 lb/h flows in this one pipe.</p>
+<p><strong>Pipe area.</strong> A state public health office pipe chart lists 2 inch schedule 40 pipe with an inside diameter of 2.067 in. That is 2.067 &divide; 12 = 0.17225 ft. Area = 0.7854 &times; 0.17225&sup2; = 0.02330 ft&sup2;.</p>
+<p><strong>Specific volume.</strong> The NIST gives saturated vapor in volume per mole. We converted with a water molar mass of 18.015 g/mol (our own constant) and 1 m&sup3;/kg = 16.018 ft&sup3;/lb.</p>
+<ul>
+<li>100 psig = 114.7 psia = 0.7908 MPa. The WebBook's vapor volume near that pressure (4.3854 l/mol at 0.78932 MPa and 4.3354 l/mol at 0.79891 MPa) interpolates to about 4.377 l/mol. That is 0.2430 m&sup3;/kg, or about <strong>3.89 ft&sup3;/lb</strong>. Saturation temperature is about 338&deg;F.</li>
+<li>15 psig = 29.7 psia = 0.2048 MPa. The WebBook rows at 0.20408 and 0.20732 MPa (15.657 and 15.428 l/mol) interpolate to about 15.61 l/mol. That is 0.8664 m&sup3;/kg, or about <strong>13.88 ft&sup3;/lb</strong>. Saturation temperature is about 250&deg;F.</li>
+</ul>
+<p><strong>Velocity at 100 psig.</strong> Mass flow = 2,000 &divide; 3,600 = 0.5556 lb/s. Volume flow = 0.5556 &times; 3.89 = 2.162 ft&sup3;/s. Velocity = 2.162 &divide; 0.02330 = <strong>about 93 ft/s</strong>, which is <strong>about 5,570 ft/min</strong>.</p>
+<p><strong>Velocity at 15 psig.</strong> Volume flow = 0.5556 &times; 13.88 = 7.711 ft&sup3;/s. Velocity = 7.711 &divide; 0.02330 = <strong>about 331 ft/s</strong>, which is <strong>about 19,850 ft/min</strong>.</p>
+<p>The ratio of the two velocities is 331 &divide; 93 = 3.6, the same as the ratio of the specific volumes, 13.88 &divide; 3.89 = 3.6.</p>
+<figure>
+<svg viewBox="0 0 640 270" role="img" aria-label="Bar chart: the same 2,000 pounds per hour in a 2 inch schedule 40 pipe moves at about 93 feet per second at 100 psig and about 331 feet per second at 15 psig." style="max-width:100%;height:auto" stroke="currentColor" fill="none">
+<title>Steam velocity in a 2 inch schedule 40 pipe at two pressures, 2,000 lb/h</title>
+<rect x="20" y="72" width="130" height="28" fill="currentColor" fill-opacity="0.35"/>
+<rect x="20" y="162" width="463" height="28" fill="currentColor" fill-opacity="0.35"/>
+<g stroke="none" fill="currentColor" font-family="sans-serif" font-size="14">
+<text x="20" y="28" font-weight="bold">Same 2,000 lb/h, same 2 inch pipe (ID 2.067 in)</text>
+<text x="20" y="62">100 psig, v = 3.89 ft&#179;/lb</text>
+<text x="165" y="91">93 ft/s (5,570 ft/min)</text>
+<text x="20" y="152">15 psig, v = 13.88 ft&#179;/lb</text>
+<text x="20" y="212">331 ft/s (19,850 ft/min)</text>
+<text x="20" y="236" font-size="13">Bar length is proportional to velocity.</text>
+<text x="20" y="258" font-weight="bold">velocity = mass flow &#215; specific volume &#247; area</text>
+</g>
+</svg>
+<figcaption>Our own calculation. The lower-pressure steam is about 3.6 times faster in the same pipe because each pound takes about 3.6 times the volume.</figcaption>
+</figure>
+
+<h2>What limits do designers use?</h2>
+<p>A university steam and chilled water design guide gives limits by system class. For medium and high pressure steam it sets a maximum of 8,000 ft/min in pipe 4 inches and smaller, and 12,000 ft/min above 4 inches. For its low pressure steam it sets 4,000 ft/min in pipe 4 inches and smaller, and 8,000 ft/min above that. It also sets a maximum pressure drop of 0.5 psi per 100 ft and says the pipe must meet whichever of the velocity and pressure drop limits is stricter.</p>
+<p>Against those numbers, our 100 psig case at about 5,570 ft/min is under the 8,000 ft/min limit for pipe 4 inches and smaller. Our 15 psig case at about 19,850 ft/min is about five times the 4,000 ft/min low pressure figure. To hold 4,000 ft/min at 15 psig we would need a flow area of 0.02330 &times; 19,853 &divide; 4,000 = 0.1156 ft&sup2;, an inside diameter of about 4.6 in (our arithmetic). A 4 inch pipe is still too small by that rule, so the next size up would be needed. These limits are one owner's guide, not a universal law, so use them as a sense of scale.</p>
+<h2>Pressure drop budgets</h2>
+<p>A budget is the pressure you can afford to lose between the boiler and the last user, spread over the run. Using the guide's 0.5 psi per 100 ft, a 150 ft run (our own example length) may lose about 0.75 psi. That small number matters differently at each pressure. 0.5 psi is about 0.4 percent of 114.7 psia, but about 1.7 percent of 29.7 psia (our arithmetic). Low-pressure heating systems often have very little pressure to spare, which is another reason their pipes are sized large. The sourcebook says larger pipe gives less pressure drop for a given flow, though it costs more to install. Friction loss rises faster than velocity does (roughly with its square, in our simplified view), so a pipe running too fast loses pressure quickly.</p>
+<h2>When an existing pipe sees a new load</h2>
+<ul>
+<li><strong>More pounds per hour.</strong> Velocity rises in direct proportion. Doubling the flow doubles the velocity in the same pipe, and pressure drop rises by roughly four times (our simplified view).</li>
+<li><strong>Lower operating pressure.</strong> If a pressure reducing station or a boiler setpoint change lowers the pressure in a line, the specific volume goes up and so does the velocity, as in the example. See <a href="prv-station-basics.html">PRV Station Basics</a>.</li>
+<li><strong>Warning signs.</strong> New banging, hissing, or wet steam at coils and traps after a change can mean the pipe is now too fast for its drainage. Check pitch and drip legs first. See <a href="steam-traps-explained.html">Steam Traps Explained</a>.</li>
+<li><strong>Condensate and flash.</strong> Return lines carry a steam and water mix; see <a href="flash-steam-and-flash-tanks-percent-flash-from-condensate-and-low-pressure-recovery.html">Flash Steam and Flash Tanks</a>.</li>
+</ul>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Sizing Steam Piping by Velocity and Pressure Drop</h2><p><em>Same pounds per hour, thinner steam, faster flow.</em></p><ul><li>velocity = mass flow &times; specific volume &divide; area (lb/s, ft&sup3;/lb, ft&sup2;).</li><li>Fast steam means noise, erosion, water hammer and carried-over condensate.</li><li>Our example: 2,000 lb/h in 2 inch schedule 40 (ID 2.067 in) is about 93 ft/s at 100 psig and about 331 ft/s at 15 psig.</li><li>One university guide: 4,000 to 12,000 ft/min limits by class and 0.5 psi per 100 ft.</li><li>New load or lower pressure on an old pipe raises velocity. Recheck before you add.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="reading-a-saturated-steam-table-gauge-vs-absolute-pressure-hf-hfg-hg-converting-btu-per-hour-to-pounds-of-steam-and-boiler-horsepower.html">Reading a Saturated Steam Table</a></li><li><a href="flash-steam-and-flash-tanks-percent-flash-from-condensate-and-low-pressure-recovery.html">Flash Steam and Flash Tanks</a></li><li><a href="prv-station-basics.html">PRV Station Basics</a></li><li><a href="steam-traps-explained.html">Steam Traps Explained</a></li><li><a href="water-hammer-in-steam-and-hot-water.html">Water Hammer in Steam and Hot Water</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or your site's procedures. Steam piping is designed by qualified engineers; do not size or change a live steam line from this lesson.</div>
+<h2>Sources</h2>
+<ol class="sources">
+<li>U.S. Department of Energy, Improving Steam System Performance: A Sourcebook for Industry (plain-text citation): piping, steam separators and condensate return sections on pressure drop, noise, erosion, water hammer and drainage.</li>
+<li>University steam and chilled water utilities design guide, <a href="https://facilities.yale.edu/sites/default/files/files/Steam%20and%20chill%20water%20design%20guide.pdf">Section 7.C.1 and 7.C.2</a>: velocity and pressure drop limits by steam class.</li>
+<li><a href="https://webbook.nist.gov/cgi/fluid.cgi?P=0.79083&amp;TLow=442.5&amp;THigh=444&amp;TInc=0.5&amp;Digits=5&amp;ID=C7732185&amp;Action=Load&amp;Type=SatP&amp;TUnit=K&amp;PUnit=MPa&amp;DUnit=m3%2Fkg&amp;HUnit=kJ%2Fkg&amp;WUnit=m%2Fs&amp;VisUnit=uPa*s&amp;STUnit=N%2Fm&amp;RefState=DEF">NIST, saturation properties of water, vapor rows near 0.79 MPa</a> (volume per mole, converted by us).</li>
+<li><a href="https://webbook.nist.gov/cgi/fluid.cgi?P=0.20475&amp;TLow=393.5&amp;THigh=395&amp;TInc=0.5&amp;Digits=5&amp;ID=C7732185&amp;Action=Load&amp;Type=SatP&amp;TUnit=K&amp;PUnit=MPa&amp;DUnit=m3%2Fkg&amp;HUnit=kJ%2Fkg&amp;WUnit=m%2Fs&amp;VisUnit=uPa*s&amp;STUnit=N%2Fm&amp;RefState=DEF">NIST, saturation properties of water, vapor rows near 0.20 MPa</a> (volume per mole, converted by us).</li>
+<li><a href="https://ehs.dph.ncdhhs.gov/oet/docs/Schedule40-80PipeSizingChart.pdf">State public health office, Schedule 40 and 80 pipe sizing chart</a>: nominal 2 inch pipe, 2.067 in inside diameter, schedule 40.</li>
+</ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
