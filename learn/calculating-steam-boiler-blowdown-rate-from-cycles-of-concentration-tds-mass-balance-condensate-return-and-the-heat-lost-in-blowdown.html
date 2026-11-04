@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculating Steam Boiler Blowdown Rate from Cycles of Concentration: TDS Mass Balance, Condensate Return and the Heat Lost in Blowdown</title>
+<meta property="og:title" content="Calculating Steam Boiler Blowdown Rate from Cycles of Concentration: TDS Mass Balance, Condensate Return and the Heat Lost in Blowdown"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Work out boiler blowdown from cycles of concentration: TDS mass balance, feedwater and steam flows, condensate return, heat lost and flash recovery.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Calculating Steam Boiler Blowdown Rate from Cycles of Concentration: TDS Mass Balance, Condensate Return and the Heat Lost in Blowdown", "about": "Plant systems", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-11-04", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/calculating-steam-boiler-blowdown-rate-from-cycles-of-concentration-tds-mass-balance-condensate-return-and-the-heat-lost-in-blowdown.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/calculating-steam-boiler-blowdown-rate-from-cycles-of-concentration-tds-mass-balance-condensate-return-and-the-heat-lost-in-blowdown.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/calculating-steam-boiler-blowdown-rate-from-cycles-of-concentration-tds-mass-balance-condensate-return-and-the-heat-lost-in-blowdown.html"><meta property="og:description" content="Work out boiler blowdown from cycles of concentration: TDS mass balance, feedwater and steam flows, condensate return, heat lost and flash recovery."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Calculating Steam Boiler Blowdown Rate from Cycles of Concentration", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/calculating-steam-boiler-blowdown-rate-from-cycles-of-concentration-tds-mass-balance-condensate-return-and-the-heat-lost-in-blowdown.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Plant systems</span>
+<h1>Calculating Steam Boiler Blowdown Rate from Cycles of Concentration: TDS Mass Balance, Condensate Return and the Heat Lost in Blowdown</h1>
+<p class="small datel">Last updated: 2026-11-04</p>
+<p class="lede">Every pound of dissolved solids that comes in with the feedwater has to leave with the blowdown, because steam carries almost none out. That one fact lets you calculate the blowdown rate from two water readings, and then price the heat that goes down the drain with it.</p>
+<h2>Where this lesson fits</h2>
+<p>This page is the arithmetic. For why impurities build up and what treatment does, see <a href="boiler-water-treatment-and-blowdown-basics.html">Boiler Water Treatment and Blowdown Basics</a>. For the surface and mud blowdown valves, see <a href="why-boilers-blow-down-surface-vs-mud-blowdown-and-automatic-control.html">Why Boilers Blow Down</a>. For how to take the readings, see <a href="boiler-water-tests-ph-alkalinity-conductivity-hardness-sulfite.html">Boiler Water Tests</a>. The same ratio idea runs a cooling tower, covered in <a href="cooling-tower-cycles-of-concentration-blowdown-and-makeup-water-calculations.html">Cooling Tower Cycles of Concentration</a>; the boiler version differs because the water leaving as steam is nearly pure and is mostly replaced by returned condensate.</p>
+<p><strong>Check your own site.</strong> The allowed boiler water TDS or conductivity comes from the boiler maker and your water treatment provider. This lesson shows the math, it does not set limits.</p>
+
+<h2>Cycles of concentration</h2>
+<p>Cycles of concentration is how many times more concentrated the boiler water is than the feedwater:</p>
+<p><strong>cycles = boiler water TDS / feedwater TDS</strong></p>
+<p>Conductivity can stand in for TDS. If both samples are read the same way (cooled, same meter), the conductivity ratio is used as the cycles ratio. Note that the feedwater here is the blend actually entering the boiler: makeup water plus returned condensate, not the raw makeup alone.</p>
+
+<h2>The mass balance</h2>
+<p>Draw a box around the boiler. Water comes in as feedwater (F). It leaves two ways: as steam (S) and as blowdown (B). Water mass is conserved, so:</p>
+<p><strong>F = S + B</strong></p>
+<p>Dissolved solids come in only with the feedwater and, because steam is nearly pure, leave only with the blowdown. Using TDS in ppm:</p>
+<p><strong>F x TDS<sub>feed</sub> = B x TDS<sub>boiler</sub></strong></p>
+<p>Divide both sides by F and by TDS<sub>feed</sub>:</p>
+<p><strong>B / F = TDS<sub>feed</sub> / TDS<sub>boiler</sub> = 1 / cycles</strong></p>
+<p>So blowdown as a fraction of feedwater is one over the cycles. At 10 cycles it is 10 percent; at 20 cycles, 5 percent. Combine with F = S + B to get the flows from the steam rate you already know:</p>
+<ul><li>F = S / (1 &minus; 1/cycles)</li><li>B = F / cycles, which also equals S / (cycles &minus; 1)</li></ul>
+<p>The U.S. Department of Energy's Steam Tip Sheet 9 uses the same relationship in its example, where feedwater flow equals steam output divided by one minus the blowdown fraction. It says blowdown rates typically run 4 to 8 percent of feedwater flow, and can reach 10 percent when the makeup water has high solids.</p>
+
+<figure><svg viewBox="0 0 640 310" role="img" aria-label="Mass balance around a steam boiler: 11,111 pounds per hour of feedwater at 300 ppm enters, 10,000 pounds per hour of nearly pure steam leaves, and 1,111 pounds per hour of blowdown at 3,000 ppm leaves." style="max-width:100%;height:auto" fill="none" stroke="currentColor" stroke-width="2">
+<title>Boiler mass balance with TDS labels</title>
+<defs><marker id="ah" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="currentColor" stroke="none"/></marker></defs>
+<rect x="210" y="60" width="220" height="170" rx="10"/>
+<line x1="30" y1="145" x2="203" y2="145" marker-end="url(#ah)"/>
+<line x1="437" y1="100" x2="595" y2="100" marker-end="url(#ah)"/>
+<line x1="437" y1="195" x2="595" y2="195" marker-end="url(#ah)"/>
+<g fill="currentColor" stroke="none" font-size="14" font-family="sans-serif">
+<text x="30" y="96" font-weight="bold">Feedwater in</text>
+<text x="30" y="116">11,111 lb/h</text>
+<text x="30" y="136">300 ppm TDS</text>
+<text x="30" y="170">(makeup + condensate)</text>
+<text x="320" y="132" text-anchor="middle" font-weight="bold">Boiler water</text>
+<text x="320" y="154" text-anchor="middle">3,000 ppm TDS</text>
+<text x="320" y="176" text-anchor="middle">10 cycles</text>
+<text x="442" y="62" font-weight="bold">Steam out</text>
+<text x="442" y="80">10,000 lb/h</text>
+<text x="442" y="124">nearly 0 ppm TDS</text>
+<text x="442" y="165" font-weight="bold">Blowdown out</text>
+<text x="442" y="184">1,111 lb/h</text>
+<text x="442" y="220">3,000 ppm TDS</text>
+<text x="30" y="262" font-size="13">Water: 11,111 = 10,000 + 1,111 lb/h</text>
+<text x="30" y="284" font-size="13">Solids: 11,111 x 300 = 1,111 x 3,000 = 3.33 million (lb/h x ppm)</text>
+</g></svg>
+<figcaption>Our own example: water and dissolved solids balance around a 10,000 lb/h steam boiler running at 10 cycles. The solids that enter with the feedwater all leave in the blowdown.</figcaption></figure>
+
+<h2>Worked example (our own, with assumptions)</h2>
+<p>These are our own numbers, not a plant's records. Assumptions: a steam boiler making 10,000 lb/h of steam at 150 psig; feedwater (a mix of makeup and returned condensate) tests 300 ppm TDS; the boiler water is held at 3,000 ppm, an assumed target for this example.</p>
+<ol>
+<li>Cycles = 3,000 / 300 = <strong>10</strong>.</li>
+<li>Blowdown as a share of feedwater = 1 / 10 = <strong>10 percent</strong>.</li>
+<li>Feedwater = 10,000 / (1 &minus; 0.10) = 10,000 / 0.90 = <strong>11,111 lb/h</strong>.</li>
+<li>Blowdown = 11,111 &minus; 10,000 = <strong>1,111 lb/h</strong>. Check: 11,111 / 10 = 1,111, and 10,000 / (10 &minus; 1) = 1,111.</li>
+<li>Solids check: 11,111 x 300 = 3,333,300 in, and 1,111 x 3,000 = 3,333,000 out. The tiny gap is rounding.</li>
+</ol>
+<p>Note that blowdown is 10 percent of feedwater but 11.1 percent of the steam rate (1,111 / 10,000). Tip sheets and logs use both bases, so check which one a number refers to.</p>
+
+<h2>How condensate return raises cycles</h2>
+<p>Condensate is distilled steam, so it carries very little dissolved solids. Mixing more of it into the feedwater lowers the feedwater TDS. With boiler water held at the same 3,000 ppm, a lower feedwater TDS means more cycles and less blowdown.</p>
+<p>Continue our example with one more assumption: makeup water is 400 ppm and returned condensate is close to 0 ppm. Feedwater that is 75 percent makeup and 25 percent condensate gives 0.75 x 400 = 300 ppm, which is the case above. Now raise condensate to half of the feedwater:</p>
+<ol>
+<li>Feedwater TDS = 0.50 x 400 = 200 ppm.</li>
+<li>Cycles = 3,000 / 200 = 15. Blowdown = 1/15 = 6.7 percent of feedwater.</li>
+<li>Feedwater = 10,000 / (1 &minus; 1/15) = 10,714 lb/h. Blowdown = 10,714 / 15 = 714 lb/h.</li>
+</ol>
+<p>Blowdown fell from 1,111 to 714 lb/h, about 36 percent less, and less raw makeup is needed. For the return side of the plant, see <a href="condensate-return-and-feedwater-basics.html">Condensate Return and Feedwater Basics</a> and <a href="feedwater-deaerators-and-oxygen-basics.html">Feedwater Deaerators and Oxygen Basics</a>.</p>
+
+<h2>The heat that leaves with blowdown</h2>
+<p>Blowdown leaves as saturated liquid at boiler pressure, so each pound carries that water's enthalpy (hf). The lost energy is replaced by heating makeup water, so the loss per pound is hf at boiler pressure minus the enthalpy of the makeup water:</p>
+<p><strong>Heat lost (Btu/h) = blowdown (lb/h) x (hf at boiler pressure &minus; hf of makeup)</strong></p>
+<p>For 150 psig, DOE Steam Tip Sheet 9 uses 338.5 Btu/lb for boiler water and 28 Btu/lb for 60 F makeup, a difference of 310.5 Btu/lb. We checked the first number against the NIST water property tables: 150 psig is 164.7 psia (14.696 + 150), and NIST lists 338.00 Btu/lb at 163.34 psia and 339.19 at 165.64 psia, which interpolates to about 338.7. The two agree within 0.2. (For how to read the hf column, see <a href="reading-a-saturated-steam-table-gauge-vs-absolute-pressure-hf-hfg-hg-converting-btu-per-hour-to-pounds-of-steam-and-boiler-horsepower.html">Reading a Saturated Steam Table</a>.)</p>
+<p>Our example, with makeup assumed at 60 F:</p>
+<ol>
+<li>1,111 lb/h x (338.5 &minus; 28) = 1,111 x 310.5 = about <strong>345,000 Btu/h</strong>, or 0.345 MMBtu/h.</li>
+<li>With the condensate case (714 lb/h): 714 x 310.5 = about 221,800 Btu/h, a saving of roughly 123,000 Btu/h.</li>
+<li>Fuel basis, assuming an 80 percent efficient boiler: 345,000 / 0.80 = about 431,000 Btu/h of fuel. Over an assumed 8,000 operating hours that is about 3,450 MMBtu a year.</li>
+</ol>
+<p>Cross-check against DOE: its Steam Tip Sheet 10 (cited as plain text below) tabulates 2.8 MMBtu/h recovered at 150 psig for 10 percent blowdown on 100,000 lb/h of steam, with 60 F makeup and 90 percent recovery. That is 10,000 lb/h of blowdown. Scaling to our 1,111 lb/h gives 2.8 x 1,111 / 10,000 = 0.31 MMBtu/h, and our 0.345 x 0.90 = 0.31. They match.</p>
+
+<h2>Flash recovery</h2>
+<p>When blowdown drops from boiler pressure to a lower pressure, part of it flashes to steam. DOE Steam Tip Sheet 12 tabulates this: from 150 psig down to 5 psig, 14.9 percent flashes; down to 15 psig, 12.7 percent. That table is for condensate, but blowdown is also saturated liquid at 150 psig, so the same percentages apply. This is our own use of the table.</p>
+<p>At 5 psig, about the pressure of a deaerator: 1,111 lb/h x 0.149 = about <strong>166 lb/h</strong> of low-pressure steam, leaving about 945 lb/h of hot liquid. Tip Sheet 10 says the flash steam is most typically used in deaerators, and that the leftover liquid can still pass through a heat exchanger to preheat makeup water. It calls continuous blowdown above 5 percent of the steam rate a good heat recovery candidate. Ours is 11.1 percent. For the formula behind the table, see <a href="flash-steam-and-flash-tanks-percent-flash-from-condensate-and-low-pressure-recovery.html">Flash Steam and Flash Tanks</a>.</p>
+
+<h2>Why too little blowdown is not a saving</h2>
+<p>Blowdown costs heat, water and chemical, so it is tempting to cut it. The mass balance shows what happens. Suppose, in our example, blowdown were cut in half to 5 percent of feedwater: cycles become 20, and boiler water climbs toward 300 x 20 = 6,000 ppm, double the assumed target. DOE Tip Sheet 9 warns that too little blowdown leads to deposits that hurt heat transfer and to carryover of boiler water into the steam, while excess blowdown wastes energy, water and chemicals. Foaming and carryover are covered in <a href="wet-steam-and-carryover-basics.html">Wet Steam and Carryover Basics</a>. Scale insulates the tube metal, which is why it can lead to tube overheating, see <a href="nucleate-and-film-boiling-heat-transfer-the-boiling-curve-critical-heat-flux-and-why-scale-and-low-water-burn-out-boiler-tubes.html">Nucleate and Film Boiling Heat Transfer</a>. The aim is to hold the limit the maker and treatment provider set, no higher and not much lower.</p>
+<p>Blowdown valves discharge scalding water. Follow your site procedure and the maker's instructions for any manual blowdown.</p>
+
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Steam boiler blowdown rate</h2><p><em>Solids in = solids out, so blowdown is one over the cycles.</em></p><ul><li>Cycles = boiler water TDS (or conductivity) / feedwater TDS.</li><li>Blowdown, as a share of feedwater = 1 / cycles.</li><li>Feedwater = steam + blowdown, so feedwater = steam / (1 &minus; 1/cycles).</li><li>Blowdown (lb/h) = steam / (cycles &minus; 1).</li><li>More condensate in the feedwater means lower feedwater TDS, more cycles, less blowdown.</li><li>Heat lost = blowdown lb/h x (hf at boiler pressure &minus; makeup enthalpy).</li><li>Our example: 10 cycles, 11,111 lb/h feedwater, 1,111 lb/h blowdown, about 345,000 Btu/h.</li><li>Too little blowdown risks deposits and carryover. Use the limits from the maker and your treatment provider.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="boiler-water-treatment-and-blowdown-basics.html">Boiler Water Treatment and Blowdown Basics</a></li><li><a href="why-boilers-blow-down-surface-vs-mud-blowdown-and-automatic-control.html">Why Boilers Blow Down: Surface vs Mud Blowdown and Automatic Control</a></li><li><a href="boiler-water-tests-ph-alkalinity-conductivity-hardness-sulfite.html">Boiler Water Tests: pH, Alkalinity, Conductivity, Hardness and Sulfite</a></li><li><a href="cooling-tower-cycles-of-concentration-blowdown-and-makeup-water-calculations.html">Cooling Tower Cycles of Concentration: Blowdown and Makeup Water Calculations</a></li><li><a href="flash-steam-and-flash-tanks-percent-flash-from-condensate-and-low-pressure-recovery.html">Flash Steam and Flash Tanks: Percent Flash From Condensate</a></li><li><a href="start-here.html">Start Here</a></li><li><a href="../products.html">Study packs and printables</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources"><li><a href="https://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/steam9_blowdown.pdf">U.S. DOE: Steam Tip Sheet #9 (blowdown rates, 150 psig example, 338.5 and 28 Btu/lb)</a></li><li>U.S. DOE: Steam Tip Sheet #10, Recover Heat from Boiler Blowdown (January 2012; the energy.gov file is cited as plain text, not linked)</li><li><a href="https://www1.eere.energy.gov/manufacturing/tech_assistance/pdfs/steam12_lowpressure_steam.pdf">U.S. DOE: Steam Tip Sheet #12 (percent flash table)</a></li><li><a href="https://webbook.nist.gov/cgi/fluid.cgi?TUnit=F&amp;PUnit=psia&amp;DUnit=lbm%2Fft3&amp;HUnit=Btu%2Flbm&amp;WUnit=ft%2Fs&amp;VisUnit=lbm%2Fft*s&amp;STUnit=lbf%2Fft&amp;Digits=5&amp;RefState=DEF&amp;Action=Load&amp;ID=C7732185&amp;Type=SatP">NIST: saturation properties of water (liquid enthalpy near 164.7 psia)</a></li></ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
