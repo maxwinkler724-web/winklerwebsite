@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Checking a Run Capacitor Under Load with Amps and Volts</title>
+<meta property="og:title" content="Checking a Run Capacitor Under Load with Amps and Volts"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="Estimate run capacitor microfarads from clamp amps and volts across it: uF = 2,652 x amps / volts at 60 Hz. Worked example, safety and limits.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Checking a Run Capacitor Under Load with Amps and Volts", "about": "Electrical and controls", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-11-04", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/checking-a-run-capacitor-under-load-with-amps-and-volts.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/checking-a-run-capacitor-under-load-with-amps-and-volts.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/checking-a-run-capacitor-under-load-with-amps-and-volts.html"><meta property="og:description" content="Estimate run capacitor microfarads from clamp amps and volts across it: uF = 2,652 x amps / volts at 60 Hz. Worked example, safety and limits."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Checking a Run Capacitor Under Load with Amps and Volts", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/checking-a-run-capacitor-under-load-with-amps-and-volts.html"}]}</script></head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Electrical and controls</span>
+<h1>Checking a Run Capacitor Under Load with Amps and Volts</h1>
+<p class="small datel">Last updated: 2026-11-04</p>
+<p class="lede">A capacitor tester or a meter in capacitance mode reads the part while it sits dead on the bench. A running compressor tells you something different: how much current the capacitor really passes at working voltage. With one clamp reading and one voltage reading you can estimate microfarads in the circuit. This lesson shows where the formula comes from, where the clamp and meter go, and what the answer can and cannot tell you.</p>
+<h2>Check the label and the procedure first</h2>
+<p><strong>This is live work.</strong> It is for trained, qualified people following their employer&#39;s procedures and the equipment maker&#39;s instructions. This page is general education. If you are not trained to take readings on energized equipment, use the off-circuit test in <a href="testing-capacitors-contactors-and-relays-with-a-meter.html">Testing Capacitors, Contactors and Relays with a Meter</a> instead.</p>
+<h2>Where the formula comes from</h2>
+<p>A capacitor on alternating current does not behave like a resistor, but it does limit current. The limit is called capacitive reactance, written X<sub>C</sub> and measured in ohms. University physics notes give it as X<sub>C</sub> = 1 / (2 &pi; f C), with f in hertz and C in farads, and say the rms current is I = V / X<sub>C</sub>, where V is the rms voltage across the capacitor. Notice that a bigger capacitor has a smaller reactance, so it passes more current at the same voltage.</p>
+<p>Put the two together and solve for C:</p>
+<ul>
+<li>I = V / X<sub>C</sub> = V &times; 2 &pi; f C</li>
+<li>C (farads) = I / (2 &pi; f V)</li>
+<li>One farad is a million microfarads, so C (microfarads) = 10<sup>6</sup> &times; I / (2 &pi; f V)</li>
+</ul>
+<p>At 60 Hz, 2 &pi; &times; 60 is 376.99 radians per second. Dividing a million by 376.99 gives 2,652.6, which the field rule rounds to 2,652. That is where the number comes from:</p>
+<p><strong>microfarads = 2,652 &times; amps / volts</strong> (at 60 Hz)</p>
+<p>Two cautions. First, the constant is only for 60 Hz, which is what U.S. utility power runs at; at another frequency the constant changes. Second, the voltage in the formula is the voltage across the capacitor, not the line voltage. The start winding is a coil in series with the capacitor, so the capacitor&#39;s own voltage can be higher than the supply (our own explanation of the circuit). That is why you place the voltmeter on the capacitor terminals.</p>
+<h2>Where to clamp and where to measure</h2>
+<figure>
+<svg role="img" aria-label="Simplified one-leg diagram: line voltage feeds the C terminal of a run capacitor, the HERM terminal leads to the compressor start winding, a clamp ammeter circles the HERM lead, and a voltmeter is connected across the C and HERM terminals." viewBox="0 0 640 320" style="max-width:100%;height:auto;fill:none;stroke:currentColor;stroke-width:2" xmlns="https://www.w3.org/2000/svg">
+<title>Where the clamp and voltmeter go when checking a run capacitor under load</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" stroke="none"/></marker></defs>
+<!-- wires -->
+<path d="M40 160 H200"/>
+<path d="M240 160 H440"/>
+<!-- capacitor plates -->
+<path d="M200 130 V190"/>
+<path d="M240 130 V190"/>
+<!-- start winding coil -->
+<path d="M440 160 q10 -28 20 0 q10 -28 20 0 q10 -28 20 0 q10 -28 20 0"/>
+<path d="M520 160 H590"/>
+<!-- terminal dots -->
+<circle cx="140" cy="160" r="4" fill="currentColor"/>
+<circle cx="300" cy="160" r="4" fill="currentColor"/>
+<!-- clamp -->
+<circle cx="380" cy="160" r="22"/>
+<path d="M358 160 H402" stroke-dasharray="3 5" stroke-width="1"/>
+<!-- voltmeter -->
+<circle cx="220" cy="270" r="26"/>
+<path d="M140 164 L196 254"/>
+<path d="M300 164 L244 254"/>
+<!-- leaders with arrowheads, stopping short of labels -->
+<path d="M380 82 V132" marker-end="url(#ah)"/>
+<!-- text -->
+<g stroke="none" fill="currentColor" font-size="14" font-family="sans-serif">
+<text x="40" y="146">From contactor</text>
+<text x="40" y="182">(line side)</text>
+<text x="112" y="206">C</text>
+<text x="294" y="188">HERM</text>
+<text x="206" y="116">Run capacitor</text>
+<text x="430" y="196">Start winding</text>
+<text x="520" y="146">to compressor</text>
+<text x="520" y="182">common</text>
+<text x="300" y="68">Clamp ammeter: HERM lead only</text>
+<text x="213" y="275">V</text>
+<text x="256" y="300">Voltmeter across C and HERM</text>
+<text x="90" y="262">Probes on</text>
+<text x="90" y="280">the terminals</text>
+</g>
+</svg>
+<figcaption>Simplified, one leg only. The clamp goes around the single HERM wire (current into the start winding). The voltmeter goes across the capacitor&#39;s C and HERM terminals.</figcaption>
+</figure>
+<ul>
+<li><strong>Clamp:</strong> around the one wire that runs from the HERM terminal to the compressor start winding. All of the current through that wire passes through the capacitor, so the clamp reads the capacitor current. Clamp one wire only. If you enclose a pair of wires carrying opposite current, the reading cancels toward zero and is useless.</li>
+<li><strong>Voltmeter:</strong> across the capacitor, from the C terminal to the HERM terminal, taken at the same moment as the amps.</li>
+<li><strong>Dual capacitors:</strong> a dual unit has a HERM side for the compressor and a FAN side for the condenser fan motor, each with its own microfarad rating and its own wire. The 45/5 in our example is a 45 microfarad compressor section and a 5 microfarad fan section sharing the C terminal. Check each section with its own wire and its own pair of terminals.</li>
+<li><strong>Warm and steady:</strong> read after the compressor has started and settled, not during the start surge.</li>
+</ul>
+<h2>Reading the label: tolerance</h2>
+<p>The can is marked with microfarads and usually a plus-or-minus percent tolerance. Read the tolerance printed on your part and follow the maker&#39;s service guidance. We found no maker document that gives a universal replacement cutoff, so this page does not give one. The example below simply assumes a printed tolerance of &plusmn;6 percent to show the arithmetic.</p>
+<h2>Our own worked example</h2>
+<p><strong>This is our own example with assumed numbers, not data from a real job.</strong> A 45/5 microfarad dual capacitor serves a 60 Hz condensing unit. Assumptions: the label shows 45 microfarads on the HERM side with a tolerance of &plusmn;6 percent; the supply is 60 Hz; the readings below are made up for teaching.</p>
+<p><strong>Step 1, what we expect.</strong> Tolerance band: 45 &times; 0.94 = 42.3 and 45 &times; 1.06 = 47.7, so 42.3 to 47.7 microfarads. A healthy 45 microfarad part has X<sub>C</sub> = 1 / (376.99 &times; 0.000045) = 58.9 ohms. At 370 volts across it, I = 370 / 58.9 = 6.28 amps. So we expect about 6.3 amps on the HERM lead.</p>
+<p><strong>Step 2, first reading.</strong> Assume the clamp reads 6.2 amps with 370 volts across HERM and C. Microfarads = 2,652 &times; 6.2 / 370 = 16,442.4 / 370 = 44.4. That is 0.6 microfarads under the label, about 1.3 percent low, inside the 42.3 to 47.7 band. Good.</p>
+<p><strong>Step 3, second reading, a weak part.</strong> Assume a later visit shows 5.0 amps with 370 volts. Microfarads = 2,652 &times; 5.0 / 370 = 13,260 / 370 = 35.8. That is 9.2 microfarads under the label, about 20 percent low, well outside the band. This part is weak and a candidate for replacement under the maker&#39;s guidance.</p>
+<table>
+<thead><tr><th>Reading</th><th>Amps</th><th>Volts</th><th>Microfarads</th><th>Versus 45 label</th></tr></thead>
+<tbody>
+<tr><td>Expected</td><td>6.28</td><td>370</td><td>45.0</td><td>on label</td></tr>
+<tr><td>First</td><td>6.2</td><td>370</td><td>44.4</td><td>1.3% low, in band</td></tr>
+<tr><td>Second</td><td>5.0</td><td>370</td><td>35.8</td><td>20.4% low, out of band</td></tr>
+<tr><td>Failed part</td><td>2.4</td><td>370</td><td>17.2</td><td>61.8% low</td></tr>
+</tbody></table>
+<p>The last row shows what a clamp reading of 2.4 amps at the same 370 volts would mean: 2,652 &times; 2.4 / 370 = 6,364.8 / 370 = 17.2 microfarads, a part that has lost most of its capacity. A quick sanity check in the other direction: if you see far less current than the label predicts, suspect the capacitor; if you see roughly the expected current, the capacitor is passing what it should.</p>
+<h2>Why this can catch what a meter at rest may miss</h2>
+<p>Our own reasoning, not a maker claim: a capacitance-mode meter tests a part that is cold, unpowered and often out of the circuit, using a small test signal. The under-load method tests the capacitor at full working voltage, at running temperature and with its real terminals and wiring in the loop, so a part that only misbehaves when hot or loaded has a better chance of showing up. It will not catch everything either. Neither method tests every failure, and a good reading does not rule out a bad compressor, a bad motor or a loose connection somewhere else.</p>
+<h2>Limits of the method</h2>
+<ul>
+<li>It is an estimate. Meter accuracy, the clamp&#39;s accuracy, a waveform that is not a clean sine wave, and line voltage that moves a little all add error. Use a true-rms meter and clamp rated for the job, and read amps and volts together.</li>
+<li>Use the capacitor&#39;s own voltage. Putting line voltage in the formula, instead of the voltage across the capacitor, gives the wrong answer.</li>
+<li>The 2,652 constant is for 60 Hz only.</li>
+<li>Compare the answer to the label, then to the maker&#39;s service instructions. A single reading is a clue to be confirmed, as in the <a href="capacitors-and-contactors.html">Capacitors and Contactors</a> lesson.</li>
+</ul>
+<h2>Safety</h2>
+<ul>
+<li>OSHA&#39;s electrical work-practices rule, 29 CFR 1910.333(c), says only qualified persons may work on circuit parts that have not been de-energized. Taking readings with the unit running is that kind of work.</li>
+<li>Keep fingers away from the terminals, keep the clamp jaws and meter probes off bare metal, and use meter leads and a meter with the right category rating (see <a href="multimeter-safety-and-cat-ratings.html">Multimeter Safety and CAT Ratings</a>).</li>
+<li>When you are done measuring, turn the power off, lock out and tag, and prove it dead (see <a href="lockout-tagout-and-verify-dead-for-hvac.html">Lockout/Tagout and Verify Dead for HVAC</a>). OSHA&#39;s lockout rule, 29 CFR 1910.147, requires that potentially hazardous stored or residual energy be relieved after lockout, and 1910.333(b)(2) says capacitors are to be discharged. Do it by the method your employer and the capacitor maker approve, then recheck, because voltage can reappear.</li>
+<li>Never replace a bulged, leaking or scorched capacitor by testing it. Replace it.</li>
+</ul>
+<p>Motor and blower context is in <a href="psc-blower-motors-speed-taps-run-capacitors-and-amp-checks.html">PSC Blower Motors: Speed Taps, Run Capacitors and Amp Checks</a>.</p>
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Checking a Run Capacitor Under Load</h2><p><em>Amps on the HERM lead, volts across the capacitor.</em></p><ul><li>Live work: qualified people only. Power off, lock out, prove dead, discharge when finished.</li><li>X<sub>C</sub> = 1 / (2 &pi; f C) and I = V / X<sub>C</sub>.</li><li>At 60 Hz: microfarads = 2,652 &times; amps / volts (10<sup>6</sup> / 376.99 = 2,652.6).</li><li>Clamp one wire: HERM lead to the start winding. Volts across C and HERM.</li><li>Our example: 45 uF, 6.2 A, 370 V gives 44.4 uF (in a 42.3 to 47.7 band); 5.0 A gives 35.8 uF (weak).</li><li>Compare to the printed tolerance and the maker&#39;s guidance. A reading is a clue, not a verdict.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="testing-capacitors-contactors-and-relays-with-a-meter.html">Testing Capacitors, Contactors and Relays with a Meter</a></li><li><a href="capacitors-and-contactors.html">Capacitors and Contactors</a></li><li><a href="psc-blower-motors-speed-taps-run-capacitors-and-amp-checks.html">PSC Blower Motors: Speed Taps, Run Capacitors and Amp Checks</a></li><li><a href="lockout-tagout-and-verify-dead-for-hvac.html">Lockout/Tagout and Verify Dead for HVAC</a></li><li><a href="multimeter-safety-and-cat-ratings.html">Multimeter Safety and CAT Ratings</a></li><li><a href="start-here.html">Start Here</a></li><li><a href="../products.html">Study packs and printables</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources"><li><a href="https://pressbooks.online.ucf.edu/phy2054lt/chapter/reactance-inductive-and-capacitive/">University of Central Florida physics text: Reactance, inductive and capacitive (X<sub>C</sub> = 1/(2&pi;fC), I = V/X<sub>C</sub>)</a></li><li><a href="https://www.nist.gov/pml/special-publication-330/sp-330-section-2">NIST Special Publication 330: SI units, including the farad, hertz and ohm</a></li><li><a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333">OSHA 29 CFR 1910.333: selection and use of work practices (qualified persons, discharging capacitors)</a></li><li><a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147">OSHA 29 CFR 1910.147: control of hazardous energy (stored or residual energy, verification of isolation)</a></li></ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
