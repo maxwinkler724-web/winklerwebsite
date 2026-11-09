@@ -3,7 +3,7 @@
              "preview" = shows clearly labeled placeholder boxes and the sponsor gate so you can see the layout
              "live"    = loads the real ad network (fill in client and slots first, and read reports/training-school-pricing-and-ads.md) */
 window.TSB = {
-  ads: { mode: "off", client: "ca-pub-XXXXXXXXXXXXXXXX", slots: { top: "", mid: "", bottom: "" } },
+  ads: { mode: "off", client: "ca-pub-8152497974042955", slots: { top: "", mid: "", bottom: "" } },
   /* Google AdSense does not allow ads shown for a preset time before content (pre-roll). The gate below is skipped in "live" mode unless directSponsorOnly is true, meaning the gate shows only a direct sponsor you sold yourself, never AdSense ads. See reports/training-school-pricing-and-ads.md. */
   gate: { enabled: false, seconds: 5, frequencyMinutes: 3, directSponsorOnly: false },
   store: { links: {
