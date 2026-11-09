@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Demand Limiting and Load Shedding With a BAS: Peak kW, Rotating Compressor Sheds and Staged Restore</title>
+<meta property="og:title" content="Demand Limiting and Load Shedding With a BAS: Peak kW, Rotating Compressor Sheds and Staged Restore"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="How a building automation system trims peak kW: demand intervals, rotating compressor sheds, limits that stay on, staged restore, trend checks.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Demand Limiting and Load Shedding With a BAS: Peak kW, Rotating Compressor Sheds and Staged Restore", "about": "Electrical and controls", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-11-04", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/demand-limiting-and-load-shedding-with-a-building-automation-system-peak-kw-demand-intervals-rotating-rooftop-compressor-sheds-comfort-and-ventilation-limits-and-staged-restore.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/demand-limiting-and-load-shedding-with-a-building-automation-system-peak-kw-demand-intervals-rotating-rooftop-compressor-sheds-comfort-and-ventilation-limits-and-staged-restore.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/demand-limiting-and-load-shedding-with-a-building-automation-system-peak-kw-demand-intervals-rotating-rooftop-compressor-sheds-comfort-and-ventilation-limits-and-staged-restore.html"><meta property="og:description" content="How a building automation system trims peak kW: demand intervals, rotating compressor sheds, limits that stay on, staged restore, trend checks."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Demand Limiting and Load Shedding With a BAS: Peak kW, Rotating Compressor Sheds and Staged Restore", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/demand-limiting-and-load-shedding-with-a-building-automation-system-peak-kw-demand-intervals-rotating-rooftop-compressor-sheds-comfort-and-ventilation-limits-and-staged-restore.html"}]}</script><meta name="google-adsense-account" content="ca-pub-8152497974042955">
+</head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Electrical and controls</span>
+<h1>Demand Limiting and Load Shedding With a BAS: Peak kW, Rotating Compressor Sheds and Staged Restore</h1>
+<p class="small datel">Last updated: 2026-11-04</p>
+<p class="lede">A building does not only pay for the electricity it uses. It is also measured on how hard it pulls at its worst moment. A building automation system (BAS) can hold that worst moment down by trimming loads before a limit is crossed. This lesson walks through how, and where a tech should be careful.</p>
+<h2>What peak demand means</h2>
+<p>Energy is measured in kilowatt-hours (kWh), the total used over time. Demand is measured in kilowatts (kW), the rate of use. A federal forest agency guide on demand charges says demand is based on energy consumed in a set period called the demand interval, usually 15 or 30 minutes, and that the interval with the most use in the billing period sets the peak. A state energy agency guide says the same: the highest kW over a set duration, commonly 15 or 30 minutes, in the billing period. A large load that runs only briefly adds little to kWh but can set the peak, which is why one bad quarter hour matters.</p>
+<p>How a given utility slides or blocks that window varies, and the meter may use a rolling average or fixed blocks. Ask the utility how its meter works before tuning a BAS. This lesson does not cover prices or rates.</p>
+<h2>What demand limiting does</h2>
+<p>A national lab report on commercial building controls defines demand limiting as shedding loads when preset peak demand limits are about to be exceeded, with loads restored once demand falls enough. A federal lab control guide describes the same job as shedding electric loads in steps as building demand approaches a preset level. The BAS watches a power meter point, projects where the interval is heading, and acts early. Acting at the end of the interval is too late.</p>
+<h2>Shed options, mildest first</h2>
+<ol>
+<li><strong>Raise cooling setpoints a few degrees.</strong> The federal lab guide gives an example ladder that starts with a 1 degree F reset, then 2 degrees with valve limits, then 4 degrees. A national lab paper describes a large federal office that cut whole-building power by raising zone setpoints from 72 to 78 F for a three-hour test, with no comfort complaints reported there. Your site will differ.</li>
+<li><strong>Stage or hold off rooftop unit compressors.</strong> Many rooftop units have several compressor stages. The BAS can lock out the last stage, or hold one unit to a single stage, while the supply fan keeps running. See <a href="rooftop-unit-basics.html">Rooftop Unit Basics</a> for stage layout.</li>
+<li><strong>Cycle equipment by duty.</strong> The federal lab guide calls shedding that turns equipment on and off "load rolling," often called duty cycling.</li>
+</ol>
+<h2>Rotate the shed</h2>
+<p>If the same two compressors are always the ones held off, the zones they serve drift warm while others stay cold. Rotation fixes that. The BAS keeps a list, holds a different group off each step, and caps how long any group can stay shed. The national lab report describes a "shared burden" idea: share the reduction across the facility instead of leaning on one area.</p>
+<p>Rotation also helps equipment. A compressor that is told to restart should still honor its own minimum off time; see <a href="anti-short-cycle-timers-and-compressor-time-delays-delay-on-break-vs-delay-on-make-wiring-in-the-y-circuit-and-testing.html">Anti-Short-Cycle Timers and Compressor Time Delays</a>. The BAS command must never defeat that protection.</p>
+<h2>What must not be shed</h2>
+<ul>
+<li><strong>Ventilation.</strong> A federal lab guide cautions that cutting airflow can drop ventilation below design levels. Outdoor air minimums stay on.</li>
+<li><strong>Comfort drift limits.</strong> The same national lab paper points to a published comfort standard that limits how fast a space can change, for example about 2 degrees F in 15 minutes. A shed that swings a room faster than that invites complaints.</li>
+<li><strong>Safety and process loads.</strong> Exhaust for hazardous spaces, life-safety equipment, refrigeration and any space with a temperature requirement stay out of the shed list. Write the exclusions down when the sequence is set.</li>
+<li><strong>Protective controls.</strong> Freeze protection, high-limit and safety circuits are never overridden for demand.</li>
+</ul>
+<p>Also check that nobody has left equipment in hand. A unit in manual does not respond to the BAS; see <a href="hand-off-auto-switches-and-bas-operator-overrides-why-equipment-left-in-hand-wastes-energy-and-bypasses-safeties-and-how-to-find-them.html">Hand-Off-Auto Switches and BAS Operator Overrides</a>. Ventilation reset belongs in <a href="demand-controlled-ventilation-co2-sensors-in-offices-and-meeting-rooms.html">Demand-Controlled Ventilation</a>.</p>
+<h2>Restore in steps</h2>
+<p>When the shed ends, warm spaces call for cooling all at once. The national lab report warns of a rebound spike as systems pull out the heat they let build, and says equipment should ramp up slowly if the event does not end when the building is empty. A state agency guide says shed loads left alone may return in an undesirable order, and that a sequence should recover them in a correct order.</p>
+<p>In practice, set a delay between restores (for example one rooftop unit or compressor group every few minutes), restore the loads with the longest time shed first, and keep the demand limit active during recovery. Our own suggestion: test the restore delay on a mild day first.</p>
+<h2>Worked example (our own)</h2>
+<p><strong>Our own example with assumed numbers.</strong> A small building has six rooftop unit compressors rated 10 kW each when running, plus 40 kW of other load (fans, lights, plugs). Assume each compressor runs at a full 10 kW when on, the other load stays steady, and all six want to run during the afternoon peak.</p>
+<ol>
+<li>Compressors: 6 &times; 10 kW = 60 kW.</li>
+<li>Peak demand, all running: 60 kW + 40 kW = <strong>100 kW</strong>.</li>
+<li>Rotating shed holding two compressors off: 4 &times; 10 kW = 40 kW.</li>
+<li>Peak demand with shed: 40 kW + 40 kW = <strong>80 kW</strong>.</li>
+<li>Difference: 100 kW &minus; 80 kW = <strong>20 kW</strong>, or 20 percent of 100 kW.</li>
+</ol>
+<p>For the rotation, group the compressors in three pairs and change which pair is held off every 5 minutes. Over a 15-minute interval each pair is off for 5 minutes, and at every moment exactly two are off, so the 15-minute average stays at 80 kW. Every compressor still runs two thirds of the time. Real units will not draw exactly their rating, so confirm with trend data.</p>
+<figure>
+<svg viewBox="0 0 520 250" role="img" aria-label="Two bars compare building demand: 100 kW with all six compressors running and 80 kW with two compressors held off, a 20 kW difference." style="max-width:100%;height:auto" xmlns="http://www.w3.org/2000/svg">
+<title>Peak demand with all compressors running versus a rotating shed</title>
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="currentColor" stroke="none"/></marker></defs>
+<line x1="40" y1="200" x2="500" y2="200" stroke="currentColor" fill="none"/>
+<rect x="70" y="40" width="120" height="160" fill="none" stroke="currentColor" stroke-width="2"/>
+<rect x="70" y="104" width="120" height="96" fill="currentColor" fill-opacity="0.25" stroke="currentColor"/>
+<rect x="290" y="72" width="120" height="128" fill="none" stroke="currentColor" stroke-width="2"/>
+<rect x="290" y="136" width="120" height="64" fill="currentColor" fill-opacity="0.25" stroke="currentColor"/>
+<rect x="290" y="72" width="120" height="64" fill="none" stroke="currentColor" stroke-dasharray="4 3"/>
+<line x1="440" y1="40" x2="440" y2="64" stroke="currentColor" fill="none" marker-end="url(#ah)"/>
+<g stroke="none" fill="currentColor" font-size="13" font-family="sans-serif" text-anchor="middle">
+<text x="130" y="30">100 kW</text>
+<text x="350" y="62">80 kW</text>
+<text x="130" y="154" font-size="11">6 compressors 60 kW</text>
+<text x="350" y="172" font-size="11">4 compressors 40 kW</text>
+<text x="130" y="188" font-size="12">other load 40 kW</text>
+<text x="350" y="104" font-size="12">2 held off</text>
+<text x="350" y="190" font-size="12">other load 40 kW</text>
+<text x="130" y="222">All running</text>
+<text x="350" y="222">Rotating shed</text>
+<text x="465" y="130" font-size="12">20 kW</text>
+<text x="465" y="146" font-size="12">lower</text>
+</g>
+</svg>
+<figcaption>Our own example: demand with all six compressors on (left) versus two held off in rotation (right). The dashed box is the shed 20 kW.</figcaption>
+</figure>
+<h2>Check the trend logs afterward</h2>
+<p>A shed that works on paper still needs proof. After a demand event, pull trend logs for the building power point, each shed unit's status and each shed zone's temperature. Look for the interval peak against the limit, a new peak during restore, any zone that drifted past its comfort limit, and units that never responded. A national lab study of automated demand response found commercial buildings cut peak demand by 5 to 15 percent, averaging 13 percent, so a result near your plan is reasonable, but your building will vary. For reading logs and alarms, see <a href="bas-alarms-trend-logs-and-how-techs-use-them.html">BAS Alarms, Trend Logs and How Techs Use Them</a>.</p>
+<p>Want to practice what you just read? The <a href="../products.html">Trade Study Bench study packs</a> turn these ideas into structured review material.</p>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Demand Limiting and Load Shedding With a BAS: Peak kW, Rotating Compressor Sheds and Staged Restore</h2><p><em>Shed early, rotate fairly, never touch ventilation or safeties, restore in steps, then check the log.</em></p><ul><li>Demand is kW; the utility finds it over an interval, often 15 minutes.</li><li>Order of shed: setpoint reset, compressor stages, duty cycling.</li><li>Rotate groups and cap how long any zone stays shed.</li><li>Keep outdoor air, safety loads and protective controls out of the shed list.</li><li>Restore with delays so recovery does not set a new peak.</li><li>Our own example: 100 kW all running, 80 kW with two of six held off, 20 kW lower.</li><li>Verify with trend logs.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="ice-thermal-energy-storage-for-commercial-cooling-ton-hours-charging-and-demand-charges.html">Ice Thermal Energy Storage for Commercial Cooling: Ton-Hours, Charging and Demand Charges</a></li><li><a href="demand-controlled-ventilation-co2-sensors-in-offices-and-meeting-rooms.html">Demand-Controlled Ventilation: CO2 Sensors in Offices and Meeting Rooms</a></li><li><a href="bas-alarms-trend-logs-and-how-techs-use-them.html">BAS Alarms, Trend Logs and How Techs Use Them</a></li><li><a href="building-automation-basics.html">Building Automation Basics</a></li><li><a href="hand-off-auto-switches-and-bas-operator-overrides-why-equipment-left-in-hand-wastes-energy-and-bypasses-safeties-and-how-to-find-them.html">Hand-Off-Auto Switches and BAS Operator Overrides</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources"><li>Federal forest agency: Saving Money by Understanding Demand Charges on Your Electric Bill (plain text, not linked)</li><li>National laboratory: Introduction to Commercial Building Control Strategies and Techniques for Demand Response (plain text, not linked)</li><li>National laboratory: conference paper on demand response in commercial buildings (zone setpoint test, 72 to 78 F) (plain text, not linked)</li><li>National laboratory: Findings from Seven Years of Field Performance Data for Automated Demand Response in Commercial Buildings (plain text, not linked)</li><li>National laboratory: Energy Management and Control System, Desired Capabilities and Functionality (plain text, not linked)</li><li>State energy agency: guide on real-time energy management and demand management, part 7 (state agency PDF, cited as plain text)</li></ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
