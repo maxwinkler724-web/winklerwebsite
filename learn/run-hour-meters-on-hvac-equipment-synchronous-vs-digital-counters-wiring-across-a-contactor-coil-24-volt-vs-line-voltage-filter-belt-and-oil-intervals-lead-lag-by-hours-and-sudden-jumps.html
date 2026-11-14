@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Run-Hour Meters on HVAC Equipment: Wiring, Intervals and Jumps</title>
+<meta property="og:title" content="Run-Hour Meters on HVAC Equipment: Wiring, Intervals and Jumps"><meta property="og:type" content="article"><meta name="theme-color" content="#0d2b45">
+<meta name="description" content="How HVAC run-hour meters work, where to wire them, how to use hours for filters, belts, oil and lead-lag, and what a sudden jump can mean.">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Run-Hour Meters on HVAC Equipment: Wiring, Intervals and Jumps", "about": "Run-hour meters on HVAC equipment", "inLanguage": "en", "audience": {"@type": "EducationalAudience", "educationalRole": "student"}, "isAccessibleForFree": true, "publisher": {"@type": "Organization", "name": "Trade Study Bench"}, "dateModified": "2026-11-04", "author": {"@type": "Organization", "name": "Trade Study Bench"}, "mainEntityOfPage": "https://maxwinkler724-web.github.io/winklerwebsite/learn/run-hour-meters-on-hvac-equipment-synchronous-vs-digital-counters-wiring-across-a-contactor-coil-24-volt-vs-line-voltage-filter-belt-and-oil-intervals-lead-lag-by-hours-and-sudden-jumps.html"}</script>
+<link rel="canonical" href="https://maxwinkler724-web.github.io/winklerwebsite/learn/run-hour-meters-on-hvac-equipment-synchronous-vs-digital-counters-wiring-across-a-contactor-coil-24-volt-vs-line-voltage-filter-belt-and-oil-intervals-lead-lag-by-hours-and-sudden-jumps.html"><meta property="og:url" content="https://maxwinkler724-web.github.io/winklerwebsite/learn/run-hour-meters-on-hvac-equipment-synchronous-vs-digital-counters-wiring-across-a-contactor-coil-24-volt-vs-line-voltage-filter-belt-and-oil-intervals-lead-lag-by-hours-and-sudden-jumps.html"><meta property="og:description" content="How HVAC run-hour meters work, where to wire them, how to use hours for filters, belts, oil and lead-lag, and what a sudden jump can mean."><meta property="og:site_name" content="Trade Study Bench"><meta property="og:image" content="https://maxwinkler724-web.github.io/winklerwebsite/img/og-default.png"><meta name="twitter:card" content="summary_large_image"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://maxwinkler724-web.github.io/winklerwebsite/"}, {"@type": "ListItem", "position": 2, "name": "Free lessons", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/index.html"}, {"@type": "ListItem", "position": 3, "name": "Run-Hour Meters on HVAC Equipment: Wiring, Intervals and Jumps", "item": "https://maxwinkler724-web.github.io/winklerwebsite/learn/run-hour-meters-on-hvac-equipment-synchronous-vs-digital-counters-wiring-across-a-contactor-coil-24-volt-vs-line-voltage-filter-belt-and-oil-intervals-lead-lag-by-hours-and-sudden-jumps.html"}]}</script><meta name="google-adsense-account" content="ca-pub-8152497974042955">
+</head><body><a class="skip" href="#main">Skip to content</a>
+<div class="util" role="region" aria-label="Site notice"><div class="wrap"><span>Free trade education from a working tech</span><span>Need HVAC or handyman service in Leonia, NJ and nearby? <a href="https://www.winklermechanical.com">Winkler Mechanical</a> (separate business). NJ HIC #13VH12516600</span></div></div>
+<header class="site"><div class="wrap"><a class="brand" href="../index.html">Trade <span>Study</span> Bench</a>
+<nav><a href="../learn/index.html">Lessons</a><a href="../learn/troubleshooting.html">Troubleshoot</a><a href="../learn/games.html">Games</a><a href="../products.html">Store</a><a href="../news.html">News &amp; events</a><a href="../premium.html" class="cta">Premium</a><a href="../about.html">About</a><a href="../account.html">Sign in</a></nav></div></header>
+<main id="main"><div class="wrap">
+<span class="tag">Free lesson &middot; Electrical and controls</span>
+<h1>Run-Hour Meters on HVAC Equipment: Wiring, Intervals and Jumps</h1>
+<p class="small datel">Last updated: 2026-11-04</p>
+<p class="lede">Calendar dates are a rough way to schedule maintenance, because a blower that runs 24 hours a day wears much faster than one that runs two. A run-hour meter counts the hours a machine is actually working, so you can service it by use instead of by guess. This lesson covers how the meter works, where to wire it, and what to do with the number.</p>
+<h2>What an hour meter is</h2>
+<p>An hour meter is a small counter that adds up time while it has power. There are two common kinds. The older style uses a small synchronous motor that turns a gear train and a number wheel, so it advances in step with the line frequency. The newer style is a digital counter with a display that counts time electronically. Both do the same job: they run only while voltage is on their two terminals. A digital unit may also keep its count through a power loss and may show tenths of an hour. Check the data sheet for the exact behavior, because models differ.</p>
+<p>The meter does not measure load, temperature or health. It measures time with power applied. That is why the wiring point decides what the number means.</p>
+<h2>Where to wire it so it counts real run time</h2>
+<p>Wire the meter in parallel with something that is energized only when the machine is really running. Two common choices:</p>
+<ul>
+<li><strong>Across the contactor coil.</strong> The meter counts whenever the coil is pulled in. This is simple, and it uses the same control voltage the coil already has. The catch is that it counts contactor time, not compressor time. If a compressor trips on an internal protector while the contactor stays closed, the meter keeps counting.</li>
+<li><strong>Across the load.</strong> Connect the meter to the load side of the contacts, from the motor or compressor leg to the neutral or other leg, if the meter is rated for that voltage. This counts only when the load has power, so it ignores a coil that is energized with open contacts or a stuck call. It must be rated for the full line voltage, so it takes more care and a good connection to a real neutral or the correct second leg.</li>
+</ul>
+<p>Do not wire a meter across the thermostat call terminal if you want run time. A call for cooling is not the same as the equipment running, since delay timers, safeties and lockouts can sit between them. A fan relay and a compressor contactor also run for different lengths of time, so put a meter on each if both matter.</p>
+<h2>24 V vs line-voltage meters</h2>
+<p>The meter must match the voltage it is wired across. A meter that shares a 24 V control circuit with a contactor coil is a low-voltage part, and a meter wired across 120 V or 240 V is a line-voltage part. Using a meter on the wrong voltage can burn it out or make it count wrongly. Also check whether the meter is rated for AC or DC. Read the voltage and type on the meter label and the data sheet before you connect anything. A 24 V meter is easy to hide in a control compartment, while a line-voltage meter needs the same lockout and testing habits as any other line-voltage work. De-energize, lock out, test for voltage with a meter you trust, and follow the equipment manufacturer's wiring instructions and your site rules.</p>
+<h2>Using run hours for maintenance</h2>
+<p>The federal operations and maintenance best practices guide from a national laboratory describes preventive maintenance as work done on a time-based or machine-run-based schedule, and lists filter changes among the preventive tasks that keep equipment running efficiently. It also says rotating equipment needs regular lubrication and belts need adjustment, and it directs readers first to the manufacturer's specifications. The same guide says lubricant changes can follow calendar time or equipment run time, and that oil analysis can justify stretching a run-based interval. Run hours give you that run-time basis.</p>
+<ul>
+<li><strong>Filters.</strong> Change at the manufacturer's or site's hour interval, or sooner if a pressure reading or a look at the media says so.</li>
+<li><strong>Belts.</strong> Check tension and wear at an hour interval. A new belt often needs an early recheck, so log the hours at install.</li>
+<li><strong>Oil changes.</strong> Equipment with an oil sump can be serviced by hours, and oil test results can move the interval.</li>
+<li><strong>Compressor tracking.</strong> Write down the hours and the start count. The guide gives the example of equipment designed for a set number of full-load hours and a separate limit on start-stop cycles, so hours alone do not tell the whole story.</li>
+</ul>
+<p>Whoever owns the machine sets the intervals; the numbers in this lesson are only our assumptions. If your site uses maintenance software, see <a href="cmms-basics-for-hvac-facilities-techs-assets-equipment-tags-work-order-life-pm-by-calendar-or-run-hours-close-out-notes-and-why-the-data-drives-budgets.html">CMMS Basics for HVAC Facilities Techs</a> for how work orders are triggered by run hours and what to record at close-out. We do not repeat that here.</p>
+<h2>Lead-lag rotation by hours</h2>
+<p>When two pumps, fans or boilers share a job, one leads and one waits as backup. If the same one always leads, it wears out first and the backup may be neglected until it is needed. Rotating the lead by hours, instead of by a fixed date, evens out wear. Our own example: pump A shows 4,200 hours and pump B shows 3,900, a gap of 300. Swap the lead and the gap shrinks over time. See <a href="multiple-boiler-plants-lead-lag-rotation-staging-turndown-and-condensing-efficiency.html">Multiple Boiler Plants: Lead-Lag Rotation and Staging</a> for the plant side. Keep the standby unit working too, since an unused machine can seize or fail to start.</p>
+<h2>Reading hours from a controller instead</h2>
+<p>Many controllers and building automation systems already total run time for each output or status point, and some can tell you starts too. If the point is a command, it counts commanded time. If it is a status from a current switch or similar proof, it counts proven time. Ask which one you are looking at. Reading the point beats adding a meter when it exists and is trusted, and the same guide notes that maintenance software can connect with energy management and control systems for condition-based monitoring. A standalone meter is still worth it on equipment with no controller, or as an independent check on the controller's number.</p>
+<h2>Comparing run hours to degree days</h2>
+<p>A federal weather service page explains degree days. The base is 65 degrees F. A heating degree day is 65 minus the day's mean temperature when the mean is below 65, and a cooling degree day is the mean minus 65 when it is above. Dividing energy use by degree days lets you compare periods with different weather. You can do the same with hours: divide a week's run hours by that week's degree days. If the ratio holds steady, the system is behaving the same way. If it climbs, the machine is working more for the same weather. Compare longer spans such as a whole season, because meter reading dates seldom match weather periods. For fuel-use math see <a href="heating-degree-days-estimating-seasonal-fuel-use-65-f-base-balance-temperature-ua-method-and-comparing-two-winters.html">Heating Degree Days: Estimating Seasonal Fuel Use</a>.</p>
+<h2>What a sudden jump can mean</h2>
+<p>A big rise in hours, with no weather change to explain it, is a clue, not a diagnosis. Possible causes include:</p>
+<ul>
+<li>A schedule or setpoint that was changed or overridden, so equipment runs after hours.</li>
+<li>A fan switch left in ON instead of AUTO.</li>
+<li>A system that cannot reach setpoint, such as low capacity, a dirty coil or a refrigerant or airflow problem, so it never cycles off.</li>
+<li>A stuck contactor, which a coil-wired meter would miss but a load-wired meter would catch.</li>
+<li>A meter or point that was reset or replaced, which can look like a drop or a jump.</li>
+</ul>
+<p>A sudden drop can matter too: a stopped machine, a failed meter, or a power problem. Compare against the previous week and the weather, then go look at the equipment. See also <a href="rooftop-unit-preventive-maintenance-quarterly-and-seasonal-tasks-belts-filters-economizers-coils-and-gas-heat-checks.html">Rooftop Unit Preventive Maintenance</a> for what to check when you arrive, and <a href="capacitors-and-contactors.html">Capacitors and Contactors</a> for contactor behavior.</p>
+<h2>Worked example (our own, with assumed numbers)</h2>
+<p><strong>This is our own example. Every input below is an assumption for practice, not a rule or a measured value.</strong></p>
+<p><strong>Assumptions:</strong> a rooftop unit blower that runs 35 percent of the time in the heating season and 50 percent in the cooling season. A filter interval of 600 hours and a belt check interval of 400 hours. A week of 150 heating degree days.</p>
+<ol>
+<li>Hours in a week: 7 days x 24 = 168 hours.</li>
+<li>Heating season run hours per week: 168 x 0.35 = 58.8 hours.</li>
+<li>Cooling season run hours per week: 168 x 0.50 = 84.0 hours.</li>
+<li>Filter in heating season: 600 / 58.8 = 10.2 weeks. In cooling season: 600 / 84 = 7.1 weeks.</li>
+<li>Belt check in heating season: 400 / 58.8 = 6.8 weeks. In cooling season: 400 / 84 = 4.8 weeks.</li>
+<li>Duty cycle check: 58.8 / 168 = 0.35, which is 35 percent, matching the assumption. For cooling, 84 / 168 = 50 percent.</li>
+<li>Hours per degree day in the heating week: 58.8 / 150 = 0.39 hours per degree day.</li>
+<li>Jump check: if the next week reads 168 hours with the same weather, the blower ran all week. 168 / 58.8 = 2.9 times the expected hours, so look for a fan switch on ON or an override.</li>
+</ol>
+<p>The same filter interval in hours lands on very different calendar dates in each season. That is the reason to schedule by hours.</p>
+<figure><svg viewBox="0 0 640 250" role="img" aria-label="Control circuit diagram showing an hour meter wired in parallel with a contactor coil, both on the switched 24 volt leg and common" style="max-width:100%;height:auto" fill="none" stroke="currentColor" stroke-width="2"><title>Hour meter wired in parallel with a contactor coil</title>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor" stroke="none"/></marker></defs>
+<path d="M60 60 H120"/><path d="M120 60 L150 42"/><path d="M160 60 H450"/><path d="M60 200 H450"/>
+<path d="M270 60 V100"/><path d="M270 160 V200"/><rect x="220" y="100" width="100" height="60"/>
+<path d="M450 60 V100"/><path d="M450 160 V200"/><rect x="400" y="100" width="100" height="60"/>
+<path d="M330 60 H370" marker-end="url(#arr)"/>
+<g stroke="none" fill="currentColor" font-size="14" font-family="sans-serif">
+<text x="20" y="24" font-size="16">Hour meter in parallel with the coil</text>
+<text x="170" y="40">Call contact</text>
+<text x="60" y="84">24 V hot</text>
+<text x="60" y="222">Common</text>
+<text x="270" y="135" text-anchor="middle">Coil</text>
+<text x="450" y="135" text-anchor="middle">Hour meter</text>
+<text x="330" y="50">current</text>
+<text x="520" y="110">Meter counts only</text>
+<text x="520" y="130">while the coil is</text>
+<text x="520" y="150">energized</text></g></svg>
+<figcaption>The meter and the coil share the same switched leg and common, so the meter counts whenever the coil is energized. Use a meter rated for the control voltage.</figcaption></figure>
+<section class="fieldcard" aria-labelledby="fc"><h2 id="fc">Field card: Run-hour meters</h2><p><em>Count the hours the machine works, then service by hours.</em></p><ul><li>Wire in parallel with a coil or load that is live only when running.</li><li>Match the meter to the voltage and to AC or DC.</li><li>A meter on a coil counts contactor time; on the load, it counts powered time.</li><li>Log hours at every filter, belt or oil service.</li><li>Rotate lead and lag by hours.</li><li>Hours per degree day should hold steady; a rise is a clue to check.</li></ul><p class="small">Educational summary only. Follow manufacturer instructions and your site procedures. Print this page to keep the card.</p></section>
+<section class="related"><h2>Related lessons</h2><ul><li><a href="cmms-basics-for-hvac-facilities-techs-assets-equipment-tags-work-order-life-pm-by-calendar-or-run-hours-close-out-notes-and-why-the-data-drives-budgets.html">CMMS Basics for HVAC Facilities Techs</a></li><li><a href="capacitors-and-contactors.html">Capacitors and Contactors</a></li><li><a href="rooftop-unit-preventive-maintenance-quarterly-and-seasonal-tasks-belts-filters-economizers-coils-and-gas-heat-checks.html">Rooftop Unit Preventive Maintenance</a></li><li><a href="heating-degree-days-estimating-seasonal-fuel-use-65-f-base-balance-temperature-ua-method-and-comparing-two-winters.html">Heating Degree Days: Estimating Seasonal Fuel Use</a></li><li><a href="multiple-boiler-plants-lead-lag-rotation-staging-turndown-and-condensing-efficiency.html">Multiple Boiler Plants: Lead-Lag Rotation and Staging</a></li></ul><p><a href="start-here.html">New here? Follow the Start Here path.</a></p></section>
+<div class="note"><strong>Educational use only.</strong> This page is general information, not a substitute for training, manufacturer instructions or the rules where you work. <a href="../disclaimer.html">Read the full disclaimer</a>.</div>
+<h2>Sources</h2><ol class="sources"><li>National laboratory for the federal energy management program: O&amp;M Best Practices Guide, Release 2.0 (2004), chapters 1, 4 and 5 and the predictive maintenance chapter (plain text, not linked)</li><li><a href="https://www.osti.gov/biblio/1220381">OSTI record: federal operations and maintenance best practices guide, Release 3.0</a></li><li>Federal weather service: heating and cooling degree days (plain text, not linked)</li></ol>
+<p><a class="btn" href="../products.html">See the study packs</a></p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>&copy; 2026 Trade Study Bench. Independent educational publisher run by Max Winkler, New Jersey. Contact: <a href="mailto:winklerhvac724@gmail.com">winklerhvac724@gmail.com</a>. Not affiliated with the EPA, any certifying organization, or any employer. Study materials do not certify you or replace required training and licenses.</p>
+<p><a href="../disclaimer.html">Disclaimer</a> &middot; <a href="../terms.html">Terms</a> &middot; <a href="../refund.html">Refunds</a> &middot; <a href="../privacy.html">Privacy</a> &middot; <a href="../cookies.html">Cookies</a> &middot; <a href="../accessibility.html">Accessibility</a> &middot; <a href="../about.html">About</a> &middot; <a href="../contact.html">Contact</a> &middot; <a href="../videos.html">Videos</a> &middot; <a href="../game/index.html">Fix-It Van</a> &middot; <a href="../game/sim/index.html">Service Call Sim</a></p></div></footer>
+<script src="../js/config.js"></script><script src="../js/site.js"></script><script src="../js/print.js"></script>
+</body></html>
